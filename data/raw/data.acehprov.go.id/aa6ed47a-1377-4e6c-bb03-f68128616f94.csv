@@ -1,0 +1,139 @@
+bps_kode_provinsi,bps_nama_provinsi,bps_kode_kabupaten,bps_nama_kabupaten,tahun,jumlah_penduduk(ribu),jenis_kelamin
+11,Aceh,1101,Kabupaten Simeulue,2017,46980,Laki-laki
+11,Aceh,1102,Kabupaten Aceh Singkil,2017,60400,Laki-laki
+11,Aceh,1103,Kabupaten Aceh Selatan,2017,114180,Laki-laki
+11,Aceh,1104,Kabupaten Aceh Tenggara,2017,104110,Laki-laki
+11,Aceh,1105,Kabupaten Aceh Timur,2017,209580,Laki-laki
+11,Aceh,1106,Kabupaten Aceh Tengah,2017,102880,Laki-laki
+11,Aceh,1107,Kabupaten Aceh Barat,2017,102100,Laki-laki
+11,Aceh,1108,Kabupaten Aceh Besar,2017,209590,Laki-laki
+11,Aceh,1109,Kabupaten Pidie,2017,209270,Laki-laki
+11,Aceh,1110,Kabupaten Bireuen,2017,221800,Laki-laki
+11,Aceh,1111,Kabupaten Aceh Utara,2017,297890,Laki-laki
+11,Aceh,1112,Kabupatan Aceh Barat Daya,2017,72280,Laki-laki
+11,Aceh,1113,Kabupaten Gayo Lues,2017,45130,Laki-laki
+11,Aceh,1114,Kabupaten Aceh Tamiang,2017,144930,Laki-laki
+11,Aceh,1115,Kabupaten Nagan Raya,2017,81510,Laki-laki
+11,Aceh,1116,Kabupaten Aceh Jaya,2017,46480,Laki-laki
+11,Aceh,1117,Kabupaten Bener Meriah,2017,72420,Laki-laki
+11,Aceh,1118,Kabupaten Pidie Jaya,2017,75420,Laki-laki
+11,Aceh,1171,Kota Banda Aceh,2017,133730,Laki-laki
+11,Aceh,1172,Kota Sabang,2017,17390,Laki-laki
+11,Aceh,1173,Kota Langsa,2017,85070,Laki-laki
+11,Aceh,1174,Kota Lhokseumawe,2017,99280,Laki-laki
+11,Aceh,1175,Kota Subulussalam,2017,39730,Laki-laki
+11,Aceh,1101,Kabupaten Simeulue,2017,44400,Perempuan
+11,Aceh,1102,Kabupaten Aceh Singkil,2017,59090,Perempuan
+11,Aceh,1103,Kabupaten Aceh Selatan,2017,117710,Perempuan
+11,Aceh,1104,Kabupaten Aceh Tenggara,2017,104370,Perempuan
+11,Aceh,1105,Kabupaten Aceh Timur,2017,210020,Perempuan
+11,Aceh,1106,Kabupaten Aceh Tengah,2017,101390,Perempuan
+11,Aceh,1107,Kabupaten Aceh Barat,2017,99580,Perempuan
+11,Aceh,1108,Kabupaten Aceh Besar,2017,199520,Perempuan
+11,Aceh,1109,Kabupaten Pidie,2017,223330,Perempuan
+11,Aceh,1110,Kabupaten Bireuen,2017,231430,Perempuan
+11,Aceh,1111,Kabupaten Aceh Utara,2017,304660,Perempuan
+11,Aceh,1112,Kabupatan Aceh Barat Daya,2017,73450,Perempuan
+11,Aceh,1113,Kabupaten Gayo Lues,2017,45890,Perempuan
+11,Aceh,1114,Kabupaten Aceh Tamiang,2017,142080,Perempuan
+11,Aceh,1115,Kabupaten Nagan Raya,2017,79820,Perempuan
+11,Aceh,1116,Kabupaten Aceh Jaya,2017,43140,Perempuan
+11,Aceh,1117,Kabupaten Bener Meriah,2017,70100,Perempuan
+11,Aceh,1118,Kabupaten Pidie Jaya,2017,79380,Perempuan
+11,Aceh,1171,Kota Banda Aceh,2017,126190,Perempuan
+11,Aceh,1172,Kota Sabang,2017,16590,Perempuan
+11,Aceh,1173,Kota Langsa,2017,86500,Perempuan
+11,Aceh,1174,Kota Lhokseumawe,2017,99700,Perempuan
+11,Aceh,1175,Kota Subulussalam,2017,39000,Perempuan
+11,Aceh,1101,Kabupaten Simeulue,2016,46421,Laki-laki
+11,Aceh,1102,Kabupaten Aceh Singkil,2016,58869,Laki-laki
+11,Aceh,1103,Kabupaten Aceh Selatan,2016,112487,Laki-laki
+11,Aceh,1104,Kabupaten Aceh Tenggara,2016,101979,Laki-laki
+11,Aceh,1105,Kabupaten Aceh Timur,2016,205566,Laki-laki
+11,Aceh,1106,Kabupaten Aceh Tengah,2016,101115,Laki-laki
+11,Aceh,1107,Kabupaten Aceh Barat,2016,100336,Laki-laki
+11,Aceh,1108,Kabupaten Aceh Besar,2016,205412,Laki-laki
+11,Aceh,1109,Kabupaten Pidie,2016,206092,Laki-laki
+11,Aceh,1110,Kabupaten Bireuen,2016,217105,Laki-laki
+11,Aceh,1111,Kabupaten Aceh Utara,2016,293231,Laki-laki
+11,Aceh,1112,Kabupatan Aceh Barat Daya,2016,71320,Laki-laki
+11,Aceh,1113,Kabupaten Gayo Lues,2016,44534,Laki-laki
+11,Aceh,1114,Kabupaten Aceh Tamiang,2016,142914,Laki-laki
+11,Aceh,1115,Kabupaten Nagan Raya,2016,79788,Laki-laki
+11,Aceh,1116,Kabupaten Aceh Jaya,2016,45476,Laki-laki
+11,Aceh,1117,Kabupaten Bener Meriah,2016,70790,Laki-laki
+11,Aceh,1118,Kabupaten Pidie Jaya,2016,73906,Laki-laki
+11,Aceh,1171,Kota Banda Aceh,2016,131010,Laki-laki
+11,Aceh,1172,Kota Sabang,2016,16981,Laki-laki
+11,Aceh,1173,Kota Langsa,2016,83671,Laki-laki
+11,Aceh,1174,Kota Lhokseumawe,2016,97299,Laki-laki
+11,Aceh,1175,Kota Subulussalam,2016,38811,Laki-laki
+11,Aceh,1101,Kabupaten Simeulue,2016,43870,Perempuan
+11,Aceh,1102,Kabupaten Aceh Singkil,2016,57843,Perempuan
+11,Aceh,1103,Kabupaten Aceh Selatan,2016,116116,Perempuan
+11,Aceh,1104,Kabupaten Aceh Tenggara,2016,102489,Perempuan
+11,Aceh,1105,Kabupaten Aceh Timur,2016,205713,Perempuan
+11,Aceh,1106,Kabupaten Aceh Tengah,2016,99297,Perempuan
+11,Aceh,1107,Kabupaten Aceh Barat,2016,97585,Perempuan
+11,Aceh,1108,Kabupaten Aceh Besar,2016,195501,Perempuan
+11,Aceh,1109,Kabupaten Pidie,2016,219882,Perempuan
+11,Aceh,1110,Kabupaten Bireuen,2016,226522,Perempuan
+11,Aceh,1111,Kabupaten Aceh Utara,2016,300261,Perempuan
+11,Aceh,1112,Kabupatan Aceh Barat Daya,2016,71992,Perempuan
+11,Aceh,1113,Kabupaten Gayo Lues,2016,44966,Perempuan
+11,Aceh,1114,Kabupaten Aceh Tamiang,2016,140007,Perempuan
+11,Aceh,1115,Kabupaten Nagan Raya,2016,78435,Perempuan
+11,Aceh,1116,Kabupaten Aceh Jaya,2016,42146,Perempuan
+11,Aceh,1117,Kabupaten Bener Meriah,2016,69100,Perempuan
+11,Aceh,1118,Kabupaten Pidie Jaya,2016,77566,Perempuan
+11,Aceh,1171,Kota Banda Aceh,2016,123894,Perempuan
+11,Aceh,1172,Kota Sabang,2016,16641,Perempuan
+11,Aceh,1173,Kota Langsa,2016,85149,Perempuan
+11,Aceh,1174,Kota Lhokseumawe,2016,97887,Perempuan
+11,Aceh,1175,Kota Subulussalam,2016,38273,Perempuan
+11,Aceh,1101,Kabupaten Simeulue,2015,45580,Laki-laki
+11,Aceh,1102,Kabupaten Aceh Singkil,2015,57620,Laki-laki
+11,Aceh,1103,Kabupaten Aceh Selatan,2015,110610,Laki-laki
+11,Aceh,1104,Kabupaten Aceh Tenggara,2015,99600,Laki-laki
+11,Aceh,1105,Kabupaten Aceh Timur,2015,201430,Laki-laki
+11,Aceh,1106,Kabupaten Aceh Tengah,2015,99010,Laki-laki
+11,Aceh,1107,Kabupaten Aceh Barat,2015,98000,Laki-laki
+11,Aceh,1108,Kabupaten Aceh Besar,2015,201190,Laki-laki
+11,Aceh,1109,Kabupaten Pidie,2015,202920,Laki-laki
+11,Aceh,1110,Kabupaten Bireuen,2015,212910,Laki-laki
+11,Aceh,1111,Kabupaten Aceh Utara,2015,288310,Laki-laki
+11,Aceh,1112,Kabupatan Aceh Barat Daya,2015,69780,Laki-laki
+11,Aceh,1113,Kabupaten Gayo Lues,2015,43610,Laki-laki
+11,Aceh,1114,Kabupaten Aceh Tamiang,2015,140310,Laki-laki
+11,Aceh,1115,Kabupaten Nagan Raya,2015,78290,Laki-laki
+11,Aceh,1116,Kabupaten Aceh Jaya,2015,44990,Laki-laki
+11,Aceh,1117,Kabupaten Bener Meriah,2015,69180,Laki-laki
+11,Aceh,1118,Kabupaten Pidie Jaya,2015,72700,Laki-laki
+11,Aceh,1171,Kota Banda Aceh,2015,128980,Laki-laki
+11,Aceh,1172,Kota Sabang,2015,16820,Laki-laki
+11,Aceh,1173,Kota Langsa,2015,82300,Laki-laki
+11,Aceh,1174,Kota Lhokseumawe,2015,95270,Laki-laki
+11,Aceh,1175,Kota Subulussalam,2015,38070,Laki-laki
+11,Aceh,1101,Kabupaten Simeulue,2015,43530,Perempuan
+11,Aceh,1102,Kabupaten Aceh Singkil,2015,56900,Perempuan
+11,Aceh,1103,Kabupaten Aceh Selatan,2015,114290,Perempuan
+11,Aceh,1104,Kabupaten Aceh Tenggara,2015,100410,Perempuan
+11,Aceh,1105,Kabupaten Aceh Timur,2015,201550,Perempuan
+11,Aceh,1106,Kabupaten Aceh Tengah,2015,97080,Perempuan
+11,Aceh,1107,Kabupaten Aceh Barat,2015,95790,Perempuan
+11,Aceh,1108,Kabupaten Aceh Besar,2015,191390,Perempuan
+11,Aceh,1109,Kabupaten Pidie,2015,215960,Perempuan
+11,Aceh,1110,Kabupaten Bireuen,2015,222390,Perempuan
+11,Aceh,1111,Kabupaten Aceh Utara,2015,295580,Perempuan
+11,Aceh,1112,Kabupatan Aceh Barat Daya,2015,70910,Perempuan
+11,Aceh,1113,Kabupaten Gayo Lues,2015,44270,Perempuan
+11,Aceh,1114,Kabupaten Aceh Tamiang,2015,138020,Perempuan
+11,Aceh,1115,Kabupaten Nagan Raya,2015,76780,Perempuan
+11,Aceh,1116,Kabupaten Aceh Jaya,2015,41390,Perempuan
+11,Aceh,1117,Kabupaten Bener Meriah,2015,67640,Perempuan
+11,Aceh,1118,Kabupaten Pidie Jaya,2015,76020,Perempuan
+11,Aceh,1171,Kota Banda Aceh,2015,121320,Perempuan
+11,Aceh,1172,Kota Sabang,2015,16400,Perempuan
+11,Aceh,1173,Kota Langsa,2015,83590,Perempuan
+11,Aceh,1174,Kota Lhokseumawe,2015,96140,Perempuan
+11,Aceh,1175,Kota Subulussalam,2015,37120,Perempuan

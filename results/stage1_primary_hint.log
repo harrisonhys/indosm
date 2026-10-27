@@ -1,0 +1,10 @@
+done def|none, new LLM calls so far 0
+done def|described, new LLM calls so far 40
+done elements|none, new LLM calls so far 41
+done elements|described, new LLM calls so far 80
+                             hit  hit@1  R@GT_neutral  F1_neutral  prompt_tokens
+config                                                                          
+rank1[def|none]            0.878  0.634         0.407       0.389       1062.049
+rank1[def|described]       0.805  0.561         0.403       0.375       1161.512
+rank1[elements|none]       0.854  0.707         0.405       0.414       1270.171
+rank1[elements|described]  0.854  0.561         0.367       0.359       1369.244

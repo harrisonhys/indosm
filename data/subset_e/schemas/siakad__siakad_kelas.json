@@ -1,0 +1,109 @@
+{
+ "system": "siakad",
+ "table": "siakad_kelas",
+ "source": "SIAKAD Feeder (idiknursidik/siakad@master, siakad.sql)",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id_kelas",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "id_kurikulummatakuliah",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "kodept",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "kode_prodi",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "id_prodi",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "id_matakuliah",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "bahasan",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "id_kelas_kuliah_ws",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "id_matkul_ws",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "id_prodi_ws",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "id_semester",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "kode_mata_kuliah",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "nama_mata_kuliah",
+   "type": "varchar(200)",
+   "desc": ""
+  },
+  {
+   "name": "nama_kelas_kuliah",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "nama_program_studi",
+   "type": "varchar(200)",
+   "desc": ""
+  },
+  {
+   "name": "nama_semester",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_akhir_efektif",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_mulai_efektif",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "date_create",
+   "type": "datetime",
+   "desc": ""
+  },
+  {
+   "name": "date_update",
+   "type": "datetime",
+   "desc": ""
+  }
+ ]
+}

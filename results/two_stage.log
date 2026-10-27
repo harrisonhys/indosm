@@ -1,0 +1,23 @@
+done E01L
+done E02L
+done E03L
+done E04L
+done E05L
+done E06L
+done E07L
+done E08L
+done E09L
+done E10L
+done E11L
+done E12L
+done E13L
+done E14L
+done E20L
+                         R@GT     F1  ...  prompt_tokens     sec
+config                                ...                       
+two-stage               0.319  0.245  ...        921.933  24.602
+two-stage+dict          0.400  0.330  ...        985.067  24.299
+two-stage-per-res       0.261  0.251  ...       1237.400  54.614
+two-stage-per-res+dict  0.283  0.274  ...       1363.800  56.045
+
+[4 rows x 7 columns]

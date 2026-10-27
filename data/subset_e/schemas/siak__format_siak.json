@@ -1,0 +1,194 @@
+{
+ "system": "siak",
+ "table": "format_siak",
+ "source": "OpenSID storage/app/template/impor/format-siak.xls (header only)",
+ "license": "GPL-3.0 (OpenSID)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "Nomor KK",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "NIK",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Nama Penduduk",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Status",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Tempat Lahir",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Tanggal Lahir",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Kelamin",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "NIK Ayah",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Ayah",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "NIK Ibu",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Ibu",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Status Kawin",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "SHDK",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Agama",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Kecamatan",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Desa/Kel",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Alamat",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "RW",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "RT",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Pendidikan",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Pekerjaan",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Deskripsi Pekerjaan",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Gol. Darah",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Cacat",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Cetak KTP",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Ganti KTP",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "KTP Berakhir",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Nomor Paspor",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Nomor Akta Lahir",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Nomor Akta Kawin",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Tanggal Kwn",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Nomor Akta Cerai",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Tgl Cerai",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Petugas Registrasi",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Tgl Ubah",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Petugas Entri",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Tgl Entri",
+   "type": "",
+   "desc": ""
+  }
+ ]
+}

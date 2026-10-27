@@ -1,0 +1,34 @@
+{
+ "system": "rmpuskesmas",
+ "table": "tb_rujuk",
+ "source": "mfarim/laravel-rekam-medis-puskesmas@1767a3ff14",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_surat_rujukan",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "tgl_rujuk",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "no_redis",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "created_at",
+   "type": "timestamps",
+   "desc": ""
+  },
+  {
+   "name": "updated_at",
+   "type": "timestamps",
+   "desc": ""
+  }
+ ]
+}

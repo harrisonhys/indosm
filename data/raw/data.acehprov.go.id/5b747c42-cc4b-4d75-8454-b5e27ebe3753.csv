@@ -1,0 +1,875 @@
+kemendagri_kode_provinsi;kemendagri_nama_provinsi;kemendagri_kode_kabupatenkota;kemendagri_nama_kabupatenkota;tahun;semester;jenis_kelamin;jumlah_penduduk;satuan
+11;Aceh;11.01;Kabupaten Aceh Selatan;2015;1;Laki-laki;113854;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2015;1;Laki-laki;109919;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2015;1;Laki-laki;211386;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2015;1;Laki-laki;104720;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2015;1;Laki-laki;95060;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2015;1;Laki-laki;193920;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2015;1;Laki-laki;216620;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2015;1;Laki-laki;283575;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2015;1;Laki-laki;45056;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2015;1;Laki-laki;64922;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2015;1;Laki-laki;211742;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2015;1;Laki-laki;74327;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2015;1;Laki-laki;46977;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2015;1;Laki-laki;42822;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2015;1;Laki-laki;83730;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2015;1;Laki-laki;143203;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2015;1;Laki-laki;77469;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2015;1;Laki-laki;76976;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2015;1;Laki-laki;121101;Jiwa
+11;Aceh;11.72;Kota Sabang;2015;1;Laki-laki;19452;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2015;1;Laki-laki;94249;Jiwa
+11;Aceh;11.74;Kota Langsa;2015;1;Laki-laki;91062;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2015;1;Laki-laki;40425;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2015;1;Perempuan;113404;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2015;1;Perempuan;109386;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2015;1;Perempuan;207355;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2015;1;Perempuan;101010;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2015;1;Perempuan;91633;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2015;1;Perempuan;187044;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2015;1;Perempuan;218584;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2015;1;Perempuan;285446;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2015;1;Perempuan;42871;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2015;1;Perempuan;63224;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2015;1;Perempuan;216905;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2015;1;Perempuan;72668;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2015;1;Perempuan;46942;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2015;1;Perempuan;40937;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2015;1;Perempuan;81861;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2015;1;Perempuan;139514;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2015;1;Perempuan;74931;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2015;1;Perempuan;78017;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2015;1;Perempuan;114666;Jiwa
+11;Aceh;11.72;Kota Sabang;2015;1;Perempuan;18725;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2015;1;Perempuan;94322;Jiwa
+11;Aceh;11.74;Kota Langsa;2015;1;Perempuan;88943;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2015;1;Perempuan;39457;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2015;2;Laki-laki;114226;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2015;2;Laki-laki;110104;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2015;2;Laki-laki;211581;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2015;2;Laki-laki;104900;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2015;2;Laki-laki;95242;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2015;2;Laki-laki;193830;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2015;2;Laki-laki;216860;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2015;2;Laki-laki;283921;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2015;2;Laki-laki;45307;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2015;2;Laki-laki;65102;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2015;2;Laki-laki;211909;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2015;2;Laki-laki;74556;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2015;2;Laki-laki;47228;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2015;2;Laki-laki;43281;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2015;2;Laki-laki;83876;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2015;2;Laki-laki;143416;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2015;2;Laki-laki;77629;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2015;2;Laki-laki;77489;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2015;2;Laki-laki;121074;Jiwa
+11;Aceh;11.72;Kota Sabang;2015;2;Laki-laki;20070;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2015;2;Laki-laki;94486;Jiwa
+11;Aceh;11.74;Kota Langsa;2015;2;Laki-laki;91225;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2015;2;Laki-laki;40617;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2015;2;Perempuan;113506;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2015;2;Perempuan;109586;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2015;2;Perempuan;207562;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2015;2;Perempuan;101250;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2015;2;Perempuan;91852;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2015;2;Perempuan;187537;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2015;2;Perempuan;218748;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2015;2;Perempuan;285505;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2015;2;Perempuan;43028;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2015;2;Perempuan;63441;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2015;2;Perempuan;217140;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2015;2;Perempuan;72853;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2015;2;Perempuan;47100;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2015;2;Perempuan;41486;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2015;2;Perempuan;81996;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2015;2;Perempuan;139702;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2015;2;Perempuan;75186;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2015;2;Perempuan;78341;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2015;2;Perempuan;115116;Jiwa
+11;Aceh;11.72;Kota Sabang;2015;2;Perempuan;19234;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2015;2;Perempuan;94503;Jiwa
+11;Aceh;11.74;Kota Langsa;2015;2;Perempuan;89198;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2015;2;Perempuan;39674;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2016;1;Laki-laki;114704;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2016;1;Laki-laki;110475;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2016;1;Laki-laki;212992;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2016;1;Laki-laki;105036;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2016;1;Laki-laki;95638;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2016;1;Laki-laki;194332;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2016;1;Laki-laki;217718;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2016;1;Laki-laki;287012;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2016;1;Laki-laki;45430;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2016;1;Laki-laki;65378;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2016;1;Laki-laki;213518;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2016;1;Laki-laki;74967;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2016;1;Laki-laki;47330;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2016;1;Laki-laki;43594;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2016;1;Laki-laki;83989;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2016;1;Laki-laki;144941;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2016;1;Laki-laki;77899;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2016;1;Laki-laki;77816;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2016;1;Laki-laki;121031;Jiwa
+11;Aceh;11.72;Kota Sabang;2016;1;Laki-laki;20201;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2016;1;Laki-laki;94822;Jiwa
+11;Aceh;11.74;Kota Langsa;2016;1;Laki-laki;91503;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2016;1;Laki-laki;40887;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2016;1;Perempuan;113719;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2016;1;Perempuan;109885;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2016;1;Perempuan;206767;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2016;1;Perempuan;101713;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2016;1;Perempuan;92062;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2016;1;Perempuan;187270;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2016;1;Perempuan;218543;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2016;1;Perempuan;284303;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2016;1;Perempuan;43186;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2016;1;Perempuan;63553;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2016;1;Perempuan;216875;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2016;1;Perempuan;72891;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2016;1;Perempuan;47281;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2016;1;Perempuan;41434;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2016;1;Perempuan;82350;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2016;1;Perempuan;140504;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2016;1;Perempuan;75381;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2016;1;Perempuan;78518;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2016;1;Perempuan;115883;Jiwa
+11;Aceh;11.72;Kota Sabang;2016;1;Perempuan;19520;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2016;1;Perempuan;94743;Jiwa
+11;Aceh;11.74;Kota Langsa;2016;1;Perempuan;89470;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2016;1;Perempuan;39654;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2016;2;Laki-laki;115580;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2016;2;Laki-laki;110990;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2016;2;Laki-laki;213400;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2016;2;Laki-laki;105816;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2016;2;Laki-laki;96150;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2016;2;Laki-laki;195184;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2016;2;Laki-laki;217589;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2016;2;Laki-laki;288489;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2016;2;Laki-laki;45698;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2016;2;Laki-laki;65680;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2016;2;Laki-laki;215181;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2016;2;Laki-laki;75292;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2016;2;Laki-laki;47751;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2016;2;Laki-laki;43794;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2016;2;Laki-laki;84548;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2016;2;Laki-laki;145511;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2016;2;Laki-laki;78305;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2016;2;Laki-laki;78162;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2016;2;Laki-laki;121706;Jiwa
+11;Aceh;11.72;Kota Sabang;2016;2;Laki-laki;20365;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2016;2;Laki-laki;95336;Jiwa
+11;Aceh;11.74;Kota Langsa;2016;2;Laki-laki;92064;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2016;2;Laki-laki;41164;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2016;2;Perempuan;113985;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2016;2;Perempuan;110031;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2016;2;Perempuan;207598;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2016;2;Perempuan;101967;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2016;2;Perempuan;92403;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2016;2;Perempuan;188326;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2016;2;Perempuan;218843;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2016;2;Perempuan;285683;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2016;2;Perempuan;43361;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2016;2;Perempuan;63896;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2016;2;Perempuan;217364;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2016;2;Perempuan;73305;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2016;2;Perempuan;47333;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2016;2;Perempuan;42006;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2016;2;Perempuan;82623;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2016;2;Perempuan;141361;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2016;2;Perempuan;75741;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2016;2;Perempuan;78954;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2016;2;Perempuan;116393;Jiwa
+11;Aceh;11.72;Kota Sabang;2016;2;Perempuan;19555;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2016;2;Perempuan;95177;Jiwa
+11;Aceh;11.74;Kota Langsa;2016;2;Perempuan;89814;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2016;2;Perempuan;39780;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2017;1;Laki-laki;115396;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2017;1;Laki-laki;110966;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2017;1;Laki-laki;213595;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2017;1;Laki-laki;106041;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2017;1;Laki-laki;96109;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2017;1;Laki-laki;195653;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2017;1;Laki-laki;218388;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2017;1;Laki-laki;288626;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2017;1;Laki-laki;45753;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2017;1;Laki-laki;65910;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2017;1;Laki-laki;215135;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2017;1;Laki-laki;75350;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2017;1;Laki-laki;47871;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2017;1;Laki-laki;43855;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2017;1;Laki-laki;84565;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2017;1;Laki-laki;145958;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2017;1;Laki-laki;78455;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2017;1;Laki-laki;78454;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2017;1;Laki-laki;121736;Jiwa
+11;Aceh;11.72;Kota Sabang;2017;1;Laki-laki;20453;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2017;1;Laki-laki;95312;Jiwa
+11;Aceh;11.74;Kota Langsa;2017;1;Laki-laki;92272;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2017;1;Laki-laki;41203;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2017;1;Perempuan;114858;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2017;1;Perempuan;110718;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2017;1;Perempuan;208666;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2017;1;Perempuan;102366;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2017;1;Perempuan;93010;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2017;1;Perempuan;189008;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2017;1;Perempuan;219352;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2017;1;Perempuan;287269;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2017;1;Perempuan;43574;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2017;1;Perempuan;64053;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2017;1;Perempuan;217735;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2017;1;Perempuan;73337;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2017;1;Perempuan;47499;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2017;1;Perempuan;42203;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2017;1;Perempuan;83107;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2017;1;Perempuan;141775;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2017;1;Perempuan;76054;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2017;1;Perempuan;79134;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2017;1;Perempuan;117078;Jiwa
+11;Aceh;11.72;Kota Sabang;2017;1;Perempuan;19587;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2017;1;Perempuan;95312;Jiwa
+11;Aceh;11.74;Kota Langsa;2017;1;Perempuan;90152;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2017;1;Perempuan;39984;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2017;2;Laki-laki;115804;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2017;2;Laki-laki;111362;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2017;2;Laki-laki;215161;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2017;2;Laki-laki;106879;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2017;2;Laki-laki;97357;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2017;2;Laki-laki;196070;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2017;2;Laki-laki;218419;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2017;2;Laki-laki;289445;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2017;2;Laki-laki;46485;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2017;2;Laki-laki;64656;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2017;2;Laki-laki;215726;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2017;2;Laki-laki;75998;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2017;2;Laki-laki;48868;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2017;2;Laki-laki;44928;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2017;2;Laki-laki;84718;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2017;2;Laki-laki;147078;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2017;2;Laki-laki;79755;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2017;2;Laki-laki;78600;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2017;2;Laki-laki;122423;Jiwa
+11;Aceh;11.72;Kota Sabang;2017;2;Laki-laki;20605;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2017;2;Laki-laki;96206;Jiwa
+11;Aceh;11.74;Kota Langsa;2017;2;Laki-laki;93025;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2017;2;Laki-laki;42429;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2017;2;Perempuan;115151;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2017;2;Perempuan;110995;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2017;2;Perempuan;209887;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2017;2;Perempuan;103329;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2017;2;Perempuan;94173;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2017;2;Perempuan;189609;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2017;2;Perempuan;219664;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2017;2;Perempuan;287865;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2017;2;Perempuan;44340;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2017;2;Perempuan;62920;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2017;2;Perempuan;218791;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2017;2;Perempuan;74072;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2017;2;Perempuan;48711;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2017;2;Perempuan;43105;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2017;2;Perempuan;83160;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2017;2;Perempuan;142646;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2017;2;Perempuan;77730;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2017;2;Perempuan;79342;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2017;2;Perempuan;118039;Jiwa
+11;Aceh;11.72;Kota Sabang;2017;2;Perempuan;19888;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2017;2;Perempuan;96390;Jiwa
+11;Aceh;11.74;Kota Langsa;2017;2;Perempuan;91032;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2017;2;Perempuan;41167;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2018;1;Laki-laki;117335;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2018;1;Laki-laki;112692;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2018;1;Laki-laki;216985;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2018;1;Laki-laki;107622;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2018;1;Laki-laki;98347;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2018;1;Laki-laki;197005;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2018;1;Laki-laki;219355;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2018;1;Laki-laki;291679;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2018;1;Laki-laki;47159;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2018;1;Laki-laki;63683;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2018;1;Laki-laki;216671;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2018;1;Laki-laki;76497;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2018;1;Laki-laki;49648;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2018;1;Laki-laki;45690;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2018;1;Laki-laki;85673;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2018;1;Laki-laki;148600;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2018;1;Laki-laki;80388;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2018;1;Laki-laki;79601;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2018;1;Laki-laki;123361;Jiwa
+11;Aceh;11.72;Kota Sabang;2018;1;Laki-laki;20987;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2018;1;Laki-laki;96235;Jiwa
+11;Aceh;11.74;Kota Langsa;2018;1;Laki-laki;93454;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2018;1;Laki-laki;43118;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2018;1;Perempuan;116421;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2018;1;Perempuan;111588;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2018;1;Perempuan;211068;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2018;1;Perempuan;104524;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2018;1;Perempuan;95401;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2018;1;Perempuan;192266;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2018;1;Perempuan;219991;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2018;1;Perempuan;290328;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2018;1;Perempuan;44918;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2018;1;Perempuan;62185;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2018;1;Perempuan;220882;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2018;1;Perempuan;74752;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2018;1;Perempuan;49470;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2018;1;Perempuan;43909;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2018;1;Perempuan;83675;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2018;1;Perempuan;144472;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2018;1;Perempuan;78384;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2018;1;Perempuan;79859;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2018;1;Perempuan;120161;Jiwa
+11;Aceh;11.72;Kota Sabang;2018;1;Perempuan;20449;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2018;1;Perempuan;96513;Jiwa
+11;Aceh;11.74;Kota Langsa;2018;1;Perempuan;92097;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2018;1;Perempuan;41936;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2018;2;Laki-laki;117791;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2018;2;Laki-laki;113134;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2018;2;Laki-laki;216825;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2018;2;Laki-laki;108041;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2018;2;Laki-laki;98749;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2018;2;Laki-laki;196318;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2018;2;Laki-laki;219485;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2018;2;Laki-laki;291022;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2018;2;Laki-laki;47649;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2018;2;Laki-laki;64137;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2018;2;Laki-laki;216363;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2018;2;Laki-laki;76598;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2018;2;Laki-laki;50096;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2018;2;Laki-laki;46197;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2018;2;Laki-laki;86172;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2018;2;Laki-laki;148911;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2018;2;Laki-laki;80844;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2018;2;Laki-laki;79920;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2018;2;Laki-laki;123782;Jiwa
+11;Aceh;11.72;Kota Sabang;2018;2;Laki-laki;21288;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2018;2;Laki-laki;96508;Jiwa
+11;Aceh;11.74;Kota Langsa;2018;2;Laki-laki;93855;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2018;2;Laki-laki;43423;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2018;2;Perempuan;116970;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2018;2;Perempuan;112005;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2018;2;Perempuan;212181;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2018;2;Perempuan;105015;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2018;2;Perempuan;95963;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2018;2;Perempuan;193719;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2018;2;Perempuan;220746;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2018;2;Perempuan;292328;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2018;2;Perempuan;45328;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2018;2;Perempuan;62631;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2018;2;Perempuan;222252;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2018;2;Perempuan;74876;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2018;2;Perempuan;49841;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2018;2;Perempuan;44427;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2018;2;Perempuan;84035;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2018;2;Perempuan;145439;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2018;2;Perempuan;78792;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2018;2;Perempuan;80195;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2018;2;Perempuan;120907;Jiwa
+11;Aceh;11.72;Kota Sabang;2018;2;Perempuan;20727;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2018;2;Perempuan;96887;Jiwa
+11;Aceh;11.74;Kota Langsa;2018;2;Perempuan;92577;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2018;2;Perempuan;42308;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2019;1;Laki-laki;118000;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2019;1;Laki-laki;113314;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2019;1;Laki-laki;212946;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2019;1;Laki-laki;108651;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2019;1;Laki-laki;99228;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2019;1;Laki-laki;197254;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2019;1;Laki-laki;219501;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2019;1;Laki-laki;291945;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2019;1;Laki-laki;47878;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2019;1;Laki-laki;64124;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2019;1;Laki-laki;216452;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2019;1;Laki-laki;76673;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2019;1;Laki-laki;50309;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2019;1;Laki-laki;46384;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2019;1;Laki-laki;86221;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2019;1;Laki-laki;149792;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2019;1;Laki-laki;81233;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2019;1;Laki-laki;80251;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2019;1;Laki-laki;123698;Jiwa
+11;Aceh;11.72;Kota Sabang;2019;1;Laki-laki;21263;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2019;1;Laki-laki;93796;Jiwa
+11;Aceh;11.74;Kota Langsa;2019;1;Laki-laki;94073;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2019;1;Laki-laki;43884;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2019;1;Perempuan;117381;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2019;1;Perempuan;112292;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2019;1;Perempuan;210018;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2019;1;Perempuan;105726;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2019;1;Perempuan;96406;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2019;1;Perempuan;194733;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2019;1;Perempuan;221632;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2019;1;Perempuan;293647;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2019;1;Perempuan;45564;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2019;1;Perempuan;62512;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2019;1;Perempuan;223120;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2019;1;Perempuan;75113;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2019;1;Perempuan;49981;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2019;1;Perempuan;44836;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2019;1;Perempuan;84677;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2019;1;Perempuan;146296;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2019;1;Perempuan;79201;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2019;1;Perempuan;80670;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2019;1;Perempuan;121486;Jiwa
+11;Aceh;11.72;Kota Sabang;2019;1;Perempuan;20840;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2019;1;Perempuan;95048;Jiwa
+11;Aceh;11.74;Kota Langsa;2019;1;Perempuan;92754;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2019;1;Perempuan;42709;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2019;2;Laki-laki;118442;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2019;2;Laki-laki;113536;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2019;2;Laki-laki;213182;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2019;2;Laki-laki;108805;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2019;2;Laki-laki;99441;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2019;2;Laki-laki;198103;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2019;2;Laki-laki;220104;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2019;2;Laki-laki;292424;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2019;2;Laki-laki;47995;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2019;2;Laki-laki;64232;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2019;2;Laki-laki;216781;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2019;2;Laki-laki;76966;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2019;2;Laki-laki;50847;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2019;2;Laki-laki;46762;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2019;2;Laki-laki;86591;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2019;2;Laki-laki;150405;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2019;2;Laki-laki;81325;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2019;2;Laki-laki;80501;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2019;2;Laki-laki;123917;Jiwa
+11;Aceh;11.72;Kota Sabang;2019;2;Laki-laki;21280;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2019;2;Laki-laki;94187;Jiwa
+11;Aceh;11.74;Kota Langsa;2019;2;Laki-laki;94418;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2019;2;Laki-laki;44290;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2019;2;Perempuan;117917;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2019;2;Perempuan;112626;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2019;2;Perempuan;210456;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2019;2;Perempuan;106023;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2019;2;Perempuan;96514;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2019;2;Perempuan;195800;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2019;2;Perempuan;222346;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2019;2;Perempuan;294427;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2019;2;Perempuan;45729;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2019;2;Perempuan;62764;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2019;2;Perempuan;223569;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2019;2;Perempuan;75282;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2019;2;Perempuan;50198;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2019;2;Perempuan;45347;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2019;2;Perempuan;84959;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2019;2;Perempuan;147024;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2019;2;Perempuan;79309;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2019;2;Perempuan;80929;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2019;2;Perempuan;121862;Jiwa
+11;Aceh;11.72;Kota Sabang;2019;2;Perempuan;20911;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2019;2;Perempuan;95318;Jiwa
+11;Aceh;11.74;Kota Langsa;2019;2;Perempuan;92970;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2019;2;Perempuan;42995;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2020;1;Laki-laki;119028;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2020;1;Laki-laki;113980;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2020;1;Laki-laki;213732;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2020;1;Laki-laki;108942;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2020;1;Laki-laki;99657;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2020;1;Laki-laki;198888;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2020;1;Laki-laki;220571;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2020;1;Laki-laki;293394;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2020;1;Laki-laki;48154;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2020;1;Laki-laki;64399;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2020;1;Laki-laki;217254;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2020;1;Laki-laki;77279;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2020;1;Laki-laki;50905;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2020;1;Laki-laki;46864;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2020;1;Laki-laki;86911;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2020;1;Laki-laki;150940;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2020;1;Laki-laki;81479;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2020;1;Laki-laki;80724;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2020;1;Laki-laki;124181;Jiwa
+11;Aceh;11.72;Kota Sabang;2020;1;Laki-laki;21316;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2020;1;Laki-laki;94374;Jiwa
+11;Aceh;11.74;Kota Langsa;2020;1;Laki-laki;94552;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2020;1;Laki-laki;45092;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2020;1;Perempuan;118520;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2020;1;Perempuan;112888;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2020;1;Perempuan;211174;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2020;1;Perempuan;106526;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2020;1;Perempuan;96884;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2020;1;Perempuan;196765;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2020;1;Perempuan;223098;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2020;1;Perempuan;295216;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2020;1;Perempuan;45852;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2020;1;Perempuan;62974;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2020;1;Perempuan;224417;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2020;1;Perempuan;75420;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2020;1;Perempuan;50435;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2020;1;Perempuan;45610;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2020;1;Perempuan;85150;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2020;1;Perempuan;147679;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2020;1;Perempuan;79631;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2020;1;Perempuan;81188;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2020;1;Perempuan;122867;Jiwa
+11;Aceh;11.72;Kota Sabang;2020;1;Perempuan;20998;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2020;1;Perempuan;95700;Jiwa
+11;Aceh;11.74;Kota Langsa;2020;1;Perempuan;93398;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2020;1;Perempuan;43879;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2020;2;Laki-laki;118929;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2020;2;Laki-laki;113911;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2020;2;Laki-laki;214304;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2020;2;Laki-laki;109144;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2020;2;Laki-laki;99560;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2020;2;Laki-laki;202799;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2020;2;Laki-laki;220707;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2020;2;Laki-laki;293480;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2020;2;Laki-laki;48265;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2020;2;Laki-laki;64466;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2020;2;Laki-laki;218062;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2020;2;Laki-laki;77389;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2020;2;Laki-laki;51097;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2020;2;Laki-laki;46986;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2020;2;Laki-laki;86818;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2020;2;Laki-laki;151744;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2020;2;Laki-laki;81601;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2020;2;Laki-laki;80835;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2020;2;Laki-laki;124901;Jiwa
+11;Aceh;11.72;Kota Sabang;2020;2;Laki-laki;21377;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2020;2;Laki-laki;94716;Jiwa
+11;Aceh;11.74;Kota Langsa;2020;2;Laki-laki;94979;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2020;2;Laki-laki;46286;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2020;2;Perempuan;118397;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2020;2;Perempuan;113263;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2020;2;Perempuan;212094;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2020;2;Perempuan;106928;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2020;2;Perempuan;97274;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2020;2;Perempuan;200912;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2020;2;Perempuan;223442;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2020;2;Perempuan;297056;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2020;2;Perempuan;45881;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2020;2;Perempuan;63245;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2020;2;Perempuan;224891;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2020;2;Perempuan;75560;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2020;2;Perempuan;50443;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2020;2;Perempuan;45795;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2020;2;Perempuan;85439;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2020;2;Perempuan;147743;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2020;2;Perempuan;80026;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2020;2;Perempuan;81339;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2020;2;Perempuan;123991;Jiwa
+11;Aceh;11.72;Kota Sabang;2020;2;Perempuan;21080;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2020;2;Perempuan;95763;Jiwa
+11;Aceh;11.74;Kota Langsa;2020;2;Perempuan;93265;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2020;2;Perempuan;45137;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2021;1;Laki-laki;118444;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2021;1;Laki-laki;114015;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2021;1;Laki-laki;215269;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2021;1;Laki-laki;110594;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2021;1;Laki-laki;100213;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2021;1;Laki-laki;204677;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2021;1;Laki-laki;215460;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2021;1;Laki-laki;294691;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2021;1;Laki-laki;48305;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2021;1;Laki-laki;65260;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2021;1;Laki-laki;218996;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2021;1;Laki-laki;77477;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2021;1;Laki-laki;51213;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2021;1;Laki-laki;47888;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2021;1;Laki-laki;86920;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2021;1;Laki-laki;152283;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2021;1;Laki-laki;83278;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2021;1;Laki-laki;79246;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2021;1;Laki-laki;125793;Jiwa
+11;Aceh;11.72;Kota Sabang;2021;1;Laki-laki;21469;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2021;1;Laki-laki;94812;Jiwa
+11;Aceh;11.74;Kota Langsa;2021;1;Laki-laki;93425;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2021;1;Laki-laki;47431;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2021;1;Perempuan;117878;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2021;1;Perempuan;113282;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2021;1;Perempuan;213311;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2021;1;Perempuan;108350;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2021;1;Perempuan;98065;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2021;1;Perempuan;203098;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2021;1;Perempuan;220032;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2021;1;Perempuan;298820;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2021;1;Perempuan;45946;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2021;1;Perempuan;63970;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2021;1;Perempuan;225076;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2021;1;Perempuan;75590;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2021;1;Perempuan;50437;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2021;1;Perempuan;46757;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2021;1;Perempuan;85443;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2021;1;Perempuan;148335;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2021;1;Perempuan;81686;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2021;1;Perempuan;80583;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2021;1;Perempuan;125495;Jiwa
+11;Aceh;11.72;Kota Sabang;2021;1;Perempuan;21090;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2021;1;Perempuan;96091;Jiwa
+11;Aceh;11.74;Kota Langsa;2021;1;Perempuan;92237;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2021;1;Perempuan;46279;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2021;2;Laki-laki;118629;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2021;2;Laki-laki;114136;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2021;2;Laki-laki;215485;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2021;2;Laki-laki;110518;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2021;2;Laki-laki;100123;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2021;2;Laki-laki;208906;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2021;2;Laki-laki;215141;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2021;2;Laki-laki;297890;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2021;2;Laki-laki;48378;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2021;2;Laki-laki;65272;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2021;2;Laki-laki;218962;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2021;2;Laki-laki;77492;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2021;2;Laki-laki;51276;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2021;2;Laki-laki;47886;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2021;2;Laki-laki;86940;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2021;2;Laki-laki;152178;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2021;2;Laki-laki;83974;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2021;2;Laki-laki;79234;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2021;2;Laki-laki;126673;Jiwa
+11;Aceh;11.72;Kota Sabang;2021;2;Laki-laki;21535;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2021;2;Laki-laki;94868;Jiwa
+11;Aceh;11.74;Kota Langsa;2021;2;Laki-laki;93411;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2021;2;Laki-laki;47791;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2021;2;Perempuan;117858;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2021;2;Perempuan;113320;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2021;2;Perempuan;213609;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2021;2;Perempuan;108580;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2021;2;Perempuan;98288;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2021;2;Perempuan;207626;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2021;2;Perempuan;220656;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2021;2;Perempuan;302273;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2021;2;Perempuan;45990;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2021;2;Perempuan;64061;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2021;2;Perempuan;225421;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2021;2;Perempuan;75721;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2021;2;Perempuan;50478;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2021;2;Perempuan;46875;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2021;2;Perempuan;85544;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2021;2;Perempuan;148653;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2021;2;Perempuan;82474;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2021;2;Perempuan;80707;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2021;2;Perempuan;126525;Jiwa
+11;Aceh;11.72;Kota Sabang;2021;2;Perempuan;21161;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2021;2;Perempuan;96166;Jiwa
+11;Aceh;11.74;Kota Langsa;2021;2;Perempuan;92425;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2021;2;Perempuan;46780;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2022;1;Laki-laki;117226;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2022;1;Laki-laki;114400;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2022;1;Laki-laki;218530;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2022;1;Laki-laki;110698;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2022;1;Laki-laki;100053;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2022;1;Laki-laki;211818;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2022;1;Laki-laki;215028;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2022;1;Laki-laki;303003;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2022;1;Laki-laki;48520;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2022;1;Laki-laki;65332;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2022;1;Laki-laki;219010;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2022;1;Laki-laki;77658;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2022;1;Laki-laki;51346;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2022;1;Laki-laki;48555;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2022;1;Laki-laki;86947;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2022;1;Laki-laki;152553;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2022;1;Laki-laki;85040;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2022;1;Laki-laki;79397;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2022;1;Laki-laki;127104;Jiwa
+11;Aceh;11.72;Kota Sabang;2022;1;Laki-laki;21574;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2022;1;Laki-laki;95119;Jiwa
+11;Aceh;11.74;Kota Langsa;2022;1;Laki-laki;93577;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2022;1;Laki-laki;48721;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2022;1;Perempuan;116943;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2022;1;Perempuan;113521;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2022;1;Perempuan;216399;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2022;1;Perempuan;109046;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2022;1;Perempuan;98805;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2022;1;Perempuan;210423;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2022;1;Perempuan;221768;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2022;1;Perempuan;306702;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2022;1;Perempuan;46040;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2022;1;Perempuan;64342;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2022;1;Perempuan;226493;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2022;1;Perempuan;75857;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2022;1;Perempuan;50609;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2022;1;Perempuan;47494;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2022;1;Perempuan;85880;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2022;1;Perempuan;149247;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2022;1;Perempuan;83429;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2022;1;Perempuan;80875;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2022;1;Perempuan;126920;Jiwa
+11;Aceh;11.72;Kota Sabang;2022;1;Perempuan;21293;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2022;1;Perempuan;96569;Jiwa
+11;Aceh;11.74;Kota Langsa;2022;1;Perempuan;92498;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2022;1;Perempuan;47575;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2022;2;Laki-laki;117285;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2022;2;Laki-laki;114467;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2022;2;Laki-laki;222124;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2022;2;Laki-laki;112101;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2022;2;Laki-laki;100666;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2022;2;Laki-laki;215260;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2022;2;Laki-laki;216031;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2022;2;Laki-laki;308321;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2022;2;Laki-laki;48754;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2022;2;Laki-laki;66224;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2022;2;Laki-laki;222286;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2022;2;Laki-laki;77709;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2022;2;Laki-laki;51365;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2022;2;Laki-laki;49137;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2022;2;Laki-laki;87141;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2022;2;Laki-laki;153303;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2022;2;Laki-laki;86572;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2022;2;Laki-laki;79501;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2022;2;Laki-laki;127681;Jiwa
+11;Aceh;11.72;Kota Sabang;2022;2;Laki-laki;21734;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2022;2;Laki-laki;95689;Jiwa
+11;Aceh;11.74;Kota Langsa;2022;2;Laki-laki;93697;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2022;2;Laki-laki;50158;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2022;2;Perempuan;117054;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2022;2;Perempuan;113708;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2022;2;Perempuan;219595;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2022;2;Perempuan;110457;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2022;2;Perempuan;99457;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2022;2;Perempuan;213883;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2022;2;Perempuan;223267;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2022;2;Perempuan;311185;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2022;2;Perempuan;46293;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2022;2;Perempuan;65199;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2022;2;Perempuan;229666;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2022;2;Perempuan;76120;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2022;2;Perempuan;50949;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2022;2;Perempuan;47987;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2022;2;Perempuan;86175;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2022;2;Perempuan;150168;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2022;2;Perempuan;84828;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2022;2;Perempuan;81327;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2022;2;Perempuan;127728;Jiwa
+11;Aceh;11.72;Kota Sabang;2022;2;Perempuan;21442;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2022;2;Perempuan;97171;Jiwa
+11;Aceh;11.74;Kota Langsa;2022;2;Perempuan;92514;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2022;2;Perempuan;48933;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2023;1;Laki-laki;117925;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2023;1;Laki-laki;114942;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2023;1;Laki-laki;224138;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2023;1;Laki-laki;112948;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2023;1;Laki-laki;101433;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2023;1;Laki-laki;216867;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2023;1;Laki-laki;217840;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2023;1;Laki-laki;311080;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2023;1;Laki-laki;48964;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2023;1;Laki-laki;66772;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2023;1;Laki-laki;224167;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2023;1;Laki-laki;78075;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2023;1;Laki-laki;51658;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2023;1;Laki-laki;49790;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2023;1;Laki-laki;87672;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2023;1;Laki-laki;154487;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2023;1;Laki-laki;87320;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2023;1;Laki-laki;79953;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2023;1;Laki-laki;128392;Jiwa
+11;Aceh;11.72;Kota Sabang;2023;1;Laki-laki;21860;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2023;1;Laki-laki;96247;Jiwa
+11;Aceh;11.74;Kota Langsa;2023;1;Laki-laki;94041;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2023;1;Laki-laki;50656;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2023;1;Perempuan;117600;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2023;1;Perempuan;114426;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2023;1;Perempuan;221528;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2023;1;Perempuan;110984;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2023;1;Perempuan;100286;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2023;1;Perempuan;215624;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2023;1;Perempuan;224865;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2023;1;Perempuan;313502;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2023;1;Perempuan;46565;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2023;1;Perempuan;65771;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2023;1;Perempuan;231388;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2023;1;Perempuan;76479;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2023;1;Perempuan;51235;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2023;1;Perempuan;48545;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2023;1;Perempuan;86654;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2023;1;Perempuan;151403;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2023;1;Perempuan;85461;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2023;1;Perempuan;81752;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2023;1;Perempuan;128921;Jiwa
+11;Aceh;11.72;Kota Sabang;2023;1;Perempuan;21535;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2023;1;Perempuan;97703;Jiwa
+11;Aceh;11.74;Kota Langsa;2023;1;Perempuan;92917;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2023;1;Perempuan;49254;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2023;2;Laki-laki;118658;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2023;2;Laki-laki;115899;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2023;2;Laki-laki;226316;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2023;2;Laki-laki;114611;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2023;2;Laki-laki;102917;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2023;2;Laki-laki;218118;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2023;2;Laki-laki;218990;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2023;2;Laki-laki;312500;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2023;2;Laki-laki;49167;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2023;2;Laki-laki;68304;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2023;2;Laki-laki;226002;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2023;2;Laki-laki;78058;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2023;2;Laki-laki;52666;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2023;2;Laki-laki;50490;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2023;2;Laki-laki;88872;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2023;2;Laki-laki;155686;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2023;2;Laki-laki;88941;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2023;2;Laki-laki;80930;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2023;2;Laki-laki;129400;Jiwa
+11;Aceh;11.72;Kota Sabang;2023;2;Laki-laki;21941;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2023;2;Laki-laki;97339;Jiwa
+11;Aceh;11.74;Kota Langsa;2023;2;Laki-laki;91560;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2023;2;Laki-laki;52320;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2023;2;Perempuan;118275;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2023;2;Perempuan;115432;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2023;2;Perempuan;223480;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2023;2;Perempuan;112557;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2023;2;Perempuan;101558;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2023;2;Perempuan;217180;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2023;2;Perempuan;225908;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2023;2;Perempuan;315043;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2023;2;Perempuan;46864;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2023;2;Perempuan;67131;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2023;2;Perempuan;232976;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2023;2;Perempuan;76742;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2023;2;Perempuan;52190;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2023;2;Perempuan;49227;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2023;2;Perempuan;87589;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2023;2;Perempuan;152416;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2023;2;Perempuan;86840;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2023;2;Perempuan;82661;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2023;2;Perempuan;130138;Jiwa
+11;Aceh;11.72;Kota Sabang;2023;2;Perempuan;21586;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2023;2;Perempuan;98728;Jiwa
+11;Aceh;11.74;Kota Langsa;2023;2;Perempuan;90909;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2023;2;Perempuan;50724;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2024;1;Laki-laki;119185;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2024;1;Laki-laki;117132;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2024;1;Laki-laki;228968;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2024;1;Laki-laki;116553;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2024;1;Laki-laki;104626;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2024;1;Laki-laki;220028;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2024;1;Laki-laki;220673;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2024;1;Laki-laki;315500;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2024;1;Laki-laki;49412;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2024;1;Laki-laki;70085;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2024;1;Laki-laki;227973;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2024;1;Laki-laki;78086;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2024;1;Laki-laki;53360;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2024;1;Laki-laki;51030;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2024;1;Laki-laki;90325;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2024;1;Laki-laki;156927;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2024;1;Laki-laki;90648;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2024;1;Laki-laki;81788;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2024;1;Laki-laki;131107;Jiwa
+11;Aceh;11.72;Kota Sabang;2024;1;Laki-laki;21461;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2024;1;Laki-laki;97982;Jiwa
+11;Aceh;11.74;Kota Langsa;2024;1;Laki-laki;91551;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2024;1;Laki-laki;53655;Jiwa
+11;Aceh;11.01;Kabupaten Aceh Selatan;2024;1;Perempuan;118836;Jiwa
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2024;1;Perempuan;116495;Jiwa
+11;Aceh;11.03;Kabupaten Aceh Timur;2024;1;Perempuan;225755;Jiwa
+11;Aceh;11.04;Kabupaten Aceh Tengah;2024;1;Perempuan;114218;Jiwa
+11;Aceh;11.05;Kabupaten Aceh Barat;2024;1;Perempuan;103064;Jiwa
+11;Aceh;11.06;Kabupaten Aceh Besar;2024;1;Perempuan;219020;Jiwa
+11;Aceh;11.07;Kabupaten Pidie;2024;1;Perempuan;227458;Jiwa
+11;Aceh;11.08;Kabupaten Aceh Utara;2024;1;Perempuan;318133;Jiwa
+11;Aceh;11.09;Kabupaten Simeulue;2024;1;Perempuan;47098;Jiwa
+11;Aceh;11.10;Kabupaten Aceh Singkil;2024;1;Perempuan;68707;Jiwa
+11;Aceh;11.11;Kabupaten Bireuen;2024;1;Perempuan;234863;Jiwa
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2024;1;Perempuan;76911;Jiwa
+11;Aceh;11.13;Kabupaten Gayo Lues;2024;1;Perempuan;52776;Jiwa
+11;Aceh;11.14;Kabupaten Aceh Jaya;2024;1;Perempuan;49644;Jiwa
+11;Aceh;11.15;Kabupaten Nagan Raya;2024;1;Perempuan;88783;Jiwa
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2024;1;Perempuan;153556;Jiwa
+11;Aceh;11.17;Kabupaten Bener Meriah;2024;1;Perempuan;88358;Jiwa
+11;Aceh;11.18;Kabupaten Pidie Jaya;2024;1;Perempuan;83292;Jiwa
+11;Aceh;11.71;Kota Banda Aceh;2024;1;Perempuan;131855;Jiwa
+11;Aceh;11.72;Kota Sabang;2024;1;Perempuan;21256;Jiwa
+11;Aceh;11.73;Kota Lhokseumawe;2024;1;Perempuan;99357;Jiwa
+11;Aceh;11.74;Kota Langsa;2024;1;Perempuan;91065;Jiwa
+11;Aceh;11.75;Kota Subulussalam;2024;1;Perempuan;51898;Jiwa

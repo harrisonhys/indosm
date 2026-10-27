@@ -1,0 +1,59 @@
+{
+ "system": "khanza",
+ "table": "rujuk",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_rujuk",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "rujuk_ke",
+   "type": "varchar(150)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_rujuk",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "keterangan_diagnosa",
+   "type": "text",
+   "desc": ""
+  },
+  {
+   "name": "kd_dokter",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "kat_rujuk",
+   "type": "enum('-','bedah','non bedah','kebidanan','anak')",
+   "desc": ""
+  },
+  {
+   "name": "ambulance",
+   "type": "enum('-','agd','sendiri','swasta')",
+   "desc": ""
+  },
+  {
+   "name": "keterangan",
+   "type": "text",
+   "desc": ""
+  },
+  {
+   "name": "jam",
+   "type": "time",
+   "desc": ""
+  }
+ ]
+}

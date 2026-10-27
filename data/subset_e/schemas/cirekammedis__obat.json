@@ -1,0 +1,29 @@
+{
+ "system": "cirekammedis",
+ "table": "obat",
+ "source": "arfandotid/ci_rekammedis@606cd16795",
+ "license": "unclear (license.txt is CodeIgniter's MIT, not the app author's)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "idObat",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "namaObat",
+   "type": "varchar(128)",
+   "desc": ""
+  },
+  {
+   "name": "harga",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "keterangan",
+   "type": "text",
+   "desc": ""
+  }
+ ]
+}

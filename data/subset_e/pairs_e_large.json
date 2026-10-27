@@ -1,0 +1,1927 @@
+[
+ {
+  "id": "E01L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__pasien",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_ktp",
+    "Patient.identifier"
+   ],
+   [
+    "nm_pasien",
+    "Patient.name"
+   ],
+   [
+    "jk",
+    "Patient.gender"
+   ],
+   [
+    "tgl_lahir",
+    "Patient.birthDate"
+   ],
+   [
+    "alamat",
+    "Patient.address"
+   ],
+   [
+    "stts_nikah",
+    "Patient.maritalStatus"
+   ],
+   [
+    "no_tlp",
+    "Patient.telecom"
+   ],
+   [
+    "bahasa_pasien",
+    "Patient.communication"
+   ],
+   [
+    "namakeluarga",
+    "Patient.contact.name"
+   ],
+   [
+    "keluarga",
+    "Patient.contact.relationship"
+   ],
+   [
+    "alamatpj",
+    "Patient.contact.address"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "no_rkm_medis",
+    "Patient.identifier"
+   ],
+   [
+    "no_peserta",
+    "Patient.identifier"
+   ],
+   [
+    "email",
+    "Patient.telecom"
+   ],
+   [
+    "kd_kel",
+    "Patient.address"
+   ],
+   [
+    "kd_kec",
+    "Patient.address"
+   ],
+   [
+    "kd_kab",
+    "Patient.address"
+   ],
+   [
+    "kd_prop",
+    "Patient.address"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "Base FHIR R4 only: SATUSEHAT extensions (birthPlace, religion, mothersMaidenName, citizenship) are not modelled, so those source columns are true negatives. Primary identifier chosen = NIK (no_ktp), as in SATUSEHAT.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E02L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__dokter",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "kd_dokter",
+    "Practitioner.identifier"
+   ],
+   [
+    "nm_dokter",
+    "Practitioner.name"
+   ],
+   [
+    "jk",
+    "Practitioner.gender"
+   ],
+   [
+    "tgl_lahir",
+    "Practitioner.birthDate"
+   ],
+   [
+    "almt_tgl",
+    "Practitioner.address"
+   ],
+   [
+    "no_telp",
+    "Practitioner.telecom"
+   ],
+   [
+    "status",
+    "Practitioner.active"
+   ],
+   [
+    "no_ijn_praktek",
+    "Practitioner.qualification.identifier"
+   ],
+   [
+    "kd_sps",
+    "Practitioner.qualification.code"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "email",
+    "Practitioner.telecom"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "alumni",
+    "Practitioner.qualification.issuer",
+    "alma mater vs. issuing body of the qualification"
+   ]
+  ],
+  "notes": "Base FHIR R4 only: SATUSEHAT extensions (birthPlace, religion, mothersMaidenName, citizenship) are not modelled, so those source columns are true negatives.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E03L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__pegawai",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "nik",
+    "Practitioner.identifier"
+   ],
+   [
+    "nama",
+    "Practitioner.name"
+   ],
+   [
+    "jk",
+    "Practitioner.gender"
+   ],
+   [
+    "tgl_lahir",
+    "Practitioner.birthDate"
+   ],
+   [
+    "alamat",
+    "Practitioner.address"
+   ],
+   [
+    "stts_aktif",
+    "Practitioner.active"
+   ],
+   [
+    "photo",
+    "Practitioner.photo"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "no_ktp",
+    "Practitioner.identifier"
+   ],
+   [
+    "kota",
+    "Practitioner.address"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "pendidikan",
+    "Practitioner.qualification.code",
+    "education level vs. professional qualification"
+   ]
+  ],
+  "notes": "Trap: in Khanza `pegawai.nik` is the EMPLOYEE number (nomor induk karyawan); the national ID is `no_ktp`.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E04L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__poliklinik",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "kd_poli",
+    "Location.identifier"
+   ],
+   [
+    "nm_poli",
+    "Location.name"
+   ],
+   [
+    "status",
+    "Location.status"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "registrasi / registrasilama are registration fees: no FHIR Location counterpart.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E05L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__reg_periksa",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "Encounter.identifier"
+   ],
+   [
+    "tgl_registrasi",
+    "Encounter.period"
+   ],
+   [
+    "kd_dokter",
+    "Encounter.participant.individual"
+   ],
+   [
+    "no_rkm_medis",
+    "Encounter.subject"
+   ],
+   [
+    "kd_poli",
+    "Encounter.location.location"
+   ],
+   [
+    "stts",
+    "Encounter.status"
+   ],
+   [
+    "status_lanjut",
+    "Encounter.class"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam_reg",
+    "Encounter.period"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "kd_pj",
+    "Encounter.account",
+    "payer code vs. billing account"
+   ],
+   [
+    "hubunganpj",
+    "Encounter.participant.type",
+    "relation of responsible person; not a care participant"
+   ]
+  ],
+  "notes": "status_lanjut = Ralan/Ranap (outpatient/inpatient) -> Encounter.class.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E06L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__diagnosa_pasien",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "Condition.encounter"
+   ],
+   [
+    "kd_penyakit",
+    "Condition.code"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "status_penyakit",
+    "Condition.clinicalStatus",
+    "Lama/Baru = new vs. existing case, not active/resolved"
+   ],
+   [
+    "prioritas",
+    "Condition.stage",
+    "diagnosis rank lives in Encounter.diagnosis.rank, not Condition"
+   ]
+  ],
+  "notes": "Small pair with 22 distractor targets.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E07L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__resep_obat",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_resep",
+    "MedicationRequest.identifier"
+   ],
+   [
+    "no_rawat",
+    "MedicationRequest.encounter"
+   ],
+   [
+    "kd_dokter",
+    "MedicationRequest.requester"
+   ],
+   [
+    "tgl_peresepan",
+    "MedicationRequest.authoredOn"
+   ],
+   [
+    "status",
+    "MedicationRequest.category"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam_peresepan",
+    "MedicationRequest.authoredOn"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "status = ralan/ranap -> MedicationRequest.category (outpatient/inpatient). tgl_penyerahan belongs to MedicationDispense.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E08L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__resep_dokter",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_resep",
+    "MedicationRequest.identifier"
+   ],
+   [
+    "kode_brng",
+    "MedicationRequest.medication[x]"
+   ],
+   [
+    "jml",
+    "MedicationRequest.dispenseRequest.quantity"
+   ],
+   [
+    "aturan_pakai",
+    "MedicationRequest.dosageInstruction"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E09L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__databarang",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "kode_brng",
+    "Medication.identifier"
+   ],
+   [
+    "nama_brng",
+    "Medication.code"
+   ],
+   [
+    "kode_industri",
+    "Medication.manufacturer"
+   ],
+   [
+    "expire",
+    "Medication.batch.expirationDate"
+   ],
+   [
+    "status",
+    "Medication.status"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "kode_sat",
+    "Medication.form",
+    "dispensing unit (TAB/BTL) vs. dose form"
+   ],
+   [
+    "isi",
+    "Medication.amount",
+    "pack content vs. amount of drug per package"
+   ]
+  ],
+  "notes": "Most columns are prices per class (kelas1..vvip): true negatives.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E10L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__kamar_inap",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "Encounter.identifier"
+   ],
+   [
+    "kd_kamar",
+    "Encounter.location.location"
+   ],
+   [
+    "tgl_masuk",
+    "Encounter.location.period"
+   ],
+   [
+    "stts_pulang",
+    "Encounter.hospitalization.dischargeDisposition"
+   ],
+   [
+    "diagnosa_awal",
+    "Encounter.reasonCode"
+   ],
+   [
+    "diagnosa_akhir",
+    "Encounter.diagnosis.condition"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam_masuk",
+    "Encounter.location.period"
+   ],
+   [
+    "tgl_keluar",
+    "Encounter.location.period"
+   ],
+   [
+    "jam_keluar",
+    "Encounter.location.period"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "lama",
+    "Encounter.length",
+    "days in this room vs. whole encounter length"
+   ]
+  ],
+  "notes": "One row = one room stay, so dates map to location.period rather than Encounter.period.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E11L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__penjab",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "kd_pj",
+    "Organization.identifier"
+   ],
+   [
+    "png_jawab",
+    "Organization.name"
+   ],
+   [
+    "alamat_asuransi",
+    "Organization.address"
+   ],
+   [
+    "no_telp",
+    "Organization.telecom"
+   ],
+   [
+    "attn",
+    "Organization.contact.name"
+   ],
+   [
+    "status",
+    "Organization.active"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "nama_perusahaan",
+    "Organization.alias",
+    "payer label (png_jawab) vs. legal company name"
+   ]
+  ],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E12L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__rujuk",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rujuk",
+    "ServiceRequest.identifier"
+   ],
+   [
+    "no_rawat",
+    "ServiceRequest.encounter"
+   ],
+   [
+    "rujuk_ke",
+    "ServiceRequest.performer"
+   ],
+   [
+    "tgl_rujuk",
+    "ServiceRequest.authoredOn"
+   ],
+   [
+    "keterangan_diagnosa",
+    "ServiceRequest.reasonCode"
+   ],
+   [
+    "kd_dokter",
+    "ServiceRequest.requester"
+   ],
+   [
+    "keterangan",
+    "ServiceRequest.note"
+   ],
+   [
+    "kat_rujuk",
+    "ServiceRequest.category"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam",
+    "ServiceRequest.authoredOn"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E13L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__periksa_lab",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "DiagnosticReport.encounter"
+   ],
+   [
+    "kd_jenis_prw",
+    "DiagnosticReport.code"
+   ],
+   [
+    "tgl_periksa",
+    "DiagnosticReport.effective[x]"
+   ],
+   [
+    "nip",
+    "DiagnosticReport.performer"
+   ],
+   [
+    "kd_dokter",
+    "DiagnosticReport.resultsInterpreter"
+   ],
+   [
+    "kategori",
+    "DiagnosticReport.category"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam",
+    "DiagnosticReport.effective[x]"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "dokter_perujuk",
+    "DiagnosticReport.basedOn",
+    "referring doctor belongs to the ServiceRequest, only reachable via basedOn"
+   ]
+  ],
+  "notes": "Tariff columns (bagian_rs, bhp, tarif_*, kso, menejemen, biaya) are true negatives.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E14L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__detail_periksa_lab",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "Observation.encounter"
+   ],
+   [
+    "id_template",
+    "Observation.code"
+   ],
+   [
+    "nilai",
+    "Observation.value[x]"
+   ],
+   [
+    "nilai_rujukan",
+    "Observation.referenceRange"
+   ],
+   [
+    "tgl_periksa",
+    "Observation.effective[x]"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam",
+    "Observation.effective[x]"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "keterangan",
+    "Observation.interpretation",
+    "Khanza stores L/H flags here, but it is free text"
+   ],
+   [
+    "kd_jenis_prw",
+    "Observation.basedOn",
+    "lab package code vs. order"
+   ]
+  ],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E20L",
+  "group": "opensid-fhir-large",
+  "lang": "id-en",
+  "source": "opensid__tweb_penduduk",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "nik",
+    "Patient.identifier"
+   ],
+   [
+    "nama",
+    "Patient.name"
+   ],
+   [
+    "sex",
+    "Patient.gender"
+   ],
+   [
+    "tanggallahir",
+    "Patient.birthDate"
+   ],
+   [
+    "alamat_sekarang",
+    "Patient.address"
+   ],
+   [
+    "status_kawin",
+    "Patient.maritalStatus"
+   ],
+   [
+    "telepon",
+    "Patient.telecom"
+   ],
+   [
+    "bahasa_id",
+    "Patient.communication"
+   ],
+   [
+    "status_dasar",
+    "Patient.deceased[x]"
+   ],
+   [
+    "foto",
+    "Patient.photo"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "email",
+    "Patient.telecom"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "Base FHIR R4 only: SATUSEHAT extensions (birthPlace, religion, mothersMaidenName, citizenship) are not modelled, so those source columns are true negatives. status_dasar (HIDUP/MATI/PINDAH) -> deceased[x] is lossy.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E29L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__pasien_mati",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rkm_medis",
+    "Patient.identifier"
+   ],
+   [
+    "tanggal",
+    "Patient.deceased[x]"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam",
+    "Patient.deceased[x]"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "icd1-4 = cause of death (Condition), kd_dokter = certifying doctor: no Patient counterpart.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E30L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__pasien_corona",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rkm_medis",
+    "Patient.identifier"
+   ],
+   [
+    "nama_lengkap",
+    "Patient.name"
+   ],
+   [
+    "kode_jk",
+    "Patient.gender"
+   ],
+   [
+    "tgl_lahir",
+    "Patient.birthDate"
+   ],
+   [
+    "kd_kelurahan",
+    "Patient.address"
+   ],
+   [
+    "notelp",
+    "Patient.telecom"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "no_pengenal",
+    "Patient.identifier"
+   ],
+   [
+    "inisial",
+    "Patient.name"
+   ],
+   [
+    "nama_jk",
+    "Patient.gender"
+   ],
+   [
+    "nm_kelurahan",
+    "Patient.address"
+   ],
+   [
+    "kd_kecamatan",
+    "Patient.address"
+   ],
+   [
+    "nm_kecamatan",
+    "Patient.address"
+   ],
+   [
+    "kd_kabupaten",
+    "Patient.address"
+   ],
+   [
+    "nm_kabupaten",
+    "Patient.address"
+   ],
+   [
+    "kd_propinsi",
+    "Patient.address"
+   ],
+   [
+    "nm_propinsi",
+    "Patient.address"
+   ],
+   [
+    "email",
+    "Patient.telecom"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "sebab_kematian",
+    "Patient.deceased[x]",
+    "cause of death text vs. deceased flag/date"
+   ]
+  ],
+  "notes": "Base FHIR R4 only: SATUSEHAT extensions (birthPlace, religion, mothersMaidenName, citizenship) are not modelled, so those source columns are true negatives. COVID-19 reporting table (kewarganegaraan, status rawat/isolasi have no base-R4 target).",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E31L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__petugas",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "nip",
+    "Practitioner.identifier"
+   ],
+   [
+    "nama",
+    "Practitioner.name"
+   ],
+   [
+    "jk",
+    "Practitioner.gender"
+   ],
+   [
+    "tgl_lahir",
+    "Practitioner.birthDate"
+   ],
+   [
+    "alamat",
+    "Practitioner.address"
+   ],
+   [
+    "no_telp",
+    "Practitioner.telecom"
+   ],
+   [
+    "status",
+    "Practitioner.active"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "email",
+    "Practitioner.telecom"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "kd_jbtn",
+    "Practitioner.qualification.code",
+    "job position vs. qualification"
+   ]
+  ],
+  "notes": "Base FHIR R4 only: SATUSEHAT extensions (birthPlace, religion, mothersMaidenName, citizenship) are not modelled, so those source columns are true negatives.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E32L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__perusahaan_pasien",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "kode_perusahaan",
+    "Organization.identifier"
+   ],
+   [
+    "nama_perusahaan",
+    "Organization.name"
+   ],
+   [
+    "alamat",
+    "Organization.address"
+   ],
+   [
+    "no_telp",
+    "Organization.telecom"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "kota",
+    "Organization.address"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E33L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__industrifarmasi",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "kode_industri",
+    "Organization.identifier"
+   ],
+   [
+    "nama_industri",
+    "Organization.name"
+   ],
+   [
+    "alamat",
+    "Organization.address"
+   ],
+   [
+    "no_telp",
+    "Organization.telecom"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "kota",
+    "Organization.address"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E34L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__datasuplier",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "kode_suplier",
+    "Organization.identifier"
+   ],
+   [
+    "nama_suplier",
+    "Organization.name"
+   ],
+   [
+    "alamat",
+    "Organization.address"
+   ],
+   [
+    "no_telp",
+    "Organization.telecom"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "kota",
+    "Organization.address"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E35L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__bangsal",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "kd_bangsal",
+    "Location.identifier"
+   ],
+   [
+    "nm_bangsal",
+    "Location.name"
+   ],
+   [
+    "status",
+    "Location.status"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E36L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__kamar",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "kd_kamar",
+    "Location.identifier"
+   ],
+   [
+    "kd_bangsal",
+    "Location.partOf"
+   ],
+   [
+    "status",
+    "Location.operationalStatus"
+   ],
+   [
+    "statusdata",
+    "Location.status"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "kelas",
+    "Location.type",
+    "room class (Kelas 1/VIP) vs. location type"
+   ]
+  ],
+  "notes": "status = ISI/KOSONG/DIBERSIHKAN is bed occupancy -> operationalStatus; statusdata = active flag -> status.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E37L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__ruang_ok",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "kd_ruang_ok",
+    "Location.identifier"
+   ],
+   [
+    "nm_ruang_ok",
+    "Location.name"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E38L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__dpjp_ranap",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "Encounter.identifier"
+   ],
+   [
+    "kd_dokter",
+    "Encounter.participant.individual"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "DPJP = attending doctor of an inpatient stay.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E39L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__resume_pasien",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "Condition.encounter"
+   ],
+   [
+    "kd_diagnosa_utama",
+    "Condition.code"
+   ],
+   [
+    "kd_dokter",
+    "Condition.asserter"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "diagnosa_utama",
+    "Condition.code"
+   ],
+   [
+    "kd_diagnosa_sekunder",
+    "Condition.code"
+   ],
+   [
+    "kd_diagnosa_sekunder2",
+    "Condition.code"
+   ],
+   [
+    "kd_diagnosa_sekunder3",
+    "Condition.code"
+   ],
+   [
+    "kd_diagnosa_sekunder4",
+    "Condition.code"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "kd_dokter",
+    "Condition.recorder",
+    "DPJP as asserter vs. recorder"
+   ]
+  ],
+  "notes": "Discharge summary; procedures, complaints and discharge meds belong to other resources.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E40L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__pemeriksaan_ralan",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "Observation.encounter"
+   ],
+   [
+    "tgl_perawatan",
+    "Observation.effective[x]"
+   ],
+   [
+    "nip",
+    "Observation.performer"
+   ],
+   [
+    "tensi",
+    "Observation.component.value[x]"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam_rawat",
+    "Observation.effective[x]"
+   ],
+   [
+    "suhu_tubuh",
+    "Observation.component.value[x]"
+   ],
+   [
+    "nadi",
+    "Observation.component.value[x]"
+   ],
+   [
+    "respirasi",
+    "Observation.component.value[x]"
+   ],
+   [
+    "tinggi",
+    "Observation.component.value[x]"
+   ],
+   [
+    "berat",
+    "Observation.component.value[x]"
+   ],
+   [
+    "spo2",
+    "Observation.component.value[x]"
+   ],
+   [
+    "gcs",
+    "Observation.component.value[x]"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "kesadaran",
+    "Observation.value[x]",
+    "consciousness level as its own observation"
+   ],
+   [
+    "pemeriksaan",
+    "Observation.note",
+    "SOAP 'O' free text"
+   ]
+  ],
+  "notes": "Vital-sign row: BP column -> component.value[x] is scored, other vitals are gt_n1 (same target).",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E41L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__pemeriksaan_ranap",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "Observation.encounter"
+   ],
+   [
+    "tgl_perawatan",
+    "Observation.effective[x]"
+   ],
+   [
+    "nip",
+    "Observation.performer"
+   ],
+   [
+    "tensi",
+    "Observation.component.value[x]"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam_rawat",
+    "Observation.effective[x]"
+   ],
+   [
+    "suhu_tubuh",
+    "Observation.component.value[x]"
+   ],
+   [
+    "nadi",
+    "Observation.component.value[x]"
+   ],
+   [
+    "respirasi",
+    "Observation.component.value[x]"
+   ],
+   [
+    "tinggi",
+    "Observation.component.value[x]"
+   ],
+   [
+    "berat",
+    "Observation.component.value[x]"
+   ],
+   [
+    "spo2",
+    "Observation.component.value[x]"
+   ],
+   [
+    "gcs",
+    "Observation.component.value[x]"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "kesadaran",
+    "Observation.value[x]",
+    "consciousness level as its own observation"
+   ],
+   [
+    "pemeriksaan",
+    "Observation.note",
+    "SOAP 'O' free text"
+   ]
+  ],
+  "notes": "Vital-sign row: BP column -> component.value[x] is scored, other vitals are gt_n1 (same target).",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E42L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__catatan_observasi_igd",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "Observation.encounter"
+   ],
+   [
+    "tgl_perawatan",
+    "Observation.effective[x]"
+   ],
+   [
+    "nip",
+    "Observation.performer"
+   ],
+   [
+    "td",
+    "Observation.component.value[x]"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam_rawat",
+    "Observation.effective[x]"
+   ],
+   [
+    "hr",
+    "Observation.component.value[x]"
+   ],
+   [
+    "rr",
+    "Observation.component.value[x]"
+   ],
+   [
+    "suhu",
+    "Observation.component.value[x]"
+   ],
+   [
+    "spo2",
+    "Observation.component.value[x]"
+   ],
+   [
+    "gcs",
+    "Observation.component.value[x]"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "Vital-sign row: BP column -> component.value[x] is scored, other vitals are gt_n1 (same target).",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E43L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__catatan_observasi_ranap",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "Observation.encounter"
+   ],
+   [
+    "tgl_perawatan",
+    "Observation.effective[x]"
+   ],
+   [
+    "nip",
+    "Observation.performer"
+   ],
+   [
+    "td",
+    "Observation.component.value[x]"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam_rawat",
+    "Observation.effective[x]"
+   ],
+   [
+    "hr",
+    "Observation.component.value[x]"
+   ],
+   [
+    "rr",
+    "Observation.component.value[x]"
+   ],
+   [
+    "suhu",
+    "Observation.component.value[x]"
+   ],
+   [
+    "spo2",
+    "Observation.component.value[x]"
+   ],
+   [
+    "gcs",
+    "Observation.component.value[x]"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "Vital-sign row: BP column -> component.value[x] is scored, other vitals are gt_n1 (same target).",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E44L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__data_triase_igd",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "Observation.encounter"
+   ],
+   [
+    "tgl_kunjungan",
+    "Observation.effective[x]"
+   ],
+   [
+    "tekanan_darah",
+    "Observation.component.value[x]"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "nadi",
+    "Observation.component.value[x]"
+   ],
+   [
+    "pernapasan",
+    "Observation.component.value[x]"
+   ],
+   [
+    "suhu",
+    "Observation.component.value[x]"
+   ],
+   [
+    "saturasi_o2",
+    "Observation.component.value[x]"
+   ],
+   [
+    "nyeri",
+    "Observation.component.value[x]"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "id_observation_tekanan_darah",
+    "Observation.identifier",
+    "SATUSEHAT resource id vs. business identifier"
+   ],
+   [
+    "kode_kasus",
+    "Observation.category",
+    "case type vs. observation category"
+   ]
+  ],
+  "notes": "Vital-sign row: BP column -> component.value[x] is scored, other vitals are gt_n1 (same target). The id_observation_* columns are Khanza's own SATUSEHAT bridging ids.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E45L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__skrining_gizi",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "Observation.encounter"
+   ],
+   [
+    "tanggal",
+    "Observation.effective[x]"
+   ],
+   [
+    "skor_total",
+    "Observation.value[x]"
+   ],
+   [
+    "nip",
+    "Observation.performer"
+   ],
+   [
+    "skor_imt",
+    "Observation.component.value[x]"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "skor_bb",
+    "Observation.component.value[x]"
+   ],
+   [
+    "skor_penyakit",
+    "Observation.component.value[x]"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "parameter_total",
+    "Observation.interpretation",
+    "free-text summary of the score"
+   ]
+  ],
+  "notes": "Nutrition screening score: total -> value[x], sub-scores -> component.value[x].",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E46L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__skrining_hipertensi",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "Observation.encounter"
+   ],
+   [
+    "tanggal",
+    "Observation.effective[x]"
+   ],
+   [
+    "nip",
+    "Observation.performer"
+   ],
+   [
+    "sistole",
+    "Observation.component.value[x]"
+   ],
+   [
+    "klasifikasi_hipertensi",
+    "Observation.interpretation"
+   ],
+   [
+    "hasil_skrining",
+    "Observation.value[x]"
+   ],
+   [
+    "keterangan",
+    "Observation.note"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "diastole",
+    "Observation.component.value[x]"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E47L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__resep_dokter_racikan",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_resep",
+    "MedicationRequest.identifier"
+   ],
+   [
+    "nama_racik",
+    "MedicationRequest.medication[x]"
+   ],
+   [
+    "jml_dr",
+    "MedicationRequest.dispenseRequest.quantity"
+   ],
+   [
+    "aturan_pakai",
+    "MedicationRequest.dosageInstruction"
+   ],
+   [
+    "keterangan",
+    "MedicationRequest.note"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "kd_racik",
+    "MedicationRequest.dosageInstruction",
+    "compounding form (puyer/kapsul) vs. dosage"
+   ]
+  ],
+  "notes": "Compounded prescription (racikan).",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E48L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__resep_pulang",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "MedicationRequest.encounter"
+   ],
+   [
+    "kode_brng",
+    "MedicationRequest.medication[x]"
+   ],
+   [
+    "jml_barang",
+    "MedicationRequest.dispenseRequest.quantity"
+   ],
+   [
+    "dosis",
+    "MedicationRequest.dosageInstruction"
+   ],
+   [
+    "tanggal",
+    "MedicationRequest.authoredOn"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam",
+    "MedicationRequest.authoredOn"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "no_batch",
+    "MedicationRequest.dispenseRequest.initialFill",
+    "batch belongs to Medication.batch / dispense"
+   ]
+  ],
+  "notes": "Discharge medication; prices (harga, total) are true negatives.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E49L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__periksa_radiologi",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "DiagnosticReport.encounter"
+   ],
+   [
+    "kd_jenis_prw",
+    "DiagnosticReport.code"
+   ],
+   [
+    "tgl_periksa",
+    "DiagnosticReport.effective[x]"
+   ],
+   [
+    "nip",
+    "DiagnosticReport.performer"
+   ],
+   [
+    "kd_dokter",
+    "DiagnosticReport.resultsInterpreter"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam",
+    "DiagnosticReport.effective[x]"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "dokter_perujuk",
+    "DiagnosticReport.basedOn",
+    "referring doctor only reachable via the ServiceRequest"
+   ]
+  ],
+  "notes": "Exposure parameters (kV, mAS, FFD, dosis) and tariffs are true negatives.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E50L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__hasil_radiologi",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "DiagnosticReport.encounter"
+   ],
+   [
+    "tgl_periksa",
+    "DiagnosticReport.effective[x]"
+   ],
+   [
+    "hasil",
+    "DiagnosticReport.conclusion"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam",
+    "DiagnosticReport.effective[x]"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E51L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__permintaan_lab",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "noorder",
+    "ServiceRequest.identifier"
+   ],
+   [
+    "no_rawat",
+    "ServiceRequest.encounter"
+   ],
+   [
+    "tgl_permintaan",
+    "ServiceRequest.authoredOn"
+   ],
+   [
+    "dokter_perujuk",
+    "ServiceRequest.requester"
+   ],
+   [
+    "informasi_tambahan",
+    "ServiceRequest.note"
+   ],
+   [
+    "diagnosa_klinis",
+    "ServiceRequest.reasonCode"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam_permintaan",
+    "ServiceRequest.authoredOn"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "tgl_sampel",
+    "ServiceRequest.specimen",
+    "sampling time belongs to Specimen"
+   ]
+  ],
+  "notes": "status = ralan/ranap is the care setting, not ServiceRequest.status.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E52L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__permintaan_radiologi",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "noorder",
+    "ServiceRequest.identifier"
+   ],
+   [
+    "no_rawat",
+    "ServiceRequest.encounter"
+   ],
+   [
+    "tgl_permintaan",
+    "ServiceRequest.authoredOn"
+   ],
+   [
+    "dokter_perujuk",
+    "ServiceRequest.requester"
+   ],
+   [
+    "informasi_tambahan",
+    "ServiceRequest.note"
+   ],
+   [
+    "diagnosa_klinis",
+    "ServiceRequest.reasonCode"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam_permintaan",
+    "ServiceRequest.authoredOn"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "tgl_sampel",
+    "ServiceRequest.specimen",
+    "sampling time belongs to Specimen"
+   ]
+  ],
+  "notes": "status = ralan/ranap is the care setting, not ServiceRequest.status.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E53L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__rujukan_internal_poli",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rawat",
+    "ServiceRequest.encounter"
+   ],
+   [
+    "kd_dokter",
+    "ServiceRequest.performer"
+   ],
+   [
+    "kd_poli",
+    "ServiceRequest.locationReference"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "Internal referral to another clinic.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E54L",
+  "group": "khanza-fhir-large",
+  "lang": "id-en",
+  "source": "khanza__rujuk_masuk",
+  "target": "fhir__ALL",
+  "gt": [
+   [
+    "no_rujuk",
+    "ServiceRequest.identifier"
+   ],
+   [
+    "no_rawat",
+    "ServiceRequest.encounter"
+   ],
+   [
+    "perujuk",
+    "ServiceRequest.requester"
+   ],
+   [
+    "kd_penyakit",
+    "ServiceRequest.reasonCode"
+   ],
+   [
+    "kategori_rujuk",
+    "ServiceRequest.category"
+   ],
+   [
+    "keterangan",
+    "ServiceRequest.note"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "dokter_perujuk",
+    "ServiceRequest.requester"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "no_rawat",
+    "ServiceRequest.encounter",
+    "the referral precedes the local encounter it created"
+   ]
+  ],
+  "notes": "Incoming referral = a ServiceRequest from an outside organisation.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ }
+]

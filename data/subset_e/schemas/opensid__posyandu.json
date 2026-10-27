@@ -1,0 +1,49 @@
+{
+ "system": "opensid",
+ "table": "posyandu",
+ "source": "OpenSID/OpenSID (branch umum, struktur_tabel migrations)@661a8884a8",
+ "license": "GPL-3.0 + OpenSID version clause",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id",
+   "type": "increments",
+   "desc": ""
+  },
+  {
+   "name": "config_id",
+   "type": "integer",
+   "desc": ""
+  },
+  {
+   "name": "nama",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "alamat",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "created_at",
+   "type": "timesWithUserstamps",
+   "desc": ""
+  },
+  {
+   "name": "created_by",
+   "type": "timesWithUserstamps",
+   "desc": ""
+  },
+  {
+   "name": "updated_at",
+   "type": "timesWithUserstamps",
+   "desc": ""
+  },
+  {
+   "name": "updated_by",
+   "type": "timesWithUserstamps",
+   "desc": ""
+  }
+ ]
+}

@@ -1,0 +1,179 @@
+{
+ "system": "khanza",
+ "table": "pegawai",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "nik",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "nama",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "jk",
+   "type": "enum('pria','wanita')",
+   "desc": ""
+  },
+  {
+   "name": "jbtn",
+   "type": "varchar(25)",
+   "desc": ""
+  },
+  {
+   "name": "jnj_jabatan",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "kode_kelompok",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "kode_resiko",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "kode_emergency",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "departemen",
+   "type": "char(4)",
+   "desc": ""
+  },
+  {
+   "name": "bidang",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "stts_wp",
+   "type": "char(5)",
+   "desc": ""
+  },
+  {
+   "name": "stts_kerja",
+   "type": "char(3)",
+   "desc": ""
+  },
+  {
+   "name": "npwp",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "pendidikan",
+   "type": "varchar(80)",
+   "desc": ""
+  },
+  {
+   "name": "gapok",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "tmp_lahir",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_lahir",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "alamat",
+   "type": "varchar(60)",
+   "desc": ""
+  },
+  {
+   "name": "kota",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "mulai_kerja",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "ms_kerja",
+   "type": "enum('<1','pt','ft>1')",
+   "desc": ""
+  },
+  {
+   "name": "indexins",
+   "type": "char(4)",
+   "desc": ""
+  },
+  {
+   "name": "bpd",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "rekening",
+   "type": "varchar(25)",
+   "desc": ""
+  },
+  {
+   "name": "stts_aktif",
+   "type": "enum('aktif','cuti','keluar','tenaga luar','non aktif')",
+   "desc": ""
+  },
+  {
+   "name": "wajibmasuk",
+   "type": "tinyint(2)",
+   "desc": ""
+  },
+  {
+   "name": "pengurang",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "indek",
+   "type": "tinyint(4)",
+   "desc": ""
+  },
+  {
+   "name": "mulai_kontrak",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "cuti_diambil",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "dankes",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "photo",
+   "type": "varchar(500)",
+   "desc": ""
+  },
+  {
+   "name": "no_ktp",
+   "type": "varchar(20)",
+   "desc": ""
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "system": "khanza",
+ "table": "hasil_radiologi",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_periksa",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam",
+   "type": "time",
+   "desc": ""
+  },
+  {
+   "name": "hasil",
+   "type": "text",
+   "desc": ""
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "system": "khanza",
+ "table": "pemeriksaan_ralan",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_perawatan",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam_rawat",
+   "type": "time",
+   "desc": ""
+  },
+  {
+   "name": "suhu_tubuh",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "tensi",
+   "type": "varchar(8)",
+   "desc": ""
+  },
+  {
+   "name": "nadi",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "respirasi",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "tinggi",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "berat",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "spo2",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "gcs",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "kesadaran",
+   "type": "enum('compos mentis','somnolence','sopor','coma','alert','confusion','voice','pain','unresponsive','apatis','delirium','meninggal')",
+   "desc": ""
+  },
+  {
+   "name": "keluhan",
+   "type": "varchar(2000)",
+   "desc": ""
+  },
+  {
+   "name": "pemeriksaan",
+   "type": "varchar(2000)",
+   "desc": ""
+  },
+  {
+   "name": "alergi",
+   "type": "varchar(80)",
+   "desc": ""
+  },
+  {
+   "name": "lingkar_perut",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "rtl",
+   "type": "varchar(2000)",
+   "desc": ""
+  },
+  {
+   "name": "penilaian",
+   "type": "varchar(2000)",
+   "desc": ""
+  },
+  {
+   "name": "instruksi",
+   "type": "varchar(2000)",
+   "desc": ""
+  },
+  {
+   "name": "evaluasi",
+   "type": "varchar(2000)",
+   "desc": ""
+  },
+  {
+   "name": "nip",
+   "type": "varchar(20)",
+   "desc": ""
+  }
+ ]
+}

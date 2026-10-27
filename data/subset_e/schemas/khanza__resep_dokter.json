@@ -1,0 +1,29 @@
+{
+ "system": "khanza",
+ "table": "resep_dokter",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_resep",
+   "type": "varchar(14)",
+   "desc": ""
+  },
+  {
+   "name": "kode_brng",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "jml",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "aturan_pakai",
+   "type": "varchar(150)",
+   "desc": ""
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "system": "feeder",
+ "table": "InsertKelasKuliah",
+ "source": "PDDikti Feeder Web Service User Guide v2.2 (07-12-2020)",
+ "license": "public documentation",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id_prodi",
+   "type": "uuid",
+   "desc": ""
+  },
+  {
+   "name": "id_semester",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "id_matkul",
+   "type": "uuid",
+   "desc": ""
+  },
+  {
+   "name": "nama_kelas_kuliah",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "bahasan",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_mulai_efektif",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_akhir_efektif",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_tutup_daftar",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "apa_untuk_pditt",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "kapasitas",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "lingkup",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "mode",
+   "type": "character",
+   "desc": ""
+  }
+ ]
+}

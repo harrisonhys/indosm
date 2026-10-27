@@ -1,0 +1,44 @@
+{
+ "system": "khanza",
+ "table": "penjab",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "kd_pj",
+   "type": "char(3)",
+   "desc": ""
+  },
+  {
+   "name": "png_jawab",
+   "type": "varchar(30)",
+   "desc": ""
+  },
+  {
+   "name": "nama_perusahaan",
+   "type": "varchar(60)",
+   "desc": ""
+  },
+  {
+   "name": "alamat_asuransi",
+   "type": "varchar(130)",
+   "desc": ""
+  },
+  {
+   "name": "no_telp",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "attn",
+   "type": "varchar(60)",
+   "desc": ""
+  },
+  {
+   "name": "status",
+   "type": "enum('0','1')",
+   "desc": ""
+  }
+ ]
+}

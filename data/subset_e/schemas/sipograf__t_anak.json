@@ -1,0 +1,44 @@
+{
+ "system": "sipograf",
+ "table": "t_anak",
+ "source": "Kriss245/Sipograf-Sistem-Informasi-Posyandu-dengan-KMS@3ddc160c19",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id_anak",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "nama_anak",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "nama_ibu",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "tempat_lahir",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_lahir",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jenis_kelamin",
+   "type": "enum('laki-laki','perempuan','','')",
+   "desc": ""
+  },
+  {
+   "name": "alamat",
+   "type": "text",
+   "desc": ""
+  }
+ ]
+}

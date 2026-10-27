@@ -1,0 +1,64 @@
+{
+ "system": "khanza",
+ "table": "resep_pulang",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "kode_brng",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "jml_barang",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "harga",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "total",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "dosis",
+   "type": "varchar(150)",
+   "desc": ""
+  },
+  {
+   "name": "tanggal",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam",
+   "type": "time",
+   "desc": ""
+  },
+  {
+   "name": "kd_bangsal",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "no_batch",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "no_faktur",
+   "type": "varchar(20)",
+   "desc": ""
+  }
+ ]
+}

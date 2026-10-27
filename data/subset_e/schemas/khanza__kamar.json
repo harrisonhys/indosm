@@ -1,0 +1,39 @@
+{
+ "system": "khanza",
+ "table": "kamar",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "kd_kamar",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "kd_bangsal",
+   "type": "char(5)",
+   "desc": ""
+  },
+  {
+   "name": "trf_kamar",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "status",
+   "type": "enum('isi','kosong','dibersihkan','dibooking','perbaikan')",
+   "desc": ""
+  },
+  {
+   "name": "kelas",
+   "type": "enum('kelas 1','kelas 2','kelas 3','kelas utama','kelas vip','kelas vvip')",
+   "desc": ""
+  },
+  {
+   "name": "statusdata",
+   "type": "enum('0','1')",
+   "desc": ""
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "system": "khanza",
+ "table": "industrifarmasi",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "kode_industri",
+   "type": "char(5)",
+   "desc": ""
+  },
+  {
+   "name": "nama_industri",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "alamat",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "kota",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "no_telp",
+   "type": "varchar(20)",
+   "desc": ""
+  }
+ ]
+}

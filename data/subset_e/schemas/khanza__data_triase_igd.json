@@ -1,0 +1,129 @@
+{
+ "system": "khanza",
+ "table": "data_triase_igd",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_kunjungan",
+   "type": "datetime",
+   "desc": ""
+  },
+  {
+   "name": "cara_masuk",
+   "type": "enum('jalan','brankar','kursi roda','digendong')",
+   "desc": ""
+  },
+  {
+   "name": "alat_transportasi",
+   "type": "enum('-','agd','sendiri','swasta')",
+   "desc": ""
+  },
+  {
+   "name": "alasan_kedatangan",
+   "type": "enum('datang sendiri','polisi','rujukan','bidan','puskesmas','rumah sakit','poliklinik','faskes lain','-')",
+   "desc": ""
+  },
+  {
+   "name": "keterangan_kedatangan",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "kode_kasus",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "tekanan_darah",
+   "type": "varchar(8)",
+   "desc": ""
+  },
+  {
+   "name": "nadi",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "pernapasan",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "suhu",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "saturasi_o2",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "nyeri",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "id_observation_cara_masuk",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "id_observation_alat_transportasi",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "id_observation_alasan_kedatangan",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "id_observation_macam_kasus",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "id_observation_tekanan_darah",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "id_observation_nadi",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "id_observation_pernapasan",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "id_observation_suhu",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "id_observation_saturasi_o2",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "id_observation_nyeri",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "id_composition",
+   "type": "varchar(40)",
+   "desc": ""
+  }
+ ]
+}

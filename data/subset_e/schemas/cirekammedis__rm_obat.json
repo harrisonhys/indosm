@@ -1,0 +1,19 @@
+{
+ "system": "cirekammedis",
+ "table": "rm_obat",
+ "source": "arfandotid/ci_rekammedis@606cd16795",
+ "license": "unclear (license.txt is CodeIgniter's MIT, not the app author's)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "idRekamMedis",
+   "type": "char(15)",
+   "desc": ""
+  },
+  {
+   "name": "idObat",
+   "type": "int(11)",
+   "desc": ""
+  }
+ ]
+}

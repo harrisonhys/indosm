@@ -1,0 +1,179 @@
+{
+ "system": "fhir",
+ "table": "Observation",
+ "source": "HL7 FHIR R4 4.0.1 StructureDefinition snapshot",
+ "license": "CC0-1.0",
+ "lang": "en",
+ "columns": [
+  {
+   "name": "identifier",
+   "type": "Identifier",
+   "desc": "Business Identifier for observation"
+  },
+  {
+   "name": "basedOn",
+   "type": "Reference",
+   "desc": "Fulfills plan, proposal or order"
+  },
+  {
+   "name": "partOf",
+   "type": "Reference",
+   "desc": "Part of referenced event"
+  },
+  {
+   "name": "status",
+   "type": "code",
+   "desc": "registered | preliminary | final | amended +"
+  },
+  {
+   "name": "category",
+   "type": "CodeableConcept",
+   "desc": "Classification of  type of observation"
+  },
+  {
+   "name": "code",
+   "type": "CodeableConcept",
+   "desc": "Type of observation (code / type)"
+  },
+  {
+   "name": "subject",
+   "type": "Reference",
+   "desc": "Who and/or what the observation is about"
+  },
+  {
+   "name": "focus",
+   "type": "Reference",
+   "desc": "What the observation is about, when it is not about the subject of record"
+  },
+  {
+   "name": "encounter",
+   "type": "Reference",
+   "desc": "Healthcare event during which this observation is made"
+  },
+  {
+   "name": "effective[x]",
+   "type": "dateTime|Period|Timing|instant",
+   "desc": "Clinically relevant time/time-period for observation"
+  },
+  {
+   "name": "issued",
+   "type": "instant",
+   "desc": "Date/Time this version was made available"
+  },
+  {
+   "name": "performer",
+   "type": "Reference",
+   "desc": "Who is responsible for the observation"
+  },
+  {
+   "name": "value[x]",
+   "type": "Quantity|CodeableConcept|string|boolean|integer|Range|Ratio|SampledData|time|dateTime|Period",
+   "desc": "Actual result"
+  },
+  {
+   "name": "dataAbsentReason",
+   "type": "CodeableConcept",
+   "desc": "Why the result is missing"
+  },
+  {
+   "name": "interpretation",
+   "type": "CodeableConcept",
+   "desc": "High, low, normal, etc."
+  },
+  {
+   "name": "note",
+   "type": "Annotation",
+   "desc": "Comments about the observation"
+  },
+  {
+   "name": "bodySite",
+   "type": "CodeableConcept",
+   "desc": "Observed body part"
+  },
+  {
+   "name": "method",
+   "type": "CodeableConcept",
+   "desc": "How it was done"
+  },
+  {
+   "name": "specimen",
+   "type": "Reference",
+   "desc": "Specimen used for this observation"
+  },
+  {
+   "name": "device",
+   "type": "Reference",
+   "desc": "(Measurement) Device"
+  },
+  {
+   "name": "referenceRange",
+   "type": "BackboneElement",
+   "desc": "Provides guide for interpretation"
+  },
+  {
+   "name": "referenceRange.low",
+   "type": "Quantity",
+   "desc": "Low Range, if relevant"
+  },
+  {
+   "name": "referenceRange.high",
+   "type": "Quantity",
+   "desc": "High Range, if relevant"
+  },
+  {
+   "name": "referenceRange.type",
+   "type": "CodeableConcept",
+   "desc": "Reference range qualifier"
+  },
+  {
+   "name": "referenceRange.appliesTo",
+   "type": "CodeableConcept",
+   "desc": "Reference range population"
+  },
+  {
+   "name": "referenceRange.age",
+   "type": "Range",
+   "desc": "Applicable age range, if relevant"
+  },
+  {
+   "name": "hasMember",
+   "type": "Reference",
+   "desc": "Related resource that belongs to the Observation group"
+  },
+  {
+   "name": "derivedFrom",
+   "type": "Reference",
+   "desc": "Related measurements the observation is made from"
+  },
+  {
+   "name": "component",
+   "type": "BackboneElement",
+   "desc": "Component results"
+  },
+  {
+   "name": "component.code",
+   "type": "CodeableConcept",
+   "desc": "Type of component observation (code / type)"
+  },
+  {
+   "name": "component.value[x]",
+   "type": "Quantity|CodeableConcept|string|boolean|integer|Range|Ratio|SampledData|time|dateTime|Period",
+   "desc": "Actual component result"
+  },
+  {
+   "name": "component.dataAbsentReason",
+   "type": "CodeableConcept",
+   "desc": "Why the component result is missing"
+  },
+  {
+   "name": "component.interpretation",
+   "type": "CodeableConcept",
+   "desc": "High, low, normal, etc."
+  },
+  {
+   "name": "component.referenceRange",
+   "type": "",
+   "desc": "Provides guide for interpretation of component result"
+  }
+ ]
+}

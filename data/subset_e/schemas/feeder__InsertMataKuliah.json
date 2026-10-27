@@ -1,0 +1,99 @@
+{
+ "system": "feeder",
+ "table": "InsertMataKuliah",
+ "source": "PDDikti Feeder Web Service User Guide v2.2 (07-12-2020)",
+ "license": "public documentation",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "kode_mata_kuliah",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "nama_mata_kuliah",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "id_prodi",
+   "type": "uuid",
+   "desc": ""
+  },
+  {
+   "name": "id_jenis_mata_kuliah",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "id_kelompok_mata_kuliah",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "sks_mata_kuliah",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "sks_tatap_muka",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "sks_praktek",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "sks_praktek_lapangan",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "sks_simulasi",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "metode_kuliah",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "ada_sap",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "ada_silabus",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "ada_bahan_ajar",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "ada_acara_praktek",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "ada_diktat",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_mulai_efektif",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_akhir_efektif",
+   "type": "date",
+   "desc": ""
+  }
+ ]
+}

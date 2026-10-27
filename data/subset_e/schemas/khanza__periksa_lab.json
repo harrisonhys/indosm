@@ -1,0 +1,94 @@
+{
+ "system": "khanza",
+ "table": "periksa_lab",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "nip",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "kd_jenis_prw",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_periksa",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam",
+   "type": "time",
+   "desc": ""
+  },
+  {
+   "name": "dokter_perujuk",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "bagian_rs",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "bhp",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "tarif_perujuk",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "tarif_tindakan_dokter",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "tarif_tindakan_petugas",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "kso",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "menejemen",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "biaya",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "kd_dokter",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "status",
+   "type": "enum('ralan','ranap')",
+   "desc": ""
+  },
+  {
+   "name": "kategori",
+   "type": "enum('pa','pk','mb')",
+   "desc": ""
+  }
+ ]
+}

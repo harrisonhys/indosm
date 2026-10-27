@@ -1,0 +1,54 @@
+{
+ "system": "rmpuskesmas",
+ "table": "tb_dokter",
+ "source": "mfarim/laravel-rekam-medis-puskesmas@1767a3ff14",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "kode_dktr",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "nama_dktr",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "alamat_dktr",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "tgl_lahir_dktr",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "agama_dktr",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "pend_trkhr_dktr",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "telp_dktr",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "created_at",
+   "type": "timestamps",
+   "desc": ""
+  },
+  {
+   "name": "updated_at",
+   "type": "timestamps",
+   "desc": ""
+  }
+ ]
+}

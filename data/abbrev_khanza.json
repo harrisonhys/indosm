@@ -1,0 +1,1007 @@
+{
+ "adl": {
+  "expansion": "antriradiologi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "almt": {
+  "expansion": "alamat",
+  "support": 0,
+  "method": "subseq"
+ },
+ "amt": {
+  "expansion": "alamat",
+  "support": 0,
+  "method": "subseq"
+ },
+ "anc": {
+  "expansion": "ambulance",
+  "support": 0,
+  "method": "subseq"
+ },
+ "apd": {
+  "expansion": "applestandtime",
+  "support": 0,
+  "method": "subseq"
+ },
+ "art": {
+  "expansion": "antropometri",
+  "support": 0,
+  "method": "subseq"
+ },
+ "attn": {
+  "expansion": "atrialfibrillationburden",
+  "support": 0,
+  "method": "subseq"
+ },
+ "back": {
+  "expansion": "background",
+  "support": 0,
+  "method": "subseq"
+ },
+ "bag": {
+  "expansion": "barang",
+  "support": 0,
+  "method": "subseq"
+ },
+ "bank": {
+  "expansion": "bankbri",
+  "support": 0,
+  "method": "subseq"
+ },
+ "bbpb": {
+  "expansion": "bbpertb",
+  "support": 0,
+  "method": "subseq"
+ },
+ "bis": {
+  "expansion": "biasa",
+  "support": 0,
+  "method": "subseq"
+ },
+ "bln": {
+  "expansion": "bulan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "bmi": {
+  "expansion": "berkemih",
+  "support": 0,
+  "method": "subseq"
+ },
+ "bno": {
+  "expansion": "benjolan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "bpd": {
+  "expansion": "bloodpressurediastolic",
+  "support": 0,
+  "method": "subseq"
+ },
+ "brng": {
+  "expansion": "barang",
+  "support": 2,
+  "method": "context"
+ },
+ "bsr": {
+  "expansion": "besar",
+  "support": 0,
+  "method": "subseq"
+ },
+ "btct": {
+  "expansion": "bodyfatpercentage",
+  "support": 0,
+  "method": "subseq"
+ },
+ "bun": {
+  "expansion": "bulan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "byr": {
+  "expansion": "bayar",
+  "support": 0,
+  "method": "subseq"
+ },
+ "byrdr": {
+  "expansion": "biayaradiologiranap",
+  "support": 0,
+  "method": "subseq"
+ },
+ "cath": {
+  "expansion": "catheter",
+  "support": 0,
+  "method": "subseq"
+ },
+ "cbg": {
+  "expansion": "cetaknotasimpanlabkesling",
+  "support": 0,
+  "method": "subseq"
+ },
+ "cct": {
+  "expansion": "checklist",
+  "support": 0,
+  "method": "subseq"
+ },
+ "cek": {
+  "expansion": "checklist",
+  "support": 0,
+  "method": "subseq"
+ },
+ "cob": {
+  "expansion": "combined",
+  "support": 0,
+  "method": "subseq"
+ },
+ "cpb": {
+  "expansion": "cetaknotasimpanlabkesling",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ctg": {
+  "expansion": "cetaknotasimpanlabkesling",
+  "support": 0,
+  "method": "subseq"
+ },
+ "cva": {
+  "expansion": "conjungtiva",
+  "support": 0,
+  "method": "subseq"
+ },
+ "cvc": {
+  "expansion": "cardiovasculer",
+  "support": 0,
+  "method": "subseq"
+ },
+ "cvl": {
+  "expansion": "cardiovasculer",
+  "support": 0,
+  "method": "subseq"
+ },
+ "dbd": {
+  "expansion": "dibandingkan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "dep": {
+  "expansion": "diagnosticreport",
+  "support": 0,
+  "method": "subseq"
+ },
+ "dirs": {
+  "expansion": "dirasakan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "dis": {
+  "expansion": "diagnosa",
+  "support": 0,
+  "method": "subseq"
+ },
+ "dpp": {
+  "expansion": "dpjpvclaim",
+  "support": 0,
+  "method": "subseq"
+ },
+ "dr": {
+  "expansion": "drpr",
+  "support": 4,
+  "method": "context"
+ },
+ "drh": {
+  "expansion": "darah",
+  "support": 0,
+  "method": "subseq"
+ },
+ "drpr": {
+  "expansion": "diagnosticreport",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ekg": {
+  "expansion": "enkoding",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ett": {
+  "expansion": "ekstrimitas",
+  "support": 0,
+  "method": "subseq"
+ },
+ "form": {
+  "expansion": "formulir",
+  "support": 0,
+  "method": "subseq"
+ },
+ "gall": {
+  "expansion": "gallop",
+  "support": 0,
+  "method": "subseq"
+ },
+ "gdp": {
+  "expansion": "glidescopi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "gds": {
+  "expansion": "glidescopi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "gol": {
+  "expansion": "golongan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "gram": {
+  "expansion": "grimasem",
+  "support": 0,
+  "method": "subseq"
+ },
+ "hak": {
+  "expansion": "hiperistaltik",
+  "support": 0,
+  "method": "subseq"
+ },
+ "hand": {
+  "expansion": "headphoneaudioexposure",
+  "support": 0,
+  "method": "subseq"
+ },
+ "hard": {
+  "expansion": "heartratevariabilitysdnn",
+  "support": 0,
+  "method": "subseq"
+ },
+ "hba": {
+  "expansion": "hibah",
+  "support": 0,
+  "method": "subseq"
+ },
+ "hcv": {
+  "expansion": "heartraterecoveryoneminute",
+  "support": 0,
+  "method": "subseq"
+ },
+ "his": {
+  "expansion": "harmonis",
+  "support": 0,
+  "method": "subseq"
+ },
+ "host": {
+  "expansion": "hospital",
+  "support": 0,
+  "method": "subseq"
+ },
+ "hta": {
+  "expansion": "hutang",
+  "support": 0,
+  "method": "subseq"
+ },
+ "hub": {
+  "expansion": "hubungan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "igm": {
+  "expansion": "integument",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ijn": {
+  "expansion": "ipsrsjenisbarang",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ikp": {
+  "expansion": "imunokompromis",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ims": {
+  "expansion": "informasi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ind": {
+  "expansion": "indikasi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "inte": {
+  "expansion": "integument",
+  "support": 2,
+  "method": "context"
+ },
+ "ipsrs": {
+  "expansion": "ipsrsjenisbarang",
+  "support": 0,
+  "method": "subseq"
+ },
+ "irj": {
+  "expansion": "ipsrsjenisbarang",
+  "support": 0,
+  "method": "subseq"
+ },
+ "isbn": {
+  "expansion": "ipsrsjenisbarang",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ivl": {
+  "expansion": "invalid",
+  "support": 0,
+  "method": "subseq"
+ },
+ "jbtn": {
+  "expansion": "jabatan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "jho": {
+  "expansion": "jatuhmorse",
+  "support": 0,
+  "method": "subseq"
+ },
+ "jk": {
+  "expansion": "jenis kelamin",
+  "support": 2,
+  "method": "acronym"
+ },
+ "jkel": {
+  "expansion": "jmdokteroperasiralan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "jkn": {
+  "expansion": "jmdokteroperasiranap",
+  "support": 0,
+  "method": "subseq"
+ },
+ "jml": {
+  "expansion": "jumlah",
+  "support": 0,
+  "method": "subseq"
+ },
+ "jmlh": {
+  "expansion": "jumlah",
+  "support": 0,
+  "method": "subseq"
+ },
+ "jnj": {
+  "expansion": "jenjang",
+  "support": 0,
+  "method": "subseq"
+ },
+ "jns": {
+  "expansion": "jenis",
+  "support": 0,
+  "method": "subseq"
+ },
+ "jpp": {
+  "expansion": "jmparamedisoperasiranap",
+  "support": 0,
+  "method": "subseq"
+ },
+ "k": {
+  "expansion": "kunjungan",
+  "support": 3,
+  "method": "context"
+ },
+ "kab": {
+  "expansion": "kabupaten",
+  "support": 2,
+  "method": "context"
+ },
+ "kat": {
+  "expansion": "kategori",
+  "support": 0,
+  "method": "subseq"
+ },
+ "kb": {
+  "expansion": "kebiasaan",
+  "support": 2,
+  "method": "context"
+ },
+ "kbab": {
+  "expansion": "kelembaban",
+  "support": 0,
+  "method": "subseq"
+ },
+ "kd": {
+  "expansion": "kode",
+  "support": 2,
+  "method": "context"
+ },
+ "kec": {
+  "expansion": "kecamatan",
+  "support": 2,
+  "method": "context"
+ },
+ "kel": {
+  "expansion": "kelurahan",
+  "support": 2,
+  "method": "context"
+ },
+ "ket": {
+  "expansion": "keterangan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "key": {
+  "expansion": "kepercayaan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "kfr": {
+  "expansion": "konfirmasi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "kip": {
+  "expansion": "kesimpulan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "kolf": {
+  "expansion": "konfulsif",
+  "support": 0,
+  "method": "subseq"
+ },
+ "kptl": {
+  "expansion": "kdpolirujukinternal",
+  "support": 0,
+  "method": "subseq"
+ },
+ "kry": {
+  "expansion": "kepercayaan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "kso": {
+  "expansion": "kolesteatoma",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ktg": {
+  "expansion": "kategori",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ktp": {
+  "expansion": "keterampilkan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "lab": {
+  "expansion": "labmb",
+  "support": 8,
+  "method": "context"
+ },
+ "lamp": {
+  "expansion": "lampiran",
+  "support": 0,
+  "method": "subseq"
+ },
+ "lip": {
+  "expansion": "limpa",
+  "support": 0,
+  "method": "subseq"
+ },
+ "lla": {
+  "expansion": "llaperu",
+  "support": 0,
+  "method": "subseq"
+ },
+ "lma": {
+  "expansion": "lemah",
+  "support": 0,
+  "method": "subseq"
+ },
+ "log": {
+  "expansion": "logistik",
+  "support": 0,
+  "method": "subseq"
+ },
+ "map": {
+  "expansion": "mapping",
+  "support": 0,
+  "method": "subseq"
+ },
+ "mas": {
+  "expansion": "masalah",
+  "support": 0,
+  "method": "subseq"
+ },
+ "mask": {
+  "expansion": "melaksanakan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "mcm": {
+  "expansion": "macam",
+  "support": 0,
+  "method": "subseq"
+ },
+ "mcu": {
+  "expansion": "medicationrequest",
+  "support": 0,
+  "method": "subseq"
+ },
+ "mens": {
+  "expansion": "mentis",
+  "support": 0,
+  "method": "subseq"
+ },
+ "merk": {
+  "expansion": "merokok",
+  "support": 0,
+  "method": "subseq"
+ },
+ "mnt": {
+  "expansion": "mentis",
+  "support": 0,
+  "method": "subseq"
+ },
+ "mpp": {
+  "expansion": "mapping",
+  "support": 0,
+  "method": "subseq"
+ },
+ "mri": {
+  "expansion": "monitoring",
+  "support": 0,
+  "method": "subseq"
+ },
+ "msa": {
+  "expansion": "masalah",
+  "support": 0,
+  "method": "subseq"
+ },
+ "nch": {
+  "expansion": "normocephale",
+  "support": 0,
+  "method": "subseq"
+ },
+ "nik": {
+  "expansion": "nmpolirujukinternal",
+  "support": 0,
+  "method": "subseq"
+ },
+ "nm": {
+  "expansion": "nama",
+  "support": 7,
+  "method": "context"
+ },
+ "no": {
+  "expansion": "nomor",
+  "support": 4,
+  "method": "context"
+ },
+ "norm": {
+  "expansion": "normal",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ogt": {
+  "expansion": "oxygensaturation",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pack": {
+  "expansion": "praecocks",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pcra": {
+  "expansion": "pencernaan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pdam": {
+  "expansion": "pendampingan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pdf": {
+  "expansion": "produktif",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pdu": {
+  "expansion": "prosedur",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pend": {
+  "expansion": "pendidikan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pest": {
+  "expansion": "perpustakaan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pews": {
+  "expansion": "pengawasan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pjlab": {
+  "expansion": "perujuklabranap",
+  "support": 0,
+  "method": "subseq"
+ },
+ "plan": {
+  "expansion": "penilaian",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pleb": {
+  "expansion": "palpebrae",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pnd": {
+  "expansion": "pengadaan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "png": {
+  "expansion": "penangung",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pnm": {
+  "expansion": "penerima",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pny": {
+  "expansion": "penyakit",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pph": {
+  "expansion": "peripheralperfusionindex",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ppi": {
+  "expansion": "pupil",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ppk": {
+  "expansion": "perpustakaan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ppn": {
+  "expansion": "perpustakaan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pri": {
+  "expansion": "permintaan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "print": {
+  "expansion": "permintaan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "pro": {
+  "expansion": "provokes",
+  "support": 0,
+  "method": "subseq"
+ },
+ "proc": {
+  "expansion": "procedure",
+  "support": 0,
+  "method": "subseq"
+ },
+ "prw": {
+  "expansion": "perawatan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "psk": {
+  "expansion": "psiko",
+  "support": 0,
+  "method": "subseq"
+ },
+ "rad": {
+  "expansion": "radiologi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "rak": {
+  "expansion": "racik",
+  "support": 2,
+  "method": "context"
+ },
+ "reg": {
+  "expansion": "registrasi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "rek": {
+  "expansion": "rekap",
+  "support": 0,
+  "method": "subseq"
+ },
+ "rkd": {
+  "expansion": "rekomendasi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "rkm": {
+  "expansion": "rekomendasi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "rpd": {
+  "expansion": "reproduksi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "rpk": {
+  "expansion": "reproduksi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "rpo": {
+  "expansion": "respon",
+  "support": 0,
+  "method": "subseq"
+ },
+ "rps": {
+  "expansion": "respirasi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "rr": {
+  "expansion": "respirasi retraksi",
+  "support": 2,
+  "method": "acronym"
+ },
+ "rs": {
+  "expansion": "rstahun",
+  "support": 7,
+  "method": "context"
+ },
+ "rta": {
+  "expansion": "registrasi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "rtl": {
+  "expansion": "retail",
+  "support": 0,
+  "method": "subseq"
+ },
+ "salt": {
+  "expansion": "statusbataltanggal",
+  "support": 0,
+  "method": "subseq"
+ },
+ "sat": {
+  "expansion": "satuan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "sep": {
+  "expansion": "seperti",
+  "support": 0,
+  "method": "subseq"
+ },
+ "sgot": {
+  "expansion": "swimmingstrokecount",
+  "support": 0,
+  "method": "subseq"
+ },
+ "sgpt": {
+  "expansion": "singlepath",
+  "support": 0,
+  "method": "subseq"
+ },
+ "shift": {
+  "expansion": "schizoaffective",
+  "support": 0,
+  "method": "subseq"
+ },
+ "sitt": {
+  "expansion": "swimmingstrokecount",
+  "support": 0,
+  "method": "subseq"
+ },
+ "sjp": {
+  "expansion": "setpenjualanperbarang",
+  "support": 0,
+  "method": "subseq"
+ },
+ "skin": {
+  "expansion": "skrining",
+  "support": 0,
+  "method": "subseq"
+ },
+ "skl": {
+  "expansion": "sirkulasi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "skp": {
+  "expansion": "stetoskop",
+  "support": 0,
+  "method": "subseq"
+ },
+ "slit": {
+  "expansion": "stabilitas",
+  "support": 0,
+  "method": "subseq"
+ },
+ "sms": {
+  "expansion": "simetris",
+  "support": 0,
+  "method": "subseq"
+ },
+ "sncn": {
+  "expansion": "swimmingstrokecount",
+  "support": 0,
+  "method": "subseq"
+ },
+ "soft": {
+  "expansion": "spektrofotometri",
+  "support": 0,
+  "method": "subseq"
+ },
+ "spo": {
+  "expansion": "sopor",
+  "support": 0,
+  "method": "subseq"
+ },
+ "sps": {
+  "expansion": "spesialis",
+  "support": 0,
+  "method": "subseq"
+ },
+ "srb": {
+  "expansion": "statusdaftarbulan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "srq": {
+  "expansion": "servicerequest",
+  "support": 0,
+  "method": "subseq"
+ },
+ "stts": {
+  "expansion": "status",
+  "support": 0,
+  "method": "subseq"
+ },
+ "task": {
+  "expansion": "transaksi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "tci": {
+  "expansion": "tachipnea",
+  "support": 0,
+  "method": "subseq"
+ },
+ "tdk": {
+  "expansion": "tidak",
+  "support": 0,
+  "method": "subseq"
+ },
+ "tds": {
+  "expansion": "terindikasi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "teks": {
+  "expansion": "teknisi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "telp": {
+  "expansion": "telepon",
+  "support": 0,
+  "method": "subseq"
+ },
+ "temp": {
+  "expansion": "tempat",
+  "support": 0,
+  "method": "subseq"
+ },
+ "tes": {
+  "expansion": "tertusuk",
+  "support": 0,
+  "method": "subseq"
+ },
+ "test": {
+  "expansion": "tracheostomi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "tfu": {
+  "expansion": "tranfusi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "tgl": {
+  "expansion": "tanggal",
+  "support": 10,
+  "method": "context"
+ },
+ "thn": {
+  "expansion": "tahun",
+  "support": 0,
+  "method": "subseq"
+ },
+ "tim": {
+  "expansion": "timpani",
+  "support": 0,
+  "method": "subseq"
+ },
+ "tlp": {
+  "expansion": "telepon",
+  "support": 0,
+  "method": "subseq"
+ },
+ "tmp": {
+  "expansion": "tempat",
+  "support": 0,
+  "method": "subseq"
+ },
+ "tmt": {
+  "expansion": "tempat",
+  "support": 0,
+  "method": "subseq"
+ },
+ "tnd": {
+  "expansion": "tindakan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "tnj": {
+  "expansion": "tunjangan",
+  "support": 0,
+  "method": "subseq"
+ },
+ "tps": {
+  "expansion": "transportasi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "trf": {
+  "expansion": "tarif",
+  "support": 0,
+  "method": "subseq"
+ },
+ "ttl": {
+  "expansion": "total",
+  "support": 0,
+  "method": "subseq"
+ },
+ "url": {
+  "expansion": "urologi",
+  "support": 0,
+  "method": "subseq"
+ },
+ "usg": {
+  "expansion": "usiagigipertama",
+  "support": 0,
+  "method": "subseq"
+ },
+ "vap": {
+  "expansion": "vaskularperifer",
+  "support": 0,
+  "method": "subseq"
+ }
+}

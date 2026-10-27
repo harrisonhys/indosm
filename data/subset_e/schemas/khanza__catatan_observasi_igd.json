@@ -1,0 +1,59 @@
+{
+ "system": "khanza",
+ "table": "catatan_observasi_igd",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_perawatan",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam_rawat",
+   "type": "time",
+   "desc": ""
+  },
+  {
+   "name": "gcs",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "td",
+   "type": "varchar(8)",
+   "desc": ""
+  },
+  {
+   "name": "hr",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "rr",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "suhu",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "spo2",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "nip",
+   "type": "varchar(20)",
+   "desc": ""
+  }
+ ]
+}

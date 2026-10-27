@@ -1,0 +1,1454 @@
+{
+ "system": "fhir",
+ "table": "ALL",
+ "source": "union of the 11 FHIR R4 resources in sub-set E",
+ "license": "CC0-1.0",
+ "lang": "en",
+ "columns": [
+  {
+   "name": "Condition.identifier",
+   "type": "Identifier",
+   "desc": "External Ids for this condition"
+  },
+  {
+   "name": "Condition.clinicalStatus",
+   "type": "CodeableConcept",
+   "desc": "active | recurrence | relapse | inactive | remission | resolved"
+  },
+  {
+   "name": "Condition.verificationStatus",
+   "type": "CodeableConcept",
+   "desc": "unconfirmed | provisional | differential | confirmed | refuted | entered-in-error"
+  },
+  {
+   "name": "Condition.category",
+   "type": "CodeableConcept",
+   "desc": "problem-list-item | encounter-diagnosis"
+  },
+  {
+   "name": "Condition.severity",
+   "type": "CodeableConcept",
+   "desc": "Subjective severity of condition"
+  },
+  {
+   "name": "Condition.code",
+   "type": "CodeableConcept",
+   "desc": "Identification of the condition, problem or diagnosis"
+  },
+  {
+   "name": "Condition.bodySite",
+   "type": "CodeableConcept",
+   "desc": "Anatomical location, if relevant"
+  },
+  {
+   "name": "Condition.subject",
+   "type": "Reference",
+   "desc": "Who has the condition?"
+  },
+  {
+   "name": "Condition.encounter",
+   "type": "Reference",
+   "desc": "Encounter created as part of"
+  },
+  {
+   "name": "Condition.onset[x]",
+   "type": "dateTime|Age|Period|Range|string",
+   "desc": "Estimated or actual date,  date-time, or age"
+  },
+  {
+   "name": "Condition.abatement[x]",
+   "type": "dateTime|Age|Period|Range|string",
+   "desc": "When in resolution/remission"
+  },
+  {
+   "name": "Condition.recordedDate",
+   "type": "dateTime",
+   "desc": "Date record was first recorded"
+  },
+  {
+   "name": "Condition.recorder",
+   "type": "Reference",
+   "desc": "Who recorded the condition"
+  },
+  {
+   "name": "Condition.asserter",
+   "type": "Reference",
+   "desc": "Person who asserts this condition"
+  },
+  {
+   "name": "Condition.stage",
+   "type": "BackboneElement",
+   "desc": "Stage/grade, usually assessed formally"
+  },
+  {
+   "name": "Condition.stage.summary",
+   "type": "CodeableConcept",
+   "desc": "Simple summary (disease specific)"
+  },
+  {
+   "name": "Condition.stage.assessment",
+   "type": "Reference",
+   "desc": "Formal record of assessment"
+  },
+  {
+   "name": "Condition.stage.type",
+   "type": "CodeableConcept",
+   "desc": "Kind of staging"
+  },
+  {
+   "name": "Condition.evidence",
+   "type": "BackboneElement",
+   "desc": "Supporting evidence"
+  },
+  {
+   "name": "Condition.evidence.code",
+   "type": "CodeableConcept",
+   "desc": "Manifestation/symptom"
+  },
+  {
+   "name": "Condition.evidence.detail",
+   "type": "Reference",
+   "desc": "Supporting information found elsewhere"
+  },
+  {
+   "name": "Condition.note",
+   "type": "Annotation",
+   "desc": "Additional information about the Condition"
+  },
+  {
+   "name": "DiagnosticReport.identifier",
+   "type": "Identifier",
+   "desc": "Business identifier for report"
+  },
+  {
+   "name": "DiagnosticReport.basedOn",
+   "type": "Reference",
+   "desc": "What was requested"
+  },
+  {
+   "name": "DiagnosticReport.status",
+   "type": "code",
+   "desc": "registered | partial | preliminary | final +"
+  },
+  {
+   "name": "DiagnosticReport.category",
+   "type": "CodeableConcept",
+   "desc": "Service category"
+  },
+  {
+   "name": "DiagnosticReport.code",
+   "type": "CodeableConcept",
+   "desc": "Name/Code for this diagnostic report"
+  },
+  {
+   "name": "DiagnosticReport.subject",
+   "type": "Reference",
+   "desc": "The subject of the report - usually, but not always, the patient"
+  },
+  {
+   "name": "DiagnosticReport.encounter",
+   "type": "Reference",
+   "desc": "Health care event when test ordered"
+  },
+  {
+   "name": "DiagnosticReport.effective[x]",
+   "type": "dateTime|Period",
+   "desc": "Clinically relevant time/time-period for report"
+  },
+  {
+   "name": "DiagnosticReport.issued",
+   "type": "instant",
+   "desc": "DateTime this version was made"
+  },
+  {
+   "name": "DiagnosticReport.performer",
+   "type": "Reference",
+   "desc": "Responsible Diagnostic Service"
+  },
+  {
+   "name": "DiagnosticReport.resultsInterpreter",
+   "type": "Reference",
+   "desc": "Primary result interpreter"
+  },
+  {
+   "name": "DiagnosticReport.specimen",
+   "type": "Reference",
+   "desc": "Specimens this report is based on"
+  },
+  {
+   "name": "DiagnosticReport.result",
+   "type": "Reference",
+   "desc": "Observations"
+  },
+  {
+   "name": "DiagnosticReport.imagingStudy",
+   "type": "Reference",
+   "desc": "Reference to full details of imaging associated with the diagnostic report"
+  },
+  {
+   "name": "DiagnosticReport.media",
+   "type": "BackboneElement",
+   "desc": "Key images associated with this report"
+  },
+  {
+   "name": "DiagnosticReport.media.comment",
+   "type": "string",
+   "desc": "Comment about the image (e.g. explanation)"
+  },
+  {
+   "name": "DiagnosticReport.media.link",
+   "type": "Reference",
+   "desc": "Reference to the image source"
+  },
+  {
+   "name": "DiagnosticReport.conclusion",
+   "type": "string",
+   "desc": "Clinical conclusion (interpretation) of test results"
+  },
+  {
+   "name": "DiagnosticReport.conclusionCode",
+   "type": "CodeableConcept",
+   "desc": "Codes for the clinical conclusion of test results"
+  },
+  {
+   "name": "DiagnosticReport.presentedForm",
+   "type": "Attachment",
+   "desc": "Entire report as issued"
+  },
+  {
+   "name": "Encounter.identifier",
+   "type": "Identifier",
+   "desc": "Identifier(s) by which this encounter is known"
+  },
+  {
+   "name": "Encounter.status",
+   "type": "code",
+   "desc": "planned | arrived | triaged | in-progress | onleave | finished | cancelled +"
+  },
+  {
+   "name": "Encounter.statusHistory",
+   "type": "BackboneElement",
+   "desc": "List of past encounter statuses"
+  },
+  {
+   "name": "Encounter.statusHistory.status",
+   "type": "code",
+   "desc": "planned | arrived | triaged | in-progress | onleave | finished | cancelled +"
+  },
+  {
+   "name": "Encounter.statusHistory.period",
+   "type": "Period",
+   "desc": "The time that the episode was in the specified status"
+  },
+  {
+   "name": "Encounter.class",
+   "type": "Coding",
+   "desc": "Classification of patient encounter"
+  },
+  {
+   "name": "Encounter.classHistory",
+   "type": "BackboneElement",
+   "desc": "List of past encounter classes"
+  },
+  {
+   "name": "Encounter.classHistory.class",
+   "type": "Coding",
+   "desc": "inpatient | outpatient | ambulatory | emergency +"
+  },
+  {
+   "name": "Encounter.classHistory.period",
+   "type": "Period",
+   "desc": "The time that the episode was in the specified class"
+  },
+  {
+   "name": "Encounter.type",
+   "type": "CodeableConcept",
+   "desc": "Specific type of encounter"
+  },
+  {
+   "name": "Encounter.serviceType",
+   "type": "CodeableConcept",
+   "desc": "Specific type of service"
+  },
+  {
+   "name": "Encounter.priority",
+   "type": "CodeableConcept",
+   "desc": "Indicates the urgency of the encounter"
+  },
+  {
+   "name": "Encounter.subject",
+   "type": "Reference",
+   "desc": "The patient or group present at the encounter"
+  },
+  {
+   "name": "Encounter.episodeOfCare",
+   "type": "Reference",
+   "desc": "Episode(s) of care that this encounter should be recorded against"
+  },
+  {
+   "name": "Encounter.basedOn",
+   "type": "Reference",
+   "desc": "The ServiceRequest that initiated this encounter"
+  },
+  {
+   "name": "Encounter.participant",
+   "type": "BackboneElement",
+   "desc": "List of participants involved in the encounter"
+  },
+  {
+   "name": "Encounter.participant.type",
+   "type": "CodeableConcept",
+   "desc": "Role of participant in encounter"
+  },
+  {
+   "name": "Encounter.participant.period",
+   "type": "Period",
+   "desc": "Period of time during the encounter that the participant participated"
+  },
+  {
+   "name": "Encounter.participant.individual",
+   "type": "Reference",
+   "desc": "Persons involved in the encounter other than the patient"
+  },
+  {
+   "name": "Encounter.appointment",
+   "type": "Reference",
+   "desc": "The appointment that scheduled this encounter"
+  },
+  {
+   "name": "Encounter.period",
+   "type": "Period",
+   "desc": "The start and end time of the encounter"
+  },
+  {
+   "name": "Encounter.length",
+   "type": "Duration",
+   "desc": "Quantity of time the encounter lasted (less time absent)"
+  },
+  {
+   "name": "Encounter.reasonCode",
+   "type": "CodeableConcept",
+   "desc": "Coded reason the encounter takes place"
+  },
+  {
+   "name": "Encounter.reasonReference",
+   "type": "Reference",
+   "desc": "Reason the encounter takes place (reference)"
+  },
+  {
+   "name": "Encounter.diagnosis",
+   "type": "BackboneElement",
+   "desc": "The list of diagnosis relevant to this encounter"
+  },
+  {
+   "name": "Encounter.diagnosis.condition",
+   "type": "Reference",
+   "desc": "The diagnosis or procedure relevant to the encounter"
+  },
+  {
+   "name": "Encounter.diagnosis.use",
+   "type": "CodeableConcept",
+   "desc": "Role that this diagnosis has within the encounter (e.g. admission, billing, discharge …)"
+  },
+  {
+   "name": "Encounter.diagnosis.rank",
+   "type": "positiveInt",
+   "desc": "Ranking of the diagnosis (for each role type)"
+  },
+  {
+   "name": "Encounter.account",
+   "type": "Reference",
+   "desc": "The set of accounts that may be used for billing for this Encounter"
+  },
+  {
+   "name": "Encounter.hospitalization",
+   "type": "BackboneElement",
+   "desc": "Details about the admission to a healthcare service"
+  },
+  {
+   "name": "Encounter.hospitalization.preAdmissionIdentifier",
+   "type": "Identifier",
+   "desc": "Pre-admission identifier"
+  },
+  {
+   "name": "Encounter.hospitalization.origin",
+   "type": "Reference",
+   "desc": "The location/organization from which the patient came before admission"
+  },
+  {
+   "name": "Encounter.hospitalization.admitSource",
+   "type": "CodeableConcept",
+   "desc": "From where patient was admitted (physician referral, transfer)"
+  },
+  {
+   "name": "Encounter.hospitalization.reAdmission",
+   "type": "CodeableConcept",
+   "desc": "The type of hospital re-admission that has occurred (if any). If the value is absent, then this is not identified as a readmission"
+  },
+  {
+   "name": "Encounter.hospitalization.dietPreference",
+   "type": "CodeableConcept",
+   "desc": "Diet preferences reported by the patient"
+  },
+  {
+   "name": "Encounter.hospitalization.specialCourtesy",
+   "type": "CodeableConcept",
+   "desc": "Special courtesies (VIP, board member)"
+  },
+  {
+   "name": "Encounter.hospitalization.specialArrangement",
+   "type": "CodeableConcept",
+   "desc": "Wheelchair, translator, stretcher, etc."
+  },
+  {
+   "name": "Encounter.hospitalization.destination",
+   "type": "Reference",
+   "desc": "Location/organization to which the patient is discharged"
+  },
+  {
+   "name": "Encounter.hospitalization.dischargeDisposition",
+   "type": "CodeableConcept",
+   "desc": "Category or kind of location after discharge"
+  },
+  {
+   "name": "Encounter.location",
+   "type": "BackboneElement",
+   "desc": "List of locations where the patient has been"
+  },
+  {
+   "name": "Encounter.location.location",
+   "type": "Reference",
+   "desc": "Location the encounter takes place"
+  },
+  {
+   "name": "Encounter.location.status",
+   "type": "code",
+   "desc": "planned | active | reserved | completed"
+  },
+  {
+   "name": "Encounter.location.physicalType",
+   "type": "CodeableConcept",
+   "desc": "The physical type of the location (usually the level in the location hierachy - bed room ward etc.)"
+  },
+  {
+   "name": "Encounter.location.period",
+   "type": "Period",
+   "desc": "Time period during which the patient was present at the location"
+  },
+  {
+   "name": "Encounter.serviceProvider",
+   "type": "Reference",
+   "desc": "The organization (facility) responsible for this encounter"
+  },
+  {
+   "name": "Encounter.partOf",
+   "type": "Reference",
+   "desc": "Another Encounter this encounter is part of"
+  },
+  {
+   "name": "Location.identifier",
+   "type": "Identifier",
+   "desc": "Unique code or number identifying the location to its users"
+  },
+  {
+   "name": "Location.status",
+   "type": "code",
+   "desc": "active | suspended | inactive"
+  },
+  {
+   "name": "Location.operationalStatus",
+   "type": "Coding",
+   "desc": "The operational status of the location (typically only for a bed/room)"
+  },
+  {
+   "name": "Location.name",
+   "type": "string",
+   "desc": "Name of the location as used by humans"
+  },
+  {
+   "name": "Location.alias",
+   "type": "string",
+   "desc": "A list of alternate names that the location is known as, or was known as, in the past"
+  },
+  {
+   "name": "Location.description",
+   "type": "string",
+   "desc": "Additional details about the location that could be displayed as further information to identify the location beyond its name"
+  },
+  {
+   "name": "Location.mode",
+   "type": "code",
+   "desc": "instance | kind"
+  },
+  {
+   "name": "Location.type",
+   "type": "CodeableConcept",
+   "desc": "Type of function performed"
+  },
+  {
+   "name": "Location.telecom",
+   "type": "ContactPoint",
+   "desc": "Contact details of the location"
+  },
+  {
+   "name": "Location.address",
+   "type": "Address",
+   "desc": "Physical location"
+  },
+  {
+   "name": "Location.physicalType",
+   "type": "CodeableConcept",
+   "desc": "Physical form of the location"
+  },
+  {
+   "name": "Location.position",
+   "type": "BackboneElement",
+   "desc": "The absolute geographic location"
+  },
+  {
+   "name": "Location.position.longitude",
+   "type": "decimal",
+   "desc": "Longitude with WGS84 datum"
+  },
+  {
+   "name": "Location.position.latitude",
+   "type": "decimal",
+   "desc": "Latitude with WGS84 datum"
+  },
+  {
+   "name": "Location.position.altitude",
+   "type": "decimal",
+   "desc": "Altitude with WGS84 datum"
+  },
+  {
+   "name": "Location.managingOrganization",
+   "type": "Reference",
+   "desc": "Organization responsible for provisioning and upkeep"
+  },
+  {
+   "name": "Location.partOf",
+   "type": "Reference",
+   "desc": "Another Location this one is physically a part of"
+  },
+  {
+   "name": "Location.hoursOfOperation",
+   "type": "BackboneElement",
+   "desc": "What days/times during a week is this location usually open"
+  },
+  {
+   "name": "Location.hoursOfOperation.daysOfWeek",
+   "type": "code",
+   "desc": "mon | tue | wed | thu | fri | sat | sun"
+  },
+  {
+   "name": "Location.hoursOfOperation.allDay",
+   "type": "boolean",
+   "desc": "The Location is open all day"
+  },
+  {
+   "name": "Location.hoursOfOperation.openingTime",
+   "type": "time",
+   "desc": "Time that the Location opens"
+  },
+  {
+   "name": "Location.hoursOfOperation.closingTime",
+   "type": "time",
+   "desc": "Time that the Location closes"
+  },
+  {
+   "name": "Location.availabilityExceptions",
+   "type": "string",
+   "desc": "Description of availability exceptions"
+  },
+  {
+   "name": "Location.endpoint",
+   "type": "Reference",
+   "desc": "Technical endpoints providing access to services operated for the location"
+  },
+  {
+   "name": "Medication.identifier",
+   "type": "Identifier",
+   "desc": "Business identifier for this medication"
+  },
+  {
+   "name": "Medication.code",
+   "type": "CodeableConcept",
+   "desc": "Codes that identify this medication"
+  },
+  {
+   "name": "Medication.status",
+   "type": "code",
+   "desc": "active | inactive | entered-in-error"
+  },
+  {
+   "name": "Medication.manufacturer",
+   "type": "Reference",
+   "desc": "Manufacturer of the item"
+  },
+  {
+   "name": "Medication.form",
+   "type": "CodeableConcept",
+   "desc": "powder | tablets | capsule +"
+  },
+  {
+   "name": "Medication.amount",
+   "type": "Ratio",
+   "desc": "Amount of drug in package"
+  },
+  {
+   "name": "Medication.ingredient",
+   "type": "BackboneElement",
+   "desc": "Active or inactive ingredient"
+  },
+  {
+   "name": "Medication.ingredient.item[x]",
+   "type": "CodeableConcept|Reference",
+   "desc": "The actual ingredient or content"
+  },
+  {
+   "name": "Medication.ingredient.isActive",
+   "type": "boolean",
+   "desc": "Active ingredient indicator"
+  },
+  {
+   "name": "Medication.ingredient.strength",
+   "type": "Ratio",
+   "desc": "Quantity of ingredient present"
+  },
+  {
+   "name": "Medication.batch",
+   "type": "BackboneElement",
+   "desc": "Details about packaged medications"
+  },
+  {
+   "name": "Medication.batch.lotNumber",
+   "type": "string",
+   "desc": "Identifier assigned to batch"
+  },
+  {
+   "name": "Medication.batch.expirationDate",
+   "type": "dateTime",
+   "desc": "When batch will expire"
+  },
+  {
+   "name": "MedicationRequest.identifier",
+   "type": "Identifier",
+   "desc": "External ids for this request"
+  },
+  {
+   "name": "MedicationRequest.status",
+   "type": "code",
+   "desc": "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown"
+  },
+  {
+   "name": "MedicationRequest.statusReason",
+   "type": "CodeableConcept",
+   "desc": "Reason for current status"
+  },
+  {
+   "name": "MedicationRequest.intent",
+   "type": "code",
+   "desc": "proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option"
+  },
+  {
+   "name": "MedicationRequest.category",
+   "type": "CodeableConcept",
+   "desc": "Type of medication usage"
+  },
+  {
+   "name": "MedicationRequest.priority",
+   "type": "code",
+   "desc": "routine | urgent | asap | stat"
+  },
+  {
+   "name": "MedicationRequest.doNotPerform",
+   "type": "boolean",
+   "desc": "True if request is prohibiting action"
+  },
+  {
+   "name": "MedicationRequest.reported[x]",
+   "type": "boolean|Reference",
+   "desc": "Reported rather than primary record"
+  },
+  {
+   "name": "MedicationRequest.medication[x]",
+   "type": "CodeableConcept|Reference",
+   "desc": "Medication to be taken"
+  },
+  {
+   "name": "MedicationRequest.subject",
+   "type": "Reference",
+   "desc": "Who or group medication request is for"
+  },
+  {
+   "name": "MedicationRequest.encounter",
+   "type": "Reference",
+   "desc": "Encounter created as part of encounter/admission/stay"
+  },
+  {
+   "name": "MedicationRequest.supportingInformation",
+   "type": "Reference",
+   "desc": "Information to support ordering of the medication"
+  },
+  {
+   "name": "MedicationRequest.authoredOn",
+   "type": "dateTime",
+   "desc": "When request was initially authored"
+  },
+  {
+   "name": "MedicationRequest.requester",
+   "type": "Reference",
+   "desc": "Who/What requested the Request"
+  },
+  {
+   "name": "MedicationRequest.performer",
+   "type": "Reference",
+   "desc": "Intended performer of administration"
+  },
+  {
+   "name": "MedicationRequest.performerType",
+   "type": "CodeableConcept",
+   "desc": "Desired kind of performer of the medication administration"
+  },
+  {
+   "name": "MedicationRequest.recorder",
+   "type": "Reference",
+   "desc": "Person who entered the request"
+  },
+  {
+   "name": "MedicationRequest.reasonCode",
+   "type": "CodeableConcept",
+   "desc": "Reason or indication for ordering or not ordering the medication"
+  },
+  {
+   "name": "MedicationRequest.reasonReference",
+   "type": "Reference",
+   "desc": "Condition or observation that supports why the prescription is being written"
+  },
+  {
+   "name": "MedicationRequest.instantiatesCanonical",
+   "type": "canonical",
+   "desc": "Instantiates FHIR protocol or definition"
+  },
+  {
+   "name": "MedicationRequest.instantiatesUri",
+   "type": "uri",
+   "desc": "Instantiates external protocol or definition"
+  },
+  {
+   "name": "MedicationRequest.basedOn",
+   "type": "Reference",
+   "desc": "What request fulfills"
+  },
+  {
+   "name": "MedicationRequest.groupIdentifier",
+   "type": "Identifier",
+   "desc": "Composite request this is part of"
+  },
+  {
+   "name": "MedicationRequest.courseOfTherapyType",
+   "type": "CodeableConcept",
+   "desc": "Overall pattern of medication administration"
+  },
+  {
+   "name": "MedicationRequest.insurance",
+   "type": "Reference",
+   "desc": "Associated insurance coverage"
+  },
+  {
+   "name": "MedicationRequest.note",
+   "type": "Annotation",
+   "desc": "Information about the prescription"
+  },
+  {
+   "name": "MedicationRequest.dosageInstruction",
+   "type": "Dosage",
+   "desc": "How the medication should be taken"
+  },
+  {
+   "name": "MedicationRequest.dispenseRequest",
+   "type": "BackboneElement",
+   "desc": "Medication supply authorization"
+  },
+  {
+   "name": "MedicationRequest.dispenseRequest.initialFill",
+   "type": "BackboneElement",
+   "desc": "First fill details"
+  },
+  {
+   "name": "MedicationRequest.dispenseRequest.initialFill.quantity",
+   "type": "Quantity",
+   "desc": "First fill quantity"
+  },
+  {
+   "name": "MedicationRequest.dispenseRequest.initialFill.duration",
+   "type": "Duration",
+   "desc": "First fill duration"
+  },
+  {
+   "name": "MedicationRequest.dispenseRequest.dispenseInterval",
+   "type": "Duration",
+   "desc": "Minimum period of time between dispenses"
+  },
+  {
+   "name": "MedicationRequest.dispenseRequest.validityPeriod",
+   "type": "Period",
+   "desc": "Time period supply is authorized for"
+  },
+  {
+   "name": "MedicationRequest.dispenseRequest.numberOfRepeatsAllowed",
+   "type": "unsignedInt",
+   "desc": "Number of refills authorized"
+  },
+  {
+   "name": "MedicationRequest.dispenseRequest.quantity",
+   "type": "Quantity",
+   "desc": "Amount of medication to supply per dispense"
+  },
+  {
+   "name": "MedicationRequest.dispenseRequest.expectedSupplyDuration",
+   "type": "Duration",
+   "desc": "Number of days supply per dispense"
+  },
+  {
+   "name": "MedicationRequest.dispenseRequest.performer",
+   "type": "Reference",
+   "desc": "Intended dispenser"
+  },
+  {
+   "name": "MedicationRequest.substitution",
+   "type": "BackboneElement",
+   "desc": "Any restrictions on medication substitution"
+  },
+  {
+   "name": "MedicationRequest.substitution.allowed[x]",
+   "type": "boolean|CodeableConcept",
+   "desc": "Whether substitution is allowed or not"
+  },
+  {
+   "name": "MedicationRequest.substitution.reason",
+   "type": "CodeableConcept",
+   "desc": "Why should (not) substitution be made"
+  },
+  {
+   "name": "MedicationRequest.priorPrescription",
+   "type": "Reference",
+   "desc": "An order/prescription that is being replaced"
+  },
+  {
+   "name": "MedicationRequest.detectedIssue",
+   "type": "Reference",
+   "desc": "Clinical Issue with action"
+  },
+  {
+   "name": "MedicationRequest.eventHistory",
+   "type": "Reference",
+   "desc": "A list of events of interest in the lifecycle"
+  },
+  {
+   "name": "Observation.identifier",
+   "type": "Identifier",
+   "desc": "Business Identifier for observation"
+  },
+  {
+   "name": "Observation.basedOn",
+   "type": "Reference",
+   "desc": "Fulfills plan, proposal or order"
+  },
+  {
+   "name": "Observation.partOf",
+   "type": "Reference",
+   "desc": "Part of referenced event"
+  },
+  {
+   "name": "Observation.status",
+   "type": "code",
+   "desc": "registered | preliminary | final | amended +"
+  },
+  {
+   "name": "Observation.category",
+   "type": "CodeableConcept",
+   "desc": "Classification of  type of observation"
+  },
+  {
+   "name": "Observation.code",
+   "type": "CodeableConcept",
+   "desc": "Type of observation (code / type)"
+  },
+  {
+   "name": "Observation.subject",
+   "type": "Reference",
+   "desc": "Who and/or what the observation is about"
+  },
+  {
+   "name": "Observation.focus",
+   "type": "Reference",
+   "desc": "What the observation is about, when it is not about the subject of record"
+  },
+  {
+   "name": "Observation.encounter",
+   "type": "Reference",
+   "desc": "Healthcare event during which this observation is made"
+  },
+  {
+   "name": "Observation.effective[x]",
+   "type": "dateTime|Period|Timing|instant",
+   "desc": "Clinically relevant time/time-period for observation"
+  },
+  {
+   "name": "Observation.issued",
+   "type": "instant",
+   "desc": "Date/Time this version was made available"
+  },
+  {
+   "name": "Observation.performer",
+   "type": "Reference",
+   "desc": "Who is responsible for the observation"
+  },
+  {
+   "name": "Observation.value[x]",
+   "type": "Quantity|CodeableConcept|string|boolean|integer|Range|Ratio|SampledData|time|dateTime|Period",
+   "desc": "Actual result"
+  },
+  {
+   "name": "Observation.dataAbsentReason",
+   "type": "CodeableConcept",
+   "desc": "Why the result is missing"
+  },
+  {
+   "name": "Observation.interpretation",
+   "type": "CodeableConcept",
+   "desc": "High, low, normal, etc."
+  },
+  {
+   "name": "Observation.note",
+   "type": "Annotation",
+   "desc": "Comments about the observation"
+  },
+  {
+   "name": "Observation.bodySite",
+   "type": "CodeableConcept",
+   "desc": "Observed body part"
+  },
+  {
+   "name": "Observation.method",
+   "type": "CodeableConcept",
+   "desc": "How it was done"
+  },
+  {
+   "name": "Observation.specimen",
+   "type": "Reference",
+   "desc": "Specimen used for this observation"
+  },
+  {
+   "name": "Observation.device",
+   "type": "Reference",
+   "desc": "(Measurement) Device"
+  },
+  {
+   "name": "Observation.referenceRange",
+   "type": "BackboneElement",
+   "desc": "Provides guide for interpretation"
+  },
+  {
+   "name": "Observation.referenceRange.low",
+   "type": "Quantity",
+   "desc": "Low Range, if relevant"
+  },
+  {
+   "name": "Observation.referenceRange.high",
+   "type": "Quantity",
+   "desc": "High Range, if relevant"
+  },
+  {
+   "name": "Observation.referenceRange.type",
+   "type": "CodeableConcept",
+   "desc": "Reference range qualifier"
+  },
+  {
+   "name": "Observation.referenceRange.appliesTo",
+   "type": "CodeableConcept",
+   "desc": "Reference range population"
+  },
+  {
+   "name": "Observation.referenceRange.age",
+   "type": "Range",
+   "desc": "Applicable age range, if relevant"
+  },
+  {
+   "name": "Observation.hasMember",
+   "type": "Reference",
+   "desc": "Related resource that belongs to the Observation group"
+  },
+  {
+   "name": "Observation.derivedFrom",
+   "type": "Reference",
+   "desc": "Related measurements the observation is made from"
+  },
+  {
+   "name": "Observation.component",
+   "type": "BackboneElement",
+   "desc": "Component results"
+  },
+  {
+   "name": "Observation.component.code",
+   "type": "CodeableConcept",
+   "desc": "Type of component observation (code / type)"
+  },
+  {
+   "name": "Observation.component.value[x]",
+   "type": "Quantity|CodeableConcept|string|boolean|integer|Range|Ratio|SampledData|time|dateTime|Period",
+   "desc": "Actual component result"
+  },
+  {
+   "name": "Observation.component.dataAbsentReason",
+   "type": "CodeableConcept",
+   "desc": "Why the component result is missing"
+  },
+  {
+   "name": "Observation.component.interpretation",
+   "type": "CodeableConcept",
+   "desc": "High, low, normal, etc."
+  },
+  {
+   "name": "Observation.component.referenceRange",
+   "type": "",
+   "desc": "Provides guide for interpretation of component result"
+  },
+  {
+   "name": "Organization.identifier",
+   "type": "Identifier",
+   "desc": "Identifies this organization  across multiple systems"
+  },
+  {
+   "name": "Organization.active",
+   "type": "boolean",
+   "desc": "Whether the organization's record is still in active use"
+  },
+  {
+   "name": "Organization.type",
+   "type": "CodeableConcept",
+   "desc": "Kind of organization"
+  },
+  {
+   "name": "Organization.name",
+   "type": "string",
+   "desc": "Name used for the organization"
+  },
+  {
+   "name": "Organization.alias",
+   "type": "string",
+   "desc": "A list of alternate names that the organization is known as, or was known as in the past"
+  },
+  {
+   "name": "Organization.telecom",
+   "type": "ContactPoint",
+   "desc": "A contact detail for the organization"
+  },
+  {
+   "name": "Organization.address",
+   "type": "Address",
+   "desc": "An address for the organization"
+  },
+  {
+   "name": "Organization.partOf",
+   "type": "Reference",
+   "desc": "The organization of which this organization forms a part"
+  },
+  {
+   "name": "Organization.contact",
+   "type": "BackboneElement",
+   "desc": "Contact for the organization for a certain purpose"
+  },
+  {
+   "name": "Organization.contact.purpose",
+   "type": "CodeableConcept",
+   "desc": "The type of contact"
+  },
+  {
+   "name": "Organization.contact.name",
+   "type": "HumanName",
+   "desc": "A name associated with the contact"
+  },
+  {
+   "name": "Organization.contact.telecom",
+   "type": "ContactPoint",
+   "desc": "Contact details (telephone, email, etc.)  for a contact"
+  },
+  {
+   "name": "Organization.contact.address",
+   "type": "Address",
+   "desc": "Visiting or postal addresses for the contact"
+  },
+  {
+   "name": "Organization.endpoint",
+   "type": "Reference",
+   "desc": "Technical endpoints providing access to services operated for the organization"
+  },
+  {
+   "name": "Patient.identifier",
+   "type": "Identifier",
+   "desc": "An identifier for this patient"
+  },
+  {
+   "name": "Patient.active",
+   "type": "boolean",
+   "desc": "Whether this patient's record is in active use"
+  },
+  {
+   "name": "Patient.name",
+   "type": "HumanName",
+   "desc": "A name associated with the patient"
+  },
+  {
+   "name": "Patient.telecom",
+   "type": "ContactPoint",
+   "desc": "A contact detail for the individual"
+  },
+  {
+   "name": "Patient.gender",
+   "type": "code",
+   "desc": "male | female | other | unknown"
+  },
+  {
+   "name": "Patient.birthDate",
+   "type": "date",
+   "desc": "The date of birth for the individual"
+  },
+  {
+   "name": "Patient.deceased[x]",
+   "type": "boolean|dateTime",
+   "desc": "Indicates if the individual is deceased or not"
+  },
+  {
+   "name": "Patient.address",
+   "type": "Address",
+   "desc": "An address for the individual"
+  },
+  {
+   "name": "Patient.maritalStatus",
+   "type": "CodeableConcept",
+   "desc": "Marital (civil) status of a patient"
+  },
+  {
+   "name": "Patient.multipleBirth[x]",
+   "type": "boolean|integer",
+   "desc": "Whether patient is part of a multiple birth"
+  },
+  {
+   "name": "Patient.photo",
+   "type": "Attachment",
+   "desc": "Image of the patient"
+  },
+  {
+   "name": "Patient.contact",
+   "type": "BackboneElement",
+   "desc": "A contact party (e.g. guardian, partner, friend) for the patient"
+  },
+  {
+   "name": "Patient.contact.relationship",
+   "type": "CodeableConcept",
+   "desc": "The kind of relationship"
+  },
+  {
+   "name": "Patient.contact.name",
+   "type": "HumanName",
+   "desc": "A name associated with the contact person"
+  },
+  {
+   "name": "Patient.contact.telecom",
+   "type": "ContactPoint",
+   "desc": "A contact detail for the person"
+  },
+  {
+   "name": "Patient.contact.address",
+   "type": "Address",
+   "desc": "Address for the contact person"
+  },
+  {
+   "name": "Patient.contact.gender",
+   "type": "code",
+   "desc": "male | female | other | unknown"
+  },
+  {
+   "name": "Patient.contact.organization",
+   "type": "Reference",
+   "desc": "Organization that is associated with the contact"
+  },
+  {
+   "name": "Patient.contact.period",
+   "type": "Period",
+   "desc": "The period during which this contact person or organization is valid to be contacted relating to this patient"
+  },
+  {
+   "name": "Patient.communication",
+   "type": "BackboneElement",
+   "desc": "A language which may be used to communicate with the patient about his or her health"
+  },
+  {
+   "name": "Patient.communication.preferred",
+   "type": "boolean",
+   "desc": "Language preference indicator"
+  },
+  {
+   "name": "Patient.generalPractitioner",
+   "type": "Reference",
+   "desc": "Patient's nominated primary care provider"
+  },
+  {
+   "name": "Patient.managingOrganization",
+   "type": "Reference",
+   "desc": "Organization that is the custodian of the patient record"
+  },
+  {
+   "name": "Patient.link",
+   "type": "BackboneElement",
+   "desc": "Link to another patient resource that concerns the same actual person"
+  },
+  {
+   "name": "Patient.link.other",
+   "type": "Reference",
+   "desc": "The other patient or related person resource that the link refers to"
+  },
+  {
+   "name": "Patient.link.type",
+   "type": "code",
+   "desc": "replaced-by | replaces | refer | seealso"
+  },
+  {
+   "name": "Practitioner.identifier",
+   "type": "Identifier",
+   "desc": "An identifier for the person as this agent"
+  },
+  {
+   "name": "Practitioner.active",
+   "type": "boolean",
+   "desc": "Whether this practitioner's record is in active use"
+  },
+  {
+   "name": "Practitioner.name",
+   "type": "HumanName",
+   "desc": "The name(s) associated with the practitioner"
+  },
+  {
+   "name": "Practitioner.telecom",
+   "type": "ContactPoint",
+   "desc": "A contact detail for the practitioner (that apply to all roles)"
+  },
+  {
+   "name": "Practitioner.address",
+   "type": "Address",
+   "desc": "Address(es) of the practitioner that are not role specific (typically home address)"
+  },
+  {
+   "name": "Practitioner.gender",
+   "type": "code",
+   "desc": "male | female | other | unknown"
+  },
+  {
+   "name": "Practitioner.birthDate",
+   "type": "date",
+   "desc": "The date  on which the practitioner was born"
+  },
+  {
+   "name": "Practitioner.photo",
+   "type": "Attachment",
+   "desc": "Image of the person"
+  },
+  {
+   "name": "Practitioner.qualification",
+   "type": "BackboneElement",
+   "desc": "Certification, licenses, or training pertaining to the provision of care"
+  },
+  {
+   "name": "Practitioner.qualification.identifier",
+   "type": "Identifier",
+   "desc": "An identifier for this qualification for the practitioner"
+  },
+  {
+   "name": "Practitioner.qualification.code",
+   "type": "CodeableConcept",
+   "desc": "Coded representation of the qualification"
+  },
+  {
+   "name": "Practitioner.qualification.period",
+   "type": "Period",
+   "desc": "Period during which the qualification is valid"
+  },
+  {
+   "name": "Practitioner.qualification.issuer",
+   "type": "Reference",
+   "desc": "Organization that regulates and issues the qualification"
+  },
+  {
+   "name": "Practitioner.communication",
+   "type": "CodeableConcept",
+   "desc": "A language the practitioner can use in patient communication"
+  },
+  {
+   "name": "ServiceRequest.identifier",
+   "type": "Identifier",
+   "desc": "Identifiers assigned to this order"
+  },
+  {
+   "name": "ServiceRequest.instantiatesCanonical",
+   "type": "canonical",
+   "desc": "Instantiates FHIR protocol or definition"
+  },
+  {
+   "name": "ServiceRequest.instantiatesUri",
+   "type": "uri",
+   "desc": "Instantiates external protocol or definition"
+  },
+  {
+   "name": "ServiceRequest.basedOn",
+   "type": "Reference",
+   "desc": "What request fulfills"
+  },
+  {
+   "name": "ServiceRequest.replaces",
+   "type": "Reference",
+   "desc": "What request replaces"
+  },
+  {
+   "name": "ServiceRequest.requisition",
+   "type": "Identifier",
+   "desc": "Composite Request ID"
+  },
+  {
+   "name": "ServiceRequest.status",
+   "type": "code",
+   "desc": "draft | active | on-hold | revoked | completed | entered-in-error | unknown"
+  },
+  {
+   "name": "ServiceRequest.intent",
+   "type": "code",
+   "desc": "proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option"
+  },
+  {
+   "name": "ServiceRequest.category",
+   "type": "CodeableConcept",
+   "desc": "Classification of service"
+  },
+  {
+   "name": "ServiceRequest.priority",
+   "type": "code",
+   "desc": "routine | urgent | asap | stat"
+  },
+  {
+   "name": "ServiceRequest.doNotPerform",
+   "type": "boolean",
+   "desc": "True if service/procedure should not be performed"
+  },
+  {
+   "name": "ServiceRequest.code",
+   "type": "CodeableConcept",
+   "desc": "What is being requested/ordered"
+  },
+  {
+   "name": "ServiceRequest.orderDetail",
+   "type": "CodeableConcept",
+   "desc": "Additional order information"
+  },
+  {
+   "name": "ServiceRequest.quantity[x]",
+   "type": "Quantity|Ratio|Range",
+   "desc": "Service amount"
+  },
+  {
+   "name": "ServiceRequest.subject",
+   "type": "Reference",
+   "desc": "Individual or Entity the service is ordered for"
+  },
+  {
+   "name": "ServiceRequest.encounter",
+   "type": "Reference",
+   "desc": "Encounter in which the request was created"
+  },
+  {
+   "name": "ServiceRequest.occurrence[x]",
+   "type": "dateTime|Period|Timing",
+   "desc": "When service should occur"
+  },
+  {
+   "name": "ServiceRequest.asNeeded[x]",
+   "type": "boolean|CodeableConcept",
+   "desc": "Preconditions for service"
+  },
+  {
+   "name": "ServiceRequest.authoredOn",
+   "type": "dateTime",
+   "desc": "Date request signed"
+  },
+  {
+   "name": "ServiceRequest.requester",
+   "type": "Reference",
+   "desc": "Who/what is requesting service"
+  },
+  {
+   "name": "ServiceRequest.performerType",
+   "type": "CodeableConcept",
+   "desc": "Performer role"
+  },
+  {
+   "name": "ServiceRequest.performer",
+   "type": "Reference",
+   "desc": "Requested performer"
+  },
+  {
+   "name": "ServiceRequest.locationCode",
+   "type": "CodeableConcept",
+   "desc": "Requested location"
+  },
+  {
+   "name": "ServiceRequest.locationReference",
+   "type": "Reference",
+   "desc": "Requested location"
+  },
+  {
+   "name": "ServiceRequest.reasonCode",
+   "type": "CodeableConcept",
+   "desc": "Explanation/Justification for procedure or service"
+  },
+  {
+   "name": "ServiceRequest.reasonReference",
+   "type": "Reference",
+   "desc": "Explanation/Justification for service or service"
+  },
+  {
+   "name": "ServiceRequest.insurance",
+   "type": "Reference",
+   "desc": "Associated insurance coverage"
+  },
+  {
+   "name": "ServiceRequest.supportingInfo",
+   "type": "Reference",
+   "desc": "Additional clinical information"
+  },
+  {
+   "name": "ServiceRequest.specimen",
+   "type": "Reference",
+   "desc": "Procedure Samples"
+  },
+  {
+   "name": "ServiceRequest.bodySite",
+   "type": "CodeableConcept",
+   "desc": "Location on Body"
+  },
+  {
+   "name": "ServiceRequest.note",
+   "type": "Annotation",
+   "desc": "Comments"
+  },
+  {
+   "name": "ServiceRequest.patientInstruction",
+   "type": "string",
+   "desc": "Patient or consumer-oriented instructions"
+  },
+  {
+   "name": "ServiceRequest.relevantHistory",
+   "type": "Reference",
+   "desc": "Request provenance"
+  }
+ ]
+}

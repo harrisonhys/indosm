@@ -1,0 +1,39 @@
+{
+ "system": "cirekammedis",
+ "table": "pasien",
+ "source": "arfandotid/ci_rekammedis@606cd16795",
+ "license": "unclear (license.txt is CodeIgniter's MIT, not the app author's)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "idPasien",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "namaPasien",
+   "type": "varchar(128)",
+   "desc": ""
+  },
+  {
+   "name": "jenisKelamin",
+   "type": "enum('laki-laki','perempuan')",
+   "desc": ""
+  },
+  {
+   "name": "email",
+   "type": "varchar(128)",
+   "desc": ""
+  },
+  {
+   "name": "noTelp",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "alamat",
+   "type": "text",
+   "desc": ""
+  }
+ ]
+}

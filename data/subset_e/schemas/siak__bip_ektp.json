@@ -1,0 +1,104 @@
+{
+ "system": "siak",
+ "table": "bip_ektp",
+ "source": "OpenSID storage/app/template/impor/format-bip-ektp.xls (header only)",
+ "license": "GPL-3.0 (OpenSID)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "NO",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Nama Lengkap",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "NIK",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Tempat Lahir",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Tgl/Bln/Th",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "JK",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Stat Kwn",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Gol. Drh",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "SHDK",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Agama",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Pendidikan Terakhir",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "No Akta Lahir",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Pekerjaan",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Nama Ibu",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Nama Ayah",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Wjb KTP",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "KTP-eL",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Status",
+   "type": "",
+   "desc": ""
+  },
+  {
+   "name": "Stat Rkm",
+   "type": "",
+   "desc": ""
+  }
+ ]
+}

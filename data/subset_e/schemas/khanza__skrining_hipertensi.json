@@ -1,0 +1,89 @@
+{
+ "system": "khanza",
+ "table": "skrining_hipertensi",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "tanggal",
+   "type": "datetime",
+   "desc": ""
+  },
+  {
+   "name": "anamnesis1",
+   "type": "enum('tidak','ya')",
+   "desc": ""
+  },
+  {
+   "name": "anamnesis2",
+   "type": "enum('tidak','ya')",
+   "desc": ""
+  },
+  {
+   "name": "anamnesis3",
+   "type": "enum('tidak','ya')",
+   "desc": ""
+  },
+  {
+   "name": "anamnesis4",
+   "type": "enum('tidak','ya')",
+   "desc": ""
+  },
+  {
+   "name": "anamnesis5",
+   "type": "enum('tidak','ya')",
+   "desc": ""
+  },
+  {
+   "name": "anamnesis6",
+   "type": "enum('tidak','ya')",
+   "desc": ""
+  },
+  {
+   "name": "anamnesis7",
+   "type": "enum('tidak','ya')",
+   "desc": ""
+  },
+  {
+   "name": "anamnesis8",
+   "type": "enum('tidak','ya')",
+   "desc": ""
+  },
+  {
+   "name": "sistole",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "diastole",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "klasifikasi_hipertensi",
+   "type": "enum('optimal normal','normal','tinggi','sub-group : perbatasan','tingkat 1 (hipertensi ringan)",
+   "desc": ""
+  },
+  {
+   "name": "hasil_skrining",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "keterangan",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "nip",
+   "type": "varchar(20)",
+   "desc": ""
+  }
+ ]
+}

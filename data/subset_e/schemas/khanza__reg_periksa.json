@@ -1,0 +1,104 @@
+{
+ "system": "khanza",
+ "table": "reg_periksa",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_reg",
+   "type": "varchar(8)",
+   "desc": ""
+  },
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_registrasi",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam_reg",
+   "type": "time",
+   "desc": ""
+  },
+  {
+   "name": "kd_dokter",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "no_rkm_medis",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "kd_poli",
+   "type": "char(5)",
+   "desc": ""
+  },
+  {
+   "name": "p_jawab",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "almt_pj",
+   "type": "varchar(200)",
+   "desc": ""
+  },
+  {
+   "name": "hubunganpj",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "biaya_reg",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "stts",
+   "type": "enum('belum','sudah','batal','berkas diterima','dirujuk','meninggal','dirawat','pulang paksa')",
+   "desc": ""
+  },
+  {
+   "name": "stts_daftar",
+   "type": "enum('-','lama','baru')",
+   "desc": ""
+  },
+  {
+   "name": "status_lanjut",
+   "type": "enum('ralan','ranap')",
+   "desc": ""
+  },
+  {
+   "name": "kd_pj",
+   "type": "char(3)",
+   "desc": ""
+  },
+  {
+   "name": "umurdaftar",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "sttsumur",
+   "type": "enum('th','bl','hr')",
+   "desc": ""
+  },
+  {
+   "name": "status_bayar",
+   "type": "enum('sudah bayar','belum bayar')",
+   "desc": ""
+  },
+  {
+   "name": "status_poli",
+   "type": "enum('lama','baru')",
+   "desc": ""
+  }
+ ]
+}

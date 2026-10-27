@@ -1,0 +1,129 @@
+{
+ "system": "fhir",
+ "table": "Location",
+ "source": "HL7 FHIR R4 4.0.1 StructureDefinition snapshot",
+ "license": "CC0-1.0",
+ "lang": "en",
+ "columns": [
+  {
+   "name": "identifier",
+   "type": "Identifier",
+   "desc": "Unique code or number identifying the location to its users"
+  },
+  {
+   "name": "status",
+   "type": "code",
+   "desc": "active | suspended | inactive"
+  },
+  {
+   "name": "operationalStatus",
+   "type": "Coding",
+   "desc": "The operational status of the location (typically only for a bed/room)"
+  },
+  {
+   "name": "name",
+   "type": "string",
+   "desc": "Name of the location as used by humans"
+  },
+  {
+   "name": "alias",
+   "type": "string",
+   "desc": "A list of alternate names that the location is known as, or was known as, in the past"
+  },
+  {
+   "name": "description",
+   "type": "string",
+   "desc": "Additional details about the location that could be displayed as further information to identify the location beyond its name"
+  },
+  {
+   "name": "mode",
+   "type": "code",
+   "desc": "instance | kind"
+  },
+  {
+   "name": "type",
+   "type": "CodeableConcept",
+   "desc": "Type of function performed"
+  },
+  {
+   "name": "telecom",
+   "type": "ContactPoint",
+   "desc": "Contact details of the location"
+  },
+  {
+   "name": "address",
+   "type": "Address",
+   "desc": "Physical location"
+  },
+  {
+   "name": "physicalType",
+   "type": "CodeableConcept",
+   "desc": "Physical form of the location"
+  },
+  {
+   "name": "position",
+   "type": "BackboneElement",
+   "desc": "The absolute geographic location"
+  },
+  {
+   "name": "position.longitude",
+   "type": "decimal",
+   "desc": "Longitude with WGS84 datum"
+  },
+  {
+   "name": "position.latitude",
+   "type": "decimal",
+   "desc": "Latitude with WGS84 datum"
+  },
+  {
+   "name": "position.altitude",
+   "type": "decimal",
+   "desc": "Altitude with WGS84 datum"
+  },
+  {
+   "name": "managingOrganization",
+   "type": "Reference",
+   "desc": "Organization responsible for provisioning and upkeep"
+  },
+  {
+   "name": "partOf",
+   "type": "Reference",
+   "desc": "Another Location this one is physically a part of"
+  },
+  {
+   "name": "hoursOfOperation",
+   "type": "BackboneElement",
+   "desc": "What days/times during a week is this location usually open"
+  },
+  {
+   "name": "hoursOfOperation.daysOfWeek",
+   "type": "code",
+   "desc": "mon | tue | wed | thu | fri | sat | sun"
+  },
+  {
+   "name": "hoursOfOperation.allDay",
+   "type": "boolean",
+   "desc": "The Location is open all day"
+  },
+  {
+   "name": "hoursOfOperation.openingTime",
+   "type": "time",
+   "desc": "Time that the Location opens"
+  },
+  {
+   "name": "hoursOfOperation.closingTime",
+   "type": "time",
+   "desc": "Time that the Location closes"
+  },
+  {
+   "name": "availabilityExceptions",
+   "type": "string",
+   "desc": "Description of availability exceptions"
+  },
+  {
+   "name": "endpoint",
+   "type": "Reference",
+   "desc": "Technical endpoints providing access to services operated for the location"
+  }
+ ]
+}

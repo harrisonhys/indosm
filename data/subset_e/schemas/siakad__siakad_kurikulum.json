@@ -1,0 +1,69 @@
+{
+ "system": "siakad",
+ "table": "siakad_kurikulum",
+ "source": "SIAKAD Feeder (idiknursidik/siakad@master, siakad.sql)",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id_kurikulum",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "id_kurikulum_ws",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "kodept",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "id_prodi",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "kode_prodi",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "id_prodi_ws",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "id_semester",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "jumlah_sks_lulus",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "jumlah_sks_pilihan",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "jumlah_sks_wajib",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "nama_kurikulum",
+   "type": "varchar(200)",
+   "desc": ""
+  },
+  {
+   "name": "semester_mulai_berlaku",
+   "type": "varchar(10)",
+   "desc": ""
+  }
+ ]
+}

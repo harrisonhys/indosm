@@ -1,0 +1,34 @@
+{
+ "system": "sipuskesmas",
+ "table": "polis",
+ "source": "elingp/sistem-informasi-puskesmas@be12a98aaf",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id",
+   "type": "id",
+   "desc": ""
+  },
+  {
+   "name": "nama",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "nomor_sekarang",
+   "type": "unsignedsmallinteger",
+   "desc": ""
+  },
+  {
+   "name": "created_at",
+   "type": "timestamps",
+   "desc": ""
+  },
+  {
+   "name": "updated_at",
+   "type": "timestamps",
+   "desc": ""
+  }
+ ]
+}

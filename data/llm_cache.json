@@ -1,0 +1,4180 @@
+{
+ "gemini-3.5-flash|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- bps_kode_provinsi: 11, 11, 11\n- bps_nama_provinsi: Aceh, Aceh, Aceh\n- bps_kode_kabupaten: 1101, 1102, 1103\n- bps_nama_kabupaten: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- tahun: 2010, 2010, 2010\n- jumlah_penduduk: 81,11, 103,22, 203,18\n\nTARGET:\n- kode kabupaten kota: 3601, 3602, 3603\n- kabupaten kota: Kabupaten Pandeglang, Kabupaten Lebak, Kabupaten Tangerang\n- tahun: 2020, 2020, 2020\n- rasio jenis kelamin: 105,51, 106,14, 104,78\n\nReturn JSON: [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]": [
+  {
+   "source": "bps_kode_kabupaten",
+   "target": "kode kabupaten kota",
+   "confidence": 0.95
+  },
+  {
+   "source": "bps_nama_kabupaten",
+   "target": "kabupaten kota",
+   "confidence": 0.95
+  },
+  {
+   "source": "tahun",
+   "target": "tahun",
+   "confidence": 1.0
+  }
+ ],
+ "gemini-3.5-flash|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- bps_kode_provinsi: 11, 11, 11\n- bps_nama_provinsi: Aceh, Aceh, Aceh\n- bps_kode_kabupaten: 1101, 1102, 1103\n- bps_nama_kabupaten: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- tahun: 2010, 2010, 2010\n- jumlah_penduduk: 81,11, 103,22, 203,18\n\nTARGET:\n- regency city code: 3601, 3602, 3603\n- regency city: Kabupaten Pandeglang, Kabupaten Lebak, Kabupaten Tangerang\n- year: 2020, 2020, 2020\n- sex ratio: 105,51, 106,14, 104,78\n\nReturn JSON: [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]": [
+  {
+   "source": "bps_kode_kabupaten",
+   "target": "regency city code",
+   "confidence": 0.95
+  },
+  {
+   "source": "bps_nama_kabupaten",
+   "target": "regency city",
+   "confidence": 0.95
+  },
+  {
+   "source": "tahun",
+   "target": "year",
+   "confidence": 1.0
+  }
+ ],
+ "gemini-3.5-flash|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- bps_province_code: 11, 11, 11\n- bps_province_name: Aceh, Aceh, Aceh\n- bps_regency_code: 1101, 1102, 1103\n- bps_regency_name: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- year: 2010, 2010, 2010\n- total_population: 81,11, 103,22, 203,18\n\nTARGET:\n- regency city code: 3601, 3602, 3603\n- regency city: Kabupaten Pandeglang, Kabupaten Lebak, Kabupaten Tangerang\n- year: 2020, 2020, 2020\n- sex ratio: 105,51, 106,14, 104,78\n\nReturn JSON: [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]": [
+  {
+   "source": "bps_regency_code",
+   "target": "regency city code",
+   "confidence": 0.95
+  },
+  {
+   "source": "bps_regency_name",
+   "target": "regency city",
+   "confidence": 0.95
+  },
+  {
+   "source": "year",
+   "target": "year",
+   "confidence": 1.0
+  }
+ ],
+ "gemini-3.5-flash|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kemendagri_kode_provinsi: 11, 11, 11\n- kemendagri_nama_provinsi: Aceh, Aceh, Aceh\n- kemendagri_kode_kabupaten_kota: 11.09, 11.1, 11.01\n- kemendagri_nama_kabupaten_kota: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- tahun: 2024, 2024, 2024\n- jumlah_puskesmas: 15, 12, 27\n- satuan: unit, unit, unit\n\nTARGET:\n- Kabupaten/Kota: Kabupaten Sambas, Kabupaten Bengkayang, Kabupaten Landak\n- Jumlah Penduduk (Jiwa): 542.559, 262.205, 383.409\n- Puskesmas (Unit): 28, 17, 16\n- Puskesmas Pembantu (Unit): 89, 75, 77\n- Puskesmas Keliling (Unit): 36, 18, 73\n- Jumlah Puskesmas per 500.000 Penduduk: 141, 210, 216\n\nReturn JSON: [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]": [
+  {
+   "source": "kemendagri_nama_kabupaten_kota",
+   "target": "Kabupaten/Kota",
+   "confidence": 1.0
+  },
+  {
+   "source": "jumlah_puskesmas",
+   "target": "Puskesmas (Unit)",
+   "confidence": 0.95
+  }
+ ],
+ "gemini-3.5-flash|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kemendagri_kode_provinsi: 11, 11, 11\n- kemendagri_nama_provinsi: Aceh, Aceh, Aceh\n- kemendagri_kode_kabupaten_kota: 11.09, 11.1, 11.01\n- kemendagri_nama_kabupaten_kota: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- tahun: 2024, 2024, 2024\n- jumlah_puskesmas: 15, 12, 27\n- satuan: unit, unit, unit\n\nTARGET:\n- Regency/City: Kabupaten Sambas, Kabupaten Bengkayang, Kabupaten Landak\n- Total Population (People): 542.559, 262.205, 383.409\n- Public Health Center (Unit): 28, 17, 16\n- Auxiliary Public Health Center (Unit): 89, 75, 77\n- Mobile Public Health Center (Unit): 36, 18, 73\n- Number of Public Health Centers per 500,000 Population: 141, 210, 216\n\nReturn JSON: [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]": [
+  {
+   "source": "kemendagri_nama_kabupaten_kota",
+   "target": "Regency/City",
+   "confidence": 0.95
+  },
+  {
+   "source": "jumlah_puskesmas",
+   "target": "Public Health Center (Unit)",
+   "confidence": 0.95
+  }
+ ],
+ "gemini-3.5-flash|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kemendagri_province_code: 11, 11, 11\n- kemendagri_province_name: Aceh, Aceh, Aceh\n- kemendagri_regency_city_code: 11.09, 11.1, 11.01\n- kemendagri_regency_city_name: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- year: 2024, 2024, 2024\n- total_puskesmas: 15, 12, 27\n- unit: unit, unit, unit\n\nTARGET:\n- Regency/City: Kabupaten Sambas, Kabupaten Bengkayang, Kabupaten Landak\n- Total Population (People): 542.559, 262.205, 383.409\n- Public Health Center (Unit): 28, 17, 16\n- Auxiliary Public Health Center (Unit): 89, 75, 77\n- Mobile Public Health Center (Unit): 36, 18, 73\n- Number of Public Health Centers per 500,000 Population: 141, 210, 216\n\nReturn JSON: [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]": [
+  {
+   "source": "kemendagri_regency_city_name",
+   "target": "Regency/City",
+   "confidence": 0.95
+  },
+  {
+   "source": "total_puskesmas",
+   "target": "Public Health Center (Unit)",
+   "confidence": 0.95
+  }
+ ],
+ "gemini-3.5-flash|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- bps_kode_provinsi: 11, 11, 11\n- bps_nama_provinsi: Aceh, Aceh, Aceh\n- bps_kode_kabupaten: 1101, 1102, 1103\n- bps_nama_kabupaten: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- tahun: 2010, 2010, 2010\n- jumlah_penduduk: 81,11, 103,22, 203,18\n\nTARGET:\n- kemendagri_kode_provinsi: 11, 11, 11\n- kemendagri_nama_provinsi: Aceh, Aceh, Aceh\n- kemendagri_kode_kabupatenkota: 11.01, 11.02, 11.03\n- kemendagri_nama_kabupatenkota: Kabupaten Aceh Selatan, Kabupaten Aceh Tenggara, Kabupaten Aceh Timur\n- tahun: 2015, 2015, 2015\n- semester: 1, 1, 1\n- jenis_kelamin: Laki-laki, Laki-laki, Laki-laki\n- jumlah_penduduk: 113854, 109919, 211386\n- satuan: Jiwa, Jiwa, Jiwa\n\nReturn JSON: [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]": [
+  {
+   "source": "bps_kode_provinsi",
+   "target": "kemendagri_kode_provinsi",
+   "confidence": 0.95
+  },
+  {
+   "source": "bps_nama_provinsi",
+   "target": "kemendagri_nama_provinsi",
+   "confidence": 1.0
+  },
+  {
+   "source": "bps_kode_kabupaten",
+   "target": "kemendagri_kode_kabupatenkota",
+   "confidence": 0.95
+  },
+  {
+   "source": "bps_nama_kabupaten",
+   "target": "kemendagri_nama_kabupatenkota",
+   "confidence": 0.98
+  },
+  {
+   "source": "tahun",
+   "target": "tahun",
+   "confidence": 1.0
+  },
+  {
+   "source": "jumlah_penduduk",
+   "target": "jumlah_penduduk",
+   "confidence": 1.0
+  }
+ ],
+ "gemini-3.5-flash|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- bps_kode_provinsi: 11, 11, 11\n- bps_nama_provinsi: Aceh, Aceh, Aceh\n- bps_kode_kabupaten: 1101, 1102, 1103\n- bps_nama_kabupaten: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- tahun: 2010, 2010, 2010\n- jumlah_penduduk: 81,11, 103,22, 203,18\n\nTARGET:\n- kemendagri_province_code: 11, 11, 11\n- kemendagri_province_name: Aceh, Aceh, Aceh\n- kemendagri_regency_city_code: 11.01, 11.02, 11.03\n- kemendagri_regency_city_name: Kabupaten Aceh Selatan, Kabupaten Aceh Tenggara, Kabupaten Aceh Timur\n- year: 2015, 2015, 2015\n- semester: 1, 1, 1\n- gender: Laki-laki, Laki-laki, Laki-laki\n- total_population: 113854, 109919, 211386\n- unit: Jiwa, Jiwa, Jiwa\n\nReturn JSON: [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]": [
+  {
+   "source": "bps_kode_provinsi",
+   "target": "kemendagri_province_code",
+   "confidence": 0.95
+  },
+  {
+   "source": "bps_nama_provinsi",
+   "target": "kemendagri_province_name",
+   "confidence": 0.98
+  },
+  {
+   "source": "bps_kode_kabupaten",
+   "target": "kemendagri_regency_city_code",
+   "confidence": 0.9
+  },
+  {
+   "source": "bps_nama_kabupaten",
+   "target": "kemendagri_regency_city_name",
+   "confidence": 0.95
+  },
+  {
+   "source": "tahun",
+   "target": "year",
+   "confidence": 1.0
+  },
+  {
+   "source": "jumlah_penduduk",
+   "target": "total_population",
+   "confidence": 0.95
+  }
+ ],
+ "gemini-3.5-flash|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- bps_province_code: 11, 11, 11\n- bps_province_name: Aceh, Aceh, Aceh\n- bps_regency_code: 1101, 1102, 1103\n- bps_regency_name: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- year: 2010, 2010, 2010\n- total_population: 81,11, 103,22, 203,18\n\nTARGET:\n- kemendagri_province_code: 11, 11, 11\n- kemendagri_province_name: Aceh, Aceh, Aceh\n- kemendagri_regency_city_code: 11.01, 11.02, 11.03\n- kemendagri_regency_city_name: Kabupaten Aceh Selatan, Kabupaten Aceh Tenggara, Kabupaten Aceh Timur\n- year: 2015, 2015, 2015\n- semester: 1, 1, 1\n- gender: Laki-laki, Laki-laki, Laki-laki\n- total_population: 113854, 109919, 211386\n- unit: Jiwa, Jiwa, Jiwa\n\nReturn JSON: [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]": [
+  {
+   "source": "bps_province_code",
+   "target": "kemendagri_province_code",
+   "confidence": 0.95
+  },
+  {
+   "source": "bps_province_name",
+   "target": "kemendagri_province_name",
+   "confidence": 1.0
+  },
+  {
+   "source": "bps_regency_code",
+   "target": "kemendagri_regency_city_code",
+   "confidence": 0.9
+  },
+  {
+   "source": "bps_regency_name",
+   "target": "kemendagri_regency_city_name",
+   "confidence": 0.95
+  },
+  {
+   "source": "year",
+   "target": "year",
+   "confidence": 1.0
+  },
+  {
+   "source": "total_population",
+   "target": "total_population",
+   "confidence": 1.0
+  }
+ ],
+ "gemini-3.5-flash|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- Kecamatan: X Koto, Batipuh, Batipuah Selatan\n- RS: 1, 1\n- Puskesmas: 3, 2, 1\n- Puskesmas Keliling: 6, 4, 3\n- Puskesmas Pembantu: 6, 8, 3\n- Klinik: 1, 4, 1\n\nTARGET:\n- Kecamatan: Bengkulu Selatan, Rejang Lebong, Bengkulu Utara\n- Puskesmas: 14, 21, 22\n- Posyandu Aktif: 150, 202, 296\n- Posyandu Tidak Aktif: 33, 1, 5\n- Total Posyandu: 183, 203, 301\n- Posbindu PTM: 166, 195, 281\n\nReturn JSON: [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]": [
+  {
+   "source": "Kecamatan",
+   "target": "Kecamatan",
+   "confidence": 1.0
+  },
+  {
+   "source": "Puskesmas",
+   "target": "Puskesmas",
+   "confidence": 1.0
+  }
+ ],
+ "gemini-3.5-flash|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- Kecamatan: X Koto, Batipuh, Batipuah Selatan\n- RS: 1, 1\n- Puskesmas: 3, 2, 1\n- Puskesmas Keliling: 6, 4, 3\n- Puskesmas Pembantu: 6, 8, 3\n- Klinik: 1, 4, 1\n\nTARGET:\n- Subdistrict: Bengkulu Selatan, Rejang Lebong, Bengkulu Utara\n- Puskesmas: 14, 21, 22\n- Active Posyandu: 150, 202, 296\n- Inactive Posyandu: 33, 1, 5\n- Total Posyandu: 183, 203, 301\n- Posbindu PTM: 166, 195, 281\n\nReturn JSON: [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]": [
+  {
+   "source": "Kecamatan",
+   "target": "Subdistrict",
+   "confidence": 1.0
+  },
+  {
+   "source": "Puskesmas",
+   "target": "Puskesmas",
+   "confidence": 1.0
+  }
+ ],
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- bps_kode_provinsi: 11, 11, 11\n- bps_nama_provinsi: Aceh, Aceh, Aceh\n- bps_kode_kabupaten: 1101, 1102, 1103\n- bps_nama_kabupaten: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- tahun: 2010, 2010, 2010\n- jumlah_penduduk: 81,11, 103,22, 203,18\n\nTARGET:\n- kode kabupaten kota: 3601, 3602, 3603\n- kabupaten kota: Kabupaten Pandeglang, Kabupaten Lebak, Kabupaten Tangerang\n- tahun: 2020, 2020, 2020\n- rasio jenis kelamin: 105,51, 106,14, 104,78\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "bps_kode_kabupaten",
+    "target": "kode kabupaten kota",
+    "confidence": 0.95
+   },
+   {
+    "source": "bps_nama_kabupaten",
+    "target": "kabupaten kota",
+    "confidence": 0.95
+   },
+   {
+    "source": "tahun",
+    "target": "tahun",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- bps_kode_provinsi: 11, 11, 11\n- bps_nama_provinsi: Aceh, Aceh, Aceh\n- bps_kode_kabupaten: 1101, 1102, 1103\n- bps_nama_kabupaten: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- tahun: 2010, 2010, 2010\n- jumlah_penduduk: 81,11, 103,22, 203,18\n\nTARGET:\n- regency city code: 3601, 3602, 3603\n- regency city: Kabupaten Pandeglang, Kabupaten Lebak, Kabupaten Tangerang\n- year: 2020, 2020, 2020\n- sex ratio: 105,51, 106,14, 104,78\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "bps_kode_provinsi",
+    "target": "regency city code",
+    "confidence": 0.8
+   },
+   {
+    "source": "bps_nama_provinsi",
+    "target": "regency city",
+    "confidence": 0.9
+   },
+   {
+    "source": "bps_kode_kabupaten",
+    "target": "regency city code",
+    "confidence": 0.8
+   },
+   {
+    "source": "bps_nama_kabupaten",
+    "target": "regency city",
+    "confidence": 0.9
+   },
+   {
+    "source": "tahun",
+    "target": "year",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- bps_province_code: 11, 11, 11\n- bps_province_name: Aceh, Aceh, Aceh\n- bps_regency_code: 1101, 1102, 1103\n- bps_regency_name: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- year: 2010, 2010, 2010\n- population: 81,11, 103,22, 203,18\n\nTARGET:\n- regency city code: 3601, 3602, 3603\n- regency city: Kabupaten Pandeglang, Kabupaten Lebak, Kabupaten Tangerang\n- year: 2020, 2020, 2020\n- sex ratio: 105,51, 106,14, 104,78\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "bps_province_code",
+    "target": "regency city code",
+    "confidence": 0.8
+   },
+   {
+    "source": "bps_regency_code",
+    "target": "regency city code",
+    "confidence": 0.9
+   },
+   {
+    "source": "year",
+    "target": "year",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kemendagri_kode_provinsi: 11, 11, 11\n- kemendagri_nama_provinsi: Aceh, Aceh, Aceh\n- kemendagri_kode_kabupaten_kota: 11.09, 11.1, 11.01\n- kemendagri_nama_kabupaten_kota: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- tahun: 2024, 2024, 2024\n- jumlah_puskesmas: 15, 12, 27\n- satuan: unit, unit, unit\n\nTARGET:\n- Kabupaten/Kota: Kabupaten Sambas, Kabupaten Bengkayang, Kabupaten Landak\n- Jumlah Penduduk (Jiwa): 542.559, 262.205, 383.409\n- Puskesmas (Unit): 28, 17, 16\n- Puskesmas Pembantu (Unit): 89, 75, 77\n- Puskesmas Keliling (Unit): 36, 18, 73\n- Jumlah Puskesmas per 500.000 Penduduk: 141, 210, 216\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "kemendagri_kode_provinsi",
+    "target": "Kabupaten/Kota",
+    "confidence": 0.5
+   },
+   {
+    "source": "kemendagri_nama_provinsi",
+    "target": "Kabupaten/Kota",
+    "confidence": 0.5
+   },
+   {
+    "source": "kemendagri_kode_kabupaten_kota",
+    "target": "Kabupaten/Kota",
+    "confidence": 0.5
+   },
+   {
+    "source": "kemendagri_nama_kabupaten_kota",
+    "target": "Kabupaten/Kota",
+    "confidence": 0.5
+   },
+   {
+    "source": "jumlah_puskesmas",
+    "target": "Puskesmas (Unit)",
+    "confidence": 0.9
+   },
+   {
+    "source": "satuan",
+    "target": "Puskesmas (Unit)",
+    "confidence": 0.5
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kemendagri_kode_provinsi: 11, 11, 11\n- kemendagri_nama_provinsi: Aceh, Aceh, Aceh\n- kemendagri_kode_kabupaten_kota: 11.09, 11.1, 11.01\n- kemendagri_nama_kabupaten_kota: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- tahun: 2024, 2024, 2024\n- jumlah_puskesmas: 15, 12, 27\n- satuan: unit, unit, unit\n\nTARGET:\n- Regency/City: Kabupaten Sambas, Kabupaten Bengkayang, Kabupaten Landak\n- Population (Persons): 542.559, 262.205, 383.409\n- Health Center (Unit): 28, 17, 16\n- Auxiliary Health Center (Unit): 89, 75, 77\n- Mobile Health Center (Unit): 36, 18, 73\n- Health Centers per 500,000 Population: 141, 210, 216\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "kemendagri_kode_provinsi",
+    "target": "Regency/City",
+    "confidence": 0.5
+   },
+   {
+    "source": "kemendagri_nama_provinsi",
+    "target": "Regency/City",
+    "confidence": 0.5
+   },
+   {
+    "source": "kemendagri_kode_kabupaten_kota",
+    "target": "Regency/City",
+    "confidence": 0.5
+   },
+   {
+    "source": "kemendagri_nama_kabupaten_kota",
+    "target": "Regency/City",
+    "confidence": 0.5
+   },
+   {
+    "source": "jumlah_puskesmas",
+    "target": "Health Center (Unit)",
+    "confidence": 0.9
+   },
+   {
+    "source": "satuan",
+    "target": "Health Center (Unit)",
+    "confidence": 0.5
+   },
+   {
+    "source": "tahun",
+    "target": "Health Centers per 500,000 Population",
+    "confidence": 0.5
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kemendagri_province_code: 11, 11, 11\n- kemendagri_province_name: Aceh, Aceh, Aceh\n- kemendagri_regency_city_code: 11.09, 11.1, 11.01\n- kemendagri_regency_city_name: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- year: 2024, 2024, 2024\n- num_health_centers: 15, 12, 27\n- unit: unit, unit, unit\n\nTARGET:\n- Regency/City: Kabupaten Sambas, Kabupaten Bengkayang, Kabupaten Landak\n- Population (Persons): 542.559, 262.205, 383.409\n- Health Center (Unit): 28, 17, 16\n- Auxiliary Health Center (Unit): 89, 75, 77\n- Mobile Health Center (Unit): 36, 18, 73\n- Health Centers per 500,000 Population: 141, 210, 216\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "kemendagri_regency_city_name",
+    "target": "Regency/City",
+    "confidence": 0.95
+   },
+   {
+    "source": "num_health_centers",
+    "target": "Health Center (Unit)",
+    "confidence": 0.95
+   },
+   {
+    "source": "year",
+    "target": "Health Centers per 500,000 Population",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- bps_kode_provinsi: 11, 11, 11\n- bps_nama_provinsi: Aceh, Aceh, Aceh\n- bps_kode_kabupaten: 1101, 1102, 1103\n- bps_nama_kabupaten: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- tahun: 2010, 2010, 2010\n- jumlah_penduduk: 81,11, 103,22, 203,18\n\nTARGET:\n- kemendagri_kode_provinsi: 11, 11, 11\n- kemendagri_nama_provinsi: Aceh, Aceh, Aceh\n- kemendagri_kode_kabupatenkota: 11.01, 11.02, 11.03\n- kemendagri_nama_kabupatenkota: Kabupaten Aceh Selatan, Kabupaten Aceh Tenggara, Kabupaten Aceh Timur\n- tahun: 2015, 2015, 2015\n- semester: 1, 1, 1\n- jenis_kelamin: Laki-laki, Laki-laki, Laki-laki\n- jumlah_penduduk: 113854, 109919, 211386\n- satuan: Jiwa, Jiwa, Jiwa\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "bps_kode_provinsi",
+    "target": "kemendagri_kode_provinsi",
+    "confidence": 1.0
+   },
+   {
+    "source": "bps_nama_provinsi",
+    "target": "kemendagri_nama_provinsi",
+    "confidence": 1.0
+   },
+   {
+    "source": "bps_kode_kabupaten",
+    "target": "kemendagri_kode_kabupatenkota",
+    "confidence": 1.0
+   },
+   {
+    "source": "bps_nama_kabupaten",
+    "target": "kemendagri_nama_kabupatenkota",
+    "confidence": 1.0
+   },
+   {
+    "source": "tahun",
+    "target": "tahun",
+    "confidence": 1.0
+   },
+   {
+    "source": "jumlah_penduduk",
+    "target": "jumlah_penduduk",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- bps_kode_provinsi: 11, 11, 11\n- bps_nama_provinsi: Aceh, Aceh, Aceh\n- bps_kode_kabupaten: 1101, 1102, 1103\n- bps_nama_kabupaten: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- tahun: 2010, 2010, 2010\n- jumlah_penduduk: 81,11, 103,22, 203,18\n\nTARGET:\n- kemendagri_province_code: 11, 11, 11\n- kemendagri_province_name: Aceh, Aceh, Aceh\n- kemendagri_regencycity_code: 11.01, 11.02, 11.03\n- kemendagri_regencycity_name: Kabupaten Aceh Selatan, Kabupaten Aceh Tenggara, Kabupaten Aceh Timur\n- year: 2015, 2015, 2015\n- semester: 1, 1, 1\n- sex: Laki-laki, Laki-laki, Laki-laki\n- population: 113854, 109919, 211386\n- unit: Jiwa, Jiwa, Jiwa\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "bps_kode_provinsi",
+    "target": "kemendagri_province_code",
+    "confidence": 1.0
+   },
+   {
+    "source": "bps_nama_provinsi",
+    "target": "kemendagri_province_name",
+    "confidence": 1.0
+   },
+   {
+    "source": "bps_kode_kabupaten",
+    "target": "kemendagri_regencycity_code",
+    "confidence": 1.0
+   },
+   {
+    "source": "tahun",
+    "target": "year",
+    "confidence": 1.0
+   },
+   {
+    "source": "jumlah_penduduk",
+    "target": "population",
+    "confidence": 1.0
+   },
+   {
+    "source": "jumlah_penduduk",
+    "target": "unit",
+    "confidence": 0.5
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- bps_province_code: 11, 11, 11\n- bps_province_name: Aceh, Aceh, Aceh\n- bps_regency_code: 1101, 1102, 1103\n- bps_regency_name: Kabupaten Simeulue, Kabupaten Aceh Singkil, Kabupaten Aceh Selatan\n- year: 2010, 2010, 2010\n- population: 81,11, 103,22, 203,18\n\nTARGET:\n- kemendagri_province_code: 11, 11, 11\n- kemendagri_province_name: Aceh, Aceh, Aceh\n- kemendagri_regencycity_code: 11.01, 11.02, 11.03\n- kemendagri_regencycity_name: Kabupaten Aceh Selatan, Kabupaten Aceh Tenggara, Kabupaten Aceh Timur\n- year: 2015, 2015, 2015\n- semester: 1, 1, 1\n- sex: Laki-laki, Laki-laki, Laki-laki\n- population: 113854, 109919, 211386\n- unit: Jiwa, Jiwa, Jiwa\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "bps_province_code",
+    "target": "kemendagri_province_code",
+    "confidence": 1.0
+   },
+   {
+    "source": "bps_province_name",
+    "target": "kemendagri_province_name",
+    "confidence": 1.0
+   },
+   {
+    "source": "bps_regency_code",
+    "target": "kemendagri_regencycity_code",
+    "confidence": 1.0
+   },
+   {
+    "source": "bps_regency_name",
+    "target": "kemendagri_regencycity_name",
+    "confidence": 1.0
+   },
+   {
+    "source": "year",
+    "target": "year",
+    "confidence": 1.0
+   },
+   {
+    "source": "population",
+    "target": "population",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- Kecamatan: X Koto, Batipuh, Batipuah Selatan\n- RS: 1, 1\n- Puskesmas: 3, 2, 1\n- Puskesmas Keliling: 6, 4, 3\n- Puskesmas Pembantu: 6, 8, 3\n- Klinik: 1, 4, 1\n\nTARGET:\n- Kecamatan: Bengkulu Selatan, Rejang Lebong, Bengkulu Utara\n- Puskesmas: 14, 21, 22\n- Posyandu Aktif: 150, 202, 296\n- Posyandu Tidak Aktif: 33, 1, 5\n- Total Posyandu: 183, 203, 301\n- Posbindu PTM: 166, 195, 281\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "Kecamatan",
+    "target": "Kecamatan",
+    "confidence": 1.0
+   },
+   {
+    "source": "Puskesmas",
+    "target": "Puskesmas",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- Kecamatan: X Koto, Batipuh, Batipuah Selatan\n- RS: 1, 1\n- Puskesmas: 3, 2, 1\n- Puskesmas Keliling: 6, 4, 3\n- Puskesmas Pembantu: 6, 8, 3\n- Klinik: 1, 4, 1\n\nTARGET:\n- District: Bengkulu Selatan, Rejang Lebong, Bengkulu Utara\n- Health Center: 14, 21, 22\n- Active Integrated Health Posts: 150, 202, 296\n- Inactive Integrated Health Posts: 33, 1, 5\n- Total Integrated Health Posts: 183, 203, 301\n- NCD Post: 166, 195, 281\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "Kecamatan",
+    "target": "District",
+    "confidence": 0.95
+   },
+   {
+    "source": "Puskesmas",
+    "target": "Health Center",
+    "confidence": 0.85
+   },
+   {
+    "source": "Puskesmas Pembantu",
+    "target": "Total Integrated Health Posts",
+    "confidence": 0.75
+   },
+   {
+    "source": "Puskesmas Keliling",
+    "target": "Active Integrated Health Posts",
+    "confidence": 0.7
+   },
+   {
+    "source": "Puskesmas Pembantu",
+    "target": "Inactive Integrated Health Posts",
+    "confidence": 0.65
+   },
+   {
+    "source": "Klinik",
+    "target": "NCD Post",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- District: X Koto, Batipuh, Batipuah Selatan\n- HOSP: 1, 1\n- Health Center: 3, 2, 1\n- Mobile Health Center: 6, 4, 3\n- Auxiliary Health Center: 6, 8, 3\n- Clinic: 1, 4, 1\n\nTARGET:\n- District: Bengkulu Selatan, Rejang Lebong, Bengkulu Utara\n- Health Center: 14, 21, 22\n- Active Integrated Health Posts: 150, 202, 296\n- Inactive Integrated Health Posts: 33, 1, 5\n- Total Integrated Health Posts: 183, 203, 301\n- NCD Post: 166, 195, 281\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "District",
+    "target": "District",
+    "confidence": 1.0
+   },
+   {
+    "source": "Health Center",
+    "target": "Total Integrated Health Posts",
+    "confidence": 0.9
+   },
+   {
+    "source": "Mobile Health Center",
+    "target": "Active Integrated Health Posts",
+    "confidence": 0.8
+   },
+   {
+    "source": "Auxiliary Health Center",
+    "target": "Inactive Integrated Health Posts",
+    "confidence": 0.8
+   },
+   {
+    "source": "Clinic",
+    "target": "NCD Post",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- Kecamatan: X Koto, Batipuh, Batipuah Selatan\n- RS: 1, 1\n- Puskesmas: 3, 2, 1\n- Puskesmas Keliling: 6, 4, 3\n- Puskesmas Pembantu: 6, 8, 3\n- Klinik: 1, 4, 1\n\nTARGET:\n- Kabupaten/Kota: Kabupaten Sambas, Kabupaten Bengkayang, Kabupaten Landak\n- Jumlah Penduduk (Jiwa): 542.559, 262.205, 383.409\n- Puskesmas (Unit): 28, 17, 16\n- Puskesmas Pembantu (Unit): 89, 75, 77\n- Puskesmas Keliling (Unit): 36, 18, 73\n- Jumlah Puskesmas per 500.000 Penduduk: 141, 210, 216\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "Kecamatan",
+    "target": "Kabupaten/Kota",
+    "confidence": 0.9
+   },
+   {
+    "source": "Puskesmas",
+    "target": "Puskesmas (Unit)",
+    "confidence": 0.85
+   },
+   {
+    "source": "Puskesmas Keliling",
+    "target": "Puskesmas Keliling (Unit)",
+    "confidence": 0.85
+   },
+   {
+    "source": "Puskesmas Pembantu",
+    "target": "Puskesmas Pembantu (Unit)",
+    "confidence": 0.85
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- Kecamatan: X Koto, Batipuh, Batipuah Selatan\n- RS: 1, 1\n- Puskesmas: 3, 2, 1\n- Puskesmas Keliling: 6, 4, 3\n- Puskesmas Pembantu: 6, 8, 3\n- Klinik: 1, 4, 1\n\nTARGET:\n- Regency/City: Kabupaten Sambas, Kabupaten Bengkayang, Kabupaten Landak\n- Population (Persons): 542.559, 262.205, 383.409\n- Health Center (Unit): 28, 17, 16\n- Auxiliary Health Center (Unit): 89, 75, 77\n- Mobile Health Center (Unit): 36, 18, 73\n- Health Centers per 500,000 Population: 141, 210, 216\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "Kecamatan",
+    "target": "Regency/City",
+    "confidence": 0.95
+   },
+   {
+    "source": "RS",
+    "target": "Health Centers per 500,000 Population",
+    "confidence": 0.85
+   },
+   {
+    "source": "Puskesmas",
+    "target": "Health Center (Unit)",
+    "confidence": 0.95
+   },
+   {
+    "source": "Puskesmas Keliling",
+    "target": "Mobile Health Center (Unit)",
+    "confidence": 0.85
+   },
+   {
+    "source": "Puskesmas Pembantu",
+    "target": "Auxiliary Health Center (Unit)",
+    "confidence": 0.95
+   },
+   {
+    "source": "Klinik",
+    "target": "Population (Persons)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- District: X Koto, Batipuh, Batipuah Selatan\n- HOSP: 1, 1\n- Health Center: 3, 2, 1\n- Mobile Health Center: 6, 4, 3\n- Auxiliary Health Center: 6, 8, 3\n- Clinic: 1, 4, 1\n\nTARGET:\n- Regency/City: Kabupaten Sambas, Kabupaten Bengkayang, Kabupaten Landak\n- Population (Persons): 542.559, 262.205, 383.409\n- Health Center (Unit): 28, 17, 16\n- Auxiliary Health Center (Unit): 89, 75, 77\n- Mobile Health Center (Unit): 36, 18, 73\n- Health Centers per 500,000 Population: 141, 210, 216\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "District",
+    "target": "Regency/City",
+    "confidence": 0.95
+   },
+   {
+    "source": "Health Center",
+    "target": "Health Center (Unit)",
+    "confidence": 0.95
+   },
+   {
+    "source": "Auxiliary Health Center",
+    "target": "Auxiliary Health Center (Unit)",
+    "confidence": 0.95
+   },
+   {
+    "source": "Mobile Health Center",
+    "target": "Mobile Health Center (Unit)",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kemendagri_kode_provinsi: 11, 11, 11\n- kemendagri_nama_provinsi: Aceh, Aceh, Aceh\n- kemendagri_kode_kabupatenkota: 11.12, 11.12, 11.12\n- kemendagri_nama_kabupatenkota: Kabupaten Aceh Barat Daya, Kabupaten Aceh Barat Daya, Kabupaten Aceh Barat Daya\n- kemendagri_kode_kecamatan: 11.12.03, 11.12.09, 11.12.02\n- kemendagri_nama_kecamatan: Kecamatan Manggeng, Kecamatan Lembah Sabil, Kecamatan Tangan-Tangan\n- nama_puskesmas: MANGGENG, LEMBAH SABIL, TANGAN-TANGAN\n- tahun: 2021, 2021, 2021\n- jenis_dokter: dokter spesialis, dokter spesialis, dokter spesialis\n- jenis_kelamin: laki-laki, laki-laki, laki-laki\n- jumlah_dokter: 0, 0, 0\n- satuan: jiwa, jiwa, jiwa\n\nTARGET:\n- KODE KECAMATAN: 137101, 137111, 137109\n- KECAMATAN: Bungus Teluk Kabung, Koto Tangah, Kuranji\n- SUDAH: 57, 415, 273\n- BELUM: 5, 100, 65\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "kemendagri_kode_kecamatan",
+    "target": "KODE KECAMATAN",
+    "confidence": 0.95
+   },
+   {
+    "source": "kemendagri_nama_kecamatan",
+    "target": "KECAMATAN",
+    "confidence": 0.95
+   },
+   {
+    "source": "nama_puskesmas",
+    "target": "KECAMATAN",
+    "confidence": 0.8
+   },
+   {
+    "source": "jumlah_dokter",
+    "target": "SUDAH",
+    "confidence": 0.8
+   },
+   {
+    "source": "satuan",
+    "target": "SUDAH",
+    "confidence": 0.6
+   },
+   {
+    "source": "tahun",
+    "target": "BELUM",
+    "confidence": 0.5
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kemendagri_kode_provinsi: 11, 11, 11\n- kemendagri_nama_provinsi: Aceh, Aceh, Aceh\n- kemendagri_kode_kabupatenkota: 11.12, 11.12, 11.12\n- kemendagri_nama_kabupatenkota: Kabupaten Aceh Barat Daya, Kabupaten Aceh Barat Daya, Kabupaten Aceh Barat Daya\n- kemendagri_kode_kecamatan: 11.12.03, 11.12.09, 11.12.02\n- kemendagri_nama_kecamatan: Kecamatan Manggeng, Kecamatan Lembah Sabil, Kecamatan Tangan-Tangan\n- nama_puskesmas: MANGGENG, LEMBAH SABIL, TANGAN-TANGAN\n- tahun: 2021, 2021, 2021\n- jenis_dokter: dokter spesialis, dokter spesialis, dokter spesialis\n- jenis_kelamin: laki-laki, laki-laki, laki-laki\n- jumlah_dokter: 0, 0, 0\n- satuan: jiwa, jiwa, jiwa\n\nTARGET:\n- DISTRICT CODE: 137101, 137111, 137109\n- DISTRICT: Bungus Teluk Kabung, Koto Tangah, Kuranji\n- DONE: 57, 415, 273\n- NOT YET: 5, 100, 65\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "kemendagri_kode_provinsi",
+    "target": "DISTRICT CODE",
+    "confidence": 0.6
+   },
+   {
+    "source": "kemendagri_nama_provinsi",
+    "target": "DISTRICT",
+    "confidence": 0.6
+   },
+   {
+    "source": "kemendagri_kode_kabupatenkota",
+    "target": "DISTRICT CODE",
+    "confidence": 0.6
+   },
+   {
+    "source": "kemendagri_nama_kabupatenkota",
+    "target": "DISTRICT",
+    "confidence": 0.6
+   },
+   {
+    "source": "kemendagri_kode_kecamatan",
+    "target": "DISTRICT CODE",
+    "confidence": 0.6
+   },
+   {
+    "source": "kemendagri_nama_kecamatan",
+    "target": "DISTRICT",
+    "confidence": 0.6
+   },
+   {
+    "source": "nama_puskesmas",
+    "target": "DISTRICT",
+    "confidence": 0.5
+   },
+   {
+    "source": "jumlah_dokter",
+    "target": "DONE",
+    "confidence": 0.8
+   },
+   {
+    "source": "satuan",
+    "target": "DONE",
+    "confidence": 0.5
+   },
+   {
+    "source": "tahun",
+    "target": "DONE",
+    "confidence": 0.5
+   },
+   {
+    "source": "jenis_dokter",
+    "target": "DISTRICT",
+    "confidence": 0.3
+   },
+   {
+    "source": "jenis_kelamin",
+    "target": "DISTRICT",
+    "confidence": 0.3
+   },
+   {
+    "source": "NOT YET",
+    "target": "NOT YET",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kemendagri_province_code: 11, 11, 11\n- kemendagri_province_name: Aceh, Aceh, Aceh\n- kemendagri_regencycity_code: 11.12, 11.12, 11.12\n- kemendagri_regencycity_name: Kabupaten Aceh Barat Daya, Kabupaten Aceh Barat Daya, Kabupaten Aceh Barat Daya\n- kemendagri_district_code: 11.12.03, 11.12.09, 11.12.02\n- kemendagri_district_name: Kecamatan Manggeng, Kecamatan Lembah Sabil, Kecamatan Tangan-Tangan\n- health_center_name: MANGGENG, LEMBAH SABIL, TANGAN-TANGAN\n- year: 2021, 2021, 2021\n- doctor_type: dokter spesialis, dokter spesialis, dokter spesialis\n- sex: laki-laki, laki-laki, laki-laki\n- num_doctors: 0, 0, 0\n- unit: jiwa, jiwa, jiwa\n\nTARGET:\n- DISTRICT CODE: 137101, 137111, 137109\n- DISTRICT: Bungus Teluk Kabung, Koto Tangah, Kuranji\n- DONE: 57, 415, 273\n- NOT YET: 5, 100, 65\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "kemendagri_district_code",
+    "target": "DISTRICT CODE",
+    "confidence": 0.95
+   },
+   {
+    "source": "kemendagri_district_name",
+    "target": "DISTRICT",
+    "confidence": 0.95
+   },
+   {
+    "source": "health_center_name",
+    "target": "DISTRICT",
+    "confidence": 0.8
+   },
+   {
+    "source": "num_doctors",
+    "target": "DONE",
+    "confidence": 0.85
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- Tingkat Pendidikan: TK, RA, SD\n- Negeri: 1, 0, 33\n- Swasta: 28, 7, 4\n- Jumlah: 29, 7, 37\n\nTARGET:\n- kemendagri_kode_provinsi: 11, 11, 11\n- kemendagri_nama_provinsi: Aceh, Aceh, Aceh\n- kemendagri_kode_kabupaten_kota: 11.05, 11.05, 11.05\n- kemendagri_nama_kabupaten_kota: Kabupaten Aceh Barat, Kabupaten Aceh Barat, Kabupaten Aceh Barat\n- tahun: 2020, 2021, 2022\n- jenjang_pendidikan: SLB, SLB, SLB\n- status_satuan_pendidikan: Negeri, Negeri, Negeri\n- jumlah: 1, 1, 1\n- satuan: Unit, Unit, Unit\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "Tingkat Pendidikan",
+    "target": "jenjang_pendidikan",
+    "confidence": 0.95
+   },
+   {
+    "source": "Negeri",
+    "target": "status_satuan_pendidikan",
+    "confidence": 0.95
+   },
+   {
+    "source": "Jumlah",
+    "target": "jumlah",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- Tingkat Pendidikan: TK, RA, SD\n- Negeri: 1, 0, 33\n- Swasta: 28, 7, 4\n- Jumlah: 29, 7, 37\n\nTARGET:\n- kemendagri_province_code: 11, 11, 11\n- kemendagri_province_name: Aceh, Aceh, Aceh\n- kemendagri_regency_city_code: 11.05, 11.05, 11.05\n- kemendagri_regency_city_name: Kabupaten Aceh Barat, Kabupaten Aceh Barat, Kabupaten Aceh Barat\n- year: 2020, 2021, 2022\n- education_level: SLB, SLB, SLB\n- school_status: Negeri, Negeri, Negeri\n- total: 1, 1, 1\n- unit: Unit, Unit, Unit\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "Tingkat Pendidikan",
+    "target": "education_level",
+    "confidence": 0.95
+   },
+   {
+    "source": "Negeri",
+    "target": "school_status",
+    "confidence": 0.95
+   },
+   {
+    "source": "Jumlah",
+    "target": "total",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- Education Level: TK, RA, SD\n- Public: 1, 0, 33\n- Private: 28, 7, 4\n- Total: 29, 7, 37\n\nTARGET:\n- kemendagri_province_code: 11, 11, 11\n- kemendagri_province_name: Aceh, Aceh, Aceh\n- kemendagri_regency_city_code: 11.05, 11.05, 11.05\n- kemendagri_regency_city_name: Kabupaten Aceh Barat, Kabupaten Aceh Barat, Kabupaten Aceh Barat\n- year: 2020, 2021, 2022\n- education_level: SLB, SLB, SLB\n- school_status: Negeri, Negeri, Negeri\n- total: 1, 1, 1\n- unit: Unit, Unit, Unit\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "Education Level",
+    "target": "education_level",
+    "confidence": 0.9
+   },
+   {
+    "source": "Public",
+    "target": "school_status",
+    "confidence": 0.7
+   },
+   {
+    "source": "Total",
+    "target": "total",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- Kelompok Umur: 15–19, 20–24, 25–29\n- jenis kelamin: Laki-laki, Laki-laki, Laki-laki\n- jumlah penduduk: 98.015, 341.921, 443.659\n\nTARGET:\n- bps_kode_provinsi: 11, 11, 11\n- bps_nama_provinsi: Aceh, Aceh, Aceh\n- tahun: 2014, 2014, 2014\n- kelompok_umur: 0–14, 15–19, 20–29\n- jumlah_angkatan_kerja_dan pencari_kerja_ditempatkan: 1, 32, 48\n- jenis_kelamin: Laki-laki, Laki-laki, Laki-laki\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "Kelompok Umur",
+    "target": "kelompok_umur",
+    "confidence": 0.95
+   },
+   {
+    "source": "jenis kelamin",
+    "target": "jenis_kelamin",
+    "confidence": 0.95
+   },
+   {
+    "source": "jumlah penduduk",
+    "target": "jumlah_angkatan_kerja_dan pencari_kerja_ditempatkan",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- Kelompok Umur: 15–19, 20–24, 25–29\n- jenis kelamin: Laki-laki, Laki-laki, Laki-laki\n- jumlah penduduk: 98.015, 341.921, 443.659\n\nTARGET:\n- bps_province_code: 11, 11, 11\n- bps_province_name: Aceh, Aceh, Aceh\n- year: 2014, 2014, 2014\n- age_group: 0–14, 15–19, 20–29\n- num_labor_force_and job_seekers_placed: 1, 32, 48\n- sex: Laki-laki, Laki-laki, Laki-laki\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "jenis kelamin",
+    "target": "sex",
+    "confidence": 1.0
+   },
+   {
+    "source": "jumlah penduduk",
+    "target": "num_labor_force_and job_seekers_placed",
+    "confidence": 0.8
+   },
+   {
+    "source": "Kelompok Umur",
+    "target": "age_group",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- Age Group: 15–19, 20–24, 25–29\n- sex: Laki-laki, Laki-laki, Laki-laki\n- population: 98.015, 341.921, 443.659\n\nTARGET:\n- bps_province_code: 11, 11, 11\n- bps_province_name: Aceh, Aceh, Aceh\n- year: 2014, 2014, 2014\n- age_group: 0–14, 15–19, 20–29\n- num_labor_force_and job_seekers_placed: 1, 32, 48\n- sex: Laki-laki, Laki-laki, Laki-laki\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "Age Group",
+    "target": "age_group",
+    "confidence": 0.95
+   },
+   {
+    "source": "sex",
+    "target": "sex",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kode kabupaten kota: 3601, 3602, 3603\n- kabupaten kota: Kabupaten Pandeglang, Kabupaten Lebak, Kabupaten Tangerang\n- tahun: 2020, 2020, 2020\n- rasio jenis kelamin: 105,51, 106,14, 104,78\n\nTARGET:\n- kemendagri_kode_provinsi: 11, 11, 11\n- kemendagri_nama_provinsi: Aceh, Aceh, Aceh\n- kemendagri_kode_kabupatenkota: 11.01, 11.02, 11.03\n- kemendagri_nama_kabupatenkota: Kabupaten Aceh Selatan, Kabupaten Aceh Tenggara, Kabupaten Aceh Timur\n- tahun: 2015, 2015, 2015\n- semester: 1, 1, 1\n- jenis_kelamin: Laki-laki, Laki-laki, Laki-laki\n- jumlah_penduduk: 113854, 109919, 211386\n- satuan: Jiwa, Jiwa, Jiwa\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "kode kabupaten kota",
+    "target": "kemendagri_kode_kabupatenkota",
+    "confidence": 0.95
+   },
+   {
+    "source": "kabupaten kota",
+    "target": "kemendagri_nama_kabupatenkota",
+    "confidence": 0.95
+   },
+   {
+    "source": "tahun",
+    "target": "tahun",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kode kabupaten kota: 3601, 3602, 3603\n- kabupaten kota: Kabupaten Pandeglang, Kabupaten Lebak, Kabupaten Tangerang\n- tahun: 2020, 2020, 2020\n- rasio jenis kelamin: 105,51, 106,14, 104,78\n\nTARGET:\n- kemendagri_province_code: 11, 11, 11\n- kemendagri_province_name: Aceh, Aceh, Aceh\n- kemendagri_regencycity_code: 11.01, 11.02, 11.03\n- kemendagri_regencycity_name: Kabupaten Aceh Selatan, Kabupaten Aceh Tenggara, Kabupaten Aceh Timur\n- year: 2015, 2015, 2015\n- semester: 1, 1, 1\n- sex: Laki-laki, Laki-laki, Laki-laki\n- population: 113854, 109919, 211386\n- unit: Jiwa, Jiwa, Jiwa\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "kode kabupaten kota",
+    "target": "kemendagri_regencycity_code",
+    "confidence": 0.95
+   },
+   {
+    "source": "kabupaten kota",
+    "target": "kemendagri_regencycity_name",
+    "confidence": 0.95
+   },
+   {
+    "source": "tahun",
+    "target": "year",
+    "confidence": 0.95
+   },
+   {
+    "source": "rasio jenis kelamin",
+    "target": "unit",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- regency city code: 3601, 3602, 3603\n- regency city: Kabupaten Pandeglang, Kabupaten Lebak, Kabupaten Tangerang\n- year: 2020, 2020, 2020\n- sex ratio: 105,51, 106,14, 104,78\n\nTARGET:\n- kemendagri_province_code: 11, 11, 11\n- kemendagri_province_name: Aceh, Aceh, Aceh\n- kemendagri_regencycity_code: 11.01, 11.02, 11.03\n- kemendagri_regencycity_name: Kabupaten Aceh Selatan, Kabupaten Aceh Tenggara, Kabupaten Aceh Timur\n- year: 2015, 2015, 2015\n- semester: 1, 1, 1\n- sex: Laki-laki, Laki-laki, Laki-laki\n- population: 113854, 109919, 211386\n- unit: Jiwa, Jiwa, Jiwa\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "regency city code",
+    "target": "kemendagri_regencycity_code",
+    "confidence": 0.95
+   },
+   {
+    "source": "regency city",
+    "target": "kemendagri_regencycity_name",
+    "confidence": 0.95
+   },
+   {
+    "source": "year",
+    "target": "year",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kemendagri_kode _provinsi: 11, 11, 11\n- kemendagri_nama _provinsi: Aceh, Aceh, Aceh\n- kemendagri_kode_ kabupaten_kota: 1101, 1101, 1101\n- kemendagri_nama_ kabupaten_kota: Kabupaten Aceh Selatan, Kabupaten Aceh Selatan, Kabupaten Aceh Selatan\n- kemendagri_kode_ kecamatan: 110101, 110101, 110101\n- kemendagri_nama_ kecamatan: Bakongan, Bakongan, Bakongan\n- kemendagri_kode_ desa: 1101012001, 1101012002, 1101012003\n- kemendagri_nama_ desa: Keude Bakongan, Ujong Mangki, Ujong Padang\n- tahun: 2024, 2024, 2024\n- ketersediaan_pustu: Tidak Ada, Tidak Ada, Tidak Ada\n- jarak_pustu: 0, 4600, 2000\n- satuan: Meter, Meter, Meter\n\nTARGET:\n- kemendagri_kode_provinsi: 11, 11, 11\n- kemendagri_nama_provinsi: Aceh, Aceh, Aceh\n- kemendagri_kode_kabupatenkota: 11.12, 11.12, 11.12\n- kemendagri_nama_kabupatenkota: Kabupaten Aceh Barat Daya, Kabupaten Aceh Barat Daya, Kabupaten Aceh Barat Daya\n- kemendagri_kode_kecamatan: 11.12.03, 11.12.09, 11.12.02\n- kemendagri_nama_kecamatan: Kecamatan Manggeng, Kecamatan Lembah Sabil, Kecamatan Tangan-Tangan\n- nama_puskesmas: MANGGENG, LEMBAH SABIL, TANGAN-TANGAN\n- tahun: 2021, 2021, 2021\n- jenis_dokter: dokter spesialis, dokter spesialis, dokter spesialis\n- jenis_kelamin: laki-laki, laki-laki, laki-laki\n- jumlah_dokter: 0, 0, 0\n- satuan: jiwa, jiwa, jiwa\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "kemendagri_kode _provinsi",
+    "target": "kemendagri_kode_provinsi",
+    "confidence": 1.0
+   },
+   {
+    "source": "kemendagri_nama _provinsi",
+    "target": "kemendagri_nama_provinsi",
+    "confidence": 1.0
+   },
+   {
+    "source": "kemendagri_kode_ kabupaten_kota",
+    "target": "kemendagri_kode_kabupatenkota",
+    "confidence": 0.8
+   },
+   {
+    "source": "kemendagri_nama_ kabupaten_kota",
+    "target": "kemendagri_nama_kabupatenkota",
+    "confidence": 1.0
+   },
+   {
+    "source": "kemendagri_kode_ kecamatan",
+    "target": "kemendagri_kode_kecamatan",
+    "confidence": 0.8
+   },
+   {
+    "source": "kemendagri_nama_ kecamatan",
+    "target": "kemendagri_nama_kecamatan",
+    "confidence": 1.0
+   },
+   {
+    "source": "tahun",
+    "target": "tahun",
+    "confidence": 1.0
+   },
+   {
+    "source": "satuan",
+    "target": "satuan",
+    "confidence": 1.0
+   },
+   {
+    "source": "nama_puskesmas",
+    "target": "kemendagri_nama_kecamatan",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kemendagri_kode _provinsi: 11, 11, 11\n- kemendagri_nama _provinsi: Aceh, Aceh, Aceh\n- kemendagri_kode_ kabupaten_kota: 1101, 1101, 1101\n- kemendagri_nama_ kabupaten_kota: Kabupaten Aceh Selatan, Kabupaten Aceh Selatan, Kabupaten Aceh Selatan\n- kemendagri_kode_ kecamatan: 110101, 110101, 110101\n- kemendagri_nama_ kecamatan: Bakongan, Bakongan, Bakongan\n- kemendagri_kode_ desa: 1101012001, 1101012002, 1101012003\n- kemendagri_nama_ desa: Keude Bakongan, Ujong Mangki, Ujong Padang\n- tahun: 2024, 2024, 2024\n- ketersediaan_pustu: Tidak Ada, Tidak Ada, Tidak Ada\n- jarak_pustu: 0, 4600, 2000\n- satuan: Meter, Meter, Meter\n\nTARGET:\n- kemendagri_province_code: 11, 11, 11\n- kemendagri_province_name: Aceh, Aceh, Aceh\n- kemendagri_regencycity_code: 11.12, 11.12, 11.12\n- kemendagri_regencycity_name: Kabupaten Aceh Barat Daya, Kabupaten Aceh Barat Daya, Kabupaten Aceh Barat Daya\n- kemendagri_district_code: 11.12.03, 11.12.09, 11.12.02\n- kemendagri_district_name: Kecamatan Manggeng, Kecamatan Lembah Sabil, Kecamatan Tangan-Tangan\n- health_center_name: MANGGENG, LEMBAH SABIL, TANGAN-TANGAN\n- year: 2021, 2021, 2021\n- doctor_type: dokter spesialis, dokter spesialis, dokter spesialis\n- sex: laki-laki, laki-laki, laki-laki\n- num_doctors: 0, 0, 0\n- unit: jiwa, jiwa, jiwa\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "kemendagri_kode _provinsi",
+    "target": "kemendagri_province_code",
+    "confidence": 1.0
+   },
+   {
+    "source": "kemendagri_nama _provinsi",
+    "target": "kemendagri_province_name",
+    "confidence": 1.0
+   },
+   {
+    "source": "kemendagri_kode_ kabupaten_kota",
+    "target": "kemendagri_regencycity_code",
+    "confidence": 1.0
+   },
+   {
+    "source": "kemendagri_nama_ kabupaten_kota",
+    "target": "kemendagri_regencycity_name",
+    "confidence": 1.0
+   },
+   {
+    "source": "kemendagri_kode_ kecamatan",
+    "target": "kemendagri_district_code",
+    "confidence": 1.0
+   },
+   {
+    "source": "kemendagri_nama_ kecamatan",
+    "target": "kemendagri_district_name",
+    "confidence": 1.0
+   },
+   {
+    "source": "kemendagri_nama_ desa",
+    "target": "health_center_name",
+    "confidence": 1.0
+   },
+   {
+    "source": "tahun",
+    "target": "year",
+    "confidence": 1.0
+   },
+   {
+    "source": "ketersediaan_pustu",
+    "target": "num_doctors",
+    "confidence": 0.8
+   },
+   {
+    "source": "jarak_pustu",
+    "target": "unit",
+    "confidence": 0.7
+   },
+   {
+    "source": "satuan",
+    "target": "unit",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kemendagri_province _code: 11, 11, 11\n- kemendagri_province _name: Aceh, Aceh, Aceh\n- kemendagri_regency_city_ code: 1101, 1101, 1101\n- kemendagri_regency_city_ name: Kabupaten Aceh Selatan, Kabupaten Aceh Selatan, Kabupaten Aceh Selatan\n- kemendagri_district_ code: 110101, 110101, 110101\n- kemendagri_district_ name: Bakongan, Bakongan, Bakongan\n- kemendagri_village_ code: 1101012001, 1101012002, 1101012003\n- kemendagri_village_ name: Keude Bakongan, Ujong Mangki, Ujong Padang\n- year: 2024, 2024, 2024\n- aux_hc_availability: Tidak Ada, Tidak Ada, Tidak Ada\n- aux_hc_distance: 0, 4600, 2000\n- unit: Meter, Meter, Meter\n\nTARGET:\n- kemendagri_province_code: 11, 11, 11\n- kemendagri_province_name: Aceh, Aceh, Aceh\n- kemendagri_regencycity_code: 11.12, 11.12, 11.12\n- kemendagri_regencycity_name: Kabupaten Aceh Barat Daya, Kabupaten Aceh Barat Daya, Kabupaten Aceh Barat Daya\n- kemendagri_district_code: 11.12.03, 11.12.09, 11.12.02\n- kemendagri_district_name: Kecamatan Manggeng, Kecamatan Lembah Sabil, Kecamatan Tangan-Tangan\n- health_center_name: MANGGENG, LEMBAH SABIL, TANGAN-TANGAN\n- year: 2021, 2021, 2021\n- doctor_type: dokter spesialis, dokter spesialis, dokter spesialis\n- sex: laki-laki, laki-laki, laki-laki\n- num_doctors: 0, 0, 0\n- unit: jiwa, jiwa, jiwa\n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "kemendagri_province _code",
+    "target": "kemendagri_province_code",
+    "confidence": 1.0
+   },
+   {
+    "source": "kemendagri_province _name",
+    "target": "kemendagri_province_name",
+    "confidence": 1.0
+   },
+   {
+    "source": "kemendagri_regency_city_ code",
+    "target": "kemendagri_regencycity_code",
+    "confidence": 0.9
+   },
+   {
+    "source": "kemendagri_regency_city_ name",
+    "target": "kemendagri_regencycity_name",
+    "confidence": 1.0
+   },
+   {
+    "source": "kemendagri_district_ code",
+    "target": "kemendagri_district_code",
+    "confidence": 0.9
+   },
+   {
+    "source": "kemendagri_district_ name",
+    "target": "kemendagri_district_name",
+    "confidence": 1.0
+   },
+   {
+    "source": "kemendagri_village_ code",
+    "target": null,
+    "confidence": 0.0
+   },
+   {
+    "source": "kemendagri_village_ name",
+    "target": null,
+    "confidence": 0.0
+   },
+   {
+    "source": "year",
+    "target": "year",
+    "confidence": 1.0
+   },
+   {
+    "source": "aux_hc_availability",
+    "target": null,
+    "confidence": 0.0
+   },
+   {
+    "source": "aux_hc_distance",
+    "target": null,
+    "confidence": 0.0
+   },
+   {
+    "source": "unit",
+    "target": "unit",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- no_rkm_medis: , \n- nm_pasien: , \n- no_ktp: , \n- jk: , \n- tmp_lahir: , \n- tgl_lahir: , \n- nm_ibu: , \n- alamat: , \n- gol_darah: , \n- pekerjaan: , \n- stts_nikah: , \n- agama: , \n- tgl_daftar: , \n- no_tlp: , \n- umur: , \n- pnd: , \n- keluarga: , \n- namakeluarga: , \n- kd_pj: , \n- no_peserta: , \n- kd_kel: , \n- kd_kec: , \n- kd_kab: , \n- pekerjaanpj: , \n- alamatpj: , \n- kelurahanpj: , \n- kecamatanpj: , \n- kabupatenpj: , \n- perusahaan_pasien: , \n- suku_bangsa: , \n- bahasa_pasien: , \n- cacat_fisik: , \n- email: , \n- nip: , \n- kd_prop: , \n- propinsipj: , \n\nTARGET:\n- id: , \n- nama: , \n- nik: , \n- id_kk: , \n- kk_level: , \n- id_rtm: , \n- rtm_level: , \n- sex: , \n- tempatlahir: , \n- tanggallahir: , \n- agama_id: , \n- pendidikan_kk_id: , \n- pendidikan_sedang_id: , \n- pekerjaan_id: , \n- status_kawin: , \n- warganegara_id: , \n- dokumen_pasport: , \n- dokumen_kitas: , \n- ayah_nik: , \n- ibu_nik: , \n- nama_ayah: , \n- nama_ibu: , \n- foto: , \n- golongan_darah_id: , \n- id_cluster: , \n- status: , \n- alamat_sebelumnya: , \n- alamat_sekarang: , \n- status_dasar: , \n- hamil: , \n- cacat_id: , \n- sakit_menahun_id: , \n- akta_lahir: , \n- akta_perkawinan: , \n- tanggalperkawinan: , \n- akta_perceraian: , \n- tanggalperceraian: , \n- cara_kb_id: , \n- telepon: , \n- tanggal_akhir_paspor: , \n- no_kk_sebelumnya: , \n- ktp_el: , \n- status_rekam: , \n- waktu_lahir: , \n- tempat_dilahirkan: , \n- jenis_kelahiran: , \n- kelahiran_anak_ke: , \n- penolong_kelahiran: , \n- berat_lahir: , \n- panjang_lahir: , \n- tag_id_card: , \n- created_at: , \n- created_by: , \n- updated_at: , \n- updated_by: , \n- id_asuransi: , \n- no_asuransi: , \n- email: , \n- bahasa_id: , \n- ket: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "no_rkm_medis",
+    "target": "id",
+    "confidence": 0.9
+   },
+   {
+    "source": "nm_pasien",
+    "target": "nama",
+    "confidence": 0.95
+   },
+   {
+    "source": "no_ktp",
+    "target": "nik",
+    "confidence": 0.95
+   },
+   {
+    "source": "jk",
+    "target": "sex",
+    "confidence": 0.95
+   },
+   {
+    "source": "tmp_lahir",
+    "target": "tempatlahir",
+    "confidence": 0.9
+   },
+   {
+    "source": "tgl_lahir",
+    "target": "tanggallahir",
+    "confidence": 0.95
+   },
+   {
+    "source": "nm_ibu",
+    "target": "nama_ibu",
+    "confidence": 0.95
+   },
+   {
+    "source": "alamat",
+    "target": "alamat_sekarang",
+    "confidence": 0.85
+   },
+   {
+    "source": "gol_darah",
+    "target": "golongan_darah_id",
+    "confidence": 0.9
+   },
+   {
+    "source": "pekerjaan",
+    "target": "pekerjaan_id",
+    "confidence": 0.9
+   },
+   {
+    "source": "stts_nikah",
+    "target": "status_kawin",
+    "confidence": 0.9
+   },
+   {
+    "source": "agama",
+    "target": "agama_id",
+    "confidence": 0.9
+   },
+   {
+    "source": "tgl_daftar",
+    "target": "created_at",
+    "confidence": 0.8
+   },
+   {
+    "source": "no_tlp",
+    "target": "telepon",
+    "confidence": 0.9
+   },
+   {
+    "source": "umur",
+    "target": "status",
+    "confidence": 0.7
+   },
+   {
+    "source": "pnd",
+    "target": "pendidikan_sedang_id",
+    "confidence": 0.8
+   },
+   {
+    "source": "keluarga",
+    "target": "id_kk",
+    "confidence": 0.8
+   },
+   {
+    "source": "namakeluarga",
+    "target": "id_rtm",
+    "confidence": 0.7
+   },
+   {
+    "source": "kd_pj",
+    "target": "id_cluster",
+    "confidence": 0.7
+   },
+   {
+    "source": "no_peserta",
+    "target": "no_asuransi",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_kel",
+    "target": "kelurahanpj",
+    "confidence": 0.7
+   },
+   {
+    "source": "kd_kec",
+    "target": "kecamatanpj",
+    "confidence": 0.7
+   },
+   {
+    "source": "kd_kab",
+    "target": "kabupatenpj",
+    "confidence": 0.7
+   },
+   {
+    "source": "pekerjaanpj",
+    "target": "pekerjaan_id",
+    "confidence": 0.7
+   },
+   {
+    "source": "alamatpj",
+    "target": "alamat_sebelumnya",
+    "confidence": 0.7
+   },
+   {
+    "source": "kelurahanpj",
+    "target": "kelurahanpj",
+    "confidence": 0.9
+   },
+   {
+    "source": "kecamatanpj",
+    "target": "kecamatanpj",
+    "confidence": 0.9
+   },
+   {
+    "source": "kabupatenpj",
+    "target": "kabupatenpj",
+    "confidence": 0.9
+   },
+   {
+    "source": "perusahaan_pasien",
+    "target": "ket",
+    "confidence": 0.7
+   },
+   {
+    "source": "suku_bangsa",
+    "target": "warganegara_id",
+    "confidence": 0.7
+   },
+   {
+    "source": "bahasa_pasien",
+    "target": "bahasa_id",
+    "confidence": 0.8
+   },
+   {
+    "source": "cacat_fisik",
+    "target": "cacat_id",
+    "confidence": 0.8
+   },
+   {
+    "source": "email",
+    "target": "email",
+    "confidence": 0.95
+   },
+   {
+    "source": "nip",
+    "target": "tag_id_card",
+    "confidence": 0.7
+   },
+   {
+    "source": "kd_prop",
+    "target": "propinsipj",
+    "confidence": 0.7
+   },
+   {
+    "source": "propinsipj",
+    "target": "propinsipj",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- no_rkm_medis: , \n- nm_pasien: , \n- no_ktp: , \n- jk: , \n- tmp_lahir: , \n- tgl_lahir: , \n- nm_ibu: , \n- alamat: , \n- gol_darah: , \n- pekerjaan: , \n- stts_nikah: , \n- agama: , \n- tgl_daftar: , \n- no_tlp: , \n- umur: , \n- pnd: , \n- keluarga: , \n- namakeluarga: , \n- kd_pj: , \n- no_peserta: , \n- kd_kel: , \n- kd_kec: , \n- kd_kab: , \n- pekerjaanpj: , \n- alamatpj: , \n- kelurahanpj: , \n- kecamatanpj: , \n- kabupatenpj: , \n- perusahaan_pasien: , \n- suku_bangsa: , \n- bahasa_pasien: , \n- cacat_fisik: , \n- email: , \n- nip: , \n- kd_prop: , \n- propinsipj: , \n\nTARGET:\n- identifier_nik: , \n- identifier_mrn: , \n- identifier_bpjs: , \n- active: , \n- name_text: , \n- gender: , \n- birthDate: , \n- birthPlace: , \n- deceasedBoolean: , \n- address_line: , \n- address_province_code: , \n- address_city_code: , \n- address_district_code: , \n- address_village_code: , \n- address_postalCode: , \n- telecom_phone: , \n- telecom_email: , \n- maritalStatus: , \n- religion: , \n- mothersMaidenName: , \n- citizenshipStatus: , \n- communication_language: , \n- multipleBirthInteger: , \n- contact_name: , \n- contact_relationship: , \n- managingOrganization: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "no_rkm_medis",
+    "target": "identifier_bpjs",
+    "confidence": 0.95
+   },
+   {
+    "source": "nm_pasien",
+    "target": "name_text",
+    "confidence": 0.95
+   },
+   {
+    "source": "no_ktp",
+    "target": "identifier_nik",
+    "confidence": 0.95
+   },
+   {
+    "source": "jk",
+    "target": "gender",
+    "confidence": 0.95
+   },
+   {
+    "source": "tmp_lahir",
+    "target": "birthPlace",
+    "confidence": 0.95
+   },
+   {
+    "source": "tgl_lahir",
+    "target": "birthDate",
+    "confidence": 0.95
+   },
+   {
+    "source": "nm_ibu",
+    "target": "mothersMaidenName",
+    "confidence": 0.9
+   },
+   {
+    "source": "alamat",
+    "target": "address_line",
+    "confidence": 0.9
+   },
+   {
+    "source": "gol_darah",
+    "target": "bloodGroup",
+    "confidence": 0.8
+   },
+   {
+    "source": "pekerjaan",
+    "target": "occupation",
+    "confidence": 0.8
+   },
+   {
+    "source": "stts_nikah",
+    "target": "maritalStatus",
+    "confidence": 0.95
+   },
+   {
+    "source": "agama",
+    "target": "religion",
+    "confidence": 0.95
+   },
+   {
+    "source": "tgl_daftar",
+    "target": "registrationDate",
+    "confidence": 0.8
+   },
+   {
+    "source": "no_tlp",
+    "target": "telecom_phone",
+    "confidence": 0.9
+   },
+   {
+    "source": "umur",
+    "target": "age",
+    "confidence": 0.8
+   },
+   {
+    "source": "pnd",
+    "target": "education",
+    "confidence": 0.8
+   },
+   {
+    "source": "keluarga",
+    "target": "contact_relationship",
+    "confidence": 0.8
+   },
+   {
+    "source": "namakeluarga",
+    "target": "contact_name",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_pj",
+    "target": "managingOrganization",
+    "confidence": 0.8
+   },
+   {
+    "source": "no_peserta",
+    "target": "identifier_mrn",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_kel",
+    "target": "address_district_code",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_kec",
+    "target": "address_city_code",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_kab",
+    "target": "address_province_code",
+    "confidence": 0.8
+   },
+   {
+    "source": "pekerjaanpj",
+    "target": "occupation",
+    "confidence": 0.7
+   },
+   {
+    "source": "alamatpj",
+    "target": "address_line",
+    "confidence": 0.7
+   },
+   {
+    "source": "kelurahanpj",
+    "target": "address_village_code",
+    "confidence": 0.7
+   },
+   {
+    "source": "kecamatanpj",
+    "target": "address_district_code",
+    "confidence": 0.7
+   },
+   {
+    "source": "kabupatenpj",
+    "target": "address_province_code",
+    "confidence": 0.7
+   },
+   {
+    "source": "perusahaan_pasien",
+    "target": "employer",
+    "confidence": 0.7
+   },
+   {
+    "source": "suku_bangsa",
+    "target": "ethnicity",
+    "confidence": 0.7
+   },
+   {
+    "source": "bahasa_pasien",
+    "target": "communication_language",
+    "confidence": 0.9
+   },
+   {
+    "source": "cacat_fisik",
+    "target": "disability",
+    "confidence": 0.7
+   },
+   {
+    "source": "email",
+    "target": "telecom_email",
+    "confidence": 0.9
+   },
+   {
+    "source": "nip",
+    "target": "employeeId",
+    "confidence": 0.7
+   },
+   {
+    "source": "kd_prop",
+    "target": "address_province_code",
+    "confidence": 0.7
+   },
+   {
+    "source": "propinsipj",
+    "target": "address_province_code",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- no_rkm_medis: , \n- nm_pasien: , \n- no_ktp: , \n- jk: , \n- tmp_lahir: , \n- tgl_lahir: , \n- nm_ibu: , \n- alamat: , \n- gol_darah: , \n- pekerjaan: , \n- stts_nikah: , \n- agama: , \n- tgl_daftar: , \n- no_tlp: , \n- umur: , \n- pnd: , \n- keluarga: , \n- namakeluarga: , \n- kd_pj: , \n- no_peserta: , \n- kd_kel: , \n- kd_kec: , \n- kd_kab: , \n- pekerjaanpj: , \n- alamatpj: , \n- kelurahanpj: , \n- kecamatanpj: , \n- kabupatenpj: , \n- perusahaan_pasien: , \n- suku_bangsa: , \n- bahasa_pasien: , \n- cacat_fisik: , \n- email: , \n- nip: , \n- kd_prop: , \n- propinsipj: , \n\nTARGET:\n- identifier: , \n- active: , \n- name: , \n- telecom: , \n- gender: , \n- birthDate: , \n- deceased[x]: , \n- address: , \n- maritalStatus: , \n- multipleBirth[x]: , \n- photo: , \n- contact: , \n- contact.relationship: , \n- contact.name: , \n- contact.telecom: , \n- contact.address: , \n- contact.gender: , \n- contact.organization: , \n- contact.period: , \n- communication: , \n- communication.preferred: , \n- generalPractitioner: , \n- managingOrganization: , \n- link: , \n- link.other: , \n- link.type: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "no_rkm_medis",
+    "target": "identifier",
+    "confidence": 0.95
+   },
+   {
+    "source": "nm_pasien",
+    "target": "name",
+    "confidence": 0.95
+   },
+   {
+    "source": "no_ktp",
+    "target": "identifier",
+    "confidence": 0.85
+   },
+   {
+    "source": "jk",
+    "target": "gender",
+    "confidence": 0.95
+   },
+   {
+    "source": "tmp_lahir",
+    "target": "address",
+    "confidence": 0.8
+   },
+   {
+    "source": "tgl_lahir",
+    "target": "birthDate",
+    "confidence": 0.95
+   },
+   {
+    "source": "nm_ibu",
+    "target": "contact.name",
+    "confidence": 0.8
+   },
+   {
+    "source": "alamat",
+    "target": "address",
+    "confidence": 0.9
+   },
+   {
+    "source": "gol_darah",
+    "target": "communication",
+    "confidence": 0.8
+   },
+   {
+    "source": "pekerjaan",
+    "target": "occupation",
+    "confidence": 0.8
+   },
+   {
+    "source": "stts_nikah",
+    "target": "maritalStatus",
+    "confidence": 0.95
+   },
+   {
+    "source": "agama",
+    "target": "communication",
+    "confidence": 0.8
+   },
+   {
+    "source": "tgl_daftar",
+    "target": "contact.period",
+    "confidence": 0.8
+   },
+   {
+    "source": "no_tlp",
+    "target": "telecom",
+    "confidence": 0.9
+   },
+   {
+    "source": "umur",
+    "target": "age",
+    "confidence": 0.8
+   },
+   {
+    "source": "pnd",
+    "target": "education",
+    "confidence": 0.8
+   },
+   {
+    "source": "keluarga",
+    "target": "contact.relationship",
+    "confidence": 0.8
+   },
+   {
+    "source": "namakeluarga",
+    "target": "contact.name",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_pj",
+    "target": "identifier",
+    "confidence": 0.8
+   },
+   {
+    "source": "no_peserta",
+    "target": "identifier",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_kel",
+    "target": "address",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_kec",
+    "target": "address",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_kab",
+    "target": "address",
+    "confidence": 0.8
+   },
+   {
+    "source": "pekerjaanpj",
+    "target": "occupation",
+    "confidence": 0.8
+   },
+   {
+    "source": "alamatpj",
+    "target": "address",
+    "confidence": 0.8
+   },
+   {
+    "source": "kelurahanpj",
+    "target": "address",
+    "confidence": 0.8
+   },
+   {
+    "source": "kecamatanpj",
+    "target": "address",
+    "confidence": 0.8
+   },
+   {
+    "source": "kabupatenpj",
+    "target": "address",
+    "confidence": 0.8
+   },
+   {
+    "source": "perusahaan_pasien",
+    "target": "organization",
+    "confidence": 0.8
+   },
+   {
+    "source": "suku_bangsa",
+    "target": "communication",
+    "confidence": 0.8
+   },
+   {
+    "source": "bahasa_pasien",
+    "target": "communication",
+    "confidence": 0.8
+   },
+   {
+    "source": "cacat_fisik",
+    "target": "communication",
+    "confidence": 0.8
+   },
+   {
+    "source": "email",
+    "target": "telecom",
+    "confidence": 0.9
+   },
+   {
+    "source": "nip",
+    "target": "identifier",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_prop",
+    "target": "address",
+    "confidence": 0.8
+   },
+   {
+    "source": "propinsipj",
+    "target": "address",
+    "confidence": 0.8
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kd_dokter: , \n- nm_dokter: , \n- jk: , \n- tmp_lahir: , \n- tgl_lahir: , \n- gol_drh: , \n- agama: , \n- almt_tgl: , \n- no_telp: , \n- email: , \n- stts_nikah: , \n- kd_sps: , \n- alumni: , \n- no_ijn_praktek: , \n- status: , \n\nTARGET:\n- identifier: , \n- active: , \n- name: , \n- telecom: , \n- address: , \n- gender: , \n- birthDate: , \n- photo: , \n- qualification: , \n- qualification.identifier: , \n- qualification.code: , \n- qualification.period: , \n- qualification.issuer: , \n- communication: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "kd_dokter",
+    "target": "identifier",
+    "confidence": 0.9
+   },
+   {
+    "source": "nm_dokter",
+    "target": "name",
+    "confidence": 0.95
+   },
+   {
+    "source": "jk",
+    "target": "gender",
+    "confidence": 0.95
+   },
+   {
+    "source": "tmp_lahir",
+    "target": "address",
+    "confidence": 0.8
+   },
+   {
+    "source": "tgl_lahir",
+    "target": "birthDate",
+    "confidence": 0.95
+   },
+   {
+    "source": "gol_drh",
+    "target": "qualification.code",
+    "confidence": 0.85
+   },
+   {
+    "source": "no_telp",
+    "target": "telecom",
+    "confidence": 0.9
+   },
+   {
+    "source": "email",
+    "target": "communication",
+    "confidence": 0.85
+   },
+   {
+    "source": "stts_nikah",
+    "target": "status",
+    "confidence": 0.8
+   },
+   {
+    "source": "no_ijn_praktek",
+    "target": "qualification.identifier",
+    "confidence": 0.8
+   },
+   {
+    "source": "alumni",
+    "target": "qualification.issuer",
+    "confidence": 0.75
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- id: , \n- nik: , \n- nama: , \n- jk: , \n- jbtn: , \n- jnj_jabatan: , \n- kode_kelompok: , \n- kode_resiko: , \n- kode_emergency: , \n- departemen: , \n- bidang: , \n- stts_wp: , \n- stts_kerja: , \n- npwp: , \n- pendidikan: , \n- gapok: , \n- tmp_lahir: , \n- tgl_lahir: , \n- alamat: , \n- kota: , \n- mulai_kerja: , \n- ms_kerja: , \n- indexins: , \n- bpd: , \n- rekening: , \n- stts_aktif: , \n- wajibmasuk: , \n- pengurang: , \n- indek: , \n- mulai_kontrak: , \n- cuti_diambil: , \n- dankes: , \n- photo: , \n- no_ktp: , \n\nTARGET:\n- identifier: , \n- active: , \n- name: , \n- telecom: , \n- address: , \n- gender: , \n- birthDate: , \n- photo: , \n- qualification: , \n- qualification.identifier: , \n- qualification.code: , \n- qualification.period: , \n- qualification.issuer: , \n- communication: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "id",
+    "target": "identifier",
+    "confidence": 0.95
+   },
+   {
+    "source": "nama",
+    "target": "name",
+    "confidence": 0.95
+   },
+   {
+    "source": "jk",
+    "target": "gender",
+    "confidence": 0.95
+   },
+   {
+    "source": "tmp_lahir",
+    "target": "address",
+    "confidence": 0.85
+   },
+   {
+    "source": "tgl_lahir",
+    "target": "birthDate",
+    "confidence": 0.95
+   },
+   {
+    "source": "photo",
+    "target": "photo",
+    "confidence": 0.95
+   },
+   {
+    "source": "no_ktp",
+    "target": "identifier",
+    "confidence": 0.85
+   },
+   {
+    "source": "pendidikan",
+    "target": "qualification",
+    "confidence": 0.8
+   },
+   {
+    "source": "stts_aktif",
+    "target": "active",
+    "confidence": 0.9
+   },
+   {
+    "source": "alamat",
+    "target": "address",
+    "confidence": 0.8
+   },
+   {
+    "source": "kota",
+    "target": "address",
+    "confidence": 0.7
+   },
+   {
+    "source": "mulai_kerja",
+    "target": "qualification.period",
+    "confidence": 0.7
+   },
+   {
+    "source": "stts_kerja",
+    "target": "status",
+    "confidence": 0.7
+   },
+   {
+    "source": "npwp",
+    "target": "telecom",
+    "confidence": 0.7
+   },
+   {
+    "source": "rekening",
+    "target": "telecom",
+    "confidence": 0.7
+   },
+   {
+    "source": "kode_kelompok",
+    "target": "qualification.code",
+    "confidence": 0.7
+   },
+   {
+    "source": "kode_resiko",
+    "target": "qualification.code",
+    "confidence": 0.7
+   },
+   {
+    "source": "kode_emergency",
+    "target": "qualification.code",
+    "confidence": 0.7
+   },
+   {
+    "source": "departemen",
+    "target": "communication",
+    "confidence": 0.6
+   },
+   {
+    "source": "bidang",
+    "target": "communication",
+    "confidence": 0.6
+   },
+   {
+    "source": "stts_wp",
+    "target": "status",
+    "confidence": 0.6
+   },
+   {
+    "source": "ms_kerja",
+    "target": "qualification.period",
+    "confidence": 0.6
+   },
+   {
+    "source": "cuti_diambil",
+    "target": "qualification.period",
+    "confidence": 0.6
+   },
+   {
+    "source": "dankes",
+    "target": "qualification.issuer",
+    "confidence": 0.6
+   },
+   {
+    "source": "indek",
+    "target": "qualification.identifier",
+    "confidence": 0.6
+   },
+   {
+    "source": "mulai_kontrak",
+    "target": "qualification.period",
+    "confidence": 0.6
+   },
+   {
+    "source": "pengurang",
+    "target": "qualification.issuer",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kd_poli: , \n- nm_poli: , \n- registrasi: , \n- registrasilama: , \n- status: , \n\nTARGET:\n- identifier: , \n- status: , \n- operationalStatus: , \n- name: , \n- alias: , \n- description: , \n- mode: , \n- type: , \n- telecom: , \n- address: , \n- physicalType: , \n- position: , \n- position.longitude: , \n- position.latitude: , \n- position.altitude: , \n- managingOrganization: , \n- partOf: , \n- hoursOfOperation: , \n- hoursOfOperation.daysOfWeek: , \n- hoursOfOperation.allDay: , \n- hoursOfOperation.openingTime: , \n- hoursOfOperation.closingTime: , \n- availabilityExceptions: , \n- endpoint: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "status",
+    "target": "status",
+    "confidence": 1.0
+   },
+   {
+    "source": "nm_poli",
+    "target": "name",
+    "confidence": 0.9
+   },
+   {
+    "source": "kd_poli",
+    "target": "identifier",
+    "confidence": 0.8
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- no_reg: , \n- no_rawat: , \n- tgl_registrasi: , \n- jam_reg: , \n- kd_dokter: , \n- no_rkm_medis: , \n- kd_poli: , \n- p_jawab: , \n- almt_pj: , \n- hubunganpj: , \n- biaya_reg: , \n- stts: , \n- stts_daftar: , \n- status_lanjut: , \n- kd_pj: , \n- umurdaftar: , \n- sttsumur: , \n- status_bayar: , \n- status_poli: , \n\nTARGET:\n- identifier: , \n- status: , \n- statusHistory: , \n- statusHistory.status: , \n- statusHistory.period: , \n- class: , \n- classHistory: , \n- classHistory.class: , \n- classHistory.period: , \n- type: , \n- serviceType: , \n- priority: , \n- subject: , \n- episodeOfCare: , \n- basedOn: , \n- participant: , \n- participant.type: , \n- participant.period: , \n- participant.individual: , \n- appointment: , \n- period: , \n- length: , \n- reasonCode: , \n- reasonReference: , \n- diagnosis: , \n- diagnosis.condition: , \n- diagnosis.use: , \n- diagnosis.rank: , \n- account: , \n- hospitalization: , \n- hospitalization.preAdmissionIdentifier: , \n- hospitalization.origin: , \n- hospitalization.admitSource: , \n- hospitalization.reAdmission: , \n- hospitalization.dietPreference: , \n- hospitalization.specialCourtesy: , \n- hospitalization.specialArrangement: , \n- hospitalization.destination: , \n- hospitalization.dischargeDisposition: , \n- location: , \n- location.location: , \n- location.status: , \n- location.physicalType: , \n- location.period: , \n- serviceProvider: , \n- partOf: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "no_reg",
+    "target": "identifier",
+    "confidence": 0.9
+   },
+   {
+    "source": "no_rawat",
+    "target": "identifier",
+    "confidence": 0.8
+   },
+   {
+    "source": "tgl_registrasi",
+    "target": "period",
+    "confidence": 0.8
+   },
+   {
+    "source": "jam_reg",
+    "target": "period",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_dokter",
+    "target": "participant.type",
+    "confidence": 0.7
+   },
+   {
+    "source": "no_rkm_medis",
+    "target": "identifier",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_poli",
+    "target": "serviceType",
+    "confidence": 0.7
+   },
+   {
+    "source": "p_jawab",
+    "target": "participant.individual",
+    "confidence": 0.7
+   },
+   {
+    "source": "almt_pj",
+    "target": "location.location",
+    "confidence": 0.7
+   },
+   {
+    "source": "hubunganpj",
+    "target": "participant.type",
+    "confidence": 0.7
+   },
+   {
+    "source": "biaya_reg",
+    "target": "account",
+    "confidence": 0.7
+   },
+   {
+    "source": "stts",
+    "target": "status",
+    "confidence": 0.8
+   },
+   {
+    "source": "stts_daftar",
+    "target": "status",
+    "confidence": 0.8
+   },
+   {
+    "source": "status_lanjut",
+    "target": "statusHistory.status",
+    "confidence": 0.7
+   },
+   {
+    "source": "kd_pj",
+    "target": "participant.type",
+    "confidence": 0.7
+   },
+   {
+    "source": "umurdaftar",
+    "target": "age",
+    "confidence": 0.6
+   },
+   {
+    "source": "sttsumur",
+    "target": "status",
+    "confidence": 0.7
+   },
+   {
+    "source": "status_bayar",
+    "target": "status",
+    "confidence": 0.7
+   },
+   {
+    "source": "status_poli",
+    "target": "status",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- no_rawat: , \n- kd_penyakit: , \n- status: , \n- prioritas: , \n- status_penyakit: , \n\nTARGET:\n- identifier: , \n- clinicalStatus: , \n- verificationStatus: , \n- category: , \n- severity: , \n- code: , \n- bodySite: , \n- subject: , \n- encounter: , \n- onset[x]: , \n- abatement[x]: , \n- recordedDate: , \n- recorder: , \n- asserter: , \n- stage: , \n- stage.summary: , \n- stage.assessment: , \n- stage.type: , \n- evidence: , \n- evidence.code: , \n- evidence.detail: , \n- note: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "no_rawat",
+    "target": "identifier",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_penyakit",
+    "target": "code",
+    "confidence": 0.8
+   },
+   {
+    "source": "status",
+    "target": "clinicalStatus",
+    "confidence": 0.8
+   },
+   {
+    "source": "status_penyakit",
+    "target": "verificationStatus",
+    "confidence": 0.8
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- no_resep: , \n- tgl_perawatan: , \n- jam: , \n- no_rawat: , \n- kd_dokter: , \n- tgl_peresepan: , \n- jam_peresepan: , \n- status: , \n- tgl_penyerahan: , \n- jam_penyerahan: , \n\nTARGET:\n- identifier: , \n- status: , \n- statusReason: , \n- intent: , \n- category: , \n- priority: , \n- doNotPerform: , \n- reported[x]: , \n- medication[x]: , \n- subject: , \n- encounter: , \n- supportingInformation: , \n- authoredOn: , \n- requester: , \n- performer: , \n- performerType: , \n- recorder: , \n- reasonCode: , \n- reasonReference: , \n- instantiatesCanonical: , \n- instantiatesUri: , \n- basedOn: , \n- groupIdentifier: , \n- courseOfTherapyType: , \n- insurance: , \n- note: , \n- dosageInstruction: , \n- dispenseRequest: , \n- dispenseRequest.initialFill: , \n- dispenseRequest.initialFill.quantity: , \n- dispenseRequest.initialFill.duration: , \n- dispenseRequest.dispenseInterval: , \n- dispenseRequest.validityPeriod: , \n- dispenseRequest.numberOfRepeatsAllowed: , \n- dispenseRequest.quantity: , \n- dispenseRequest.expectedSupplyDuration: , \n- dispenseRequest.performer: , \n- substitution: , \n- substitution.allowed[x]: , \n- substitution.reason: , \n- priorPrescription: , \n- detectedIssue: , \n- eventHistory: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "no_resep",
+    "target": "identifier",
+    "confidence": 0.9
+   },
+   {
+    "source": "status",
+    "target": "status",
+    "confidence": 0.9
+   },
+   {
+    "source": "tgl_perawatan",
+    "target": "encounter",
+    "confidence": 0.8
+   },
+   {
+    "source": "jam",
+    "target": "authoredOn",
+    "confidence": 0.8
+   },
+   {
+    "source": "no_rawat",
+    "target": "identifier",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_dokter",
+    "target": "requester",
+    "confidence": 0.8
+   },
+   {
+    "source": "tgl_peresepan",
+    "target": "authoredOn",
+    "confidence": 0.8
+   },
+   {
+    "source": "jam_peresepan",
+    "target": "authoredOn",
+    "confidence": 0.8
+   },
+   {
+    "source": "tgl_penyerahan",
+    "target": "authoredOn",
+    "confidence": 0.7
+   },
+   {
+    "source": "jam_penyerahan",
+    "target": "authoredOn",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- no_resep: , \n- kode_brng: , \n- jml: , \n- aturan_pakai: , \n\nTARGET:\n- identifier: , \n- status: , \n- statusReason: , \n- intent: , \n- category: , \n- priority: , \n- doNotPerform: , \n- reported[x]: , \n- medication[x]: , \n- subject: , \n- encounter: , \n- supportingInformation: , \n- authoredOn: , \n- requester: , \n- performer: , \n- performerType: , \n- recorder: , \n- reasonCode: , \n- reasonReference: , \n- instantiatesCanonical: , \n- instantiatesUri: , \n- basedOn: , \n- groupIdentifier: , \n- courseOfTherapyType: , \n- insurance: , \n- note: , \n- dosageInstruction: , \n- dispenseRequest: , \n- dispenseRequest.initialFill: , \n- dispenseRequest.initialFill.quantity: , \n- dispenseRequest.initialFill.duration: , \n- dispenseRequest.dispenseInterval: , \n- dispenseRequest.validityPeriod: , \n- dispenseRequest.numberOfRepeatsAllowed: , \n- dispenseRequest.quantity: , \n- dispenseRequest.expectedSupplyDuration: , \n- dispenseRequest.performer: , \n- substitution: , \n- substitution.allowed[x]: , \n- substitution.reason: , \n- priorPrescription: , \n- detectedIssue: , \n- eventHistory: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "no_resep",
+    "target": "dispenseRequest.performer",
+    "confidence": 0.8
+   },
+   {
+    "source": "kode_brng",
+    "target": "medication[x]",
+    "confidence": 0.7
+   },
+   {
+    "source": "jml",
+    "target": "dispenseRequest.initialFill.quantity",
+    "confidence": 0.7
+   },
+   {
+    "source": "aturan_pakai",
+    "target": "dosageInstruction",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kode_brng: , \n- nama_brng: , \n- kode_satbesar: , \n- kode_sat: , \n- letak_barang: , \n- dasar: , \n- h_beli: , \n- ralan: , \n- kelas1: , \n- kelas2: , \n- kelas3: , \n- utama: , \n- vip: , \n- vvip: , \n- beliluar: , \n- jualbebas: , \n- karyawan: , \n- stokminimal: , \n- kdjns: , \n- isi: , \n- kapasitas: , \n- expire: , \n- status: , \n- kode_industri: , \n- kode_kategori: , \n- kode_golongan: , \n\nTARGET:\n- identifier: , \n- code: , \n- status: , \n- manufacturer: , \n- form: , \n- amount: , \n- ingredient: , \n- ingredient.item[x]: , \n- ingredient.isActive: , \n- ingredient.strength: , \n- batch: , \n- batch.lotNumber: , \n- batch.expirationDate: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "kode_brng",
+    "target": "code",
+    "confidence": 0.95
+   },
+   {
+    "source": "status",
+    "target": "status",
+    "confidence": 0.95
+   },
+   {
+    "source": "kode_industri",
+    "target": "manufacturer",
+    "confidence": 0.85
+   },
+   {
+    "source": "kode_kategori",
+    "target": "form",
+    "confidence": 0.8
+   },
+   {
+    "source": "isi",
+    "target": "amount",
+    "confidence": 0.8
+   },
+   {
+    "source": "kapasitas",
+    "target": "ingredient.strength",
+    "confidence": 0.75
+   },
+   {
+    "source": "expire",
+    "target": "batch.expirationDate",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- no_rawat: , \n- kd_kamar: , \n- trf_kamar: , \n- diagnosa_awal: , \n- diagnosa_akhir: , \n- tgl_masuk: , \n- jam_masuk: , \n- tgl_keluar: , \n- jam_keluar: , \n- lama: , \n- ttl_biaya: , \n- stts_pulang: , \n\nTARGET:\n- identifier: , \n- status: , \n- statusHistory: , \n- statusHistory.status: , \n- statusHistory.period: , \n- class: , \n- classHistory: , \n- classHistory.class: , \n- classHistory.period: , \n- type: , \n- serviceType: , \n- priority: , \n- subject: , \n- episodeOfCare: , \n- basedOn: , \n- participant: , \n- participant.type: , \n- participant.period: , \n- participant.individual: , \n- appointment: , \n- period: , \n- length: , \n- reasonCode: , \n- reasonReference: , \n- diagnosis: , \n- diagnosis.condition: , \n- diagnosis.use: , \n- diagnosis.rank: , \n- account: , \n- hospitalization: , \n- hospitalization.preAdmissionIdentifier: , \n- hospitalization.origin: , \n- hospitalization.admitSource: , \n- hospitalization.reAdmission: , \n- hospitalization.dietPreference: , \n- hospitalization.specialCourtesy: , \n- hospitalization.specialArrangement: , \n- hospitalization.destination: , \n- hospitalization.dischargeDisposition: , \n- location: , \n- location.location: , \n- location.status: , \n- location.physicalType: , \n- location.period: , \n- serviceProvider: , \n- partOf: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "no_rawat",
+    "target": "hospitalization.preAdmissionIdentifier",
+    "confidence": 0.95
+   },
+   {
+    "source": "kd_kamar",
+    "target": "location.location",
+    "confidence": 0.85
+   },
+   {
+    "source": "trf_kamar",
+    "target": "location.status",
+    "confidence": 0.8
+   },
+   {
+    "source": "diagnosa_awal",
+    "target": "diagnosis.condition",
+    "confidence": 0.9
+   },
+   {
+    "source": "diagnosa_akhir",
+    "target": "diagnosis.condition",
+    "confidence": 0.85
+   },
+   {
+    "source": "tgl_masuk",
+    "target": "hospitalization.origin",
+    "confidence": 0.9
+   },
+   {
+    "source": "jam_masuk",
+    "target": "hospitalization.origin",
+    "confidence": 0.8
+   },
+   {
+    "source": "tgl_keluar",
+    "target": "hospitalization.destination",
+    "confidence": 0.9
+   },
+   {
+    "source": "jam_keluar",
+    "target": "hospitalization.destination",
+    "confidence": 0.8
+   },
+   {
+    "source": "lama",
+    "target": "length",
+    "confidence": 0.9
+   },
+   {
+    "source": "ttl_biaya",
+    "target": "account",
+    "confidence": 0.8
+   },
+   {
+    "source": "stts_pulang",
+    "target": "dischargeDisposition",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- kd_pj: , \n- png_jawab: , \n- nama_perusahaan: , \n- alamat_asuransi: , \n- no_telp: , \n- attn: , \n- status: , \n\nTARGET:\n- identifier: , \n- active: , \n- type: , \n- name: , \n- alias: , \n- telecom: , \n- address: , \n- partOf: , \n- contact: , \n- contact.purpose: , \n- contact.name: , \n- contact.telecom: , \n- contact.address: , \n- endpoint: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "kd_pj",
+    "target": "identifier",
+    "confidence": 0.9
+   },
+   {
+    "source": "nama_perusahaan",
+    "target": "name",
+    "confidence": 0.95
+   },
+   {
+    "source": "alamat_asuransi",
+    "target": "address",
+    "confidence": 0.9
+   },
+   {
+    "source": "no_telp",
+    "target": "telecom",
+    "confidence": 0.9
+   },
+   {
+    "source": "attn",
+    "target": "contact.name",
+    "confidence": 0.85
+   },
+   {
+    "source": "status",
+    "target": "active",
+    "confidence": 0.8
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- no_rujuk: , \n- no_rawat: , \n- rujuk_ke: , \n- tgl_rujuk: , \n- keterangan_diagnosa: , \n- kd_dokter: , \n- kat_rujuk: , \n- ambulance: , \n- keterangan: , \n- jam: , \n\nTARGET:\n- identifier: , \n- instantiatesCanonical: , \n- instantiatesUri: , \n- basedOn: , \n- replaces: , \n- requisition: , \n- status: , \n- intent: , \n- category: , \n- priority: , \n- doNotPerform: , \n- code: , \n- orderDetail: , \n- quantity[x]: , \n- subject: , \n- encounter: , \n- occurrence[x]: , \n- asNeeded[x]: , \n- authoredOn: , \n- requester: , \n- performerType: , \n- performer: , \n- locationCode: , \n- locationReference: , \n- reasonCode: , \n- reasonReference: , \n- insurance: , \n- supportingInfo: , \n- specimen: , \n- bodySite: , \n- note: , \n- patientInstruction: , \n- relevantHistory: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "no_rujuk",
+    "target": "encounter",
+    "confidence": 0.8
+   },
+   {
+    "source": "no_rawat",
+    "target": "identifier",
+    "confidence": 0.7
+   },
+   {
+    "source": "tgl_rujuk",
+    "target": "occurrence[x]",
+    "confidence": 0.7
+   },
+   {
+    "source": "jam",
+    "target": "authoredOn",
+    "confidence": 0.7
+   },
+   {
+    "source": "kd_dokter",
+    "target": "requester",
+    "confidence": 0.6
+   },
+   {
+    "source": "keterangan_diagnosa",
+    "target": "note",
+    "confidence": 0.6
+   },
+   {
+    "source": "keterangan",
+    "target": "note",
+    "confidence": 0.5
+   },
+   {
+    "source": "ambulance",
+    "target": "insurance",
+    "confidence": 0.5
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- no_rawat: , \n- nip: , \n- kd_jenis_prw: , \n- tgl_periksa: , \n- jam: , \n- dokter_perujuk: , \n- bagian_rs: , \n- bhp: , \n- tarif_perujuk: , \n- tarif_tindakan_dokter: , \n- tarif_tindakan_petugas: , \n- kso: , \n- menejemen: , \n- biaya: , \n- kd_dokter: , \n- status: , \n- kategori: , \n\nTARGET:\n- identifier: , \n- basedOn: , \n- status: , \n- category: , \n- code: , \n- subject: , \n- encounter: , \n- effective[x]: , \n- issued: , \n- performer: , \n- resultsInterpreter: , \n- specimen: , \n- result: , \n- imagingStudy: , \n- media: , \n- media.comment: , \n- media.link: , \n- conclusion: , \n- conclusionCode: , \n- presentedForm: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "status",
+    "target": "status",
+    "confidence": 0.95
+   },
+   {
+    "source": "kategori",
+    "target": "category",
+    "confidence": 0.9
+   },
+   {
+    "source": "kd_jenis_prw",
+    "target": "code",
+    "confidence": 0.8
+   },
+   {
+    "source": "tgl_periksa",
+    "target": "effective[x]",
+    "confidence": 0.8
+   },
+   {
+    "source": "jam",
+    "target": "issued",
+    "confidence": 0.8
+   },
+   {
+    "source": "dokter_perujuk",
+    "target": "performer",
+    "confidence": 0.8
+   },
+   {
+    "source": "bagian_rs",
+    "target": "department",
+    "confidence": 0.7
+   },
+   {
+    "source": "kd_dokter",
+    "target": "identifier",
+    "confidence": 0.7
+   },
+   {
+    "source": "tarif_perujuk",
+    "target": "result",
+    "confidence": 0.6
+   },
+   {
+    "source": "tarif_tindakan_dokter",
+    "target": "result",
+    "confidence": 0.6
+   },
+   {
+    "source": "tarif_tindakan_petugas",
+    "target": "result",
+    "confidence": 0.6
+   },
+   {
+    "source": "biaya",
+    "target": "result",
+    "confidence": 0.6
+   },
+   {
+    "source": "no_rawat",
+    "target": "identifier",
+    "confidence": 0.6
+   },
+   {
+    "source": "bhp",
+    "target": "media",
+    "confidence": 0.5
+   },
+   {
+    "source": "menejemen",
+    "target": "conclusion",
+    "confidence": 0.5
+   },
+   {
+    "source": "kso",
+    "target": "conclusionCode",
+    "confidence": 0.5
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- no_rawat: , \n- kd_jenis_prw: , \n- tgl_periksa: , \n- jam: , \n- id_template: , \n- nilai: , \n- nilai_rujukan: , \n- keterangan: , \n- bagian_rs: , \n- bhp: , \n- bagian_perujuk: , \n- bagian_dokter: , \n- bagian_laborat: , \n- kso: , \n- menejemen: , \n- biaya_item: , \n\nTARGET:\n- identifier: , \n- basedOn: , \n- partOf: , \n- status: , \n- category: , \n- code: , \n- subject: , \n- focus: , \n- encounter: , \n- effective[x]: , \n- issued: , \n- performer: , \n- value[x]: , \n- dataAbsentReason: , \n- interpretation: , \n- note: , \n- bodySite: , \n- method: , \n- specimen: , \n- device: , \n- referenceRange: , \n- referenceRange.low: , \n- referenceRange.high: , \n- referenceRange.type: , \n- referenceRange.appliesTo: , \n- referenceRange.age: , \n- hasMember: , \n- derivedFrom: , \n- component: , \n- component.code: , \n- component.value[x]: , \n- component.dataAbsentReason: , \n- component.interpretation: , \n- component.referenceRange: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "no_rawat",
+    "target": "identifier",
+    "confidence": 0.9
+   },
+   {
+    "source": "kd_jenis_prw",
+    "target": "code",
+    "confidence": 0.8
+   },
+   {
+    "source": "tgl_periksa",
+    "target": "effective[x]",
+    "confidence": 0.8
+   },
+   {
+    "source": "jam",
+    "target": "issued",
+    "confidence": 0.8
+   },
+   {
+    "source": "id_template",
+    "target": "code",
+    "confidence": 0.7
+   },
+   {
+    "source": "nilai",
+    "target": "value[x]",
+    "confidence": 0.9
+   },
+   {
+    "source": "nilai_rujukan",
+    "target": "referenceRange",
+    "confidence": 0.8
+   },
+   {
+    "source": "keterangan",
+    "target": "note",
+    "confidence": 0.8
+   },
+   {
+    "source": "bagian_rs",
+    "target": "performer",
+    "confidence": 0.7
+   },
+   {
+    "source": "bhp",
+    "target": "specimen",
+    "confidence": 0.7
+   },
+   {
+    "source": "bagian_perujuk",
+    "target": "derivedFrom",
+    "confidence": 0.7
+   },
+   {
+    "source": "bagian_dokter",
+    "target": "performer",
+    "confidence": 0.7
+   },
+   {
+    "source": "bagian_laborat",
+    "target": "performer",
+    "confidence": 0.7
+   },
+   {
+    "source": "kso",
+    "target": "bodySite",
+    "confidence": 0.7
+   },
+   {
+    "source": "menejemen",
+    "target": "note",
+    "confidence": 0.6
+   },
+   {
+    "source": "biaya_item",
+    "target": "note",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- id: , \n- nama: , \n- nik: , \n- id_kk: , \n- kk_level: , \n- id_rtm: , \n- rtm_level: , \n- sex: , \n- tempatlahir: , \n- tanggallahir: , \n- agama_id: , \n- pendidikan_kk_id: , \n- pendidikan_sedang_id: , \n- pekerjaan_id: , \n- status_kawin: , \n- warganegara_id: , \n- dokumen_pasport: , \n- dokumen_kitas: , \n- ayah_nik: , \n- ibu_nik: , \n- nama_ayah: , \n- nama_ibu: , \n- foto: , \n- golongan_darah_id: , \n- id_cluster: , \n- status: , \n- alamat_sebelumnya: , \n- alamat_sekarang: , \n- status_dasar: , \n- hamil: , \n- cacat_id: , \n- sakit_menahun_id: , \n- akta_lahir: , \n- akta_perkawinan: , \n- tanggalperkawinan: , \n- akta_perceraian: , \n- tanggalperceraian: , \n- cara_kb_id: , \n- telepon: , \n- tanggal_akhir_paspor: , \n- no_kk_sebelumnya: , \n- ktp_el: , \n- status_rekam: , \n- waktu_lahir: , \n- tempat_dilahirkan: , \n- jenis_kelahiran: , \n- kelahiran_anak_ke: , \n- penolong_kelahiran: , \n- berat_lahir: , \n- panjang_lahir: , \n- tag_id_card: , \n- created_at: , \n- created_by: , \n- updated_at: , \n- updated_by: , \n- id_asuransi: , \n- no_asuransi: , \n- email: , \n- bahasa_id: , \n- ket: , \n\nTARGET:\n- Nomor KK: , \n- NIK: , \n- Nama Penduduk: , \n- Status: , \n- Tempat Lahir: , \n- Tanggal Lahir: , \n- Kelamin: , \n- NIK Ayah: , \n- Ayah: , \n- NIK Ibu: , \n- Ibu: , \n- Status Kawin: , \n- SHDK: , \n- Agama: , \n- Kecamatan: , \n- Desa/Kel: , \n- Alamat: , \n- RW: , \n- RT: , \n- Pendidikan: , \n- Pekerjaan: , \n- Deskripsi Pekerjaan: , \n- Gol. Darah: , \n- Cacat: , \n- Cetak KTP: , \n- Ganti KTP: , \n- KTP Berakhir: , \n- Nomor Paspor: , \n- Nomor Akta Lahir: , \n- Nomor Akta Kawin: , \n- Tanggal Kwn: , \n- Nomor Akta Cerai: , \n- Tgl Cerai: , \n- Petugas Registrasi: , \n- Tgl Ubah: , \n- Petugas Entri: , \n- Tgl Entri: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "id",
+    "target": "Status",
+    "confidence": 0.8
+   },
+   {
+    "source": "nama",
+    "target": "Nama Penduduk",
+    "confidence": 1.0
+   },
+   {
+    "source": "nik",
+    "target": "NIK",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_kk",
+    "target": "Nomor KK",
+    "confidence": 1.0
+   },
+   {
+    "source": "kk_level",
+    "target": "SHDK",
+    "confidence": 0.7
+   },
+   {
+    "source": "id_rtm",
+    "target": "SHDK",
+    "confidence": 0.5
+   },
+   {
+    "source": "sex",
+    "target": "Kelamin",
+    "confidence": 1.0
+   },
+   {
+    "source": "tempatlahir",
+    "target": "Tempat Lahir",
+    "confidence": 1.0
+   },
+   {
+    "source": "tanggallahir",
+    "target": "Tanggal Lahir",
+    "confidence": 1.0
+   },
+   {
+    "source": "agama_id",
+    "target": "Agama",
+    "confidence": 0.8
+   },
+   {
+    "source": "nik_ayah",
+    "target": "NIK Ayah",
+    "confidence": 1.0
+   },
+   {
+    "source": "nama_ayah",
+    "target": "Ayah",
+    "confidence": 1.0
+   },
+   {
+    "source": "nik_ibu",
+    "target": "NIK Ibu",
+    "confidence": 1.0
+   },
+   {
+    "source": "nama_ibu",
+    "target": "Ibu",
+    "confidence": 1.0
+   },
+   {
+    "source": "status_kawin",
+    "target": "Status Kawin",
+    "confidence": 1.0
+   },
+   {
+    "source": "dokumen_pasport",
+    "target": "Nomor Paspor",
+    "confidence": 0.8
+   },
+   {
+    "source": "akta_lahir",
+    "target": "Nomor Akta Lahir",
+    "confidence": 1.0
+   },
+   {
+    "source": "akta_perkawinan",
+    "target": "Nomor Akta Kawin",
+    "confidence": 1.0
+   },
+   {
+    "source": "tanggalperkawinan",
+    "target": "Tanggal Kwn",
+    "confidence": 1.0
+   },
+   {
+    "source": "akta_perceraian",
+    "target": "Nomor Akta Cerai",
+    "confidence": 1.0
+   },
+   {
+    "source": "tanggalperceraian",
+    "target": "Tgl Cerai",
+    "confidence": 1.0
+   },
+   {
+    "source": "telepon",
+    "target": "Petugas Registrasi",
+    "confidence": 0.5
+   },
+   {
+    "source": "tanggal_akhir_paspor",
+    "target": "KTP Berakhir",
+    "confidence": 0.8
+   },
+   {
+    "source": "created_at",
+    "target": "Tgl Entri",
+    "confidence": 0.8
+   },
+   {
+    "source": "created_by",
+    "target": "Petugas Entri",
+    "confidence": 0.8
+   },
+   {
+    "source": "updated_at",
+    "target": "Tgl Ubah",
+    "confidence": 0.8
+   },
+   {
+    "source": "updated_by",
+    "target": "Petugas Registrasi",
+    "confidence": 0.5
+   },
+   {
+    "source": "email",
+    "target": "Cetak KTP",
+    "confidence": 0.5
+   },
+   {
+    "source": "bahasa_id",
+    "target": "Kecamatan",
+    "confidence": 0.5
+   },
+   {
+    "source": "ket",
+    "target": "Deskripsi Pekerjaan",
+    "confidence": 0.5
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- id: , \n- nama: , \n- nik: , \n- id_kk: , \n- kk_level: , \n- id_rtm: , \n- rtm_level: , \n- sex: , \n- tempatlahir: , \n- tanggallahir: , \n- agama_id: , \n- pendidikan_kk_id: , \n- pendidikan_sedang_id: , \n- pekerjaan_id: , \n- status_kawin: , \n- warganegara_id: , \n- dokumen_pasport: , \n- dokumen_kitas: , \n- ayah_nik: , \n- ibu_nik: , \n- nama_ayah: , \n- nama_ibu: , \n- foto: , \n- golongan_darah_id: , \n- id_cluster: , \n- status: , \n- alamat_sebelumnya: , \n- alamat_sekarang: , \n- status_dasar: , \n- hamil: , \n- cacat_id: , \n- sakit_menahun_id: , \n- akta_lahir: , \n- akta_perkawinan: , \n- tanggalperkawinan: , \n- akta_perceraian: , \n- tanggalperceraian: , \n- cara_kb_id: , \n- telepon: , \n- tanggal_akhir_paspor: , \n- no_kk_sebelumnya: , \n- ktp_el: , \n- status_rekam: , \n- waktu_lahir: , \n- tempat_dilahirkan: , \n- jenis_kelahiran: , \n- kelahiran_anak_ke: , \n- penolong_kelahiran: , \n- berat_lahir: , \n- panjang_lahir: , \n- tag_id_card: , \n- created_at: , \n- created_by: , \n- updated_at: , \n- updated_by: , \n- id_asuransi: , \n- no_asuransi: , \n- email: , \n- bahasa_id: , \n- ket: , \n\nTARGET:\n- NO: , \n- Nama Lengkap: , \n- NIK: , \n- Tempat Lahir: , \n- Tgl/Bln/Th: , \n- JK: , \n- Stat Kwn: , \n- Gol. Drh: , \n- SHDK: , \n- Agama: , \n- Pendidikan Terakhir: , \n- No Akta Lahir: , \n- Pekerjaan: , \n- Nama Ibu: , \n- Nama Ayah: , \n- Wjb KTP: , \n- KTP-eL: , \n- Status: , \n- Stat Rkm: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "id",
+    "target": "NO",
+    "confidence": 0.9
+   },
+   {
+    "source": "nama",
+    "target": "Nama Lengkap",
+    "confidence": 0.95
+   },
+   {
+    "source": "nik",
+    "target": "NIK",
+    "confidence": 0.95
+   },
+   {
+    "source": "tempatlahir",
+    "target": "Tempat Lahir",
+    "confidence": 0.95
+   },
+   {
+    "source": "tanggallahir",
+    "target": "Tgl/Bln/Th",
+    "confidence": 0.9
+   },
+   {
+    "source": "sex",
+    "target": "JK",
+    "confidence": 0.95
+   },
+   {
+    "source": "status_kawin",
+    "target": "Stat Kwn",
+    "confidence": 0.9
+   },
+   {
+    "source": "golongan_darah_id",
+    "target": "Gol. Drh",
+    "confidence": 0.9
+   },
+   {
+    "source": "agama_id",
+    "target": "Agama",
+    "confidence": 0.9
+   },
+   {
+    "source": "pendidikan_sedang_id",
+    "target": "Pendidikan Terakhir",
+    "confidence": 0.85
+   },
+   {
+    "source": "pekerjaan_id",
+    "target": "Pekerjaan",
+    "confidence": 0.9
+   },
+   {
+    "source": "nama_ibu",
+    "target": "Nama Ibu",
+    "confidence": 0.95
+   },
+   {
+    "source": "nama_ayah",
+    "target": "Nama Ayah",
+    "confidence": 0.95
+   },
+   {
+    "source": "ktp_el",
+    "target": "KTP-eL",
+    "confidence": 0.95
+   },
+   {
+    "source": "status",
+    "target": "Status",
+    "confidence": 0.9
+   },
+   {
+    "source": "status_rekam",
+    "target": "Stat Rkm",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- no_rkm_medis: , \n- nm_pasien: , \n- no_ktp: , \n- jk: , \n- tmp_lahir: , \n- tgl_lahir: , \n- nm_ibu: , \n- alamat: , \n- gol_darah: , \n- pekerjaan: , \n- stts_nikah: , \n- agama: , \n- tgl_daftar: , \n- no_tlp: , \n- umur: , \n- pnd: , \n- keluarga: , \n- namakeluarga: , \n- kd_pj: , \n- no_peserta: , \n- kd_kel: , \n- kd_kec: , \n- kd_kab: , \n- pekerjaanpj: , \n- alamatpj: , \n- kelurahanpj: , \n- kecamatanpj: , \n- kabupatenpj: , \n- perusahaan_pasien: , \n- suku_bangsa: , \n- bahasa_pasien: , \n- cacat_fisik: , \n- email: , \n- nip: , \n- kd_prop: , \n- propinsipj: , \n\nTARGET:\n- Nomor KK: , \n- NIK: , \n- Nama Penduduk: , \n- Status: , \n- Tempat Lahir: , \n- Tanggal Lahir: , \n- Kelamin: , \n- NIK Ayah: , \n- Ayah: , \n- NIK Ibu: , \n- Ibu: , \n- Status Kawin: , \n- SHDK: , \n- Agama: , \n- Kecamatan: , \n- Desa/Kel: , \n- Alamat: , \n- RW: , \n- RT: , \n- Pendidikan: , \n- Pekerjaan: , \n- Deskripsi Pekerjaan: , \n- Gol. Darah: , \n- Cacat: , \n- Cetak KTP: , \n- Ganti KTP: , \n- KTP Berakhir: , \n- Nomor Paspor: , \n- Nomor Akta Lahir: , \n- Nomor Akta Kawin: , \n- Tanggal Kwn: , \n- Nomor Akta Cerai: , \n- Tgl Cerai: , \n- Petugas Registrasi: , \n- Tgl Ubah: , \n- Petugas Entri: , \n- Tgl Entri: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "no_rkm_medis",
+    "target": "Nomor Paspor",
+    "confidence": 0.7
+   },
+   {
+    "source": "nm_pasien",
+    "target": "Nama Penduduk",
+    "confidence": 0.95
+   },
+   {
+    "source": "no_ktp",
+    "target": "NIK",
+    "confidence": 0.95
+   },
+   {
+    "source": "jk",
+    "target": "Kelamin",
+    "confidence": 0.95
+   },
+   {
+    "source": "tmp_lahir",
+    "target": "Tempat Lahir",
+    "confidence": 0.95
+   },
+   {
+    "source": "tgl_lahir",
+    "target": "Tanggal Lahir",
+    "confidence": 0.95
+   },
+   {
+    "source": "nm_ibu",
+    "target": "Ibu",
+    "confidence": 0.9
+   },
+   {
+    "source": "alamat",
+    "target": "Alamat",
+    "confidence": 0.9
+   },
+   {
+    "source": "gol_darah",
+    "target": "Gol. Darah",
+    "confidence": 0.95
+   },
+   {
+    "source": "pekerjaan",
+    "target": "Pekerjaan",
+    "confidence": 0.95
+   },
+   {
+    "source": "stts_nikah",
+    "target": "Status Kawin",
+    "confidence": 0.95
+   },
+   {
+    "source": "agama",
+    "target": "Agama",
+    "confidence": 0.95
+   },
+   {
+    "source": "tgl_daftar",
+    "target": "Tgl Entri",
+    "confidence": 0.8
+   },
+   {
+    "source": "no_tlp",
+    "target": "Cetak KTP",
+    "confidence": 0.7
+   },
+   {
+    "source": "umur",
+    "target": "SHDK",
+    "confidence": 0.8
+   },
+   {
+    "source": "pnd",
+    "target": "Pendidikan",
+    "confidence": 0.95
+   },
+   {
+    "source": "keluarga",
+    "target": "Status",
+    "confidence": 0.7
+   },
+   {
+    "source": "namakeluarga",
+    "target": "Ayah",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_pj",
+    "target": "Kecamatan",
+    "confidence": 0.8
+   },
+   {
+    "source": "no_peserta",
+    "target": "Nomor Akta Lahir",
+    "confidence": 0.7
+   },
+   {
+    "source": "kd_kel",
+    "target": "Desa/Kel",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_kec",
+    "target": "Kecamatan",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_kab",
+    "target": "Kabupaten",
+    "confidence": 0.7
+   },
+   {
+    "source": "pekerjaanpj",
+    "target": "Deskripsi Pekerjaan",
+    "confidence": 0.8
+   },
+   {
+    "source": "alamatpj",
+    "target": "Alamat",
+    "confidence": 0.8
+   },
+   {
+    "source": "kelurahanpj",
+    "target": "Desa/Kel",
+    "confidence": 0.8
+   },
+   {
+    "source": "kecamatanpj",
+    "target": "Kecamatan",
+    "confidence": 0.8
+   },
+   {
+    "source": "kabupatenpj",
+    "target": "Kabupaten",
+    "confidence": 0.7
+   },
+   {
+    "source": "perusahaan_pasien",
+    "target": "Nomor Akta Kawin",
+    "confidence": 0.7
+   },
+   {
+    "source": "suku_bangsa",
+    "target": "Cacat",
+    "confidence": 0.7
+   },
+   {
+    "source": "bahasa_pasien",
+    "target": "Cacat",
+    "confidence": 0.7
+   },
+   {
+    "source": "cacat_fisik",
+    "target": "Cacat",
+    "confidence": 0.95
+   },
+   {
+    "source": "email",
+    "target": "Nomor Akta Cerai",
+    "confidence": 0.7
+   },
+   {
+    "source": "nip",
+    "target": "Nomor Akta Cerai",
+    "confidence": 0.7
+   },
+   {
+    "source": "kd_prop",
+    "target": "Propinsi",
+    "confidence": 0.7
+   },
+   {
+    "source": "propinsipj",
+    "target": "Propinsi",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- no_rkm_medis: , \n- nm_pasien: , \n- no_ktp: , \n- jk: , \n- tmp_lahir: , \n- tgl_lahir: , \n- nm_ibu: , \n- alamat: , \n- gol_darah: , \n- pekerjaan: , \n- stts_nikah: , \n- agama: , \n- tgl_daftar: , \n- no_tlp: , \n- umur: , \n- pnd: , \n- keluarga: , \n- namakeluarga: , \n- kd_pj: , \n- no_peserta: , \n- kd_kel: , \n- kd_kec: , \n- kd_kab: , \n- pekerjaanpj: , \n- alamatpj: , \n- kelurahanpj: , \n- kecamatanpj: , \n- kabupatenpj: , \n- perusahaan_pasien: , \n- suku_bangsa: , \n- bahasa_pasien: , \n- cacat_fisik: , \n- email: , \n- nip: , \n- kd_prop: , \n- propinsipj: , \n\nTARGET:\n- NO: , \n- Nama Lengkap: , \n- NIK: , \n- Tempat Lahir: , \n- Tgl/Bln/Th: , \n- JK: , \n- Stat Kwn: , \n- Gol. Drh: , \n- SHDK: , \n- Agama: , \n- Pendidikan Terakhir: , \n- No Akta Lahir: , \n- Pekerjaan: , \n- Nama Ibu: , \n- Nama Ayah: , \n- Wjb KTP: , \n- KTP-eL: , \n- Status: , \n- Stat Rkm: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "no_rkm_medis",
+    "target": "Stat Rkm",
+    "confidence": 0.95
+   },
+   {
+    "source": "nm_pasien",
+    "target": "Nama Lengkap",
+    "confidence": 0.95
+   },
+   {
+    "source": "no_ktp",
+    "target": "Wjb KTP",
+    "confidence": 0.95
+   },
+   {
+    "source": "jk",
+    "target": "JK",
+    "confidence": 0.95
+   },
+   {
+    "source": "tmp_lahir",
+    "target": "Tempat Lahir",
+    "confidence": 0.95
+   },
+   {
+    "source": "tgl_lahir",
+    "target": "Tgl/Bln/Th",
+    "confidence": 0.95
+   },
+   {
+    "source": "nm_ibu",
+    "target": "Nama Ibu",
+    "confidence": 0.95
+   },
+   {
+    "source": "gol_darah",
+    "target": "Gol. Drh",
+    "confidence": 0.95
+   },
+   {
+    "source": "pekerjaan",
+    "target": "Pekerjaan",
+    "confidence": 0.95
+   },
+   {
+    "source": "agama",
+    "target": "Agama",
+    "confidence": 0.95
+   },
+   {
+    "source": "pekerjaanpj",
+    "target": "SHDK",
+    "confidence": 0.8
+   },
+   {
+    "source": "alamatpj",
+    "target": "Status",
+    "confidence": 0.7
+   },
+   {
+    "source": "kelurahanpj",
+    "target": "Stat Kwn",
+    "confidence": 0.7
+   },
+   {
+    "source": "kecamatanpj",
+    "target": "No Akta Lahir",
+    "confidence": 0.6
+   },
+   {
+    "source": "kabupatenpj",
+    "target": "Pendidikan Terakhir",
+    "confidence": 0.6
+   },
+   {
+    "source": "kd_prop",
+    "target": "Propinsi",
+    "confidence": 0.5
+   },
+   {
+    "source": "propinsipj",
+    "target": "KTP-eL",
+    "confidence": 0.5
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- id: , \n- nama: , \n- nik: , \n- id_kk: , \n- kk_level: , \n- id_rtm: , \n- rtm_level: , \n- sex: , \n- tempatlahir: , \n- tanggallahir: , \n- agama_id: , \n- pendidikan_kk_id: , \n- pendidikan_sedang_id: , \n- pekerjaan_id: , \n- status_kawin: , \n- warganegara_id: , \n- dokumen_pasport: , \n- dokumen_kitas: , \n- ayah_nik: , \n- ibu_nik: , \n- nama_ayah: , \n- nama_ibu: , \n- foto: , \n- golongan_darah_id: , \n- id_cluster: , \n- status: , \n- alamat_sebelumnya: , \n- alamat_sekarang: , \n- status_dasar: , \n- hamil: , \n- cacat_id: , \n- sakit_menahun_id: , \n- akta_lahir: , \n- akta_perkawinan: , \n- tanggalperkawinan: , \n- akta_perceraian: , \n- tanggalperceraian: , \n- cara_kb_id: , \n- telepon: , \n- tanggal_akhir_paspor: , \n- no_kk_sebelumnya: , \n- ktp_el: , \n- status_rekam: , \n- waktu_lahir: , \n- tempat_dilahirkan: , \n- jenis_kelahiran: , \n- kelahiran_anak_ke: , \n- penolong_kelahiran: , \n- berat_lahir: , \n- panjang_lahir: , \n- tag_id_card: , \n- created_at: , \n- created_by: , \n- updated_at: , \n- updated_by: , \n- id_asuransi: , \n- no_asuransi: , \n- email: , \n- bahasa_id: , \n- ket: , \n\nTARGET:\n- identifier: , \n- active: , \n- name: , \n- telecom: , \n- gender: , \n- birthDate: , \n- deceased[x]: , \n- address: , \n- maritalStatus: , \n- multipleBirth[x]: , \n- photo: , \n- contact: , \n- contact.relationship: , \n- contact.name: , \n- contact.telecom: , \n- contact.address: , \n- contact.gender: , \n- contact.organization: , \n- contact.period: , \n- communication: , \n- communication.preferred: , \n- generalPractitioner: , \n- managingOrganization: , \n- link: , \n- link.other: , \n- link.type: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "id",
+    "target": "identifier",
+    "confidence": 0.95
+   },
+   {
+    "source": "nama",
+    "target": "name",
+    "confidence": 0.95
+   },
+   {
+    "source": "nik",
+    "target": "identifier",
+    "confidence": 0.9
+   },
+   {
+    "source": "sex",
+    "target": "gender",
+    "confidence": 0.95
+   },
+   {
+    "source": "tempatlahir",
+    "target": "birthPlace",
+    "confidence": 0.8
+   },
+   {
+    "source": "tanggallahir",
+    "target": "birthDate",
+    "confidence": 0.95
+   },
+   {
+    "source": "agama_id",
+    "target": "religion",
+    "confidence": 0.8
+   },
+   {
+    "source": "pendidikan_kk_id",
+    "target": "education",
+    "confidence": 0.7
+   },
+   {
+    "source": "pendidikan_sedang_id",
+    "target": "education",
+    "confidence": 0.7
+   },
+   {
+    "source": "pekerjaan_id",
+    "target": "occupation",
+    "confidence": 0.7
+   },
+   {
+    "source": "status_kawin",
+    "target": "maritalStatus",
+    "confidence": 0.95
+   },
+   {
+    "source": "warganegara_id",
+    "target": "citizenship",
+    "confidence": 0.7
+   },
+   {
+    "source": "dokumen_pasport",
+    "target": "passportNumber",
+    "confidence": 0.8
+   },
+   {
+    "source": "dokumen_kitas",
+    "target": "kitaNumber",
+    "confidence": 0.8
+   },
+   {
+    "source": "ayah_nik",
+    "target": "contact.name",
+    "confidence": 0.8
+   },
+   {
+    "source": "ibu_nik",
+    "target": "contact.name",
+    "confidence": 0.8
+   },
+   {
+    "source": "nama_ayah",
+    "target": "contact.name",
+    "confidence": 0.8
+   },
+   {
+    "source": "nama_ibu",
+    "target": "contact.name",
+    "confidence": 0.8
+   },
+   {
+    "source": "foto",
+    "target": "photo",
+    "confidence": 0.95
+   },
+   {
+    "source": "golongan_darah_id",
+    "target": "bloodGroup",
+    "confidence": 0.7
+   },
+   {
+    "source": "id_cluster",
+    "target": "identifier",
+    "confidence": 0.8
+   },
+   {
+    "source": "status",
+    "target": "active",
+    "confidence": 0.9
+   },
+   {
+    "source": "alamat_sekarang",
+    "target": "address",
+    "confidence": 0.9
+   },
+   {
+    "source": "status_dasar",
+    "target": "status",
+    "confidence": 0.8
+   },
+   {
+    "source": "hamil",
+    "target": "pregnancy",
+    "confidence": 0.7
+   },
+   {
+    "source": "cacat_id",
+    "target": "disability",
+    "confidence": 0.7
+   },
+   {
+    "source": "sakit_menahun_id",
+    "target": "chronicDisease",
+    "confidence": 0.7
+   },
+   {
+    "source": "akta_lahir",
+    "target": "birthCertificate",
+    "confidence": 0.7
+   },
+   {
+    "source": "akta_perkawinan",
+    "target": "marriageCertificate",
+    "confidence": 0.7
+   },
+   {
+    "source": "tanggalperkawinan",
+    "target": "marriageDate",
+    "confidence": 0.7
+   },
+   {
+    "source": "akta_perceraian",
+    "target": "divorceCertificate",
+    "confidence": 0.7
+   },
+   {
+    "source": "tanggalperceraian",
+    "target": "divorceDate",
+    "confidence": 0.7
+   },
+   {
+    "source": "cara_kb_id",
+    "target": "contraceptionMethod",
+    "confidence": 0.7
+   },
+   {
+    "source": "telepon",
+    "target": "telecom",
+    "confidence": 0.9
+   },
+   {
+    "source": "tanggal_akhir_paspor",
+    "target": "passportExpiry",
+    "confidence": 0.8
+   },
+   {
+    "source": "no_kk_sebelumnya",
+    "target": "previousKkNumber",
+    "confidence": 0.7
+   },
+   {
+    "source": "ktp_el",
+    "target": "electronicKtp",
+    "confidence": 0.7
+   },
+   {
+    "source": "status_rekam",
+    "target": "recordStatus",
+    "confidence": 0.7
+   },
+   {
+    "source": "waktu_lahir",
+    "target": "birthTime",
+    "confidence": 0.8
+   },
+   {
+    "source": "tempat_dilahirkan",
+    "target": "birthPlace",
+    "confidence": 0.8
+   },
+   {
+    "source": "jenis_kelahiran",
+    "target": "birthType",
+    "confidence": 0.7
+   },
+   {
+    "source": "kelahiran_anak_ke",
+    "target": "birthOrder",
+    "confidence": 0.7
+   },
+   {
+    "source": "penolong_kelahiran",
+    "target": "birthAssistants",
+    "confidence": 0.7
+   },
+   {
+    "source": "berat_lahir",
+    "target": "birthWeight",
+    "confidence": 0.7
+   },
+   {
+    "source": "panjang_lahir",
+    "target": "birthLength",
+    "confidence": 0.7
+   },
+   {
+    "source": "tag_id_card",
+    "target": "idCardTag",
+    "confidence": 0.7
+   },
+   {
+    "source": "created_at",
+    "target": "createdDate",
+    "confidence": 0.7
+   },
+   {
+    "source": "created_by",
+    "target": "createdBy",
+    "confidence": 0.7
+   },
+   {
+    "source": "updated_at",
+    "target": "updatedDate",
+    "confidence": 0.7
+   },
+   {
+    "source": "updated_by",
+    "target": "updatedBy",
+    "confidence": 0.7
+   },
+   {
+    "source": "id_asuransi",
+    "target": "insuranceId",
+    "confidence": 0.7
+   },
+   {
+    "source": "no_asuransi",
+    "target": "insuranceNumber",
+    "confidence": 0.7
+   },
+   {
+    "source": "email",
+    "target": "email",
+    "confidence": 0.95
+   },
+   {
+    "source": "bahasa_id",
+    "target": "language",
+    "confidence": 0.7
+   },
+   {
+    "source": "ket",
+    "target": "note",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- id_mahasiswa: , \n- kodept: , \n- id_pendaftaran: , \n- id_jenis_daftar: , \n- id_mahasiswa_ws: , \n- nama_mahasiswa: , \n- jenis_kelamin: , \n- jalan: , \n- rt: , \n- rw: , \n- dusun: , \n- kelurahan: , \n- kode_pos: , \n- kecamatan: , \n- nisn: , \n- nik: , \n- tempat_lahir: , \n- tanggal_lahir: , \n- nama_ayah: , \n- tanggal_lahir_ayah: , \n- nik_ayah: , \n- id_pendidikan_ayah: , \n- id_pekerjaan_ayah: , \n- id_penghasilan_ayah: , \n- id_kebutuhan_khusus_ayah: , \n- nama_ibu_kandung: , \n- tanggal_lahir_ibu: , \n- nik_ibu: , \n- id_pendidikan_ibu: , \n- id_pekerjaan_ibu: , \n- id_penghasilan_ibu: , \n- id_kebutuhan_khusus_ibu: , \n- nama_wali: , \n- tanggal_lahir_wali: , \n- id_pendidikan_wali: , \n- id_pekerjaan_wali: , \n- id_penghasilan_wali: , \n- id_kebutuhan_khusus_mahasiswa: , \n- telepon: , \n- handphone: , \n- email: , \n- penerima_kps: , \n- no_kps: , \n- nomor_kps: , \n- npwp: , \n- id_wilayah: , \n- id_jenis_tinggal: , \n- id_agama: , \n- id_alat_transportasi: , \n- kewarganegaraan: , \n- datecreated: , \n- usercreated: , \n- dateupdate: , \n- userupdate: , \n\nTARGET:\n- nama_mahasiswa: , \n- jenis_kelamin: , \n- tempat_lahir: , \n- tanggal_lahir: , \n- id_agama: , \n- nik: , \n- nisn: , \n- npwp: , \n- kewarganegaraan: , \n- jalan: , \n- dusun: , \n- rt: , \n- rw: , \n- kelurahan: , \n- kode_pos: , \n- id_wilayah: , \n- id_jenis_tinggal: , \n- id_alat_transportasi: , \n- telepon: , \n- handphone: , \n- email: , \n- penerima_kps: , \n- nomor_kps: , \n- nik_ayah: , \n- nama_ayah: , \n- tanggal_lahir_ayah: , \n- id_pendidikan_ayah: , \n- id_pekerjaan_ayah: , \n- id_penghasilan_ayah: , \n- nik_ibu: , \n- nama_ibu_kandung: , \n- tanggal_lahir_ibu: , \n- id_pendidikan_ibu: , \n- id_pekerjaan_ibu: , \n- id_penghasilan_ibu: , \n- nama_wali: , \n- tanggal_lahir_wali: , \n- id_pendidikan_wali: , \n- id_pekerjaan_wali: , \n- id_penghasilan_wali: , \n- id_kebutuhan_khusus_mahasiswa: , \n- id_kebutuhan_khusus_ayah: , \n- id_kebutuhan_khusus_ibu: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "id_mahasiswa",
+    "target": "",
+    "confidence": 0.0
+   },
+   {
+    "source": "kodept",
+    "target": "",
+    "confidence": 0.0
+   },
+   {
+    "source": "id_pendaftaran",
+    "target": "",
+    "confidence": 0.0
+   },
+   {
+    "source": "id_jenis_daftar",
+    "target": "",
+    "confidence": 0.0
+   },
+   {
+    "source": "id_mahasiswa_ws",
+    "target": "",
+    "confidence": 0.0
+   },
+   {
+    "source": "nama_mahasiswa",
+    "target": "nama_mahasiswa",
+    "confidence": 1.0
+   },
+   {
+    "source": "jenis_kelamin",
+    "target": "jenis_kelamin",
+    "confidence": 1.0
+   },
+   {
+    "source": "jalan",
+    "target": "jalan",
+    "confidence": 1.0
+   },
+   {
+    "source": "rt",
+    "target": "rt",
+    "confidence": 1.0
+   },
+   {
+    "source": "rw",
+    "target": "rw",
+    "confidence": 1.0
+   },
+   {
+    "source": "dusun",
+    "target": "dusun",
+    "confidence": 1.0
+   },
+   {
+    "source": "kelurahan",
+    "target": "kelurahan",
+    "confidence": 1.0
+   },
+   {
+    "source": "kode_pos",
+    "target": "kode_pos",
+    "confidence": 1.0
+   },
+   {
+    "source": "kecamatan",
+    "target": "",
+    "confidence": 0.0
+   },
+   {
+    "source": "nisn",
+    "target": "nisn",
+    "confidence": 1.0
+   },
+   {
+    "source": "nik",
+    "target": "nik",
+    "confidence": 1.0
+   },
+   {
+    "source": "tempat_lahir",
+    "target": "tempat_lahir",
+    "confidence": 1.0
+   },
+   {
+    "source": "tanggal_lahir",
+    "target": "tanggal_lahir",
+    "confidence": 1.0
+   },
+   {
+    "source": "nama_ayah",
+    "target": "nama_ayah",
+    "confidence": 1.0
+   },
+   {
+    "source": "tanggal_lahir_ayah",
+    "target": "tanggal_lahir_ayah",
+    "confidence": 1.0
+   },
+   {
+    "source": "nik_ayah",
+    "target": "nik_ayah",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_pendidikan_ayah",
+    "target": "id_pendidikan_ayah",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_pekerjaan_ayah",
+    "target": "id_pekerjaan_ayah",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_penghasilan_ayah",
+    "target": "id_penghasilan_ayah",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_kebutuhan_khusus_ayah",
+    "target": "id_kebutuhan_khusus_ayah",
+    "confidence": 1.0
+   },
+   {
+    "source": "nama_ibu_kandung",
+    "target": "nama_ibu_kandung",
+    "confidence": 1.0
+   },
+   {
+    "source": "tanggal_lahir_ibu",
+    "target": "tanggal_lahir_ibu",
+    "confidence": 1.0
+   },
+   {
+    "source": "nik_ibu",
+    "target": "nik_ibu",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_pendidikan_ibu",
+    "target": "id_pendidikan_ibu",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_pekerjaan_ibu",
+    "target": "id_pekerjaan_ibu",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_penghasilan_ibu",
+    "target": "id_penghasilan_ibu",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_kebutuhan_khusus_ibu",
+    "target": "id_kebutuhan_khusus_ibu",
+    "confidence": 1.0
+   },
+   {
+    "source": "nama_wali",
+    "target": "nama_wali",
+    "confidence": 1.0
+   },
+   {
+    "source": "tanggal_lahir_wali",
+    "target": "tanggal_lahir_wali",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_pendidikan_wali",
+    "target": "id_pendidikan_wali",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_pekerjaan_wali",
+    "target": "id_pekerjaan_wali",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_penghasilan_wali",
+    "target": "id_penghasilan_wali",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_kebutuhan_khusus_mahasiswa",
+    "target": "id_kebutuhan_khusus_mahasiswa",
+    "confidence": 1.0
+   },
+   {
+    "source": "telepon",
+    "target": "telepon",
+    "confidence": 1.0
+   },
+   {
+    "source": "handphone",
+    "target": "handphone",
+    "confidence": 1.0
+   },
+   {
+    "source": "email",
+    "target": "email",
+    "confidence": 1.0
+   },
+   {
+    "source": "penerima_kps",
+    "target": "penerima_kps",
+    "confidence": 1.0
+   },
+   {
+    "source": "no_kps",
+    "target": "nomor_kps",
+    "confidence": 0.9
+   },
+   {
+    "source": "nomor_kps",
+    "target": "nomor_kps",
+    "confidence": 1.0
+   },
+   {
+    "source": "npwp",
+    "target": "npwp",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_wilayah",
+    "target": "id_wilayah",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_jenis_tinggal",
+    "target": "id_jenis_tinggal",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_agama",
+    "target": "id_agama",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_alat_transportasi",
+    "target": "id_alat_transportasi",
+    "confidence": 1.0
+   },
+   {
+    "source": "kewarganegaraan",
+    "target": "kewarganegaraan",
+    "confidence": 1.0
+   },
+   {
+    "source": "datecreated",
+    "target": "",
+    "confidence": 0.0
+   },
+   {
+    "source": "usercreated",
+    "target": "",
+    "confidence": 0.0
+   },
+   {
+    "source": "dateupdate",
+    "target": "",
+    "confidence": 0.0
+   },
+   {
+    "source": "userupdate",
+    "target": "",
+    "confidence": 0.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- id_matakuliah: , \n- id_prodi: , \n- id_matkul_ws: , \n- kodept: , \n- kode_prodi: , \n- id_prodi_ws: , \n- ada_acara_praktek: , \n- ada_bahan_ajar: , \n- ada_diktat: , \n- ada_sap: , \n- ada_silabus: , \n- id_jenis_matakuliah: , \n- id_kelompok_matakuliah: , \n- kode_matakuliah: , \n- metode_kuliah: , \n- nama_matakuliah: , \n- sks_matakuliah: , \n- sks_praktek: , \n- sks_praktek_lapangan: , \n- sks_simulasi: , \n- sks_tatapmuka: , \n- tanggal_mulai_efektif: , \n- tanggal_akhir_efektif: , \n\nTARGET:\n- kode_mata_kuliah: , \n- nama_mata_kuliah: , \n- id_prodi: , \n- id_jenis_mata_kuliah: , \n- id_kelompok_mata_kuliah: , \n- sks_mata_kuliah: , \n- sks_tatap_muka: , \n- sks_praktek: , \n- sks_praktek_lapangan: , \n- sks_simulasi: , \n- metode_kuliah: , \n- ada_sap: , \n- ada_silabus: , \n- ada_bahan_ajar: , \n- ada_acara_praktek: , \n- ada_diktat: , \n- tanggal_mulai_efektif: , \n- tanggal_akhir_efektif: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "id_matakuliah",
+    "target": "id_prodi",
+    "confidence": 0.6
+   },
+   {
+    "source": "id_prodi",
+    "target": "id_prodi",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_matkul_ws",
+    "target": "id_prodi",
+    "confidence": 0.6
+   },
+   {
+    "source": "kodept",
+    "target": "kode_mata_kuliah",
+    "confidence": 0.6
+   },
+   {
+    "source": "kode_prodi",
+    "target": "id_prodi",
+    "confidence": 0.6
+   },
+   {
+    "source": "id_prodi_ws",
+    "target": "id_prodi",
+    "confidence": 0.6
+   },
+   {
+    "source": "ada_acara_praktek",
+    "target": "ada_acara_praktek",
+    "confidence": 1.0
+   },
+   {
+    "source": "ada_bahan_ajar",
+    "target": "ada_bahan_ajar",
+    "confidence": 1.0
+   },
+   {
+    "source": "ada_diktat",
+    "target": "ada_diktat",
+    "confidence": 1.0
+   },
+   {
+    "source": "ada_sap",
+    "target": "ada_sap",
+    "confidence": 1.0
+   },
+   {
+    "source": "ada_silabus",
+    "target": "ada_silabus",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_jenis_matakuliah",
+    "target": "id_jenis_mata_kuliah",
+    "confidence": 0.6
+   },
+   {
+    "source": "id_kelompok_matakuliah",
+    "target": "id_kelompok_mata_kuliah",
+    "confidence": 0.6
+   },
+   {
+    "source": "kode_matakuliah",
+    "target": "kode_mata_kuliah",
+    "confidence": 1.0
+   },
+   {
+    "source": "metode_kuliah",
+    "target": "metode_kuliah",
+    "confidence": 1.0
+   },
+   {
+    "source": "nama_matakuliah",
+    "target": "nama_mata_kuliah",
+    "confidence": 1.0
+   },
+   {
+    "source": "sks_matakuliah",
+    "target": "sks_mata_kuliah",
+    "confidence": 1.0
+   },
+   {
+    "source": "sks_praktek",
+    "target": "sks_praktek",
+    "confidence": 1.0
+   },
+   {
+    "source": "sks_praktek_lapangan",
+    "target": "sks_praktek_lapangan",
+    "confidence": 1.0
+   },
+   {
+    "source": "sks_simulasi",
+    "target": "sks_simulasi",
+    "confidence": 1.0
+   },
+   {
+    "source": "sks_tatapmuka",
+    "target": "sks_tatap_muka",
+    "confidence": 0.6
+   },
+   {
+    "source": "tanggal_mulai_efektif",
+    "target": "tanggal_mulai_efektif",
+    "confidence": 1.0
+   },
+   {
+    "source": "tanggal_akhir_efektif",
+    "target": "tanggal_akhir_efektif",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- id_kelas: , \n- id_kurikulummatakuliah: , \n- kodept: , \n- kode_prodi: , \n- id_prodi: , \n- id_matakuliah: , \n- bahasan: , \n- id_kelas_kuliah_ws: , \n- id_matkul_ws: , \n- id_prodi_ws: , \n- id_semester: , \n- kode_mata_kuliah: , \n- nama_mata_kuliah: , \n- nama_kelas_kuliah: , \n- nama_program_studi: , \n- nama_semester: , \n- tanggal_akhir_efektif: , \n- tanggal_mulai_efektif: , \n- date_create: , \n- date_update: , \n\nTARGET:\n- id_prodi: , \n- id_semester: , \n- id_matkul: , \n- nama_kelas_kuliah: , \n- bahasan: , \n- tanggal_mulai_efektif: , \n- tanggal_akhir_efektif: , \n- tanggal_tutup_daftar: , \n- apa_untuk_pditt: , \n- kapasitas: , \n- lingkup: , \n- mode: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "id_prodi",
+    "target": "id_prodi",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_semester",
+    "target": "id_semester",
+    "confidence": 1.0
+   },
+   {
+    "source": "nama_kelas_kuliah",
+    "target": "nama_kelas_kuliah",
+    "confidence": 1.0
+   },
+   {
+    "source": "bahasan",
+    "target": "bahasan",
+    "confidence": 1.0
+   },
+   {
+    "source": "tanggal_mulai_efektif",
+    "target": "tanggal_mulai_efektif",
+    "confidence": 1.0
+   },
+   {
+    "source": "tanggal_akhir_efektif",
+    "target": "tanggal_akhir_efektif",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- id_akm: , \n- kodept: , \n- kode_prodi: , \n- id_prodi: , \n- id_semester: , \n- nim: , \n- id_status_mahasiswa: , \n- ips: , \n- sks_semester: , \n- ipk: , \n- sks_total: , \n- angkatan: , \n- biaya_kuliah_smt: , \n- id_prodi_ws: , \n- id_mahasiswa_ws: , \n- id_status_mahasiswa_ws: , \n- impor_status_error: , \n- impor_keterangan: , \n- date_created: , \n- date_update: , \n- id_registrasi_mahasiswa_ws: , \n\nTARGET:\n- id_registrasi_mahasiswa: , \n- id_semester: , \n- id_status_mahasiswa: , \n- ips: , \n- ipk: , \n- sks_semester: , \n- total_sks: , \n- biaya_kuliah_smt: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "id_semester",
+    "target": "id_semester",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_status_mahasiswa",
+    "target": "id_status_mahasiswa",
+    "confidence": 1.0
+   },
+   {
+    "source": "ips",
+    "target": "ips",
+    "confidence": 1.0
+   },
+   {
+    "source": "ipk",
+    "target": "ipk",
+    "confidence": 1.0
+   },
+   {
+    "source": "sks_semester",
+    "target": "sks_semester",
+    "confidence": 1.0
+   },
+   {
+    "source": "biaya_kuliah_smt",
+    "target": "biaya_kuliah_smt",
+    "confidence": 1.0
+   },
+   {
+    "source": "sks_total",
+    "target": "total_sks",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- id_riwayatpendidikan: , \n- id_prodi: , \n- id_mahasiswa: , \n- kodept: , \n- kode_prodi: , \n- biaya_masuk: , \n- id_bidang_minat: , \n- id_jalur_daftar: , \n- id_jenis_daftar: , \n- id_jenis_keluar: , \n- id_mahasiswa_ws: , \n- id_pembiayaan: , \n- id_perguruan_tinggi: , \n- id_perguruan_tinggi_asal: , \n- id_periode_masuk: , \n- id_prodi_ws: , \n- id_prodi_asal: , \n- id_registrasi_mahasiswa: , \n- keterangan_keluar: , \n- nama_jenis_daftar: , \n- nama_pembiayaan_awal: , \n- nama_perguruan_tinggi: , \n- nama_perguruan_tinggi_asal: , \n- nama_periode_masuk: , \n- nama_program_studi: , \n- nama_program_studi_asal: , \n- nim: , \n- nm_bidang_minat: , \n- sks_diakui: , \n- tanggal_daftar: , \n\nTARGET:\n- id_mahasiswa: , \n- nim: , \n- id_jenis_daftar: , \n- id_jalur_daftar: , \n- id_periode_masuk: , \n- tanggal_daftar: , \n- id_perguruan_tinggi: , \n- id_prodi: , \n- id_bidang_minat: , \n- sks_diakui: , \n- id_perguruan_tinggi_asal: , \n- id_prodi_asal: , \n- id_pembiayaan: , \n- biaya_masuk: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "id_mahasiswa",
+    "target": "id_mahasiswa",
+    "confidence": 1.0
+   },
+   {
+    "source": "nim",
+    "target": "nim",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_jenis_daftar",
+    "target": "id_jenis_daftar",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_jalur_daftar",
+    "target": "id_jalur_daftar",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_periode_masuk",
+    "target": "id_periode_masuk",
+    "confidence": 1.0
+   },
+   {
+    "source": "tanggal_daftar",
+    "target": "tanggal_daftar",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_perguruan_tinggi",
+    "target": "id_perguruan_tinggi",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_prodi",
+    "target": "id_prodi",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_bidang_minat",
+    "target": "id_bidang_minat",
+    "confidence": 1.0
+   },
+   {
+    "source": "sks_diakui",
+    "target": "sks_diakui",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_perguruan_tinggi_asal",
+    "target": "id_perguruan_tinggi_asal",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_prodi_asal",
+    "target": "id_prodi_asal",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_pembiayaan",
+    "target": "id_pembiayaan",
+    "confidence": 1.0
+   },
+   {
+    "source": "biaya_masuk",
+    "target": "biaya_masuk",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- id_kurikulum: , \n- id_kurikulum_ws: , \n- kodept: , \n- id_prodi: , \n- kode_prodi: , \n- id_prodi_ws: , \n- id_semester: , \n- jumlah_sks_lulus: , \n- jumlah_sks_pilihan: , \n- jumlah_sks_wajib: , \n- nama_kurikulum: , \n- semester_mulai_berlaku: , \n\nTARGET:\n- nama_kurikulum: , \n- id_prodi: , \n- jumlah_sks_lulus: , \n- jumlah_sks_wajib: , \n- jumlah_sks_pilihan: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "nama_kurikulum",
+    "target": "nama_kurikulum",
+    "confidence": 1.0
+   },
+   {
+    "source": "id_prodi",
+    "target": "id_prodi",
+    "confidence": 1.0
+   },
+   {
+    "source": "jumlah_sks_lulus",
+    "target": "jumlah_sks_lulus",
+    "confidence": 1.0
+   },
+   {
+    "source": "jumlah_sks_wajib",
+    "target": "jumlah_sks_wajib",
+    "confidence": 1.0
+   },
+   {
+    "source": "jumlah_sks_pilihan",
+    "target": "jumlah_sks_pilihan",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- member_id: , \n- member_name: , \n- gender: , \n- birth_date: , \n- member_type_id: , \n- member_address: , \n- member_mail_address: , \n- member_email: , \n- postal_code: , \n- inst_name: , \n- is_new: , \n- member_image: , \n- pin: , \n- member_phone: , \n- member_fax: , \n- member_since_date: , \n- register_date: , \n- expire_date: , \n- member_notes: , \n- is_pending: , \n- mpasswd: , \n- last_login: , \n- last_login_ip: , \n- input_date: , \n- last_update: , \n\nTARGET:\n- nama_mahasiswa: , \n- jenis_kelamin: , \n- tempat_lahir: , \n- tanggal_lahir: , \n- id_agama: , \n- nik: , \n- nisn: , \n- npwp: , \n- kewarganegaraan: , \n- jalan: , \n- dusun: , \n- rt: , \n- rw: , \n- kelurahan: , \n- kode_pos: , \n- id_wilayah: , \n- id_jenis_tinggal: , \n- id_alat_transportasi: , \n- telepon: , \n- handphone: , \n- email: , \n- penerima_kps: , \n- nomor_kps: , \n- nik_ayah: , \n- nama_ayah: , \n- tanggal_lahir_ayah: , \n- id_pendidikan_ayah: , \n- id_pekerjaan_ayah: , \n- id_penghasilan_ayah: , \n- nik_ibu: , \n- nama_ibu_kandung: , \n- tanggal_lahir_ibu: , \n- id_pendidikan_ibu: , \n- id_pekerjaan_ibu: , \n- id_penghasilan_ibu: , \n- nama_wali: , \n- tanggal_lahir_wali: , \n- id_pendidikan_wali: , \n- id_pekerjaan_wali: , \n- id_penghasilan_wali: , \n- id_kebutuhan_khusus_mahasiswa: , \n- id_kebutuhan_khusus_ayah: , \n- id_kebutuhan_khusus_ibu: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "member_id",
+    "target": "nik",
+    "confidence": 0.95
+   },
+   {
+    "source": "member_name",
+    "target": "nama_mahasiswa",
+    "confidence": 0.95
+   },
+   {
+    "source": "gender",
+    "target": "jenis_kelamin",
+    "confidence": 0.95
+   },
+   {
+    "source": "birth_date",
+    "target": "tanggal_lahir",
+    "confidence": 0.95
+   },
+   {
+    "source": "member_address",
+    "target": "jalan",
+    "confidence": 0.85
+   },
+   {
+    "source": "member_mail_address",
+    "target": "dusun",
+    "confidence": 0.75
+   },
+   {
+    "source": "member_email",
+    "target": "email",
+    "confidence": 0.95
+   },
+   {
+    "source": "postal_code",
+    "target": "kode_pos",
+    "confidence": 0.95
+   },
+   {
+    "source": "member_phone",
+    "target": "telepon",
+    "confidence": 0.95
+   },
+   {
+    "source": "member_fax",
+    "target": "handphone",
+    "confidence": 0.75
+   },
+   {
+    "source": "member_since_date",
+    "target": "input_date",
+    "confidence": 0.85
+   },
+   {
+    "source": "register_date",
+    "target": "last_login",
+    "confidence": 0.8
+   },
+   {
+    "source": "expire_date",
+    "target": "last_update",
+    "confidence": 0.8
+   },
+   {
+    "source": "member_notes",
+    "target": "nama_wali",
+    "confidence": 0.7
+   },
+   {
+    "source": "is_pending",
+    "target": "penerima_kps",
+    "confidence": 0.7
+   },
+   {
+    "source": "pin",
+    "target": "nomor_kps",
+    "confidence": 0.7
+   },
+   {
+    "source": "last_login_ip",
+    "target": "id_wilayah",
+    "confidence": 0.6
+   },
+   {
+    "source": "input_date",
+    "target": "tanggal_lahir_ayah",
+    "confidence": 0.6
+   },
+   {
+    "source": "last_update",
+    "target": "tanggal_lahir_ibu",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "qwen3:8b|You are a data-integration engineer doing schema matching. Find 1:1 correspondences between columns of the SOURCE and TARGET tables (same real-world attribute, possibly different naming or language). Each column is listed as 'name: sample values'. Leave columns unmatched if nothing fits.\nSOURCE:\n- no_rkm_medis: , \n- nm_pasien: , \n- no_ktp: , \n- jk: , \n- tmp_lahir: , \n- tgl_lahir: , \n- nm_ibu: , \n- alamat: , \n- gol_darah: , \n- pekerjaan: , \n- stts_nikah: , \n- agama: , \n- tgl_daftar: , \n- no_tlp: , \n- umur: , \n- pnd: , \n- keluarga: , \n- namakeluarga: , \n- kd_pj: , \n- no_peserta: , \n- kd_kel: , \n- kd_kec: , \n- kd_kab: , \n- pekerjaanpj: , \n- alamatpj: , \n- kelurahanpj: , \n- kecamatanpj: , \n- kabupatenpj: , \n- perusahaan_pasien: , \n- suku_bangsa: , \n- bahasa_pasien: , \n- cacat_fisik: , \n- email: , \n- nip: , \n- kd_prop: , \n- propinsipj: , \n\nTARGET:\n- nama_mahasiswa: , \n- jenis_kelamin: , \n- tempat_lahir: , \n- tanggal_lahir: , \n- id_agama: , \n- nik: , \n- nisn: , \n- npwp: , \n- kewarganegaraan: , \n- jalan: , \n- dusun: , \n- rt: , \n- rw: , \n- kelurahan: , \n- kode_pos: , \n- id_wilayah: , \n- id_jenis_tinggal: , \n- id_alat_transportasi: , \n- telepon: , \n- handphone: , \n- email: , \n- penerima_kps: , \n- nomor_kps: , \n- nik_ayah: , \n- nama_ayah: , \n- tanggal_lahir_ayah: , \n- id_pendidikan_ayah: , \n- id_pekerjaan_ayah: , \n- id_penghasilan_ayah: , \n- nik_ibu: , \n- nama_ibu_kandung: , \n- tanggal_lahir_ibu: , \n- id_pendidikan_ibu: , \n- id_pekerjaan_ibu: , \n- id_penghasilan_ibu: , \n- nama_wali: , \n- tanggal_lahir_wali: , \n- id_pendidikan_wali: , \n- id_pekerjaan_wali: , \n- id_penghasilan_wali: , \n- id_kebutuhan_khusus_mahasiswa: , \n- id_kebutuhan_khusus_ayah: , \n- id_kebutuhan_khusus_ibu: , \n\nReturn JSON: {\"matches\": [{\"source\": <exact source name>, \"target\": <exact target name>, \"confidence\": <0..1>}]}": {
+  "matches": [
+   {
+    "source": "nm_pasien",
+    "target": "nama_mahasiswa",
+    "confidence": 0.95
+   },
+   {
+    "source": "jk",
+    "target": "jenis_kelamin",
+    "confidence": 0.95
+   },
+   {
+    "source": "tmp_lahir",
+    "target": "tempat_lahir",
+    "confidence": 0.95
+   },
+   {
+    "source": "tgl_lahir",
+    "target": "tanggal_lahir",
+    "confidence": 0.95
+   },
+   {
+    "source": "agama",
+    "target": "id_agama",
+    "confidence": 0.9
+   },
+   {
+    "source": "no_ktp",
+    "target": "nik",
+    "confidence": 0.95
+   },
+   {
+    "source": "no_tlp",
+    "target": "telepon",
+    "confidence": 0.9
+   },
+   {
+    "source": "email",
+    "target": "email",
+    "confidence": 0.95
+   },
+   {
+    "source": "nm_ibu",
+    "target": "nama_ibu_kandung",
+    "confidence": 0.9
+   },
+   {
+    "source": "nm_ibu",
+    "target": "nama_ibu",
+    "confidence": 0.85
+   },
+   {
+    "source": "kd_kel",
+    "target": "kelurahan",
+    "confidence": 0.8
+   },
+   {
+    "source": "kd_kec",
+    "target": "kelurahan",
+    "confidence": 0.7
+   },
+   {
+    "source": "kd_kab",
+    "target": "kelurahan",
+    "confidence": 0.6
+   },
+   {
+    "source": "kd_prop",
+    "target": "kelurahan",
+    "confidence": 0.5
+   },
+   {
+    "source": "alamat",
+    "target": "jalan",
+    "confidence": 0.8
+   },
+   {
+    "source": "pekerjaan",
+    "target": "id_pekerjaan_ayah",
+    "confidence": 0.7
+   },
+   {
+    "source": "pekerjaan",
+    "target": "id_pekerjaan_ibu",
+    "confidence": 0.7
+   },
+   {
+    "source": "pekerjaan",
+    "target": "id_pekerjaan_wali",
+    "confidence": 0.7
+   },
+   {
+    "source": "pnd",
+    "target": "id_pendidikan_ayah",
+    "confidence": 0.7
+   },
+   {
+    "source": "pnd",
+    "target": "id_pendidikan_ibu",
+    "confidence": 0.7
+   },
+   {
+    "source": "pnd",
+    "target": "id_pendidikan_wali",
+    "confidence": 0.7
+   },
+   {
+    "source": "stts_nikah",
+    "target": "id_status_perkawinan",
+    "confidence": 0.6
+   },
+   {
+    "source": "no_peserta",
+    "target": "nisn",
+    "confidence": 0.8
+   },
+   {
+    "source": "no_peserta",
+    "target": "nomor_kps",
+    "confidence": 0.7
+   },
+   {
+    "source": "cacat_fisik",
+    "target": "id_kebutuhan_khusus_mahasiswa",
+    "confidence": 0.6
+   },
+   {
+    "source": "kd_pj",
+    "target": "kelurahan",
+    "confidence": 0.6
+   },
+   {
+    "source": "alamatpj",
+    "target": "jalan",
+    "confidence": 0.7
+   },
+   {
+    "source": "kelurahanpj",
+    "target": "kelurahan",
+    "confidence": 0.7
+   },
+   {
+    "source": "kecamatanpj",
+    "target": "kelurahan",
+    "confidence": 0.6
+   },
+   {
+    "source": "kabupatenpj",
+    "target": "kelurahan",
+    "confidence": 0.5
+   },
+   {
+    "source": "propinsipj",
+    "target": "kelurahan",
+    "confidence": 0.5
+   },
+   {
+    "source": "no_ktp",
+    "target": "nik_ayah",
+    "confidence": 0.7
+   },
+   {
+    "source": "no_ktp",
+    "target": "nik_ibu",
+    "confidence": 0.7
+   },
+   {
+    "source": "no_ktp",
+    "target": "nik_wali",
+    "confidence": 0.6
+   },
+   {
+    "source": "tgl_daftar",
+    "target": "tanggal_lahir",
+    "confidence": 0.6
+   },
+   {
+    "source": "no_peserta",
+    "target": "nisn",
+    "confidence": 0.8
+   },
+   {
+    "source": "no_peserta",
+    "target": "nomor_kps",
+    "confidence": 0.7
+   },
+   {
+    "source": "kd_kel",
+    "target": "rt",
+    "confidence": 0.5
+   },
+   {
+    "source": "kd_kel",
+    "target": "rw",
+    "confidence": 0.5
+   },
+   {
+    "source": "kd_kel",
+    "target": "dusun",
+    "confidence": 0.5
+   },
+   {
+    "source": "kd_kec",
+    "target": "rt",
+    "confidence": 0.5
+   },
+   {
+    "source": "kd_kec",
+    "target": "rw",
+    "confidence": 0.5
+   },
+   {
+    "source": "kd_kec",
+    "target": "dusun",
+    "confidence": 0.5
+   },
+   {
+    "source": "kd_kab",
+    "target": "rt",
+    "confidence": 0.5
+   },
+   {
+    "source": "kd_kab",
+    "target": "rw",
+    "confidence": 0.5
+   },
+   {
+    "source": "kd_kab",
+    "target": "dusun",
+    "confidence": 0.5
+   },
+   {
+    "source": "kd_prop",
+    "target": "rt",
+    "confidence": 0.5
+   },
+   {
+    "source": "kd_prop",
+    "target": "rw",
+    "confidence": 0.5
+   },
+   {
+    "source": "kd_prop",
+    "target": "dusun",
+    "confidence": 0.5
+   },
+   {
+    "source": "no_peserta",
+    "target": "nisn",
+    "confidence": 0.8
+   },
+   {
+    "source": "no_peserta",
+    "target": "nomor_kps",
+    "confidence": 0.7
+   },
+   {
+    "source": "no_peserta",
+    "target": "id_wilayah",
+    "confidence": 0.6
+   },
+   {
+    "source": "no_peserta",
+    "target": "id_jenis_tinggal",
+    "confidence": 0.6
+   },
+   {
+    "source": "no_peserta",
+    "target": "id_alat_transportasi",
+    "confidence": 0.6
+   },
+   {
+    "source": "no_peserta",
+    "target": "kode_pos",
+    "confidence": 0.6
+   },
+   {
+    "source": "no_peserta",
+    "target": "id_kebutuhan_khusus_mahasiswa",
+    "confidence": 0.6
+   },
+   {
+    "source": "no_peserta",
+    "target": "id_kebutuhan_khusus_ayah",
+    "confidence": 0.6
+   },
+   {
+    "source": "no_peserta",
+    "target": "id_kebutuhan_khusus_ibu",
+    "confidence": 0.6
+   },
+   {
+    "source": "no_peserta",
+    "target": "id_penerima_kps",
+    "confidence": 0.6
+   },
+   {
+    "source": "no_peserta",
+    "target": "nomor_kps",
+    "confidence": 0.7
+   }
+  ]
+ }
+}

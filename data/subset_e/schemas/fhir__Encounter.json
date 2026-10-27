@@ -1,0 +1,239 @@
+{
+ "system": "fhir",
+ "table": "Encounter",
+ "source": "HL7 FHIR R4 4.0.1 StructureDefinition snapshot",
+ "license": "CC0-1.0",
+ "lang": "en",
+ "columns": [
+  {
+   "name": "identifier",
+   "type": "Identifier",
+   "desc": "Identifier(s) by which this encounter is known"
+  },
+  {
+   "name": "status",
+   "type": "code",
+   "desc": "planned | arrived | triaged | in-progress | onleave | finished | cancelled +"
+  },
+  {
+   "name": "statusHistory",
+   "type": "BackboneElement",
+   "desc": "List of past encounter statuses"
+  },
+  {
+   "name": "statusHistory.status",
+   "type": "code",
+   "desc": "planned | arrived | triaged | in-progress | onleave | finished | cancelled +"
+  },
+  {
+   "name": "statusHistory.period",
+   "type": "Period",
+   "desc": "The time that the episode was in the specified status"
+  },
+  {
+   "name": "class",
+   "type": "Coding",
+   "desc": "Classification of patient encounter"
+  },
+  {
+   "name": "classHistory",
+   "type": "BackboneElement",
+   "desc": "List of past encounter classes"
+  },
+  {
+   "name": "classHistory.class",
+   "type": "Coding",
+   "desc": "inpatient | outpatient | ambulatory | emergency +"
+  },
+  {
+   "name": "classHistory.period",
+   "type": "Period",
+   "desc": "The time that the episode was in the specified class"
+  },
+  {
+   "name": "type",
+   "type": "CodeableConcept",
+   "desc": "Specific type of encounter"
+  },
+  {
+   "name": "serviceType",
+   "type": "CodeableConcept",
+   "desc": "Specific type of service"
+  },
+  {
+   "name": "priority",
+   "type": "CodeableConcept",
+   "desc": "Indicates the urgency of the encounter"
+  },
+  {
+   "name": "subject",
+   "type": "Reference",
+   "desc": "The patient or group present at the encounter"
+  },
+  {
+   "name": "episodeOfCare",
+   "type": "Reference",
+   "desc": "Episode(s) of care that this encounter should be recorded against"
+  },
+  {
+   "name": "basedOn",
+   "type": "Reference",
+   "desc": "The ServiceRequest that initiated this encounter"
+  },
+  {
+   "name": "participant",
+   "type": "BackboneElement",
+   "desc": "List of participants involved in the encounter"
+  },
+  {
+   "name": "participant.type",
+   "type": "CodeableConcept",
+   "desc": "Role of participant in encounter"
+  },
+  {
+   "name": "participant.period",
+   "type": "Period",
+   "desc": "Period of time during the encounter that the participant participated"
+  },
+  {
+   "name": "participant.individual",
+   "type": "Reference",
+   "desc": "Persons involved in the encounter other than the patient"
+  },
+  {
+   "name": "appointment",
+   "type": "Reference",
+   "desc": "The appointment that scheduled this encounter"
+  },
+  {
+   "name": "period",
+   "type": "Period",
+   "desc": "The start and end time of the encounter"
+  },
+  {
+   "name": "length",
+   "type": "Duration",
+   "desc": "Quantity of time the encounter lasted (less time absent)"
+  },
+  {
+   "name": "reasonCode",
+   "type": "CodeableConcept",
+   "desc": "Coded reason the encounter takes place"
+  },
+  {
+   "name": "reasonReference",
+   "type": "Reference",
+   "desc": "Reason the encounter takes place (reference)"
+  },
+  {
+   "name": "diagnosis",
+   "type": "BackboneElement",
+   "desc": "The list of diagnosis relevant to this encounter"
+  },
+  {
+   "name": "diagnosis.condition",
+   "type": "Reference",
+   "desc": "The diagnosis or procedure relevant to the encounter"
+  },
+  {
+   "name": "diagnosis.use",
+   "type": "CodeableConcept",
+   "desc": "Role that this diagnosis has within the encounter (e.g. admission, billing, discharge …)"
+  },
+  {
+   "name": "diagnosis.rank",
+   "type": "positiveInt",
+   "desc": "Ranking of the diagnosis (for each role type)"
+  },
+  {
+   "name": "account",
+   "type": "Reference",
+   "desc": "The set of accounts that may be used for billing for this Encounter"
+  },
+  {
+   "name": "hospitalization",
+   "type": "BackboneElement",
+   "desc": "Details about the admission to a healthcare service"
+  },
+  {
+   "name": "hospitalization.preAdmissionIdentifier",
+   "type": "Identifier",
+   "desc": "Pre-admission identifier"
+  },
+  {
+   "name": "hospitalization.origin",
+   "type": "Reference",
+   "desc": "The location/organization from which the patient came before admission"
+  },
+  {
+   "name": "hospitalization.admitSource",
+   "type": "CodeableConcept",
+   "desc": "From where patient was admitted (physician referral, transfer)"
+  },
+  {
+   "name": "hospitalization.reAdmission",
+   "type": "CodeableConcept",
+   "desc": "The type of hospital re-admission that has occurred (if any). If the value is absent, then this is not identified as a readmission"
+  },
+  {
+   "name": "hospitalization.dietPreference",
+   "type": "CodeableConcept",
+   "desc": "Diet preferences reported by the patient"
+  },
+  {
+   "name": "hospitalization.specialCourtesy",
+   "type": "CodeableConcept",
+   "desc": "Special courtesies (VIP, board member)"
+  },
+  {
+   "name": "hospitalization.specialArrangement",
+   "type": "CodeableConcept",
+   "desc": "Wheelchair, translator, stretcher, etc."
+  },
+  {
+   "name": "hospitalization.destination",
+   "type": "Reference",
+   "desc": "Location/organization to which the patient is discharged"
+  },
+  {
+   "name": "hospitalization.dischargeDisposition",
+   "type": "CodeableConcept",
+   "desc": "Category or kind of location after discharge"
+  },
+  {
+   "name": "location",
+   "type": "BackboneElement",
+   "desc": "List of locations where the patient has been"
+  },
+  {
+   "name": "location.location",
+   "type": "Reference",
+   "desc": "Location the encounter takes place"
+  },
+  {
+   "name": "location.status",
+   "type": "code",
+   "desc": "planned | active | reserved | completed"
+  },
+  {
+   "name": "location.physicalType",
+   "type": "CodeableConcept",
+   "desc": "The physical type of the location (usually the level in the location hierachy - bed room ward etc.)"
+  },
+  {
+   "name": "location.period",
+   "type": "Period",
+   "desc": "Time period during which the patient was present at the location"
+  },
+  {
+   "name": "serviceProvider",
+   "type": "Reference",
+   "desc": "The organization (facility) responsible for this encounter"
+  },
+  {
+   "name": "partOf",
+   "type": "Reference",
+   "desc": "Another Encounter this encounter is part of"
+  }
+ ]
+}

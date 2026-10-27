@@ -1,0 +1,49 @@
+{
+ "system": "feeder",
+ "table": "InsertPerkuliahanMahasiswa",
+ "source": "PDDikti Feeder Web Service User Guide v2.2 (07-12-2020)",
+ "license": "public documentation",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id_registrasi_mahasiswa",
+   "type": "uuid",
+   "desc": ""
+  },
+  {
+   "name": "id_semester",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "id_status_mahasiswa",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "ips",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "ipk",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "sks_semester",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "total_sks",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "biaya_kuliah_smt",
+   "type": "numeric",
+   "desc": ""
+  }
+ ]
+}

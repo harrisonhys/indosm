@@ -1,0 +1,19 @@
+{
+ "system": "khanza",
+ "table": "ruang_ok",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "kd_ruang_ok",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "nm_ruang_ok",
+   "type": "varchar(50)",
+   "desc": ""
+  }
+ ]
+}

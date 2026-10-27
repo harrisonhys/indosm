@@ -1,0 +1,119 @@
+{
+ "system": "fhir",
+ "table": "Condition",
+ "source": "HL7 FHIR R4 4.0.1 StructureDefinition snapshot",
+ "license": "CC0-1.0",
+ "lang": "en",
+ "columns": [
+  {
+   "name": "identifier",
+   "type": "Identifier",
+   "desc": "External Ids for this condition"
+  },
+  {
+   "name": "clinicalStatus",
+   "type": "CodeableConcept",
+   "desc": "active | recurrence | relapse | inactive | remission | resolved"
+  },
+  {
+   "name": "verificationStatus",
+   "type": "CodeableConcept",
+   "desc": "unconfirmed | provisional | differential | confirmed | refuted | entered-in-error"
+  },
+  {
+   "name": "category",
+   "type": "CodeableConcept",
+   "desc": "problem-list-item | encounter-diagnosis"
+  },
+  {
+   "name": "severity",
+   "type": "CodeableConcept",
+   "desc": "Subjective severity of condition"
+  },
+  {
+   "name": "code",
+   "type": "CodeableConcept",
+   "desc": "Identification of the condition, problem or diagnosis"
+  },
+  {
+   "name": "bodySite",
+   "type": "CodeableConcept",
+   "desc": "Anatomical location, if relevant"
+  },
+  {
+   "name": "subject",
+   "type": "Reference",
+   "desc": "Who has the condition?"
+  },
+  {
+   "name": "encounter",
+   "type": "Reference",
+   "desc": "Encounter created as part of"
+  },
+  {
+   "name": "onset[x]",
+   "type": "dateTime|Age|Period|Range|string",
+   "desc": "Estimated or actual date,  date-time, or age"
+  },
+  {
+   "name": "abatement[x]",
+   "type": "dateTime|Age|Period|Range|string",
+   "desc": "When in resolution/remission"
+  },
+  {
+   "name": "recordedDate",
+   "type": "dateTime",
+   "desc": "Date record was first recorded"
+  },
+  {
+   "name": "recorder",
+   "type": "Reference",
+   "desc": "Who recorded the condition"
+  },
+  {
+   "name": "asserter",
+   "type": "Reference",
+   "desc": "Person who asserts this condition"
+  },
+  {
+   "name": "stage",
+   "type": "BackboneElement",
+   "desc": "Stage/grade, usually assessed formally"
+  },
+  {
+   "name": "stage.summary",
+   "type": "CodeableConcept",
+   "desc": "Simple summary (disease specific)"
+  },
+  {
+   "name": "stage.assessment",
+   "type": "Reference",
+   "desc": "Formal record of assessment"
+  },
+  {
+   "name": "stage.type",
+   "type": "CodeableConcept",
+   "desc": "Kind of staging"
+  },
+  {
+   "name": "evidence",
+   "type": "BackboneElement",
+   "desc": "Supporting evidence"
+  },
+  {
+   "name": "evidence.code",
+   "type": "CodeableConcept",
+   "desc": "Manifestation/symptom"
+  },
+  {
+   "name": "evidence.detail",
+   "type": "Reference",
+   "desc": "Supporting information found elsewhere"
+  },
+  {
+   "name": "note",
+   "type": "Annotation",
+   "desc": "Additional information about the Condition"
+  }
+ ]
+}

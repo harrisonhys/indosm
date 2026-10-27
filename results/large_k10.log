@@ -1,0 +1,40 @@
+dict               False                   True                  
+k                     1     3     5     10    1     3     5    10
+group                                                            
+khanza-fhir-large   0.09  0.17  0.22  0.25  0.12  0.27  0.35  0.4
+opensid-fhir-large  0.30  0.50  0.50  0.60  0.40  0.60  0.60  0.7
+done E01L
+done E02L
+done E03L
+done E04L
+done E05L
+done E06L
+done E07L
+done E08L
+done E09L
+done E10L
+done E11L
+done E12L
+done E13L
+done E14L
+done E20L
+
+== R@GT (k=10) ==
+group          khanza-fhir-large  opensid-fhir-large
+config                                              
+emb                        0.107                 0.1
+emb+dict                   0.113                 0.1
+hybrid                     0.055                 0.4
+hybrid+dict                0.154                 0.5
+llm-full                   0.262                 0.6
+llm-full+dict              0.328                 0.7
+
+== F1 (k=10) ==
+group          khanza-fhir-large  opensid-fhir-large
+config                                              
+emb                        0.048               0.086
+emb+dict                   0.069               0.086
+hybrid                     0.041               0.278
+hybrid+dict                0.129               0.278
+llm-full                   0.209               0.545
+llm-full+dict              0.252               0.522

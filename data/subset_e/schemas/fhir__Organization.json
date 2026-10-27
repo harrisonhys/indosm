@@ -1,0 +1,79 @@
+{
+ "system": "fhir",
+ "table": "Organization",
+ "source": "HL7 FHIR R4 4.0.1 StructureDefinition snapshot",
+ "license": "CC0-1.0",
+ "lang": "en",
+ "columns": [
+  {
+   "name": "identifier",
+   "type": "Identifier",
+   "desc": "Identifies this organization  across multiple systems"
+  },
+  {
+   "name": "active",
+   "type": "boolean",
+   "desc": "Whether the organization's record is still in active use"
+  },
+  {
+   "name": "type",
+   "type": "CodeableConcept",
+   "desc": "Kind of organization"
+  },
+  {
+   "name": "name",
+   "type": "string",
+   "desc": "Name used for the organization"
+  },
+  {
+   "name": "alias",
+   "type": "string",
+   "desc": "A list of alternate names that the organization is known as, or was known as in the past"
+  },
+  {
+   "name": "telecom",
+   "type": "ContactPoint",
+   "desc": "A contact detail for the organization"
+  },
+  {
+   "name": "address",
+   "type": "Address",
+   "desc": "An address for the organization"
+  },
+  {
+   "name": "partOf",
+   "type": "Reference",
+   "desc": "The organization of which this organization forms a part"
+  },
+  {
+   "name": "contact",
+   "type": "BackboneElement",
+   "desc": "Contact for the organization for a certain purpose"
+  },
+  {
+   "name": "contact.purpose",
+   "type": "CodeableConcept",
+   "desc": "The type of contact"
+  },
+  {
+   "name": "contact.name",
+   "type": "HumanName",
+   "desc": "A name associated with the contact"
+  },
+  {
+   "name": "contact.telecom",
+   "type": "ContactPoint",
+   "desc": "Contact details (telephone, email, etc.)  for a contact"
+  },
+  {
+   "name": "contact.address",
+   "type": "Address",
+   "desc": "Visiting or postal addresses for the contact"
+  },
+  {
+   "name": "endpoint",
+   "type": "Reference",
+   "desc": "Technical endpoints providing access to services operated for the organization"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "system": "khanza",
+ "table": "dpjp_ranap",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "kd_dokter",
+   "type": "varchar(20)",
+   "desc": ""
+  }
+ ]
+}

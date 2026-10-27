@@ -1,0 +1,69 @@
+{
+ "system": "khanza",
+ "table": "kamar_inap",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "kd_kamar",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "trf_kamar",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "diagnosa_awal",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "diagnosa_akhir",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_masuk",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam_masuk",
+   "type": "time",
+   "desc": ""
+  },
+  {
+   "name": "tgl_keluar",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam_keluar",
+   "type": "time",
+   "desc": ""
+  },
+  {
+   "name": "lama",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "ttl_biaya",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "stts_pulang",
+   "type": "enum('sehat','rujuk','aps','+','meninggal','sembuh','membaik','pulang paksa','-','pindah kamar','status belum lengkap','atas persetujuan dokter','atas permintaan sendiri','isoman','lain-lain')",
+   "desc": ""
+  }
+ ]
+}

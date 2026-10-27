@@ -1,0 +1,279 @@
+{
+ "system": "siakad",
+ "table": "siakad_mahasiswa",
+ "source": "SIAKAD Feeder (idiknursidik/siakad@master, siakad.sql)",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id_mahasiswa",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "kodept",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "id_pendaftaran",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "id_jenis_daftar",
+   "type": "varchar(11)",
+   "desc": ""
+  },
+  {
+   "name": "id_mahasiswa_ws",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "nama_mahasiswa",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "jenis_kelamin",
+   "type": "char(1)",
+   "desc": ""
+  },
+  {
+   "name": "jalan",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "rt",
+   "type": "decimal(2, 0)",
+   "desc": ""
+  },
+  {
+   "name": "rw",
+   "type": "decimal(2, 0)",
+   "desc": ""
+  },
+  {
+   "name": "dusun",
+   "type": "char(100)",
+   "desc": ""
+  },
+  {
+   "name": "kelurahan",
+   "type": "char(100)",
+   "desc": ""
+  },
+  {
+   "name": "kode_pos",
+   "type": "char(10)",
+   "desc": ""
+  },
+  {
+   "name": "kecamatan",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "nisn",
+   "type": "char(11)",
+   "desc": ""
+  },
+  {
+   "name": "nik",
+   "type": "char(20)",
+   "desc": ""
+  },
+  {
+   "name": "tempat_lahir",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_lahir",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "nama_ayah",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_lahir_ayah",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "nik_ayah",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "id_pendidikan_ayah",
+   "type": "decimal(2, 0)",
+   "desc": ""
+  },
+  {
+   "name": "id_pekerjaan_ayah",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "id_penghasilan_ayah",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "id_kebutuhan_khusus_ayah",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "nama_ibu_kandung",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_lahir_ibu",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "nik_ibu",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "id_pendidikan_ibu",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "id_pekerjaan_ibu",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "id_penghasilan_ibu",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "id_kebutuhan_khusus_ibu",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "nama_wali",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_lahir_wali",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "id_pendidikan_wali",
+   "type": "varchar(2)",
+   "desc": ""
+  },
+  {
+   "name": "id_pekerjaan_wali",
+   "type": "varchar(2)",
+   "desc": ""
+  },
+  {
+   "name": "id_penghasilan_wali",
+   "type": "varchar(2)",
+   "desc": ""
+  },
+  {
+   "name": "id_kebutuhan_khusus_mahasiswa",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "telepon",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "handphone",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "email",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "penerima_kps",
+   "type": "enum('1','0')",
+   "desc": ""
+  },
+  {
+   "name": "no_kps",
+   "type": "varchar(255)",
+   "desc": ""
+  },
+  {
+   "name": "nomor_kps",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "npwp",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "id_wilayah",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "id_jenis_tinggal",
+   "type": "varchar(2)",
+   "desc": ""
+  },
+  {
+   "name": "id_agama",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "id_alat_transportasi",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "kewarganegaraan",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "datecreated",
+   "type": "datetime",
+   "desc": ""
+  },
+  {
+   "name": "usercreated",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "dateupdate",
+   "type": "datetime",
+   "desc": ""
+  },
+  {
+   "name": "userupdate",
+   "type": "varchar(100)",
+   "desc": ""
+  }
+ ]
+}

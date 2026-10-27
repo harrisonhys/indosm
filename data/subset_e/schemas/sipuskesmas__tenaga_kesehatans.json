@@ -1,0 +1,44 @@
+{
+ "system": "sipuskesmas",
+ "table": "tenaga_kesehatans",
+ "source": "elingp/sistem-informasi-puskesmas@be12a98aaf",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id",
+   "type": "id",
+   "desc": ""
+  },
+  {
+   "name": "poli_id",
+   "type": "foreignid",
+   "desc": ""
+  },
+  {
+   "name": "nama",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "jadwal",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "no_telepon",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "created_at",
+   "type": "timestamps",
+   "desc": ""
+  },
+  {
+   "name": "updated_at",
+   "type": "timestamps",
+   "desc": ""
+  }
+ ]
+}

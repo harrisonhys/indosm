@@ -1,0 +1,74 @@
+{
+ "system": "fhir",
+ "table": "Medication",
+ "source": "HL7 FHIR R4 4.0.1 StructureDefinition snapshot",
+ "license": "CC0-1.0",
+ "lang": "en",
+ "columns": [
+  {
+   "name": "identifier",
+   "type": "Identifier",
+   "desc": "Business identifier for this medication"
+  },
+  {
+   "name": "code",
+   "type": "CodeableConcept",
+   "desc": "Codes that identify this medication"
+  },
+  {
+   "name": "status",
+   "type": "code",
+   "desc": "active | inactive | entered-in-error"
+  },
+  {
+   "name": "manufacturer",
+   "type": "Reference",
+   "desc": "Manufacturer of the item"
+  },
+  {
+   "name": "form",
+   "type": "CodeableConcept",
+   "desc": "powder | tablets | capsule +"
+  },
+  {
+   "name": "amount",
+   "type": "Ratio",
+   "desc": "Amount of drug in package"
+  },
+  {
+   "name": "ingredient",
+   "type": "BackboneElement",
+   "desc": "Active or inactive ingredient"
+  },
+  {
+   "name": "ingredient.item[x]",
+   "type": "CodeableConcept|Reference",
+   "desc": "The actual ingredient or content"
+  },
+  {
+   "name": "ingredient.isActive",
+   "type": "boolean",
+   "desc": "Active ingredient indicator"
+  },
+  {
+   "name": "ingredient.strength",
+   "type": "Ratio",
+   "desc": "Quantity of ingredient present"
+  },
+  {
+   "name": "batch",
+   "type": "BackboneElement",
+   "desc": "Details about packaged medications"
+  },
+  {
+   "name": "batch.lotNumber",
+   "type": "string",
+   "desc": "Identifier assigned to batch"
+  },
+  {
+   "name": "batch.expirationDate",
+   "type": "dateTime",
+   "desc": "When batch will expire"
+  }
+ ]
+}

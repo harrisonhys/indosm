@@ -1,0 +1,24 @@
+{
+ "system": "khanza",
+ "table": "bangsal",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "kd_bangsal",
+   "type": "char(5)",
+   "desc": ""
+  },
+  {
+   "name": "nm_bangsal",
+   "type": "varchar(30)",
+   "desc": ""
+  },
+  {
+   "name": "status",
+   "type": "enum('0','1')",
+   "desc": ""
+  }
+ ]
+}

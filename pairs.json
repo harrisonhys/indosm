@@ -1,0 +1,238 @@
+[
+ {
+  "id": "P01",
+  "kind": "cross-region",
+  "source": "data/raw/data.acehprov.go.id/7add250f-8a85-4f67-9f9a-f7d84570b775.csv",
+  "target": "data/raw/data.bantenprov.go.id/78961937-020b-4cea-9093-e29983a08fdd.csv",
+  "gt": [
+   [
+    "bps_kode_kabupaten",
+    "kode kabupaten kota"
+   ],
+   [
+    "bps_nama_kabupaten",
+    "kabupaten kota"
+   ],
+   [
+    "tahun",
+    "tahun"
+   ]
+  ],
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "P02",
+  "kind": "cross-region",
+  "source": "data/raw/data.acehprov.go.id/d56ca8e2-9efd-4e12-8695-c39f1818b447.csv",
+  "target": "data/raw/data.kalbarprov.go.id/d47dbef8-7261-4d1a-8271-b6cf0fd8a26d.csv",
+  "gt": [
+   [
+    "kemendagri_nama_kabupaten_kota",
+    "Kabupaten/Kota"
+   ],
+   [
+    "jumlah_puskesmas",
+    "Puskesmas (Unit)"
+   ]
+  ],
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "P03",
+  "kind": "bps-vs-kemendagri",
+  "source": "data/raw/data.acehprov.go.id/7add250f-8a85-4f67-9f9a-f7d84570b775.csv",
+  "target": "data/raw/data.acehprov.go.id/5b747c42-cc4b-4d75-8454-b5e27ebe3753.csv",
+  "gt": [
+   [
+    "bps_kode_provinsi",
+    "kemendagri_kode_provinsi"
+   ],
+   [
+    "bps_nama_provinsi",
+    "kemendagri_nama_provinsi"
+   ],
+   [
+    "bps_kode_kabupaten",
+    "kemendagri_kode_kabupatenkota"
+   ],
+   [
+    "bps_nama_kabupaten",
+    "kemendagri_nama_kabupatenkota"
+   ],
+   [
+    "tahun",
+    "tahun"
+   ],
+   [
+    "jumlah_penduduk",
+    "jumlah_penduduk"
+   ]
+  ],
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "P04",
+  "kind": "cross-region",
+  "source": "data/raw/data.tanahdatar.go.id/9fd50b6b-21a6-4300-9b4e-220b8e5f92f8.csv",
+  "target": "data/raw/data.bengkuluprov.go.id/bbf61347-e858-4f25-97e5-706d0641d691.csv",
+  "gt": [
+   [
+    "Kecamatan",
+    "Kecamatan"
+   ],
+   [
+    "Puskesmas",
+    "Puskesmas"
+   ]
+  ],
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "P05",
+  "kind": "cross-region",
+  "source": "data/raw/data.tanahdatar.go.id/9fd50b6b-21a6-4300-9b4e-220b8e5f92f8.csv",
+  "target": "data/raw/data.kalbarprov.go.id/d47dbef8-7261-4d1a-8271-b6cf0fd8a26d.csv",
+  "gt": [
+   [
+    "Kecamatan",
+    "Kabupaten/Kota"
+   ],
+   [
+    "Puskesmas",
+    "Puskesmas (Unit)"
+   ],
+   [
+    "Puskesmas Keliling",
+    "Puskesmas Keliling (Unit)"
+   ],
+   [
+    "Puskesmas Pembantu",
+    "Puskesmas Pembantu (Unit)"
+   ]
+  ],
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "P06",
+  "kind": "cross-region",
+  "source": "data/raw/data.acehprov.go.id/b5c0e232-69e9-48e9-a0aa-4f6c6925d831.csv",
+  "target": "data/raw/satudata.padang.go.id/97e33c30-757d-4e91-a5a1-110616fe6d22.csv",
+  "gt": [
+   [
+    "kemendagri_kode_kecamatan",
+    "KODE KECAMATAN"
+   ],
+   [
+    "kemendagri_nama_kecamatan",
+    "KECAMATAN"
+   ]
+  ],
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "P07",
+  "kind": "cross-region",
+  "source": "data/raw/data.paserkab.go.id/9cc2176e-a809-44db-bc86-9832fd19ec88.csv",
+  "target": "data/raw/data.acehprov.go.id/854ec289-8b42-4bfb-9285-916dbeffdfb5.csv",
+  "gt": [
+   [
+    "Tingkat Pendidikan",
+    "jenjang_pendidikan"
+   ],
+   [
+    "Jumlah",
+    "jumlah"
+   ]
+  ],
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "P08",
+  "kind": "cross-region",
+  "source": "data/raw/data.bantenprov.go.id/83b9886f-e0f0-408c-a7b5-6bc085bd6fda.csv",
+  "target": "data/raw/data.acehprov.go.id/aed697cd-afe1-4607-90ee-16a00d95f28c.csv",
+  "gt": [
+   [
+    "Kelompok Umur",
+    "kelompok_umur"
+   ],
+   [
+    "jenis kelamin",
+    "jenis_kelamin"
+   ]
+  ],
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "P09",
+  "kind": "cross-region",
+  "source": "data/raw/data.bantenprov.go.id/78961937-020b-4cea-9093-e29983a08fdd.csv",
+  "target": "data/raw/data.acehprov.go.id/5b747c42-cc4b-4d75-8454-b5e27ebe3753.csv",
+  "gt": [
+   [
+    "kode kabupaten kota",
+    "kemendagri_kode_kabupatenkota"
+   ],
+   [
+    "kabupaten kota",
+    "kemendagri_nama_kabupatenkota"
+   ],
+   [
+    "tahun",
+    "tahun"
+   ]
+  ],
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "P10",
+  "kind": "same-portal-messy",
+  "source": "data/raw/data.acehprov.go.id/0731ecfb-b3af-4d61-8689-70153338dfe5.csv",
+  "target": "data/raw/data.acehprov.go.id/b5c0e232-69e9-48e9-a0aa-4f6c6925d831.csv",
+  "gt": [
+   [
+    "kemendagri_kode _provinsi",
+    "kemendagri_kode_provinsi"
+   ],
+   [
+    "kemendagri_nama _provinsi",
+    "kemendagri_nama_provinsi"
+   ],
+   [
+    "kemendagri_kode_ kabupaten_kota",
+    "kemendagri_kode_kabupatenkota"
+   ],
+   [
+    "kemendagri_nama_ kabupaten_kota",
+    "kemendagri_nama_kabupatenkota"
+   ],
+   [
+    "kemendagri_kode_ kecamatan",
+    "kemendagri_kode_kecamatan"
+   ],
+   [
+    "kemendagri_nama_ kecamatan",
+    "kemendagri_nama_kecamatan"
+   ],
+   [
+    "tahun",
+    "tahun"
+   ],
+   [
+    "satuan",
+    "satuan"
+   ]
+  ],
+  "annotator": "draft-claude",
+  "adjudicated": false
+ }
+]

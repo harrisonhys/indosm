@@ -1,0 +1,174 @@
+{
+ "system": "fhir",
+ "table": "ServiceRequest",
+ "source": "HL7 FHIR R4 4.0.1 StructureDefinition snapshot",
+ "license": "CC0-1.0",
+ "lang": "en",
+ "columns": [
+  {
+   "name": "identifier",
+   "type": "Identifier",
+   "desc": "Identifiers assigned to this order"
+  },
+  {
+   "name": "instantiatesCanonical",
+   "type": "canonical",
+   "desc": "Instantiates FHIR protocol or definition"
+  },
+  {
+   "name": "instantiatesUri",
+   "type": "uri",
+   "desc": "Instantiates external protocol or definition"
+  },
+  {
+   "name": "basedOn",
+   "type": "Reference",
+   "desc": "What request fulfills"
+  },
+  {
+   "name": "replaces",
+   "type": "Reference",
+   "desc": "What request replaces"
+  },
+  {
+   "name": "requisition",
+   "type": "Identifier",
+   "desc": "Composite Request ID"
+  },
+  {
+   "name": "status",
+   "type": "code",
+   "desc": "draft | active | on-hold | revoked | completed | entered-in-error | unknown"
+  },
+  {
+   "name": "intent",
+   "type": "code",
+   "desc": "proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option"
+  },
+  {
+   "name": "category",
+   "type": "CodeableConcept",
+   "desc": "Classification of service"
+  },
+  {
+   "name": "priority",
+   "type": "code",
+   "desc": "routine | urgent | asap | stat"
+  },
+  {
+   "name": "doNotPerform",
+   "type": "boolean",
+   "desc": "True if service/procedure should not be performed"
+  },
+  {
+   "name": "code",
+   "type": "CodeableConcept",
+   "desc": "What is being requested/ordered"
+  },
+  {
+   "name": "orderDetail",
+   "type": "CodeableConcept",
+   "desc": "Additional order information"
+  },
+  {
+   "name": "quantity[x]",
+   "type": "Quantity|Ratio|Range",
+   "desc": "Service amount"
+  },
+  {
+   "name": "subject",
+   "type": "Reference",
+   "desc": "Individual or Entity the service is ordered for"
+  },
+  {
+   "name": "encounter",
+   "type": "Reference",
+   "desc": "Encounter in which the request was created"
+  },
+  {
+   "name": "occurrence[x]",
+   "type": "dateTime|Period|Timing",
+   "desc": "When service should occur"
+  },
+  {
+   "name": "asNeeded[x]",
+   "type": "boolean|CodeableConcept",
+   "desc": "Preconditions for service"
+  },
+  {
+   "name": "authoredOn",
+   "type": "dateTime",
+   "desc": "Date request signed"
+  },
+  {
+   "name": "requester",
+   "type": "Reference",
+   "desc": "Who/what is requesting service"
+  },
+  {
+   "name": "performerType",
+   "type": "CodeableConcept",
+   "desc": "Performer role"
+  },
+  {
+   "name": "performer",
+   "type": "Reference",
+   "desc": "Requested performer"
+  },
+  {
+   "name": "locationCode",
+   "type": "CodeableConcept",
+   "desc": "Requested location"
+  },
+  {
+   "name": "locationReference",
+   "type": "Reference",
+   "desc": "Requested location"
+  },
+  {
+   "name": "reasonCode",
+   "type": "CodeableConcept",
+   "desc": "Explanation/Justification for procedure or service"
+  },
+  {
+   "name": "reasonReference",
+   "type": "Reference",
+   "desc": "Explanation/Justification for service or service"
+  },
+  {
+   "name": "insurance",
+   "type": "Reference",
+   "desc": "Associated insurance coverage"
+  },
+  {
+   "name": "supportingInfo",
+   "type": "Reference",
+   "desc": "Additional clinical information"
+  },
+  {
+   "name": "specimen",
+   "type": "Reference",
+   "desc": "Procedure Samples"
+  },
+  {
+   "name": "bodySite",
+   "type": "CodeableConcept",
+   "desc": "Location on Body"
+  },
+  {
+   "name": "note",
+   "type": "Annotation",
+   "desc": "Comments"
+  },
+  {
+   "name": "patientInstruction",
+   "type": "string",
+   "desc": "Patient or consumer-oriented instructions"
+  },
+  {
+   "name": "relevantHistory",
+   "type": "Reference",
+   "desc": "Request provenance"
+  }
+ ]
+}

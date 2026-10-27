@@ -1,0 +1,139 @@
+{
+ "system": "khanza",
+ "table": "databarang",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "kode_brng",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "nama_brng",
+   "type": "varchar(80)",
+   "desc": ""
+  },
+  {
+   "name": "kode_satbesar",
+   "type": "char(4)",
+   "desc": ""
+  },
+  {
+   "name": "kode_sat",
+   "type": "char(4)",
+   "desc": ""
+  },
+  {
+   "name": "letak_barang",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "dasar",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "h_beli",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "ralan",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "kelas1",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "kelas2",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "kelas3",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "utama",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "vip",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "vvip",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "beliluar",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "jualbebas",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "karyawan",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "stokminimal",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "kdjns",
+   "type": "char(4)",
+   "desc": ""
+  },
+  {
+   "name": "isi",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "kapasitas",
+   "type": "double",
+   "desc": ""
+  },
+  {
+   "name": "expire",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "status",
+   "type": "enum('0','1')",
+   "desc": ""
+  },
+  {
+   "name": "kode_industri",
+   "type": "char(5)",
+   "desc": ""
+  },
+  {
+   "name": "kode_kategori",
+   "type": "char(4)",
+   "desc": ""
+  },
+  {
+   "name": "kode_golongan",
+   "type": "char(4)",
+   "desc": ""
+  }
+ ]
+}

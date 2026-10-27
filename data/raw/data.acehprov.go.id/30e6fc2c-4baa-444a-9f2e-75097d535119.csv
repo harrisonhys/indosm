@@ -1,0 +1,507 @@
+kemendagri_kode_provinsi;kemendagri_nama_provinsi;kemendagri_kode_kabupaten_kota;kemendagri_nama_kabupaten_kota;tahun;tahun_ajaran;semester;jenis_sekolah;jumlah_sekolah_kb;satuan
+11;Aceh;11.01;Kabupaten Aceh Selatan;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2020;2020/2021;Ganjil;Negeri;2;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2020;2020/2021;Genap;Negeri;3;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2020;2020/2021;Ganjil;Negeri;1;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2020;2020/2021;Genap;Negeri;1;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2021;2021/2022;Ganjil;Negeri;1;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2021;2021/2022;Genap;Negeri;1;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2020;2020/2021;Ganjil;Negeri;1;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.07;Kabupaten Pidie;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.07;Kabupaten Pidie;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.07;Kabupaten Pidie;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.07;Kabupaten Pidie;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.07;Kabupaten Pidie;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.07;Kabupaten Pidie;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.07;Kabupaten Pidie;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.07;Kabupaten Pidie;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.07;Kabupaten Pidie;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.07;Kabupaten Pidie;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.07;Kabupaten Pidie;2024;2024/2025;Ganjil;Negeri;1;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2020;2020/2021;Ganjil;Negeri;2;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2020;2020/2021;Genap;Negeri;2;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2021;2021/2022;Ganjil;Negeri;2;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2021;2021/2022;Genap;Negeri;3;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2022;2022/2023;Ganjil;Negeri;1;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2022;2022/2023;Genap;Negeri;1;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2023;2023/2024;Ganjil;Negeri;1;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2023;2023/2024;Genap;Negeri;1;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.71;Kota Banda Aceh;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.71;Kota Banda Aceh;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.71;Kota Banda Aceh;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.71;Kota Banda Aceh;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.71;Kota Banda Aceh;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.71;Kota Banda Aceh;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.71;Kota Banda Aceh;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.71;Kota Banda Aceh;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.71;Kota Banda Aceh;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.71;Kota Banda Aceh;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.71;Kota Banda Aceh;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.72;Kota Sabang;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.72;Kota Sabang;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.72;Kota Sabang;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.72;Kota Sabang;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.72;Kota Sabang;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.72;Kota Sabang;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.72;Kota Sabang;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.72;Kota Sabang;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.72;Kota Sabang;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.72;Kota Sabang;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.72;Kota Sabang;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.74;Kota Langsa;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.74;Kota Langsa;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.74;Kota Langsa;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.74;Kota Langsa;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.74;Kota Langsa;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.74;Kota Langsa;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.74;Kota Langsa;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.74;Kota Langsa;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.74;Kota Langsa;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.74;Kota Langsa;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.74;Kota Langsa;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.75;Kota Subulussalam;2019;2019/2020;Ganjil;Negeri;0;Unit
+11;Aceh;11.75;Kota Subulussalam;2019;2019/2020;Genap;Negeri;0;Unit
+11;Aceh;11.75;Kota Subulussalam;2020;2020/2021;Ganjil;Negeri;0;Unit
+11;Aceh;11.75;Kota Subulussalam;2020;2020/2021;Genap;Negeri;0;Unit
+11;Aceh;11.75;Kota Subulussalam;2021;2021/2022;Ganjil;Negeri;0;Unit
+11;Aceh;11.75;Kota Subulussalam;2021;2021/2022;Genap;Negeri;0;Unit
+11;Aceh;11.75;Kota Subulussalam;2022;2022/2023;Ganjil;Negeri;0;Unit
+11;Aceh;11.75;Kota Subulussalam;2022;2022/2023;Genap;Negeri;0;Unit
+11;Aceh;11.75;Kota Subulussalam;2023;2023/2024;Ganjil;Negeri;0;Unit
+11;Aceh;11.75;Kota Subulussalam;2023;2023/2024;Genap;Negeri;0;Unit
+11;Aceh;11.75;Kota Subulussalam;2024;2024/2025;Ganjil;Negeri;0;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2020;2020/2021;Ganjil;Swasta;240;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2020;2020/2021;Genap;Swasta;245;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2021;2021/2022;Ganjil;Swasta;231;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2021;2021/2022;Genap;Swasta;237;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2022;2022/2023;Ganjil;Swasta;241;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2022;2022/2023;Genap;Swasta;261;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2023;2023/2024;Ganjil;Swasta;237;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2023;2023/2024;Genap;Swasta;238;Unit
+11;Aceh;11.01;Kabupaten Aceh Selatan;2024;2024/2025;Ganjil;Swasta;243;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2020;2020/2021;Ganjil;Swasta;123;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2020;2020/2021;Genap;Swasta;120;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2021;2021/2022;Ganjil;Swasta;128;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2021;2021/2022;Genap;Swasta;130;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2022;2022/2023;Ganjil;Swasta;131;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2022;2022/2023;Genap;Swasta;133;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2023;2023/2024;Ganjil;Swasta;128;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2023;2023/2024;Genap;Swasta;134;Unit
+11;Aceh;11.02;Kabupaten Aceh Tenggara;2024;2024/2025;Ganjil;Swasta;139;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2020;2020/2021;Ganjil;Swasta;190;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2020;2020/2021;Genap;Swasta;200;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2021;2021/2022;Ganjil;Swasta;215;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2021;2021/2022;Genap;Swasta;223;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2022;2022/2023;Ganjil;Swasta;200;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2022;2022/2023;Genap;Swasta;210;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2023;2023/2024;Ganjil;Swasta;217;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2023;2023/2024;Genap;Swasta;214;Unit
+11;Aceh;11.03;Kabupaten Aceh Timur;2024;2024/2025;Ganjil;Swasta;220;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2020;2020/2021;Ganjil;Swasta;45;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2020;2020/2021;Genap;Swasta;47;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2021;2021/2022;Ganjil;Swasta;47;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2021;2021/2022;Genap;Swasta;48;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2022;2022/2023;Ganjil;Swasta;45;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2022;2022/2023;Genap;Swasta;41;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2023;2023/2024;Ganjil;Swasta;40;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2023;2023/2024;Genap;Swasta;40;Unit
+11;Aceh;11.04;Kabupaten Aceh Tengah;2024;2024/2025;Ganjil;Swasta;40;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2020;2020/2021;Ganjil;Swasta;81;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2020;2020/2021;Genap;Swasta;83;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2021;2021/2022;Ganjil;Swasta;78;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2021;2021/2022;Genap;Swasta;79;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2022;2022/2023;Ganjil;Swasta;74;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2022;2022/2023;Genap;Swasta;79;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2023;2023/2024;Ganjil;Swasta;71;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2023;2023/2024;Genap;Swasta;71;Unit
+11;Aceh;11.05;Kabupaten Aceh Barat;2024;2024/2025;Ganjil;Swasta;72;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2020;2020/2021;Ganjil;Swasta;108;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2020;2020/2021;Genap;Swasta;100;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2021;2021/2022;Ganjil;Swasta;93;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2021;2021/2022;Genap;Swasta;82;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2022;2022/2023;Ganjil;Swasta;87;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2022;2022/2023;Genap;Swasta;84;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2023;2023/2024;Ganjil;Swasta;73;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2023;2023/2024;Genap;Swasta;73;Unit
+11;Aceh;11.06;Kabupaten Aceh Besar;2024;2024/2025;Ganjil;Swasta;71;Unit
+11;Aceh;11.07;Kabupaten Pidie;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.07;Kabupaten Pidie;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.07;Kabupaten Pidie;2020;2020/2021;Ganjil;Swasta;114;Unit
+11;Aceh;11.07;Kabupaten Pidie;2020;2020/2021;Genap;Swasta;114;Unit
+11;Aceh;11.07;Kabupaten Pidie;2021;2021/2022;Ganjil;Swasta;101;Unit
+11;Aceh;11.07;Kabupaten Pidie;2021;2021/2022;Genap;Swasta;100;Unit
+11;Aceh;11.07;Kabupaten Pidie;2022;2022/2023;Ganjil;Swasta;101;Unit
+11;Aceh;11.07;Kabupaten Pidie;2022;2022/2023;Genap;Swasta;104;Unit
+11;Aceh;11.07;Kabupaten Pidie;2023;2023/2024;Ganjil;Swasta;85;Unit
+11;Aceh;11.07;Kabupaten Pidie;2023;2023/2024;Genap;Swasta;85;Unit
+11;Aceh;11.07;Kabupaten Pidie;2024;2024/2025;Ganjil;Swasta;86;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2020;2020/2021;Ganjil;Swasta;135;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2020;2020/2021;Genap;Swasta;127;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2021;2021/2022;Ganjil;Swasta;127;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2021;2021/2022;Genap;Swasta;133;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2022;2022/2023;Ganjil;Swasta;130;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2022;2022/2023;Genap;Swasta;145;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2023;2023/2024;Ganjil;Swasta;144;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2023;2023/2024;Genap;Swasta;145;Unit
+11;Aceh;11.08;Kabupaten Aceh Utara;2024;2024/2025;Ganjil;Swasta;149;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2020;2020/2021;Ganjil;Swasta;58;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2020;2020/2021;Genap;Swasta;58;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2021;2021/2022;Ganjil;Swasta;59;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2021;2021/2022;Genap;Swasta;58;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2022;2022/2023;Ganjil;Swasta;58;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2022;2022/2023;Genap;Swasta;60;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2023;2023/2024;Ganjil;Swasta;62;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2023;2023/2024;Genap;Swasta;62;Unit
+11;Aceh;11.09;Kabupaten Simeulue;2024;2024/2025;Ganjil;Swasta;61;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2020;2020/2021;Ganjil;Swasta;21;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2020;2020/2021;Genap;Swasta;22;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2021;2021/2022;Ganjil;Swasta;25;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2021;2021/2022;Genap;Swasta;24;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2022;2022/2023;Ganjil;Swasta;25;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2022;2022/2023;Genap;Swasta;23;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2023;2023/2024;Ganjil;Swasta;22;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2023;2023/2024;Genap;Swasta;23;Unit
+11;Aceh;11.1;Kabupaten Aceh Singkil;2024;2024/2025;Ganjil;Swasta;22;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2020;2020/2021;Ganjil;Swasta;183;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2020;2020/2021;Genap;Swasta;184;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2021;2021/2022;Ganjil;Swasta;179;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2021;2021/2022;Genap;Swasta;182;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2022;2022/2023;Ganjil;Swasta;164;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2022;2022/2023;Genap;Swasta;156;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2023;2023/2024;Ganjil;Swasta;135;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2023;2023/2024;Genap;Swasta;132;Unit
+11;Aceh;11.11;Kabupaten Bireuen;2024;2024/2025;Ganjil;Swasta;126;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2020;2020/2021;Ganjil;Swasta;99;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2020;2020/2021;Genap;Swasta;108;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2021;2021/2022;Ganjil;Swasta;106;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2021;2021/2022;Genap;Swasta;115;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2022;2022/2023;Ganjil;Swasta;119;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2022;2022/2023;Genap;Swasta;130;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2023;2023/2024;Ganjil;Swasta;124;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2023;2023/2024;Genap;Swasta;124;Unit
+11;Aceh;11.12;Kabupaten Aceh Barat Daya;2024;2024/2025;Ganjil;Swasta;113;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2020;2020/2021;Ganjil;Swasta;37;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2020;2020/2021;Genap;Swasta;37;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2021;2021/2022;Ganjil;Swasta;37;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2021;2021/2022;Genap;Swasta;33;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2022;2022/2023;Ganjil;Swasta;34;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2022;2022/2023;Genap;Swasta;34;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2023;2023/2024;Ganjil;Swasta;33;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2023;2023/2024;Genap;Swasta;33;Unit
+11;Aceh;11.13;Kabupaten Gayo Lues;2024;2024/2025;Ganjil;Swasta;35;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2020;2020/2021;Ganjil;Swasta;125;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2020;2020/2021;Genap;Swasta;124;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2021;2021/2022;Ganjil;Swasta;126;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2021;2021/2022;Genap;Swasta;127;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2022;2022/2023;Ganjil;Swasta;126;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2022;2022/2023;Genap;Swasta;126;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2023;2023/2024;Ganjil;Swasta;123;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2023;2023/2024;Genap;Swasta;124;Unit
+11;Aceh;11.14;Kabupaten Aceh Jaya;2024;2024/2025;Ganjil;Swasta;124;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2020;2020/2021;Ganjil;Swasta;124;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2020;2020/2021;Genap;Swasta;128;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2021;2021/2022;Ganjil;Swasta;130;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2021;2021/2022;Genap;Swasta;127;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2022;2022/2023;Ganjil;Swasta;133;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2022;2022/2023;Genap;Swasta;134;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2023;2023/2024;Ganjil;Swasta;133;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2023;2023/2024;Genap;Swasta;133;Unit
+11;Aceh;11.15;Kabupaten Nagan Raya;2024;2024/2025;Ganjil;Swasta;133;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2020;2020/2021;Ganjil;Swasta;51;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2020;2020/2021;Genap;Swasta;50;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2021;2021/2022;Ganjil;Swasta;49;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2021;2021/2022;Genap;Swasta;47;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2022;2022/2023;Ganjil;Swasta;47;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2022;2022/2023;Genap;Swasta;46;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2023;2023/2024;Ganjil;Swasta;45;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2023;2023/2024;Genap;Swasta;45;Unit
+11;Aceh;11.16;Kabupaten Aceh Tamiang;2024;2024/2025;Ganjil;Swasta;41;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2020;2020/2021;Ganjil;Swasta;40;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2020;2020/2021;Genap;Swasta;40;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2021;2021/2022;Ganjil;Swasta;59;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2021;2021/2022;Genap;Swasta;66;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2022;2022/2023;Ganjil;Swasta;70;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2022;2022/2023;Genap;Swasta;69;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2023;2023/2024;Ganjil;Swasta;65;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2023;2023/2024;Genap;Swasta;61;Unit
+11;Aceh;11.17;Kabupaten Bener Meriah;2024;2024/2025;Ganjil;Swasta;62;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2020;2020/2021;Ganjil;Swasta;75;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2020;2020/2021;Genap;Swasta;75;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2021;2021/2022;Ganjil;Swasta;77;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2021;2021/2022;Genap;Swasta;77;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2022;2022/2023;Ganjil;Swasta;77;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2022;2022/2023;Genap;Swasta;77;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2023;2023/2024;Ganjil;Swasta;74;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2023;2023/2024;Genap;Swasta;75;Unit
+11;Aceh;11.18;Kabupaten Pidie Jaya;2024;2024/2025;Ganjil;Swasta;78;Unit
+11;Aceh;11.71;Kota Banda Aceh;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.71;Kota Banda Aceh;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.71;Kota Banda Aceh;2020;2020/2021;Ganjil;Swasta;51;Unit
+11;Aceh;11.71;Kota Banda Aceh;2020;2020/2021;Genap;Swasta;50;Unit
+11;Aceh;11.71;Kota Banda Aceh;2021;2021/2022;Ganjil;Swasta;47;Unit
+11;Aceh;11.71;Kota Banda Aceh;2021;2021/2022;Genap;Swasta;49;Unit
+11;Aceh;11.71;Kota Banda Aceh;2022;2022/2023;Ganjil;Swasta;49;Unit
+11;Aceh;11.71;Kota Banda Aceh;2022;2022/2023;Genap;Swasta;51;Unit
+11;Aceh;11.71;Kota Banda Aceh;2023;2023/2024;Ganjil;Swasta;50;Unit
+11;Aceh;11.71;Kota Banda Aceh;2023;2023/2024;Genap;Swasta;50;Unit
+11;Aceh;11.71;Kota Banda Aceh;2024;2024/2025;Ganjil;Swasta;50;Unit
+11;Aceh;11.72;Kota Sabang;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.72;Kota Sabang;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.72;Kota Sabang;2020;2020/2021;Ganjil;Swasta;19;Unit
+11;Aceh;11.72;Kota Sabang;2020;2020/2021;Genap;Swasta;20;Unit
+11;Aceh;11.72;Kota Sabang;2021;2021/2022;Ganjil;Swasta;20;Unit
+11;Aceh;11.72;Kota Sabang;2021;2021/2022;Genap;Swasta;21;Unit
+11;Aceh;11.72;Kota Sabang;2022;2022/2023;Ganjil;Swasta;21;Unit
+11;Aceh;11.72;Kota Sabang;2022;2022/2023;Genap;Swasta;22;Unit
+11;Aceh;11.72;Kota Sabang;2023;2023/2024;Ganjil;Swasta;18;Unit
+11;Aceh;11.72;Kota Sabang;2023;2023/2024;Genap;Swasta;18;Unit
+11;Aceh;11.72;Kota Sabang;2024;2024/2025;Ganjil;Swasta;18;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2020;2020/2021;Ganjil;Swasta;65;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2020;2020/2021;Genap;Swasta;60;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2021;2021/2022;Ganjil;Swasta;56;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2021;2021/2022;Genap;Swasta;57;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2022;2022/2023;Ganjil;Swasta;55;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2022;2022/2023;Genap;Swasta;55;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2023;2023/2024;Ganjil;Swasta;50;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2023;2023/2024;Genap;Swasta;49;Unit
+11;Aceh;11.73;Kota Lhokseumawe;2024;2024/2025;Ganjil;Swasta;50;Unit
+11;Aceh;11.74;Kota Langsa;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.74;Kota Langsa;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.74;Kota Langsa;2020;2020/2021;Ganjil;Swasta;77;Unit
+11;Aceh;11.74;Kota Langsa;2020;2020/2021;Genap;Swasta;77;Unit
+11;Aceh;11.74;Kota Langsa;2021;2021/2022;Ganjil;Swasta;70;Unit
+11;Aceh;11.74;Kota Langsa;2021;2021/2022;Genap;Swasta;72;Unit
+11;Aceh;11.74;Kota Langsa;2022;2022/2023;Ganjil;Swasta;70;Unit
+11;Aceh;11.74;Kota Langsa;2022;2022/2023;Genap;Swasta;72;Unit
+11;Aceh;11.74;Kota Langsa;2023;2023/2024;Ganjil;Swasta;73;Unit
+11;Aceh;11.74;Kota Langsa;2023;2023/2024;Genap;Swasta;75;Unit
+11;Aceh;11.74;Kota Langsa;2024;2024/2025;Ganjil;Swasta;77;Unit
+11;Aceh;11.75;Kota Subulussalam;2019;2019/2020;Ganjil;Swasta;0;Unit
+11;Aceh;11.75;Kota Subulussalam;2019;2019/2020;Genap;Swasta;0;Unit
+11;Aceh;11.75;Kota Subulussalam;2020;2020/2021;Ganjil;Swasta;40;Unit
+11;Aceh;11.75;Kota Subulussalam;2020;2020/2021;Genap;Swasta;41;Unit
+11;Aceh;11.75;Kota Subulussalam;2021;2021/2022;Ganjil;Swasta;45;Unit
+11;Aceh;11.75;Kota Subulussalam;2021;2021/2022;Genap;Swasta;45;Unit
+11;Aceh;11.75;Kota Subulussalam;2022;2022/2023;Ganjil;Swasta;47;Unit
+11;Aceh;11.75;Kota Subulussalam;2022;2022/2023;Genap;Swasta;49;Unit
+11;Aceh;11.75;Kota Subulussalam;2023;2023/2024;Ganjil;Swasta;50;Unit
+11;Aceh;11.75;Kota Subulussalam;2023;2023/2024;Genap;Swasta;50;Unit
+11;Aceh;11.75;Kota Subulussalam;2024;2024/2025;Ganjil;Swasta;51;Unit

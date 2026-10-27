@@ -1,0 +1,74 @@
+{
+ "system": "khanza",
+ "table": "petugas",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "nip",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "nama",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "jk",
+   "type": "enum('l','p')",
+   "desc": ""
+  },
+  {
+   "name": "tmp_lahir",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_lahir",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "gol_darah",
+   "type": "enum('a','b','o','ab','-')",
+   "desc": ""
+  },
+  {
+   "name": "agama",
+   "type": "varchar(12)",
+   "desc": ""
+  },
+  {
+   "name": "stts_nikah",
+   "type": "enum('belum menikah','menikah','janda','dudha','jomblo')",
+   "desc": ""
+  },
+  {
+   "name": "alamat",
+   "type": "varchar(60)",
+   "desc": ""
+  },
+  {
+   "name": "kd_jbtn",
+   "type": "char(4)",
+   "desc": ""
+  },
+  {
+   "name": "no_telp",
+   "type": "varchar(13)",
+   "desc": ""
+  },
+  {
+   "name": "email",
+   "type": "varchar(70)",
+   "desc": ""
+  },
+  {
+   "name": "status",
+   "type": "enum('0','1')",
+   "desc": ""
+  }
+ ]
+}

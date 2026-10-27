@@ -1,0 +1,349 @@
+{
+ "judge": "claude (single annotator, not adjudicated)",
+ "eval_tokens": {
+  "almt": {
+   "mined": "alamat",
+   "correct": true,
+   "should_be": null
+  },
+  "attn": {
+   "mined": "atrialfibrillationburden",
+   "correct": false,
+   "should_be": "attention/up (attn)"
+  },
+  "bpd": {
+   "mined": "bloodpressurediastolic",
+   "correct": false,
+   "should_be": "Bank Pembangunan Daerah"
+  },
+  "brng": {
+   "mined": "barang",
+   "correct": true,
+   "should_be": null
+  },
+  "drh": {
+   "mined": "darah",
+   "correct": true,
+   "should_be": null
+  },
+  "gol": {
+   "mined": "golongan",
+   "correct": true,
+   "should_be": null
+  },
+  "ijn": {
+   "mined": "ipsrsjenisbarang",
+   "correct": false,
+   "should_be": "izin"
+  },
+  "jbtn": {
+   "mined": "jabatan",
+   "correct": true,
+   "should_be": null
+  },
+  "jk": {
+   "mined": "jenis kelamin",
+   "correct": true,
+   "should_be": null
+  },
+  "jml": {
+   "mined": "jumlah",
+   "correct": true,
+   "should_be": null
+  },
+  "jnj": {
+   "mined": "jenjang",
+   "correct": true,
+   "should_be": null
+  },
+  "kab": {
+   "mined": "kabupaten",
+   "correct": true,
+   "should_be": null
+  },
+  "kat": {
+   "mined": "kategori",
+   "correct": true,
+   "should_be": null
+  },
+  "kd": {
+   "mined": "kode",
+   "correct": true,
+   "should_be": null
+  },
+  "kec": {
+   "mined": "kecamatan",
+   "correct": true,
+   "should_be": null
+  },
+  "kel": {
+   "mined": "kelurahan",
+   "correct": true,
+   "should_be": null
+  },
+  "kso": {
+   "mined": "kolesteatoma",
+   "correct": false,
+   "should_be": "kerja sama operasional"
+  },
+  "ktp": {
+   "mined": "keterampilkan",
+   "correct": false,
+   "should_be": "kartu tanda penduduk"
+  },
+  "nik": {
+   "mined": "nmpolirujukinternal",
+   "correct": false,
+   "should_be": "nomor induk (karyawan/kependudukan)"
+  },
+  "nm": {
+   "mined": "nama",
+   "correct": true,
+   "should_be": null
+  },
+  "no": {
+   "mined": "nomor",
+   "correct": true,
+   "should_be": null
+  },
+  "pnd": {
+   "mined": "pengadaan",
+   "correct": false,
+   "should_be": "pendidikan"
+  },
+  "png": {
+   "mined": "penangung",
+   "correct": true,
+   "should_be": null
+  },
+  "prw": {
+   "mined": "perawatan",
+   "correct": true,
+   "should_be": null
+  },
+  "reg": {
+   "mined": "registrasi",
+   "correct": true,
+   "should_be": null
+  },
+  "rkm": {
+   "mined": "rekomendasi",
+   "correct": false,
+   "should_be": "rekam"
+  },
+  "rs": {
+   "mined": "rstahun",
+   "correct": false,
+   "should_be": "rumah sakit"
+  },
+  "sat": {
+   "mined": "satuan",
+   "correct": true,
+   "should_be": null
+  },
+  "sps": {
+   "mined": "spesialis",
+   "correct": true,
+   "should_be": null
+  },
+  "stts": {
+   "mined": "status",
+   "correct": true,
+   "should_be": null
+  },
+  "telp": {
+   "mined": "telepon",
+   "correct": true,
+   "should_be": null
+  },
+  "tgl": {
+   "mined": "tanggal",
+   "correct": true,
+   "should_be": null
+  },
+  "tlp": {
+   "mined": "telepon",
+   "correct": true,
+   "should_be": null
+  },
+  "tmp": {
+   "mined": "tempat",
+   "correct": true,
+   "should_be": null
+  },
+  "trf": {
+   "mined": "tarif",
+   "correct": true,
+   "should_be": null
+  },
+  "ttl": {
+   "mined": "total",
+   "correct": true,
+   "should_be": null
+  }
+ },
+ "heldout_sample": {
+  "adl": {
+   "mined": "antriradiologi",
+   "correct": false
+  },
+  "apd": {
+   "mined": "applestandtime",
+   "correct": false
+  },
+  "bln": {
+   "mined": "bulan",
+   "correct": true
+  },
+  "bun": {
+   "mined": "bulan",
+   "correct": false
+  },
+  "cath": {
+   "mined": "catheter",
+   "correct": true
+  },
+  "cpb": {
+   "mined": "cetaknotasimpanlabkesling",
+   "correct": false
+  },
+  "ctg": {
+   "mined": "cetaknotasimpanlabkesling",
+   "correct": false
+  },
+  "cva": {
+   "mined": "conjungtiva",
+   "correct": false
+  },
+  "ekg": {
+   "mined": "enkoding",
+   "correct": false
+  },
+  "form": {
+   "mined": "formulir",
+   "correct": true
+  },
+  "ikp": {
+   "mined": "imunokompromis",
+   "correct": false
+  },
+  "inte": {
+   "mined": "integument",
+   "correct": null
+  },
+  "jmlh": {
+   "mined": "jumlah",
+   "correct": true
+  },
+  "jns": {
+   "mined": "jenis",
+   "correct": true
+  },
+  "k": {
+   "mined": "kunjungan",
+   "correct": null
+  },
+  "kip": {
+   "mined": "kesimpulan",
+   "correct": false
+  },
+  "lab": {
+   "mined": "labmb",
+   "correct": false
+  },
+  "lamp": {
+   "mined": "lampiran",
+   "correct": true
+  },
+  "lip": {
+   "mined": "limpa",
+   "correct": null
+  },
+  "lla": {
+   "mined": "llaperu",
+   "correct": false
+  },
+  "mas": {
+   "mined": "masalah",
+   "correct": null
+  },
+  "mnt": {
+   "mined": "mentis",
+   "correct": false
+  },
+  "mpp": {
+   "mined": "mapping",
+   "correct": false
+  },
+  "pcra": {
+   "mined": "pencernaan",
+   "correct": null
+  },
+  "pend": {
+   "mined": "pendidikan",
+   "correct": true
+  },
+  "pest": {
+   "mined": "perpustakaan",
+   "correct": false
+  },
+  "pleb": {
+   "mined": "palpebrae",
+   "correct": true
+  },
+  "ppi": {
+   "mined": "pupil",
+   "correct": false
+  },
+  "ppn": {
+   "mined": "perpustakaan",
+   "correct": false
+  },
+  "rak": {
+   "mined": "racik",
+   "correct": false
+  },
+  "rkd": {
+   "mined": "rekomendasi",
+   "correct": false
+  },
+  "rpk": {
+   "mined": "reproduksi",
+   "correct": false
+  },
+  "rtl": {
+   "mined": "retail",
+   "correct": false
+  },
+  "salt": {
+   "mined": "statusbataltanggal",
+   "correct": false
+  },
+  "sjp": {
+   "mined": "setpenjualanperbarang",
+   "correct": false
+  },
+  "soft": {
+   "mined": "spektrofotometri",
+   "correct": false
+  },
+  "tdk": {
+   "mined": "tidak",
+   "correct": true
+  },
+  "teks": {
+   "mined": "teknisi",
+   "correct": false
+  },
+  "thn": {
+   "mined": "tahun",
+   "correct": true
+  },
+  "tps": {
+   "mined": "transportasi",
+   "correct": false
+  }
+ },
+ "eval_tokens_precision": "27/36 correct, 0 unsure",
+ "heldout_sample_precision": "10/40 correct, 5 unsure"
+}

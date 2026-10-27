@@ -1,0 +1,159 @@
+{
+ "system": "siakad",
+ "table": "siakad_riwayatpendidikan",
+ "source": "SIAKAD Feeder (idiknursidik/siakad@master, siakad.sql)",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id_riwayatpendidikan",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "id_prodi",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "id_mahasiswa",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "kodept",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "kode_prodi",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "biaya_masuk",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "id_bidang_minat",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "id_jalur_daftar",
+   "type": "varchar(200)",
+   "desc": ""
+  },
+  {
+   "name": "id_jenis_daftar",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "id_jenis_keluar",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "id_mahasiswa_ws",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "id_pembiayaan",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "id_perguruan_tinggi",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "id_perguruan_tinggi_asal",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "id_periode_masuk",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "id_prodi_ws",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "id_prodi_asal",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "id_registrasi_mahasiswa",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "keterangan_keluar",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "nama_jenis_daftar",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "nama_pembiayaan_awal",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "nama_perguruan_tinggi",
+   "type": "varchar(200)",
+   "desc": ""
+  },
+  {
+   "name": "nama_perguruan_tinggi_asal",
+   "type": "varchar(200)",
+   "desc": ""
+  },
+  {
+   "name": "nama_periode_masuk",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "nama_program_studi",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "nama_program_studi_asal",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "nim",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "nm_bidang_minat",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "sks_diakui",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_daftar",
+   "type": "date",
+   "desc": ""
+  }
+ ]
+}

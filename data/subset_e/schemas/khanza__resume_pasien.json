@@ -1,0 +1,139 @@
+{
+ "system": "khanza",
+ "table": "resume_pasien",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "kd_dokter",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "keluhan_utama",
+   "type": "text",
+   "desc": ""
+  },
+  {
+   "name": "jalannya_penyakit",
+   "type": "text",
+   "desc": ""
+  },
+  {
+   "name": "pemeriksaan_penunjang",
+   "type": "text",
+   "desc": ""
+  },
+  {
+   "name": "hasil_laborat",
+   "type": "text",
+   "desc": ""
+  },
+  {
+   "name": "diagnosa_utama",
+   "type": "varchar(80)",
+   "desc": ""
+  },
+  {
+   "name": "kd_diagnosa_utama",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "diagnosa_sekunder",
+   "type": "varchar(80)",
+   "desc": ""
+  },
+  {
+   "name": "kd_diagnosa_sekunder",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "diagnosa_sekunder2",
+   "type": "varchar(80)",
+   "desc": ""
+  },
+  {
+   "name": "kd_diagnosa_sekunder2",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "diagnosa_sekunder3",
+   "type": "varchar(80)",
+   "desc": ""
+  },
+  {
+   "name": "kd_diagnosa_sekunder3",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "diagnosa_sekunder4",
+   "type": "varchar(80)",
+   "desc": ""
+  },
+  {
+   "name": "kd_diagnosa_sekunder4",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "prosedur_utama",
+   "type": "varchar(80)",
+   "desc": ""
+  },
+  {
+   "name": "kd_prosedur_utama",
+   "type": "varchar(8)",
+   "desc": ""
+  },
+  {
+   "name": "prosedur_sekunder",
+   "type": "varchar(80)",
+   "desc": ""
+  },
+  {
+   "name": "kd_prosedur_sekunder",
+   "type": "varchar(8)",
+   "desc": ""
+  },
+  {
+   "name": "prosedur_sekunder2",
+   "type": "varchar(80)",
+   "desc": ""
+  },
+  {
+   "name": "kd_prosedur_sekunder2",
+   "type": "varchar(8)",
+   "desc": ""
+  },
+  {
+   "name": "prosedur_sekunder3",
+   "type": "varchar(80)",
+   "desc": ""
+  },
+  {
+   "name": "kd_prosedur_sekunder3",
+   "type": "varchar(8)",
+   "desc": ""
+  },
+  {
+   "name": "kondisi_pulang",
+   "type": "enum('hidup','meninggal')",
+   "desc": ""
+  },
+  {
+   "name": "obat_pulang",
+   "type": "text",
+   "desc": ""
+  }
+ ]
+}

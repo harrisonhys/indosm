@@ -1,0 +1,1805 @@
+[
+ {
+  "id": "E01",
+  "group": "khanza-fhir",
+  "lang": "id-en",
+  "source": "khanza__pasien",
+  "target": "fhir__Patient",
+  "gt": [
+   [
+    "no_ktp",
+    "identifier"
+   ],
+   [
+    "nm_pasien",
+    "name"
+   ],
+   [
+    "jk",
+    "gender"
+   ],
+   [
+    "tgl_lahir",
+    "birthDate"
+   ],
+   [
+    "alamat",
+    "address"
+   ],
+   [
+    "stts_nikah",
+    "maritalStatus"
+   ],
+   [
+    "no_tlp",
+    "telecom"
+   ],
+   [
+    "bahasa_pasien",
+    "communication"
+   ],
+   [
+    "namakeluarga",
+    "contact.name"
+   ],
+   [
+    "keluarga",
+    "contact.relationship"
+   ],
+   [
+    "alamatpj",
+    "contact.address"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "no_rkm_medis",
+    "identifier"
+   ],
+   [
+    "no_peserta",
+    "identifier"
+   ],
+   [
+    "email",
+    "telecom"
+   ],
+   [
+    "kd_kel",
+    "address"
+   ],
+   [
+    "kd_kec",
+    "address"
+   ],
+   [
+    "kd_kab",
+    "address"
+   ],
+   [
+    "kd_prop",
+    "address"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "Base FHIR R4 only: SATUSEHAT extensions (birthPlace, religion, mothersMaidenName, citizenship) are not modelled, so those source columns are true negatives. Primary identifier chosen = NIK (no_ktp), as in SATUSEHAT.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E02",
+  "group": "khanza-fhir",
+  "lang": "id-en",
+  "source": "khanza__dokter",
+  "target": "fhir__Practitioner",
+  "gt": [
+   [
+    "kd_dokter",
+    "identifier"
+   ],
+   [
+    "nm_dokter",
+    "name"
+   ],
+   [
+    "jk",
+    "gender"
+   ],
+   [
+    "tgl_lahir",
+    "birthDate"
+   ],
+   [
+    "almt_tgl",
+    "address"
+   ],
+   [
+    "no_telp",
+    "telecom"
+   ],
+   [
+    "status",
+    "active"
+   ],
+   [
+    "no_ijn_praktek",
+    "qualification.identifier"
+   ],
+   [
+    "kd_sps",
+    "qualification.code"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "email",
+    "telecom"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "alumni",
+    "qualification.issuer",
+    "alma mater vs. issuing body of the qualification"
+   ]
+  ],
+  "notes": "Base FHIR R4 only: SATUSEHAT extensions (birthPlace, religion, mothersMaidenName, citizenship) are not modelled, so those source columns are true negatives.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E03",
+  "group": "khanza-fhir",
+  "lang": "id-en",
+  "source": "khanza__pegawai",
+  "target": "fhir__Practitioner",
+  "gt": [
+   [
+    "nik",
+    "identifier"
+   ],
+   [
+    "nama",
+    "name"
+   ],
+   [
+    "jk",
+    "gender"
+   ],
+   [
+    "tgl_lahir",
+    "birthDate"
+   ],
+   [
+    "alamat",
+    "address"
+   ],
+   [
+    "stts_aktif",
+    "active"
+   ],
+   [
+    "photo",
+    "photo"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "no_ktp",
+    "identifier"
+   ],
+   [
+    "kota",
+    "address"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "pendidikan",
+    "qualification.code",
+    "education level vs. professional qualification"
+   ]
+  ],
+  "notes": "Trap: in Khanza `pegawai.nik` is the EMPLOYEE number (nomor induk karyawan); the national ID is `no_ktp`.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E04",
+  "group": "khanza-fhir",
+  "lang": "id-en",
+  "source": "khanza__poliklinik",
+  "target": "fhir__Location",
+  "gt": [
+   [
+    "kd_poli",
+    "identifier"
+   ],
+   [
+    "nm_poli",
+    "name"
+   ],
+   [
+    "status",
+    "status"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "registrasi / registrasilama are registration fees: no FHIR Location counterpart.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E05",
+  "group": "khanza-fhir",
+  "lang": "id-en",
+  "source": "khanza__reg_periksa",
+  "target": "fhir__Encounter",
+  "gt": [
+   [
+    "no_rawat",
+    "identifier"
+   ],
+   [
+    "tgl_registrasi",
+    "period"
+   ],
+   [
+    "kd_dokter",
+    "participant.individual"
+   ],
+   [
+    "no_rkm_medis",
+    "subject"
+   ],
+   [
+    "kd_poli",
+    "location.location"
+   ],
+   [
+    "stts",
+    "status"
+   ],
+   [
+    "status_lanjut",
+    "class"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam_reg",
+    "period"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "kd_pj",
+    "account",
+    "payer code vs. billing account"
+   ],
+   [
+    "hubunganpj",
+    "participant.type",
+    "relation of responsible person; not a care participant"
+   ]
+  ],
+  "notes": "status_lanjut = Ralan/Ranap (outpatient/inpatient) -> Encounter.class.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E06",
+  "group": "khanza-fhir",
+  "lang": "id-en",
+  "source": "khanza__diagnosa_pasien",
+  "target": "fhir__Condition",
+  "gt": [
+   [
+    "no_rawat",
+    "encounter"
+   ],
+   [
+    "kd_penyakit",
+    "code"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "status_penyakit",
+    "clinicalStatus",
+    "Lama/Baru = new vs. existing case, not active/resolved"
+   ],
+   [
+    "prioritas",
+    "stage",
+    "diagnosis rank lives in Encounter.diagnosis.rank, not Condition"
+   ]
+  ],
+  "notes": "Small pair with 22 distractor targets.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E07",
+  "group": "khanza-fhir",
+  "lang": "id-en",
+  "source": "khanza__resep_obat",
+  "target": "fhir__MedicationRequest",
+  "gt": [
+   [
+    "no_resep",
+    "identifier"
+   ],
+   [
+    "no_rawat",
+    "encounter"
+   ],
+   [
+    "kd_dokter",
+    "requester"
+   ],
+   [
+    "tgl_peresepan",
+    "authoredOn"
+   ],
+   [
+    "status",
+    "category"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam_peresepan",
+    "authoredOn"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "status = ralan/ranap -> MedicationRequest.category (outpatient/inpatient). tgl_penyerahan belongs to MedicationDispense.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E08",
+  "group": "khanza-fhir",
+  "lang": "id-en",
+  "source": "khanza__resep_dokter",
+  "target": "fhir__MedicationRequest",
+  "gt": [
+   [
+    "no_resep",
+    "identifier"
+   ],
+   [
+    "kode_brng",
+    "medication[x]"
+   ],
+   [
+    "jml",
+    "dispenseRequest.quantity"
+   ],
+   [
+    "aturan_pakai",
+    "dosageInstruction"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E09",
+  "group": "khanza-fhir",
+  "lang": "id-en",
+  "source": "khanza__databarang",
+  "target": "fhir__Medication",
+  "gt": [
+   [
+    "kode_brng",
+    "identifier"
+   ],
+   [
+    "nama_brng",
+    "code"
+   ],
+   [
+    "kode_industri",
+    "manufacturer"
+   ],
+   [
+    "expire",
+    "batch.expirationDate"
+   ],
+   [
+    "status",
+    "status"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "kode_sat",
+    "form",
+    "dispensing unit (TAB/BTL) vs. dose form"
+   ],
+   [
+    "isi",
+    "amount",
+    "pack content vs. amount of drug per package"
+   ]
+  ],
+  "notes": "Most columns are prices per class (kelas1..vvip): true negatives.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E10",
+  "group": "khanza-fhir",
+  "lang": "id-en",
+  "source": "khanza__kamar_inap",
+  "target": "fhir__Encounter",
+  "gt": [
+   [
+    "no_rawat",
+    "identifier"
+   ],
+   [
+    "kd_kamar",
+    "location.location"
+   ],
+   [
+    "tgl_masuk",
+    "location.period"
+   ],
+   [
+    "stts_pulang",
+    "hospitalization.dischargeDisposition"
+   ],
+   [
+    "diagnosa_awal",
+    "reasonCode"
+   ],
+   [
+    "diagnosa_akhir",
+    "diagnosis.condition"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam_masuk",
+    "location.period"
+   ],
+   [
+    "tgl_keluar",
+    "location.period"
+   ],
+   [
+    "jam_keluar",
+    "location.period"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "lama",
+    "length",
+    "days in this room vs. whole encounter length"
+   ]
+  ],
+  "notes": "One row = one room stay, so dates map to location.period rather than Encounter.period.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E11",
+  "group": "khanza-fhir",
+  "lang": "id-en",
+  "source": "khanza__penjab",
+  "target": "fhir__Organization",
+  "gt": [
+   [
+    "kd_pj",
+    "identifier"
+   ],
+   [
+    "png_jawab",
+    "name"
+   ],
+   [
+    "alamat_asuransi",
+    "address"
+   ],
+   [
+    "no_telp",
+    "telecom"
+   ],
+   [
+    "attn",
+    "contact.name"
+   ],
+   [
+    "status",
+    "active"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "nama_perusahaan",
+    "alias",
+    "payer label (png_jawab) vs. legal company name"
+   ]
+  ],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E12",
+  "group": "khanza-fhir",
+  "lang": "id-en",
+  "source": "khanza__rujuk",
+  "target": "fhir__ServiceRequest",
+  "gt": [
+   [
+    "no_rujuk",
+    "identifier"
+   ],
+   [
+    "no_rawat",
+    "encounter"
+   ],
+   [
+    "rujuk_ke",
+    "performer"
+   ],
+   [
+    "tgl_rujuk",
+    "authoredOn"
+   ],
+   [
+    "keterangan_diagnosa",
+    "reasonCode"
+   ],
+   [
+    "kd_dokter",
+    "requester"
+   ],
+   [
+    "keterangan",
+    "note"
+   ],
+   [
+    "kat_rujuk",
+    "category"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam",
+    "authoredOn"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E13",
+  "group": "khanza-fhir",
+  "lang": "id-en",
+  "source": "khanza__periksa_lab",
+  "target": "fhir__DiagnosticReport",
+  "gt": [
+   [
+    "no_rawat",
+    "encounter"
+   ],
+   [
+    "kd_jenis_prw",
+    "code"
+   ],
+   [
+    "tgl_periksa",
+    "effective[x]"
+   ],
+   [
+    "nip",
+    "performer"
+   ],
+   [
+    "kd_dokter",
+    "resultsInterpreter"
+   ],
+   [
+    "kategori",
+    "category"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam",
+    "effective[x]"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "dokter_perujuk",
+    "basedOn",
+    "referring doctor belongs to the ServiceRequest, only reachable via basedOn"
+   ]
+  ],
+  "notes": "Tariff columns (bagian_rs, bhp, tarif_*, kso, menejemen, biaya) are true negatives.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E14",
+  "group": "khanza-fhir",
+  "lang": "id-en",
+  "source": "khanza__detail_periksa_lab",
+  "target": "fhir__Observation",
+  "gt": [
+   [
+    "no_rawat",
+    "encounter"
+   ],
+   [
+    "id_template",
+    "code"
+   ],
+   [
+    "nilai",
+    "value[x]"
+   ],
+   [
+    "nilai_rujukan",
+    "referenceRange"
+   ],
+   [
+    "tgl_periksa",
+    "effective[x]"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "jam",
+    "effective[x]"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "keterangan",
+    "interpretation",
+    "Khanza stores L/H flags here, but it is free text"
+   ],
+   [
+    "kd_jenis_prw",
+    "basedOn",
+    "lab package code vs. order"
+   ]
+  ],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E15",
+  "group": "opensid-siak",
+  "lang": "id-id",
+  "source": "opensid__tweb_penduduk",
+  "target": "siak__format_siak",
+  "gt": [
+   [
+    "nik",
+    "NIK"
+   ],
+   [
+    "nama",
+    "Nama Penduduk"
+   ],
+   [
+    "tempatlahir",
+    "Tempat Lahir"
+   ],
+   [
+    "tanggallahir",
+    "Tanggal Lahir"
+   ],
+   [
+    "sex",
+    "Kelamin"
+   ],
+   [
+    "ayah_nik",
+    "NIK Ayah"
+   ],
+   [
+    "nama_ayah",
+    "Ayah"
+   ],
+   [
+    "ibu_nik",
+    "NIK Ibu"
+   ],
+   [
+    "nama_ibu",
+    "Ibu"
+   ],
+   [
+    "status_kawin",
+    "Status Kawin"
+   ],
+   [
+    "kk_level",
+    "SHDK"
+   ],
+   [
+    "agama_id",
+    "Agama"
+   ],
+   [
+    "alamat_sekarang",
+    "Alamat"
+   ],
+   [
+    "pendidikan_kk_id",
+    "Pendidikan"
+   ],
+   [
+    "pekerjaan_id",
+    "Pekerjaan"
+   ],
+   [
+    "golongan_darah_id",
+    "Gol. Darah"
+   ],
+   [
+    "cacat_id",
+    "Cacat"
+   ],
+   [
+    "dokumen_pasport",
+    "Nomor Paspor"
+   ],
+   [
+    "akta_lahir",
+    "Nomor Akta Lahir"
+   ],
+   [
+    "akta_perkawinan",
+    "Nomor Akta Kawin"
+   ],
+   [
+    "tanggalperkawinan",
+    "Tanggal Kwn"
+   ],
+   [
+    "akta_perceraian",
+    "Nomor Akta Cerai"
+   ],
+   [
+    "tanggalperceraian",
+    "Tgl Cerai"
+   ],
+   [
+    "status_dasar",
+    "Status"
+   ],
+   [
+    "created_at",
+    "Tgl Entri"
+   ],
+   [
+    "created_by",
+    "Petugas Entri"
+   ],
+   [
+    "updated_at",
+    "Tgl Ubah"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "id_kk",
+    "Nomor KK",
+    "FK to tweb_keluarga, KK number only via join"
+   ],
+   [
+    "id_cluster",
+    "RT",
+    "FK to wilayah; RT/RW/Desa only via join"
+   ],
+   [
+    "ktp_el",
+    "Cetak KTP",
+    "e-KTP ownership flag vs. print date"
+   ]
+  ],
+  "notes": "SIAK export layout as shipped in OpenSID's import templates (header only).",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E16",
+  "group": "opensid-siak",
+  "lang": "id-id",
+  "source": "opensid__tweb_penduduk",
+  "target": "siak__bip_ektp",
+  "gt": [
+   [
+    "nama",
+    "Nama Lengkap"
+   ],
+   [
+    "nik",
+    "NIK"
+   ],
+   [
+    "tempatlahir",
+    "Tempat Lahir"
+   ],
+   [
+    "tanggallahir",
+    "Tgl/Bln/Th"
+   ],
+   [
+    "sex",
+    "JK"
+   ],
+   [
+    "status_kawin",
+    "Stat Kwn"
+   ],
+   [
+    "golongan_darah_id",
+    "Gol. Drh"
+   ],
+   [
+    "kk_level",
+    "SHDK"
+   ],
+   [
+    "agama_id",
+    "Agama"
+   ],
+   [
+    "pendidikan_kk_id",
+    "Pendidikan Terakhir"
+   ],
+   [
+    "akta_lahir",
+    "No Akta Lahir"
+   ],
+   [
+    "pekerjaan_id",
+    "Pekerjaan"
+   ],
+   [
+    "nama_ibu",
+    "Nama Ibu"
+   ],
+   [
+    "nama_ayah",
+    "Nama Ayah"
+   ],
+   [
+    "ktp_el",
+    "KTP-eL"
+   ],
+   [
+    "status_rekam",
+    "Stat Rkm"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "status_dasar",
+    "Status",
+    "BIP 'Status' holds e-KTP issuance state (SDH DPT), not alive/dead"
+   ]
+  ],
+  "notes": "Buku Induk Penduduk e-KTP layout: abbreviated headers (JK, Stat Kwn, Gol. Drh, Stat Rkm, Wjb KTP).",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E17",
+  "group": "khanza-siak",
+  "lang": "id-id",
+  "source": "khanza__pasien",
+  "target": "siak__format_siak",
+  "gt": [
+   [
+    "no_ktp",
+    "NIK"
+   ],
+   [
+    "nm_pasien",
+    "Nama Penduduk"
+   ],
+   [
+    "tmp_lahir",
+    "Tempat Lahir"
+   ],
+   [
+    "tgl_lahir",
+    "Tanggal Lahir"
+   ],
+   [
+    "jk",
+    "Kelamin"
+   ],
+   [
+    "nm_ibu",
+    "Ibu"
+   ],
+   [
+    "stts_nikah",
+    "Status Kawin"
+   ],
+   [
+    "agama",
+    "Agama"
+   ],
+   [
+    "alamat",
+    "Alamat"
+   ],
+   [
+    "pnd",
+    "Pendidikan"
+   ],
+   [
+    "pekerjaan",
+    "Pekerjaan"
+   ],
+   [
+    "gol_darah",
+    "Gol. Darah"
+   ],
+   [
+    "cacat_fisik",
+    "Cacat"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "kd_kec",
+    "Kecamatan",
+    "code vs. name of the same attribute"
+   ],
+   [
+    "kd_kel",
+    "Desa/Kel",
+    "code vs. name of the same attribute"
+   ]
+  ],
+  "notes": "Hospital patient master vs. civil registry export (NIK verification scenario).",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E18",
+  "group": "khanza-opensid",
+  "lang": "id-id",
+  "source": "khanza__pasien",
+  "target": "opensid__tweb_penduduk",
+  "gt": [
+   [
+    "nm_pasien",
+    "nama"
+   ],
+   [
+    "no_ktp",
+    "nik"
+   ],
+   [
+    "jk",
+    "sex"
+   ],
+   [
+    "tmp_lahir",
+    "tempatlahir"
+   ],
+   [
+    "tgl_lahir",
+    "tanggallahir"
+   ],
+   [
+    "nm_ibu",
+    "nama_ibu"
+   ],
+   [
+    "alamat",
+    "alamat_sekarang"
+   ],
+   [
+    "gol_darah",
+    "golongan_darah_id"
+   ],
+   [
+    "pekerjaan",
+    "pekerjaan_id"
+   ],
+   [
+    "stts_nikah",
+    "status_kawin"
+   ],
+   [
+    "agama",
+    "agama_id"
+   ],
+   [
+    "no_tlp",
+    "telepon"
+   ],
+   [
+    "pnd",
+    "pendidikan_kk_id"
+   ],
+   [
+    "cacat_fisik",
+    "cacat_id"
+   ],
+   [
+    "email",
+    "email"
+   ],
+   [
+    "no_peserta",
+    "no_asuransi"
+   ],
+   [
+    "kd_pj",
+    "id_asuransi"
+   ],
+   [
+    "bahasa_pasien",
+    "bahasa_id"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "Same GT as pilot #1 (ddl_pilot.py).",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E19",
+  "group": "khanza-siak",
+  "lang": "id-id",
+  "source": "khanza__pasien",
+  "target": "siak__bip_ektp",
+  "gt": [
+   [
+    "nm_pasien",
+    "Nama Lengkap"
+   ],
+   [
+    "no_ktp",
+    "NIK"
+   ],
+   [
+    "tmp_lahir",
+    "Tempat Lahir"
+   ],
+   [
+    "tgl_lahir",
+    "Tgl/Bln/Th"
+   ],
+   [
+    "jk",
+    "JK"
+   ],
+   [
+    "stts_nikah",
+    "Stat Kwn"
+   ],
+   [
+    "gol_darah",
+    "Gol. Drh"
+   ],
+   [
+    "agama",
+    "Agama"
+   ],
+   [
+    "pnd",
+    "Pendidikan Terakhir"
+   ],
+   [
+    "pekerjaan",
+    "Pekerjaan"
+   ],
+   [
+    "nm_ibu",
+    "Nama Ibu"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "Abbreviated on BOTH sides (jk/JK, stts_nikah/Stat Kwn, gol_darah/Gol. Drh).",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E20",
+  "group": "opensid-fhir",
+  "lang": "id-en",
+  "source": "opensid__tweb_penduduk",
+  "target": "fhir__Patient",
+  "gt": [
+   [
+    "nik",
+    "identifier"
+   ],
+   [
+    "nama",
+    "name"
+   ],
+   [
+    "sex",
+    "gender"
+   ],
+   [
+    "tanggallahir",
+    "birthDate"
+   ],
+   [
+    "alamat_sekarang",
+    "address"
+   ],
+   [
+    "status_kawin",
+    "maritalStatus"
+   ],
+   [
+    "telepon",
+    "telecom"
+   ],
+   [
+    "bahasa_id",
+    "communication"
+   ],
+   [
+    "status_dasar",
+    "deceased[x]"
+   ],
+   [
+    "foto",
+    "photo"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "email",
+    "telecom"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "Base FHIR R4 only: SATUSEHAT extensions (birthPlace, religion, mothersMaidenName, citizenship) are not modelled, so those source columns are true negatives. status_dasar (HIDUP/MATI/PINDAH) -> deceased[x] is lossy.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E21",
+  "group": "siakad-feeder",
+  "lang": "id-id",
+  "source": "siakad__siakad_mahasiswa",
+  "target": "feeder__InsertBiodataMahasiswa",
+  "gt": [
+   [
+    "dusun",
+    "dusun"
+   ],
+   [
+    "email",
+    "email"
+   ],
+   [
+    "handphone",
+    "handphone"
+   ],
+   [
+    "id_agama",
+    "id_agama"
+   ],
+   [
+    "id_alat_transportasi",
+    "id_alat_transportasi"
+   ],
+   [
+    "id_jenis_tinggal",
+    "id_jenis_tinggal"
+   ],
+   [
+    "id_kebutuhan_khusus_ayah",
+    "id_kebutuhan_khusus_ayah"
+   ],
+   [
+    "id_kebutuhan_khusus_ibu",
+    "id_kebutuhan_khusus_ibu"
+   ],
+   [
+    "id_kebutuhan_khusus_mahasiswa",
+    "id_kebutuhan_khusus_mahasiswa"
+   ],
+   [
+    "id_pekerjaan_ayah",
+    "id_pekerjaan_ayah"
+   ],
+   [
+    "id_pekerjaan_ibu",
+    "id_pekerjaan_ibu"
+   ],
+   [
+    "id_pekerjaan_wali",
+    "id_pekerjaan_wali"
+   ],
+   [
+    "id_pendidikan_ayah",
+    "id_pendidikan_ayah"
+   ],
+   [
+    "id_pendidikan_ibu",
+    "id_pendidikan_ibu"
+   ],
+   [
+    "id_pendidikan_wali",
+    "id_pendidikan_wali"
+   ],
+   [
+    "id_penghasilan_ayah",
+    "id_penghasilan_ayah"
+   ],
+   [
+    "id_penghasilan_ibu",
+    "id_penghasilan_ibu"
+   ],
+   [
+    "id_penghasilan_wali",
+    "id_penghasilan_wali"
+   ],
+   [
+    "id_wilayah",
+    "id_wilayah"
+   ],
+   [
+    "jalan",
+    "jalan"
+   ],
+   [
+    "jenis_kelamin",
+    "jenis_kelamin"
+   ],
+   [
+    "kelurahan",
+    "kelurahan"
+   ],
+   [
+    "kewarganegaraan",
+    "kewarganegaraan"
+   ],
+   [
+    "kode_pos",
+    "kode_pos"
+   ],
+   [
+    "nama_ayah",
+    "nama_ayah"
+   ],
+   [
+    "nama_ibu_kandung",
+    "nama_ibu_kandung"
+   ],
+   [
+    "nama_mahasiswa",
+    "nama_mahasiswa"
+   ],
+   [
+    "nama_wali",
+    "nama_wali"
+   ],
+   [
+    "nik",
+    "nik"
+   ],
+   [
+    "nik_ayah",
+    "nik_ayah"
+   ],
+   [
+    "nik_ibu",
+    "nik_ibu"
+   ],
+   [
+    "nisn",
+    "nisn"
+   ],
+   [
+    "nomor_kps",
+    "nomor_kps"
+   ],
+   [
+    "npwp",
+    "npwp"
+   ],
+   [
+    "penerima_kps",
+    "penerima_kps"
+   ],
+   [
+    "rt",
+    "rt"
+   ],
+   [
+    "rw",
+    "rw"
+   ],
+   [
+    "tanggal_lahir",
+    "tanggal_lahir"
+   ],
+   [
+    "tanggal_lahir_ayah",
+    "tanggal_lahir_ayah"
+   ],
+   [
+    "tanggal_lahir_ibu",
+    "tanggal_lahir_ibu"
+   ],
+   [
+    "tanggal_lahir_wali",
+    "tanggal_lahir_wali"
+   ],
+   [
+    "telepon",
+    "telepon"
+   ],
+   [
+    "tempat_lahir",
+    "tempat_lahir"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "no_kps",
+    "nomor_kps",
+    "duplicate KPS column in source"
+   ]
+  ],
+  "notes": "Easy control: SIAKAD built around Feeder naming.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E22",
+  "group": "siakad-feeder",
+  "lang": "id-id",
+  "source": "siakad__siakad_matakuliah",
+  "target": "feeder__InsertMataKuliah",
+  "gt": [
+   [
+    "id_prodi_ws",
+    "id_prodi"
+   ],
+   [
+    "kode_matakuliah",
+    "kode_mata_kuliah"
+   ],
+   [
+    "nama_matakuliah",
+    "nama_mata_kuliah"
+   ],
+   [
+    "id_jenis_matakuliah",
+    "id_jenis_mata_kuliah"
+   ],
+   [
+    "id_kelompok_matakuliah",
+    "id_kelompok_mata_kuliah"
+   ],
+   [
+    "sks_matakuliah",
+    "sks_mata_kuliah"
+   ],
+   [
+    "sks_tatapmuka",
+    "sks_tatap_muka"
+   ],
+   [
+    "ada_acara_praktek",
+    "ada_acara_praktek"
+   ],
+   [
+    "ada_bahan_ajar",
+    "ada_bahan_ajar"
+   ],
+   [
+    "ada_diktat",
+    "ada_diktat"
+   ],
+   [
+    "ada_sap",
+    "ada_sap"
+   ],
+   [
+    "ada_silabus",
+    "ada_silabus"
+   ],
+   [
+    "metode_kuliah",
+    "metode_kuliah"
+   ],
+   [
+    "sks_praktek",
+    "sks_praktek"
+   ],
+   [
+    "sks_praktek_lapangan",
+    "sks_praktek_lapangan"
+   ],
+   [
+    "sks_simulasi",
+    "sks_simulasi"
+   ],
+   [
+    "tanggal_akhir_efektif",
+    "tanggal_akhir_efektif"
+   ],
+   [
+    "tanggal_mulai_efektif",
+    "tanggal_mulai_efektif"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "id_prodi",
+    "id_prodi",
+    "local key; the Feeder UUID is in id_prodi_ws"
+   ]
+  ],
+  "notes": "Trap: identical name id_prodi is the LOCAL key; the correct push mapping is id_prodi_ws -> id_prodi.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E23",
+  "group": "siakad-feeder",
+  "lang": "id-id",
+  "source": "siakad__siakad_kelas",
+  "target": "feeder__InsertKelasKuliah",
+  "gt": [
+   [
+    "id_prodi_ws",
+    "id_prodi"
+   ],
+   [
+    "id_matkul_ws",
+    "id_matkul"
+   ],
+   [
+    "bahasan",
+    "bahasan"
+   ],
+   [
+    "id_semester",
+    "id_semester"
+   ],
+   [
+    "nama_kelas_kuliah",
+    "nama_kelas_kuliah"
+   ],
+   [
+    "tanggal_akhir_efektif",
+    "tanggal_akhir_efektif"
+   ],
+   [
+    "tanggal_mulai_efektif",
+    "tanggal_mulai_efektif"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "id_prodi",
+    "id_prodi",
+    "local key; the Feeder UUID is in id_prodi_ws"
+   ]
+  ],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E24",
+  "group": "siakad-feeder",
+  "lang": "id-id",
+  "source": "siakad__siakad_akm",
+  "target": "feeder__InsertPerkuliahanMahasiswa",
+  "gt": [
+   [
+    "id_registrasi_mahasiswa_ws",
+    "id_registrasi_mahasiswa"
+   ],
+   [
+    "id_status_mahasiswa_ws",
+    "id_status_mahasiswa"
+   ],
+   [
+    "sks_total",
+    "total_sks"
+   ],
+   [
+    "biaya_kuliah_smt",
+    "biaya_kuliah_smt"
+   ],
+   [
+    "id_semester",
+    "id_semester"
+   ],
+   [
+    "ipk",
+    "ipk"
+   ],
+   [
+    "ips",
+    "ips"
+   ],
+   [
+    "sks_semester",
+    "sks_semester"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "id_status_mahasiswa",
+    "id_status_mahasiswa",
+    "local copy vs. *_ws Feeder value"
+   ]
+  ],
+  "notes": "AKM = aktivitas kuliah mahasiswa.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E25",
+  "group": "siakad-feeder",
+  "lang": "id-id",
+  "source": "siakad__siakad_riwayatpendidikan",
+  "target": "feeder__InsertRiwayatPendidikanMahasiswa",
+  "gt": [
+   [
+    "id_mahasiswa_ws",
+    "id_mahasiswa"
+   ],
+   [
+    "id_prodi_ws",
+    "id_prodi"
+   ],
+   [
+    "biaya_masuk",
+    "biaya_masuk"
+   ],
+   [
+    "id_bidang_minat",
+    "id_bidang_minat"
+   ],
+   [
+    "id_jalur_daftar",
+    "id_jalur_daftar"
+   ],
+   [
+    "id_jenis_daftar",
+    "id_jenis_daftar"
+   ],
+   [
+    "id_pembiayaan",
+    "id_pembiayaan"
+   ],
+   [
+    "id_perguruan_tinggi",
+    "id_perguruan_tinggi"
+   ],
+   [
+    "id_perguruan_tinggi_asal",
+    "id_perguruan_tinggi_asal"
+   ],
+   [
+    "id_periode_masuk",
+    "id_periode_masuk"
+   ],
+   [
+    "id_prodi_asal",
+    "id_prodi_asal"
+   ],
+   [
+    "nim",
+    "nim"
+   ],
+   [
+    "sks_diakui",
+    "sks_diakui"
+   ],
+   [
+    "tanggal_daftar",
+    "tanggal_daftar"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "id_mahasiswa",
+    "id_mahasiswa",
+    "local key"
+   ],
+   [
+    "id_prodi",
+    "id_prodi",
+    "local key"
+   ]
+  ],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E26",
+  "group": "siakad-feeder",
+  "lang": "id-id",
+  "source": "siakad__siakad_kurikulum",
+  "target": "feeder__InsertKurikulum",
+  "gt": [
+   [
+    "id_prodi_ws",
+    "id_prodi"
+   ],
+   [
+    "jumlah_sks_lulus",
+    "jumlah_sks_lulus"
+   ],
+   [
+    "jumlah_sks_pilihan",
+    "jumlah_sks_pilihan"
+   ],
+   [
+    "jumlah_sks_wajib",
+    "jumlah_sks_wajib"
+   ],
+   [
+    "nama_kurikulum",
+    "nama_kurikulum"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "id_prodi",
+    "id_prodi",
+    "local key"
+   ]
+  ],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E27",
+  "group": "slims-feeder",
+  "lang": "en-id",
+  "source": "slims__member",
+  "target": "feeder__InsertBiodataMahasiswa",
+  "gt": [
+   [
+    "member_name",
+    "nama_mahasiswa"
+   ],
+   [
+    "gender",
+    "jenis_kelamin"
+   ],
+   [
+    "birth_date",
+    "tanggal_lahir"
+   ],
+   [
+    "member_address",
+    "jalan"
+   ],
+   [
+    "member_email",
+    "email"
+   ],
+   [
+    "postal_code",
+    "kode_pos"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "member_phone",
+    "handphone",
+    "generic phone vs. mobile/landline split (telepon)"
+   ]
+  ],
+  "notes": "Natural EN->ID pair: campus library (SLiMS, English schema) vs. PDDikti student biodata.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "E28",
+  "group": "khanza-feeder",
+  "lang": "id-id",
+  "source": "khanza__pasien",
+  "target": "feeder__InsertBiodataMahasiswa",
+  "gt": [
+   [
+    "nm_pasien",
+    "nama_mahasiswa"
+   ],
+   [
+    "jk",
+    "jenis_kelamin"
+   ],
+   [
+    "tmp_lahir",
+    "tempat_lahir"
+   ],
+   [
+    "tgl_lahir",
+    "tanggal_lahir"
+   ],
+   [
+    "agama",
+    "id_agama"
+   ],
+   [
+    "no_ktp",
+    "nik"
+   ],
+   [
+    "alamat",
+    "jalan"
+   ],
+   [
+    "email",
+    "email"
+   ],
+   [
+    "nm_ibu",
+    "nama_ibu_kandung"
+   ],
+   [
+    "cacat_fisik",
+    "id_kebutuhan_khusus_mahasiswa"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "no_tlp",
+    "handphone",
+    "single phone column vs. telepon/handphone split"
+   ],
+   [
+    "kd_kel",
+    "kelurahan",
+    "code vs. name"
+   ]
+  ],
+  "notes": "Campus clinic scenario: abbreviated (Khanza) vs. descriptive (Feeder) Indonesian.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ }
+]

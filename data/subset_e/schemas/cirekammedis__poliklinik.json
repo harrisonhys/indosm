@@ -1,0 +1,24 @@
+{
+ "system": "cirekammedis",
+ "table": "poliklinik",
+ "source": "arfandotid/ci_rekammedis@606cd16795",
+ "license": "unclear (license.txt is CodeIgniter's MIT, not the app author's)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "idPoliklinik",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "namaPoliklinik",
+   "type": "varchar(128)",
+   "desc": ""
+  },
+  {
+   "name": "gedung",
+   "type": "varchar(128)",
+   "desc": ""
+  }
+ ]
+}

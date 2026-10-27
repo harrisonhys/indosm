@@ -1,0 +1,79 @@
+{
+ "system": "rmpuskesmas",
+ "table": "tb_rekam_medis",
+ "source": "mfarim/laravel-rekam-medis-puskesmas@1767a3ff14",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_redis",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "Anamnesia",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "pmrk_fisik",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "keluhan",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "diagnosa",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "therapy",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "rcn_tndk_lnjt",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "cat_kprawatan",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "layanan_lain",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "kode_pasien",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "kode_dktr",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "paraf_vld_dktr",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "created_at",
+   "type": "timestamps",
+   "desc": ""
+  },
+  {
+   "name": "updated_at",
+   "type": "timestamps",
+   "desc": ""
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "system": "sipuskesmas",
+ "table": "antrians",
+ "source": "elingp/sistem-informasi-puskesmas@be12a98aaf",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id",
+   "type": "id",
+   "desc": ""
+  },
+  {
+   "name": "poli_id",
+   "type": "foreignid",
+   "desc": ""
+  },
+  {
+   "name": "pasien_id",
+   "type": "foreignid",
+   "desc": ""
+  },
+  {
+   "name": "nomor_antrian",
+   "type": "unsignedsmallinteger",
+   "desc": ""
+  },
+  {
+   "name": "created_at",
+   "type": "timestamps",
+   "desc": ""
+  },
+  {
+   "name": "updated_at",
+   "type": "timestamps",
+   "desc": ""
+  }
+ ]
+}

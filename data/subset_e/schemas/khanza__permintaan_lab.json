@@ -1,0 +1,69 @@
+{
+ "system": "khanza",
+ "table": "permintaan_lab",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "noorder",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_permintaan",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam_permintaan",
+   "type": "time",
+   "desc": ""
+  },
+  {
+   "name": "tgl_sampel",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam_sampel",
+   "type": "time",
+   "desc": ""
+  },
+  {
+   "name": "tgl_hasil",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam_hasil",
+   "type": "time",
+   "desc": ""
+  },
+  {
+   "name": "dokter_perujuk",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "status",
+   "type": "enum('ralan','ranap')",
+   "desc": ""
+  },
+  {
+   "name": "informasi_tambahan",
+   "type": "varchar(60)",
+   "desc": ""
+  },
+  {
+   "name": "diagnosa_klinis",
+   "type": "varchar(80)",
+   "desc": ""
+  }
+ ]
+}

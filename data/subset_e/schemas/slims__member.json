@@ -1,0 +1,134 @@
+{
+ "system": "slims",
+ "table": "member",
+ "source": "SLiMS 9 Bulian (slims/slims9_bulian@master, install/senayan.sql)",
+ "license": "GPL-3.0",
+ "lang": "en",
+ "columns": [
+  {
+   "name": "member_id",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "member_name",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "gender",
+   "type": "int(1)",
+   "desc": ""
+  },
+  {
+   "name": "birth_date",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "member_type_id",
+   "type": "int(6)",
+   "desc": ""
+  },
+  {
+   "name": "member_address",
+   "type": "varchar(255)",
+   "desc": ""
+  },
+  {
+   "name": "member_mail_address",
+   "type": "varchar(255)",
+   "desc": ""
+  },
+  {
+   "name": "member_email",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "postal_code",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "inst_name",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "is_new",
+   "type": "int(1)",
+   "desc": ""
+  },
+  {
+   "name": "member_image",
+   "type": "varchar(200)",
+   "desc": ""
+  },
+  {
+   "name": "pin",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "member_phone",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "member_fax",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "member_since_date",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "register_date",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "expire_date",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "member_notes",
+   "type": "text",
+   "desc": ""
+  },
+  {
+   "name": "is_pending",
+   "type": "smallint(1)",
+   "desc": ""
+  },
+  {
+   "name": "mpasswd",
+   "type": "varchar(64)",
+   "desc": ""
+  },
+  {
+   "name": "last_login",
+   "type": "datetime",
+   "desc": ""
+  },
+  {
+   "name": "last_login_ip",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "input_date",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "last_update",
+   "type": "date",
+   "desc": ""
+  }
+ ]
+}

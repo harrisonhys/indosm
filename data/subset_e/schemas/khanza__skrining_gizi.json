@@ -1,0 +1,79 @@
+{
+ "system": "khanza",
+ "table": "skrining_gizi",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "tanggal",
+   "type": "datetime",
+   "desc": ""
+  },
+  {
+   "name": "skrining_bb",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "skrining_tb",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "alergi",
+   "type": "varchar(25)",
+   "desc": ""
+  },
+  {
+   "name": "parameter_imt",
+   "type": "enum('imt > 20/z score > 2','imt 18,5-20/-2 =< z score =< 2','imt < 18,5/z score < -2')",
+   "desc": ""
+  },
+  {
+   "name": "skor_imt",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "parameter_bb",
+   "type": "enum('bb hilang < 5%','bb hilang 5 - 10 %','bb hilang > 10 %')",
+   "desc": ""
+  },
+  {
+   "name": "skor_bb",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "parameter_penyakit",
+   "type": "enum('ada asupan nutrisi > 5 hari','tidak ada asupan nutrisi > 5 hari')",
+   "desc": ""
+  },
+  {
+   "name": "skor_penyakit",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "skor_total",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "parameter_total",
+   "type": "varchar(200)",
+   "desc": ""
+  },
+  {
+   "name": "nip",
+   "type": "varchar(20)",
+   "desc": ""
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "system": "feeder",
+ "table": "InsertRiwayatPendidikanMahasiswa",
+ "source": "PDDikti Feeder Web Service User Guide v2.2 (07-12-2020)",
+ "license": "public documentation",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id_mahasiswa",
+   "type": "uuid",
+   "desc": ""
+  },
+  {
+   "name": "nim",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "id_jenis_daftar",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "id_jalur_daftar",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "id_periode_masuk",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_daftar",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "id_perguruan_tinggi",
+   "type": "uuid",
+   "desc": ""
+  },
+  {
+   "name": "id_prodi",
+   "type": "uuid",
+   "desc": ""
+  },
+  {
+   "name": "id_bidang_minat",
+   "type": "uuid",
+   "desc": ""
+  },
+  {
+   "name": "sks_diakui",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "id_perguruan_tinggi_asal",
+   "type": "uuid",
+   "desc": ""
+  },
+  {
+   "name": "id_prodi_asal",
+   "type": "uuid",
+   "desc": ""
+  },
+  {
+   "name": "id_pembiayaan",
+   "type": "uuid",
+   "desc": ""
+  },
+  {
+   "name": "biaya_masuk",
+   "type": "numeric",
+   "desc": ""
+  }
+ ]
+}

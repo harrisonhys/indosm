@@ -1,0 +1,34 @@
+{
+ "system": "epuskesmas",
+ "table": "obat",
+ "source": "Slyzyy/TUBES_WEBPRO_e-Puskesmas@82f97d411f",
+ "license": "unclear (license.txt is CodeIgniter's MIT, not the app author's)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id_obat",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "nama",
+   "type": "varchar(255)",
+   "desc": ""
+  },
+  {
+   "name": "kategori",
+   "type": "varchar(255)",
+   "desc": ""
+  },
+  {
+   "name": "deskripsi",
+   "type": "varchar(1000)",
+   "desc": ""
+  },
+  {
+   "name": "harga",
+   "type": "double",
+   "desc": ""
+  }
+ ]
+}

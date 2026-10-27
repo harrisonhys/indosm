@@ -1,0 +1,13 @@
+{
+ "judge": "claude (single annotator)", "config": "llm-full+dict, large target, k-independent",
+ "population": 136, "sample": 30, "seed": 1,
+ "defensible": [
+  ["E01L", "kd_pj", "Organization.identifier", "FK to payer master -> payer Organization"],
+  ["E05L", "hubunganpj", "Patient.contact.relationship", "responsible party = patient contact"],
+  ["E05L", "p_jawab", "Patient.contact.name", "responsible party = patient contact"],
+  ["E07L", "tgl_perawatan", "Encounter.period", "care date of the visit (weak)"],
+  ["E08L", "kode_brng", "Medication.code", "drug code of the referenced Medication"],
+  ["E14L", "no_rawat", "Encounter.identifier", "FK to the visit -> Encounter.identifier"]
+ ],
+ "result": "6/30 defensible (20%); 24/30 genuine resource confusion"
+}

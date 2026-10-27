@@ -1,0 +1,114 @@
+{
+ "system": "siakad",
+ "table": "siakad_akm",
+ "source": "SIAKAD Feeder (idiknursidik/siakad@master, siakad.sql)",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id_akm",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "kodept",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "kode_prodi",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "id_prodi",
+   "type": "int",
+   "desc": ""
+  },
+  {
+   "name": "id_semester",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "nim",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "id_status_mahasiswa",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "ips",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "sks_semester",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "ipk",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "sks_total",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "angkatan",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "biaya_kuliah_smt",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "id_prodi_ws",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "id_mahasiswa_ws",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "id_status_mahasiswa_ws",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "impor_status_error",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "impor_keterangan",
+   "type": "text",
+   "desc": ""
+  },
+  {
+   "name": "date_created",
+   "type": "datetime",
+   "desc": ""
+  },
+  {
+   "name": "date_update",
+   "type": "datetime",
+   "desc": ""
+  },
+  {
+   "name": "id_registrasi_mahasiswa_ws",
+   "type": "varchar(255)",
+   "desc": ""
+  }
+ ]
+}

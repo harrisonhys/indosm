@@ -1,0 +1,48 @@
+done E01
+done E02
+done E03
+done E04
+done E05
+done E06
+done E07
+done E08
+done E09
+done E10
+done E11
+done E12
+done E13
+done E14
+done E20
+done E29
+done E30
+done E31
+done E32
+done E33
+done E34
+done E35
+done E36
+done E37
+done E38
+done E39
+done E40
+done E41
+done E42
+done E43
+done E44
+done E45
+done E46
+done E47
+done E48
+done E49
+done E50
+done E51
+done E52
+done E53
+done E54
+new LLM calls: 67
+                   chosen_right  R@GT_neutral  F1_neutral  prompt_tokens      sec
+config                                                                           
+primary[rank1]            0.634         0.407       0.389       1688.268  462.972
+primary[sum_conf]         0.512         0.305       0.307       1688.268  462.972
+primary[coverage]         0.463         0.278       0.286       1688.268  462.972
+primary[best]             0.829         0.508       0.476       1688.268  462.972

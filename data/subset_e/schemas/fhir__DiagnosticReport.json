@@ -1,0 +1,109 @@
+{
+ "system": "fhir",
+ "table": "DiagnosticReport",
+ "source": "HL7 FHIR R4 4.0.1 StructureDefinition snapshot",
+ "license": "CC0-1.0",
+ "lang": "en",
+ "columns": [
+  {
+   "name": "identifier",
+   "type": "Identifier",
+   "desc": "Business identifier for report"
+  },
+  {
+   "name": "basedOn",
+   "type": "Reference",
+   "desc": "What was requested"
+  },
+  {
+   "name": "status",
+   "type": "code",
+   "desc": "registered | partial | preliminary | final +"
+  },
+  {
+   "name": "category",
+   "type": "CodeableConcept",
+   "desc": "Service category"
+  },
+  {
+   "name": "code",
+   "type": "CodeableConcept",
+   "desc": "Name/Code for this diagnostic report"
+  },
+  {
+   "name": "subject",
+   "type": "Reference",
+   "desc": "The subject of the report - usually, but not always, the patient"
+  },
+  {
+   "name": "encounter",
+   "type": "Reference",
+   "desc": "Health care event when test ordered"
+  },
+  {
+   "name": "effective[x]",
+   "type": "dateTime|Period",
+   "desc": "Clinically relevant time/time-period for report"
+  },
+  {
+   "name": "issued",
+   "type": "instant",
+   "desc": "DateTime this version was made"
+  },
+  {
+   "name": "performer",
+   "type": "Reference",
+   "desc": "Responsible Diagnostic Service"
+  },
+  {
+   "name": "resultsInterpreter",
+   "type": "Reference",
+   "desc": "Primary result interpreter"
+  },
+  {
+   "name": "specimen",
+   "type": "Reference",
+   "desc": "Specimens this report is based on"
+  },
+  {
+   "name": "result",
+   "type": "Reference",
+   "desc": "Observations"
+  },
+  {
+   "name": "imagingStudy",
+   "type": "Reference",
+   "desc": "Reference to full details of imaging associated with the diagnostic report"
+  },
+  {
+   "name": "media",
+   "type": "BackboneElement",
+   "desc": "Key images associated with this report"
+  },
+  {
+   "name": "media.comment",
+   "type": "string",
+   "desc": "Comment about the image (e.g. explanation)"
+  },
+  {
+   "name": "media.link",
+   "type": "Reference",
+   "desc": "Reference to the image source"
+  },
+  {
+   "name": "conclusion",
+   "type": "string",
+   "desc": "Clinical conclusion (interpretation) of test results"
+  },
+  {
+   "name": "conclusionCode",
+   "type": "CodeableConcept",
+   "desc": "Codes for the clinical conclusion of test results"
+  },
+  {
+   "name": "presentedForm",
+   "type": "Attachment",
+   "desc": "Entire report as issued"
+  }
+ ]
+}

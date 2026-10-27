@@ -1,0 +1,224 @@
+{
+ "system": "feeder",
+ "table": "InsertBiodataMahasiswa",
+ "source": "PDDikti Feeder Web Service User Guide v2.2 (07-12-2020)",
+ "license": "public documentation",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "nama_mahasiswa",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "jenis_kelamin",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "tempat_lahir",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_lahir",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "id_agama",
+   "type": "smallint",
+   "desc": ""
+  },
+  {
+   "name": "nik",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "nisn",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "npwp",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "kewarganegaraan",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "jalan",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "dusun",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "rt",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "rw",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "kelurahan",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "kode_pos",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "id_wilayah",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "id_jenis_tinggal",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "id_alat_transportasi",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "telepon",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "handphone",
+   "type": "character varying",
+   "desc": ""
+  },
+  {
+   "name": "email",
+   "type": "character varying",
+   "desc": ""
+  },
+  {
+   "name": "penerima_kps",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "nomor_kps",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "nik_ayah",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "nama_ayah",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_lahir_ayah",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "id_pendidikan_ayah",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "id_pekerjaan_ayah",
+   "type": "integer",
+   "desc": ""
+  },
+  {
+   "name": "id_penghasilan_ayah",
+   "type": "integer",
+   "desc": ""
+  },
+  {
+   "name": "nik_ibu",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "nama_ibu_kandung",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_lahir_ibu",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "id_pendidikan_ibu",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "id_pekerjaan_ibu",
+   "type": "integer",
+   "desc": ""
+  },
+  {
+   "name": "id_penghasilan_ibu",
+   "type": "integer",
+   "desc": ""
+  },
+  {
+   "name": "nama_wali",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_lahir_wali",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "id_pendidikan_wali",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "id_pekerjaan_wali",
+   "type": "integer",
+   "desc": ""
+  },
+  {
+   "name": "id_penghasilan_wali",
+   "type": "integer",
+   "desc": ""
+  },
+  {
+   "name": "id_kebutuhan_khusus_mahasiswa",
+   "type": "integer",
+   "desc": ""
+  },
+  {
+   "name": "id_kebutuhan_khusus_ayah",
+   "type": "integer",
+   "desc": ""
+  },
+  {
+   "name": "id_kebutuhan_khusus_ibu",
+   "type": "integer",
+   "desc": ""
+  }
+ ]
+}

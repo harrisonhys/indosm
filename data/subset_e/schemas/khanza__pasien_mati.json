@@ -1,0 +1,59 @@
+{
+ "system": "khanza",
+ "table": "pasien_mati",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "tanggal",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam",
+   "type": "time",
+   "desc": ""
+  },
+  {
+   "name": "no_rkm_medis",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "keterangan",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "temp_meninggal",
+   "type": "enum('-','rumah sakit','puskesmas','rumah bersalin','rumah tempat tinggal','lain-lain (termasuk doa)",
+   "desc": ""
+  },
+  {
+   "name": "icd1",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "icd2",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "icd3",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "icd4",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "kd_dokter",
+   "type": "varchar(20)",
+   "desc": ""
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "system": "khanza",
+ "table": "resep_obat",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_resep",
+   "type": "varchar(14)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_perawatan",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam",
+   "type": "time",
+   "desc": ""
+  },
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "kd_dokter",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_peresepan",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam_peresepan",
+   "type": "time",
+   "desc": ""
+  },
+  {
+   "name": "status",
+   "type": "enum('ralan','ranap')",
+   "desc": ""
+  },
+  {
+   "name": "tgl_penyerahan",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "jam_penyerahan",
+   "type": "time",
+   "desc": ""
+  }
+ ]
+}

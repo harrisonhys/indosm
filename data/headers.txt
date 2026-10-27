@@ -1,0 +1,103 @@
+penduduk  data.kaltimprov.go.id    31ecc522 Jumlah Migrasi Penduduk berdasarkan Jenis Kelamin  :: KODE | JUMLAH MIGRASI PENDUDUK BERDASARKAN JENIS KELAMIN DAN DIRINCI MENURUT KECAMATAN | SATUAN | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | GROUP | JENIS | UNIT
+penduduk  data.kaltimprov.go.id    5919518c Rasio Jenis Kelamin Penduduk Kota Samarinda dalam  :: KODE | RASIO JENIS KELAMIN PENDUDUK KOTA SAMARINDA | SATUAN | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | GROUP | JENIS | UNIT
+penduduk  data.kaltimprov.go.id    d7943df8 Jumlah Penduduk Menurut Jenis Kelamin Kota Samarin :: KODE | JUMLAH PENDUDUK MENURUT JENIS KELAMIN KOTA SAMARINDA | SATUAN | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | GROUP | JENIS | UNIT
+sekolah   data.kaltimprov.go.id    65068a80 Jumlah Siswa Sekolah Dasar (SD) Berdasarkan Kelas  :: KODE | JUMLAH SISWA SEKOLAH DASAR (SD) BERDASARKAN KELAS DAN DIRINCI MENURUT STATUS SEKOLAH | SATUAN | 2022 | 2023 | 2024 | 2025 | GROUP | JENIS | UNIT
+sekolah   data.kaltimprov.go.id    0d79f428 Jumlah Guru Sekolah Dasar (SD) Berdasarkan Jenis K :: KODE | JUMLAH GURU SEKOLAH DASAR (SD) BERDASARKAN JENIS KELAMIN DAN DIRINCI MENURUT STATUS SEKOLAH | SATUAN | 2022 | 2023 | 2024 | 2025 | GROUP | JENIS | UNIT
+sekolah   data.kaltimprov.go.id    95133c14 Jumlah Siswa Sekolah Menengah Pertama (SMP) Berdas :: KODE | JUMLAH SISWA SEKOLAH MENENGAH PERTAMA (SMP) BERDASARKAN KELAS DAN DIRINCI MENURUT STATUS SEKOLAH | SATUAN | 2022 | 2023 | 2024 | 2025 | GROUP | JENIS | UNIT
+sekolah   data.kaltimprov.go.id    e43afa12 Jumlah Guru Sekolah Menengah Pertama (SMP) Berdasa :: KODE | JUMLAH GURU SEKOLAH MENENGAH PERTAMA (SMP) BERDASARKAN JENIS KELAMIN DAN DIRINCI MENURUT STATUS SEKOLAH | SATUAN | 2022 | 2023 | 2024 | 2025 | GROUP | JENIS | UNIT
+sekolah   data.kaltimprov.go.id    fdcd5172 Jumlah Staf Tenaga Administrasi Sekolah Dasar (SD) :: KODE | JUMLAH STAF TENAGA ADMINISTRASI SEKOLAH DASAR (SD) BERDASARKAN JENIS KELAMIN DAN DIRINCI MENURUT STATUS SEKOLAH | SATUAN | 2022 | 2023 | 2024 | 2025 | GROUP | JENIS | UNIT
+sekolah   data.kaltimprov.go.id    11bcb172 Data Jumlah Sekolah/Perguruan Agama Prov. Kaltim T :: No | Daftar Data | 2016 | 2017 | 2018 | 2019 | 2020 | Satuan
+sekolah   data.kaltimprov.go.id    11741238 Jumlah Staf Tenaga Administrasi Sekolah Menengah P :: KODE | JUMLAH STAF TENAGA ADMINISTRASI SEKOLAH MENENGAH PERTAMA (SMP) BERDASARKAN JENIS KELAMIN DAN DIRINCI MENURUT STATUS SEKOLAH | SATUAN | 2022 | 2023 | 2024 | 2025 | GROUP | JENIS | UNIT
+penduduk  data.tanahdatar.go.id    4375ad35 Jumlah Penduduk Menurut Kelompok Umur dan Jenis Ke :: Kelompok Umur | Jenis Kelamin Laki-laki | Jenis Kelamin Perempuan
+penduduk  data.tanahdatar.go.id    3e0a949c Persentase Pencapaian Akseptor Baru KB Menurut Kec :: Kecamatan | IUD | Pil | Kondom | Suntikan | Implant | LL/MO | Jumlah
+penduduk  data.tanahdatar.go.id    ac79c1bc Perkembangan Akseptor Aktif Keluarga Berencana Men :: Kecamatan | Pasangan Usia Subur | IUD | Pil | Kondom | Suntikan | Implan | LL/MO | Jumlah
+penduduk  data.tanahdatar.go.id    05fef6ac Jumlah Pencapaian Akseptor Baru KB Menurut Kecamat :: Kecamatan | IUD | Pil | Kondom | Suntikan | Implant | LL/MO | Jumlah
+sekolah   data.tanahdatar.go.id    3a5b658a Jumlah Sekolah Taman Kanak-Kanak (TK) di Bawah Kem :: Kecamatan District | Sekolah Negeri 2022/2023 | Sekolah Negeri 2023/2024 | Sekolah Swasta 2022/2023 | Sekolah Swasta 2023/2024 | Jumlah 2022/2023 | Jumlah 2023/2024
+sekolah   data.tanahdatar.go.id    80912c96 Jumlah Sekolah (SMA) di Bawah Kementerian Pendidik :: Kecamatan | Sekolah Negeri 2024/2025 | Sekolah Negeri 2025/2026 | sekolah Swasta 2024/2025 | Sekolah Swasta 2025/2026 | Jumlah 2024/2025 | Jumlah 2025/ 2026
+sekolah   data.tanahdatar.go.id    12d0c1fd Jumlah Sekolah (SMK) di Bawah Kementerian Pendidik :: Kecamatan | Sekolah Negeri 2024/2025 | Sekolah Negeri 2025/2026 | sekolah Swasta 2024/2025 | Sekolah Swasta 2025/2026 | Jumlah 2024/2025 | Jumlah 2025/ 2026
+sekolah   data.tanahdatar.go.id    33705270 Jumlah Sekolah (SD) di Bawah Kementerian Pendidika :: Kecamatan | Sekolah Negeri 2024/2025 | Sekolah Negri 2025/2026 | Sekolah Swasta 2024/2025 | Sekolah Swasta 2025/2026 | Jumlah 2024/2025 | Jumlah 2025/ 2026
+sekolah   data.tanahdatar.go.id    4dcf69f8 Jumlah Sekolah (SMP) di Bawah Kementerian Pendidik :: Kecamatan | Sekolah Negeri 2024/2025 | Sekolah Negri 2025/2026 | Sekolah Swasta 2024/2025 | Sekolah Swasta 2025/2026 | Jumlah 2024/2025 | Jumlah 2025/ 2026
+puskesmas data.tanahdatar.go.id    023a9c40 Rumah Sakit dan Puskesmas Menurut Kecamatan di Kab :: Kecamatan | Rumah Sakit Umum 2023 | Rumah Sakit Umum 2024 | Rumah Sakit Khusus 2023 | Rumah Sakit Khusus 2024 | Puskesmas Rawat Inap 2023 | Puskesmas Rawat Inap 2024 | Puskesmas Non Rawat Inap 2023 | Puskesmas Non Rawat Inap 2024
+puskesmas data.tanahdatar.go.id    9fd50b6b Rumah Sakit dan Puskesmas Menurut Kecamatan di Kab :: Kecamatan | RS | Puskesmas | Puskesmas Keliling | Puskesmas Pembantu | Klinik
+penduduk  data.bengkuluprov.go.id  e44e4d1c JUMLAH ANAK PENYANDANG DISABILITAS TUNGGAL MENURUT :: Nama Sekolah | L | P | Ketunaan Tunggal | SD | SMP | SMA | Jumlah
+penduduk  data.bengkuluprov.go.id  468b7de7 JUMLAH ANAK PENYANDANG DISABILITAS GANDA MENURUT J :: Nama Sekolah | L | P | Ketunaan Tunggal | SD | SMP | SMA | Jumlah
+sekolah   data.bengkuluprov.go.id  e2032400 DATA JUMLAH PENDUDUK PROVINSI BENGKULU MENURUT USI :: SKIP
+puskesmas data.bengkuluprov.go.id  bbf61347 Jumlah Puskesmas Kabupaten/Kota Provinsi Bengkulu  :: Kecamatan | Puskesmas | Posyandu Aktif | Posyandu Tidak Aktif | Total Posyandu | Posbindu PTM
+penduduk  data.bantenprov.go.id    f5df2577 Jumlah Penduduk 15+ Tahun di Banten Berdasarkan Je :: kegiatan utama | jenis kelamin | jumlah
+penduduk  data.bantenprov.go.id    8b776c93 Jumlah Penduduk 15+ Tahun di Banten Berdasarkan Je :: kegiatan utama | jenis kelamin | jumlah
+penduduk  data.bantenprov.go.id    83b9886f Penduduk 15+ Tahun Bekerja Menurut Kelompok Umur d :: Kelompok Umur | jenis kelamin | jumlah penduduk
+penduduk  data.bantenprov.go.id    08a3d9c4 Penduduk 15+ Tahun Bekerja Menurut Lapangan Pekerj :: lapangan pekerjaan utama | jenis kelamin | jumlah penduduk berumur 15 tahun ke atas yang bekerja selama seminggu terakhir
+penduduk  data.bantenprov.go.id    a467179d Jumlah Penduduk Jenis Kelamin Perempuan Menurut Ke :: Kelompok umur 2024 | value
+penduduk  data.bantenprov.go.id    de78d9a2 Jumlah Penduduk Jenis Kelamin Perempuan Menurut Ke :: Kelompok umur 2025 | value
+penduduk  data.bantenprov.go.id    78961937 Rasio Jenis Kelamin Penduduk Menurut Kabupaten/ Ko :: kode kabupaten kota | kabupaten kota | tahun | rasio jenis kelamin
+penduduk  data.bantenprov.go.id    6469316b Jumlah Penduduk Jenis Kelamin Laki-laki Menurut Ke :: Kelompok umur 2025 | value
+sekolah   data.bantenprov.go.id    ec8cc1b4 Jumlah Sekolah Menengah Kejuruan                   :: Tahun | Unit
+sekolah   data.bantenprov.go.id    8d319669 Jumlah Sekolah Lapang Kelompok Tani                :: Tahun | Unit
+sekolah   data.bantenprov.go.id    e39f9617 jumlah siswa sekolah menengah atas mengulang       :: Tahun | Orang
+sekolah   data.bantenprov.go.id    77365818 Jumlah Rombongan Belajar Sekolah Menengah Kejuruan :: Tahun | Orang
+sekolah   data.bantenprov.go.id    465e068e Jumlah Ruang Kelas Sekolah Menengah Kejuruan       :: Tahun | Unit
+sekolah   data.bantenprov.go.id    b7a8ad4f Jumlah Siswa Sekolah Menengah Kejuruan Mengulang   :: Tahun | Orang
+sekolah   data.bantenprov.go.id    1483422f Jumlah lulusan sekolah perikanan (ratus orang)     :: indikator | periode | nilai | satuan | keterangan
+sekolah   data.bantenprov.go.id    0f140641 Jumlah Siswa Sekolah Menengah Kejuruan Putus Neger :: Tahun | Orang
+puskesmas data.bantenprov.go.id    8a347342 Dokumen Hasil Verifikasi dan Penilaian Kelayakan P :: Tahun | Dokumen
+puskesmas data.bantenprov.go.id    7d07f7dc Parkir Kendaraan Roda 2 dan 4 serta Garasi untuk A :: Tahun | Unit
+puskesmas data.bantenprov.go.id    5b257922 Anak Telantar yang Mendapatkan Akses ke Layanan Ke :: Tahun | Orang
+puskesmas data.bantenprov.go.id    aabdb3cd Gelandangan dan Pengemis yang Mendapatkan Akses ke :: Tahun | Orang
+puskesmas data.bantenprov.go.id    674d2acd Penyandang Disabilitas Terlantar Yang Mendapatkan  :: Tahun | Orang
+puskesmas data.bantenprov.go.id    da111b9f Lanjut Usia Telantar Yang Mendapatkan Akses Ke Lay :: Tahun | Orang
+puskesmas data.bantenprov.go.id    6342eb8a Dokumen Hasil Koordinasi Berkala Antar Lembaga Pem :: Tahun | Dokumen
+sekolah   data.kamparkab.go.id     dc13660b ANGKA HARAPAN LAMA SEKOLAH KABUPATEN KAMPAR TAHUN  :: SKIP
+sekolah   data.kamparkab.go.id     d21026f3 RATA RATA LAMA SEKOLAH KABUPATEN KAMPAR TAHUN 2021 :: SKIP
+sekolah   data.kamparkab.go.id     4e41c285 BANGUNAN SEKOLAH KONDISI BAIK JENJANG SMP TAHUN 20 :: SKIP
+sekolah   data.kamparkab.go.id     52833d40 BANGUNAN SEKOLAH DENGAN KONDISI BAIK JENJANG SD TA :: SKIP
+sekolah   data.kamparkab.go.id     ecf5af3c ANGKA PUTUS SEKOLAH SD DAN SMP KABUPATEN KAMPAR TA :: SKIP
+penduduk  satudata.padang.go.id    7240a13d JUMLAH PENDUDUK DI KECAMATAN BUNGUS TELUK KABUNG B :: SKIP
+sekolah   satudata.padang.go.id    2a287738 Jumlah Sekolah Sekolah Dasar di Kecamatan Padang U :: No | Uraian Data Prioritas | Jumlah Sekolah Sekolah Dasar
+sekolah   satudata.padang.go.id    94afbefc Jumlah Sekolah Lanjutan Tingkat Pertama di Kecamat :: No | Uraian Data Prioritas | Jumlah Sekolah Lanjutan Tingkat Pertama
+sekolah   satudata.padang.go.id    21e2942d Jumlah Sekolah Lanjutan Tingkat Atas di Kecamatan  :: No | Uraian Data Prioritas | Jumlah Sekolah Lanjutan Tingkat Atas
+sekolah   satudata.padang.go.id    8919775d Sertifikasi Unit Kesehatan Sekolah                 :: SKIP
+sekolah   satudata.padang.go.id    97e33c30 Guru dan Kepala Sekolah Berdasarkan Sertifikasi pa :: KODE KECAMATAN | KECAMATAN | SUDAH | BELUM
+sekolah   satudata.padang.go.id    79d6536d Guru dan Kepala Sekolah Berdasarkan Sertifikasi pa :: KODE KECAMATAN | KECAMATAN | SUDAH | BELUM
+sekolah   satudata.padang.go.id    517d1603 Guru dan Kepala Sekolah Berdasarkan Ijazah pada Je :: KODE KECAMATAN | KECAMATAN | < S1 | S1 | > S1
+puskesmas satudata.padang.go.id    cd026503 Jumlah Puskesmas, Pustu dan Posyandu               :: SKIP
+puskesmas satudata.padang.go.id    0707c4fc Jumlah Puskesmas di Kecamatan Padang Utara         :: No | Uraian Data Prioritas | Jumlah Puskesmas
+puskesmas satudata.padang.go.id    68aaefbe Persentase  Puskesmas dengan Ketersedian Obat Esen :: SKIP
+puskesmas satudata.padang.go.id    a7239791 Jumlah Kematian Ibu Menurut Kecamatan dan Puskesma :: SKIP
+puskesmas satudata.padang.go.id    3fca0f48 Jumlah Puskesmas Pembantu (Pustu) di Kecamatan Pad :: No | Uraian Data Prioritas | Jumlah Pustu
+sekolah   data.kalbarprov.go.id    c8420ee2 Jumlah Sekolah yang melaksanakan UKS Tahun 2016-20 :: Tahun | SD/MI ? Absolut | SMP/MTS ? Absolut | SMA,SMK/MA ? Absolut
+sekolah   data.kalbarprov.go.id    5ebfdcb6 Jumlah Sekolah Negeri/Swasta di Provinsi Kalimanta :: Jumlah Sekolah | Sekolah Negeri Tahun 2016 | Sekolah Swasta Tahun 2016 | Jumlah Sekolah Tahun 2016 | Sekolah Negeri Tahun 2017 | Sekolah Swasta Tahun 2017 | Jumlah Sekolah Tahun 2017
+sekolah   data.kalbarprov.go.id    b2006008 Jumlah Murid Sekolah Menengah Umum Menurut Kabupat :: Kabupaten / Kota | 2015 | 2016 | 2017
+sekolah   data.kalbarprov.go.id    ebb9a176 Jumlah Murid Sekolah Menengah Pertama Menurut Kabu :: Kabupaten / Kota | 2015 | 2016 | 2017
+puskesmas data.kalbarprov.go.id    05034207 Jumlah Puskesmas, 2015-2017                        :: Kab/Kota | Tahun 2015 | Tahun 2016 | Tahun 2017
+puskesmas data.kalbarprov.go.id    91b8e7b2 Jumlah Puskesmas Pembantu, 2015-2017               :: Kab/Kota | Tahun 2015 | Tahun 2016 | Tahun 2017
+puskesmas data.kalbarprov.go.id    bcf08c56 Jumlah Puskesmas Keliling, 2015-2017               :: Kab/Kota | Tahun 2015 | Tahun 2016 | Tahun 2017
+puskesmas data.kalbarprov.go.id    d47dbef8 Jumlah Puskesmas per 500.000 dan Puskesmas Kelilin :: Kabupaten/Kota | Jumlah Penduduk (Jiwa) | Puskesmas (Unit) | Puskesmas Pembantu (Unit) | Puskesmas Keliling (Unit) | Jumlah Puskesmas per 500.000 Penduduk
+puskesmas data.kalbarprov.go.id    5ba5ad7c Jumlah Puskesmas per 500.000 dan Puskesmas Kelilin :: Tahun | Jumlah Penduduk (Jiwa) | Puskesmas (Unit) | Puskesmas Pembantu (Unit) | Puskesmas Keliling (Unit) | Jumlah Puskesmas per 500.000 Penduduk
+puskesmas data.kalbarprov.go.id    12f3c2db Nomor Kontak (WHATSAPP) Puskesmas Kota Pontianak   :: KECAMATAN | NAMA PUSAT KESEHATAN MASYARAKAT | NOMOR WHATSAPP
+sekolah   data.paserkab.go.id      9cc2176e Jumlah Sekolah Menurut Tingkat Pendidikan di Kecam :: Tingkat Pendidikan | Negeri | Swasta | Jumlah
+penduduk  data.acehprov.go.id      b0472996 Penduduk Berumur 15 Tahun Ke Atas yang Bekerja Sel :: bps_kode_provinsi | bps_nama_provinsi | tahun | jam | jiwa | jenis_kelamin
+penduduk  data.acehprov.go.id      aa6ed47a Jumlah Penduduk per Kabupaten/Kota Berdasarkan Jen :: bps_kode_provinsi | bps_nama_provinsi | bps_kode_kabupaten | bps_nama_kabupaten | tahun | jumlah_penduduk(ribu) | jenis_kelamin
+penduduk  data.acehprov.go.id      8cea80b5 Jumlah Pencari Kerja yang Terdaftar Menurut Pendid :: bps_kode_provinsi | bps_nama_provinsi | tahun | pendidikan | jumlah_pencari_kerja_terdaftar | jenis_kelamin
+penduduk  data.acehprov.go.id      aed697cd Jumlah Angkatan Kerja dan Pencari Kerja yang Ditem :: bps_kode_provinsi | bps_nama_provinsi | tahun | kelompok_umur | jumlah_angkatan_kerja_dan pencari_kerja_ditempatkan | jenis_kelamin
+penduduk  data.acehprov.go.id      7add250f Jumlah Penduduk Menurut Kabupaten/Kota di Provinsi :: bps_kode_provinsi | bps_nama_provinsi | bps_kode_kabupaten | bps_nama_kabupaten | tahun | jumlah_penduduk
+penduduk  data.acehprov.go.id      acb6738c Jumlah Penduduk Menurut Jenis Kelamin (Ribuan)     :: bps_kode_provinsi | bps_nama_provinsi | tahun | jumlah_penduduk | jenis_kelamin
+penduduk  data.acehprov.go.id      5b747c42 Jumlah Penduduk Menurut Jenis Kelamin (SIAK)       :: kemendagri_kode_provinsi | kemendagri_nama_provinsi | kemendagri_kode_kabupatenkota | kemendagri_nama_kabupatenkota | tahun | semester | jenis_kelamin | jumlah_penduduk | satuan
+penduduk  data.acehprov.go.id      44deabf2 Cakupan Jaminan Kesehatan Penduduk Menurut Jenis K :: kemendagri_kode_provinsi | kemendagri_nama_provinsi | kemendagri_kode_kabupatenkota | kemendagri_nama_kabupatenkota | tahun | jenis_peserta_penerima_dan_non_penerima_bantuan | jumlah_peserta_penerima_bantuan | satuan
+sekolah   data.acehprov.go.id      854ec289 Jumlah Sekolah Menengah Atas                       :: kemendagri_kode_provinsi | kemendagri_nama_provinsi | kemendagri_kode_kabupaten_kota | kemendagri_nama_kabupaten_kota | tahun | jenjang_pendidikan | status_satuan_pendidikan | jumlah | satuan
+sekolah   data.acehprov.go.id      05441e33 Jumlah Sekolah Berdasarkan Status Sekolah (Dapodik :: kemendagri_kode_provinsi | kemendagri_nama_provinsi | kemendagri_kode_kabupaten_kota | kemendagri_nama_kabupaten_kota | tahun | tahun_ajaran | semester | jenis_sekolah | jumlah_sekolah | satuan
+sekolah   data.acehprov.go.id      fd7e0f44 Jumlah Sekolah (Dapodik)                           :: kemendagri_kode_provinsi | kemendagri_nama_provinsi | kemendagri_kode_kabupaten_kota | kemendagri_nama_kabupaten_kota | tahun | tahun_ajaran | semester | jumlah_sekolah | satuan
+sekolah   data.acehprov.go.id      56696b71 Jumlah Sekolah Menurut Jenjang Pendidikan          :: kemendagri_kode_provinsi | kemendagri_nama_provinsi | kemendagri_kode_kabupaten_kota | kemendagri_nama_kabupaten_kota | tahun | jenjang_pendidikan | jumlah | satuan
+sekolah   data.acehprov.go.id      f29d88ad Jumlah Sekolah Dasar (SD) (Dapodik)                :: kemendagri_kode_provinsi | kemendagri_nama_provinsi | kemendagri_kode_kabupaten_kota | kemendagri_nama_kabupaten_kota | tahun | tahun_ajaran | semester | jumlah_sekolah | satuan
+sekolah   data.acehprov.go.id      30e6fc2c Jumlah Sekolah Kelompok Bermain (KB) Berdasarkan S :: kemendagri_kode_provinsi | kemendagri_nama_provinsi | kemendagri_kode_kabupaten_kota | kemendagri_nama_kabupaten_kota | tahun | tahun_ajaran | semester | jenis_sekolah | jumlah_sekolah_kb | satuan
+sekolah   data.acehprov.go.id      bfa698a8 Jumlah Sekolah Dasar (SD) Berdasarkan Status Sekol :: kemendagri_kode_provinsi | kemendagri_nama_provinsi | kemendagri_kode_kabupaten_kota | kemendagri_nama_kabupaten_kota | tahun | tahun_ajaran | semester | jenis_sekolah | jumlah_sekolah | satuan
+puskesmas data.acehprov.go.id      d56ca8e2 Jumlah Puskesmas Menurut Kabupaten Kota            :: kemendagri_kode_provinsi | kemendagri_nama_provinsi | kemendagri_kode_kabupaten_kota | kemendagri_nama_kabupaten_kota | tahun | jumlah_puskesmas | satuan
+puskesmas data.acehprov.go.id      0731ecfb Jarak Puskesmas Pembantu Terdekat (IDM)            :: kemendagri_kode _provinsi | kemendagri_nama _provinsi | kemendagri_kode_ kabupaten_kota | kemendagri_nama_ kabupaten_kota | kemendagri_kode_ kecamatan | kemendagri_nama_ kecamatan | kemendagri_kode_ desa | kemendagri_nama_ desa | tahun | ketersediaan_pustu | j
+puskesmas data.acehprov.go.id      b5c0e232 Jumlah Tenaga Medis di Fasilitas Kesehatan Puskesm :: kemendagri_kode_provinsi | kemendagri_nama_provinsi | kemendagri_kode_kabupatenkota | kemendagri_nama_kabupatenkota | kemendagri_kode_kecamatan | kemendagri_nama_kecamatan | nama_puskesmas | tahun | jenis_dokter | jenis_kelamin | jumlah_dokter | satuan
+puskesmas data.acehprov.go.id      823a597e Jumlah Tenaga Kefarmasian di Fasilitas Kesehatan P :: kemendagri_kode_provinsi | kemendagri_nama_provinsi | kemendagri_kode_kabupatenkota | kemendagri_nama_kabupatenkota | kemendagri_kode_kecamatan | kemendagri_nama_kecamatan | nama_puskesmas | tahun | kategori | jenis_kelamin | jumlah | satuan
+puskesmas data.acehprov.go.id      389dfdb2 Jarak Puskesmas Rawat Inap Terdekat (IDM)          :: kemendagri_kode _provinsi | kemendagri_nama _provinsi | kemendagri_kode_ kabupaten_kota | kemendagri_nama_ kabupaten_kota | kemendagri_kode_ kecamatan | kemendagri_nama_ kecamatan | kemendagri_kode_ desa | kemendagri_nama_ desa | tahun | ketersediaan_puskesmas
+puskesmas data.acehprov.go.id      badd98f2 Waktu Tempuh ke Puskesmas Pembantu Terdekat (IDM)  :: kemendagri_kode _provinsi | kemendagri_nama _provinsi | kemendagri_kode_ kabupaten_kota | kemendagri_nama_ kabupaten_kota | kemendagri_kode_ kecamatan | kemendagri_nama_ kecamatan | kemendagri_kode_ desa | kemendagri_nama_ desa | tahun | ketersediaan_pustu | w
+puskesmas data.acehprov.go.id      0964b574 Jarak Puskesmas Tanpa Rawat Inap Terdekat (IDM)    :: kemendagri_kode _provinsi | kemendagri_nama _provinsi | kemendagri_kode_ kabupaten_kota | kemendagri_nama_ kabupaten_kota | kemendagri_kode_ kecamatan | kemendagri_nama_ kecamatan | kemendagri_kode_ desa | kemendagri_nama_ desa | tahun | ketersediaan_puskesmas
+sekolah   data.agamkab.go.id       1efc5243 Jumlah Sekolah, Guru, Murid, dan Rasio Murid-Guru  :: SKIP
+sekolah   data.agamkab.go.id       8959072d Jumlah Sekolah, Guru dan Murid SMA                 :: SKIP
+sekolah   data.agamkab.go.id       5eb6892c Jumlah Sekolah, Guru, Murid dan Rasio Murid Guru S :: SKIP
+puskesmas data.agamkab.go.id       592884b5 Jumlah Puskesmas Menurut Kecamatan di Kabupaten Ag :: SKIP

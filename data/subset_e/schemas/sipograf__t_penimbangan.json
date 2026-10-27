@@ -1,0 +1,54 @@
+{
+ "system": "sipograf",
+ "table": "t_penimbangan",
+ "source": "Kriss245/Sipograf-Sistem-Informasi-Posyandu-dengan-KMS@3ddc160c19",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id_penimbangan",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "id_anak",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_penimbangan",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "umur",
+   "type": "int(2)",
+   "desc": ""
+  },
+  {
+   "name": "berat_badan",
+   "type": "float",
+   "desc": ""
+  },
+  {
+   "name": "tinggi_badan",
+   "type": "float",
+   "desc": ""
+  },
+  {
+   "name": "keterangan",
+   "type": "text",
+   "desc": ""
+  },
+  {
+   "name": "petugas",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "posyandu",
+   "type": "varchar(100)",
+   "desc": ""
+  }
+ ]
+}

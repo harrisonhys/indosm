@@ -1,0 +1,79 @@
+{
+ "system": "fhir",
+ "table": "Practitioner",
+ "source": "HL7 FHIR R4 4.0.1 StructureDefinition snapshot",
+ "license": "CC0-1.0",
+ "lang": "en",
+ "columns": [
+  {
+   "name": "identifier",
+   "type": "Identifier",
+   "desc": "An identifier for the person as this agent"
+  },
+  {
+   "name": "active",
+   "type": "boolean",
+   "desc": "Whether this practitioner's record is in active use"
+  },
+  {
+   "name": "name",
+   "type": "HumanName",
+   "desc": "The name(s) associated with the practitioner"
+  },
+  {
+   "name": "telecom",
+   "type": "ContactPoint",
+   "desc": "A contact detail for the practitioner (that apply to all roles)"
+  },
+  {
+   "name": "address",
+   "type": "Address",
+   "desc": "Address(es) of the practitioner that are not role specific (typically home address)"
+  },
+  {
+   "name": "gender",
+   "type": "code",
+   "desc": "male | female | other | unknown"
+  },
+  {
+   "name": "birthDate",
+   "type": "date",
+   "desc": "The date  on which the practitioner was born"
+  },
+  {
+   "name": "photo",
+   "type": "Attachment",
+   "desc": "Image of the person"
+  },
+  {
+   "name": "qualification",
+   "type": "BackboneElement",
+   "desc": "Certification, licenses, or training pertaining to the provision of care"
+  },
+  {
+   "name": "qualification.identifier",
+   "type": "Identifier",
+   "desc": "An identifier for this qualification for the practitioner"
+  },
+  {
+   "name": "qualification.code",
+   "type": "CodeableConcept",
+   "desc": "Coded representation of the qualification"
+  },
+  {
+   "name": "qualification.period",
+   "type": "Period",
+   "desc": "Period during which the qualification is valid"
+  },
+  {
+   "name": "qualification.issuer",
+   "type": "Reference",
+   "desc": "Organization that regulates and issues the qualification"
+  },
+  {
+   "name": "communication",
+   "type": "CodeableConcept",
+   "desc": "A language the practitioner can use in patient communication"
+  }
+ ]
+}

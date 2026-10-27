@@ -1,0 +1,34 @@
+{
+ "system": "khanza",
+ "table": "diagnosa_pasien",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_rawat",
+   "type": "varchar(17)",
+   "desc": ""
+  },
+  {
+   "name": "kd_penyakit",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "status",
+   "type": "enum('ralan','ranap')",
+   "desc": ""
+  },
+  {
+   "name": "prioritas",
+   "type": "tinyint(4)",
+   "desc": ""
+  },
+  {
+   "name": "status_penyakit",
+   "type": "enum('lama','baru')",
+   "desc": ""
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "system": "rmpuskesmas",
+ "table": "tb_pasien",
+ "source": "mfarim/laravel-rekam-medis-puskesmas@1767a3ff14",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "kode_pasien",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "nama_pasien",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "alamat",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "rt",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "rw",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "tgl_lahir",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "agama",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "Jen_pmbyrn",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "no_jaminan",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "pekerjaan",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "pend_trkhr",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "telp",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "ortu_suami",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "istri_anak",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "alergi_obat",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "created_at",
+   "type": "timestamps",
+   "desc": ""
+  },
+  {
+   "name": "updated_at",
+   "type": "timestamps",
+   "desc": ""
+  }
+ ]
+}

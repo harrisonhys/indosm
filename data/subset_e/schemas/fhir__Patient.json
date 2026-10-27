@@ -1,0 +1,139 @@
+{
+ "system": "fhir",
+ "table": "Patient",
+ "source": "HL7 FHIR R4 4.0.1 StructureDefinition snapshot",
+ "license": "CC0-1.0",
+ "lang": "en",
+ "columns": [
+  {
+   "name": "identifier",
+   "type": "Identifier",
+   "desc": "An identifier for this patient"
+  },
+  {
+   "name": "active",
+   "type": "boolean",
+   "desc": "Whether this patient's record is in active use"
+  },
+  {
+   "name": "name",
+   "type": "HumanName",
+   "desc": "A name associated with the patient"
+  },
+  {
+   "name": "telecom",
+   "type": "ContactPoint",
+   "desc": "A contact detail for the individual"
+  },
+  {
+   "name": "gender",
+   "type": "code",
+   "desc": "male | female | other | unknown"
+  },
+  {
+   "name": "birthDate",
+   "type": "date",
+   "desc": "The date of birth for the individual"
+  },
+  {
+   "name": "deceased[x]",
+   "type": "boolean|dateTime",
+   "desc": "Indicates if the individual is deceased or not"
+  },
+  {
+   "name": "address",
+   "type": "Address",
+   "desc": "An address for the individual"
+  },
+  {
+   "name": "maritalStatus",
+   "type": "CodeableConcept",
+   "desc": "Marital (civil) status of a patient"
+  },
+  {
+   "name": "multipleBirth[x]",
+   "type": "boolean|integer",
+   "desc": "Whether patient is part of a multiple birth"
+  },
+  {
+   "name": "photo",
+   "type": "Attachment",
+   "desc": "Image of the patient"
+  },
+  {
+   "name": "contact",
+   "type": "BackboneElement",
+   "desc": "A contact party (e.g. guardian, partner, friend) for the patient"
+  },
+  {
+   "name": "contact.relationship",
+   "type": "CodeableConcept",
+   "desc": "The kind of relationship"
+  },
+  {
+   "name": "contact.name",
+   "type": "HumanName",
+   "desc": "A name associated with the contact person"
+  },
+  {
+   "name": "contact.telecom",
+   "type": "ContactPoint",
+   "desc": "A contact detail for the person"
+  },
+  {
+   "name": "contact.address",
+   "type": "Address",
+   "desc": "Address for the contact person"
+  },
+  {
+   "name": "contact.gender",
+   "type": "code",
+   "desc": "male | female | other | unknown"
+  },
+  {
+   "name": "contact.organization",
+   "type": "Reference",
+   "desc": "Organization that is associated with the contact"
+  },
+  {
+   "name": "contact.period",
+   "type": "Period",
+   "desc": "The period during which this contact person or organization is valid to be contacted relating to this patient"
+  },
+  {
+   "name": "communication",
+   "type": "BackboneElement",
+   "desc": "A language which may be used to communicate with the patient about his or her health"
+  },
+  {
+   "name": "communication.preferred",
+   "type": "boolean",
+   "desc": "Language preference indicator"
+  },
+  {
+   "name": "generalPractitioner",
+   "type": "Reference",
+   "desc": "Patient's nominated primary care provider"
+  },
+  {
+   "name": "managingOrganization",
+   "type": "Reference",
+   "desc": "Organization that is the custodian of the patient record"
+  },
+  {
+   "name": "link",
+   "type": "BackboneElement",
+   "desc": "Link to another patient resource that concerns the same actual person"
+  },
+  {
+   "name": "link.other",
+   "type": "Reference",
+   "desc": "The other patient or related person resource that the link refers to"
+  },
+  {
+   "name": "link.type",
+   "type": "code",
+   "desc": "replaced-by | replaces | refer | seealso"
+  }
+ ]
+}

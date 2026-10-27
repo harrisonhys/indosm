@@ -1,0 +1,309 @@
+{
+ "system": "opensid",
+ "table": "tweb_penduduk",
+ "source": "OpenSID (OpenSID/OpenSID@master, contoh_data_awal_20210901.sql)",
+ "license": "GPL-3.0 + OpenSID version clause",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "id",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "nama",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "nik",
+   "type": "decimal(16,0)",
+   "desc": ""
+  },
+  {
+   "name": "id_kk",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "kk_level",
+   "type": "tinyint(2)",
+   "desc": ""
+  },
+  {
+   "name": "id_rtm",
+   "type": "varchar(30)",
+   "desc": ""
+  },
+  {
+   "name": "rtm_level",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "sex",
+   "type": "tinyint(4)",
+   "desc": ""
+  },
+  {
+   "name": "tempatlahir",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "tanggallahir",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "agama_id",
+   "type": "int(1)",
+   "desc": ""
+  },
+  {
+   "name": "pendidikan_kk_id",
+   "type": "int(1)",
+   "desc": ""
+  },
+  {
+   "name": "pendidikan_sedang_id",
+   "type": "int(1)",
+   "desc": ""
+  },
+  {
+   "name": "pekerjaan_id",
+   "type": "int(1)",
+   "desc": ""
+  },
+  {
+   "name": "status_kawin",
+   "type": "tinyint(4)",
+   "desc": ""
+  },
+  {
+   "name": "warganegara_id",
+   "type": "tinyint(4)",
+   "desc": ""
+  },
+  {
+   "name": "dokumen_pasport",
+   "type": "varchar(45)",
+   "desc": ""
+  },
+  {
+   "name": "dokumen_kitas",
+   "type": "varchar(45)",
+   "desc": ""
+  },
+  {
+   "name": "ayah_nik",
+   "type": "varchar(16)",
+   "desc": ""
+  },
+  {
+   "name": "ibu_nik",
+   "type": "varchar(16)",
+   "desc": ""
+  },
+  {
+   "name": "nama_ayah",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "nama_ibu",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "foto",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "golongan_darah_id",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "id_cluster",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "status",
+   "type": "int(10)",
+   "desc": ""
+  },
+  {
+   "name": "alamat_sebelumnya",
+   "type": "varchar(200)",
+   "desc": ""
+  },
+  {
+   "name": "alamat_sekarang",
+   "type": "varchar(200)",
+   "desc": ""
+  },
+  {
+   "name": "status_dasar",
+   "type": "tinyint(4)",
+   "desc": ""
+  },
+  {
+   "name": "hamil",
+   "type": "int(1)",
+   "desc": ""
+  },
+  {
+   "name": "cacat_id",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "sakit_menahun_id",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "akta_lahir",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "akta_perkawinan",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "tanggalperkawinan",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "akta_perceraian",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "tanggalperceraian",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "cara_kb_id",
+   "type": "tinyint(2)",
+   "desc": ""
+  },
+  {
+   "name": "telepon",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "tanggal_akhir_paspor",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "no_kk_sebelumnya",
+   "type": "varchar(30)",
+   "desc": ""
+  },
+  {
+   "name": "ktp_el",
+   "type": "tinyint(4)",
+   "desc": ""
+  },
+  {
+   "name": "status_rekam",
+   "type": "tinyint(4)",
+   "desc": ""
+  },
+  {
+   "name": "waktu_lahir",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "tempat_dilahirkan",
+   "type": "tinyint(2)",
+   "desc": ""
+  },
+  {
+   "name": "jenis_kelahiran",
+   "type": "tinyint(2)",
+   "desc": ""
+  },
+  {
+   "name": "kelahiran_anak_ke",
+   "type": "tinyint(2)",
+   "desc": ""
+  },
+  {
+   "name": "penolong_kelahiran",
+   "type": "tinyint(2)",
+   "desc": ""
+  },
+  {
+   "name": "berat_lahir",
+   "type": "smallint(6)",
+   "desc": ""
+  },
+  {
+   "name": "panjang_lahir",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "tag_id_card",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "created_at",
+   "type": "timestamp",
+   "desc": ""
+  },
+  {
+   "name": "created_by",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "updated_at",
+   "type": "timestamp",
+   "desc": ""
+  },
+  {
+   "name": "updated_by",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "id_asuransi",
+   "type": "tinyint(5)",
+   "desc": ""
+  },
+  {
+   "name": "no_asuransi",
+   "type": "char(100)",
+   "desc": ""
+  },
+  {
+   "name": "email",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "bahasa_id",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "ket",
+   "type": "tinytext",
+   "desc": ""
+  }
+ ]
+}

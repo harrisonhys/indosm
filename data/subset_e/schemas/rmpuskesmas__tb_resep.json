@@ -1,0 +1,39 @@
+{
+ "system": "rmpuskesmas",
+ "table": "tb_resep",
+ "source": "mfarim/laravel-rekam-medis-puskesmas@1767a3ff14",
+ "license": "MIT",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_resep",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "resep",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "tgl_resep",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "no_redis",
+   "type": "string",
+   "desc": ""
+  },
+  {
+   "name": "created_at",
+   "type": "timestamps",
+   "desc": ""
+  },
+  {
+   "name": "updated_at",
+   "type": "timestamps",
+   "desc": ""
+  }
+ ]
+}

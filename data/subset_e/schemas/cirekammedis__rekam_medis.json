@@ -1,0 +1,49 @@
+{
+ "system": "cirekammedis",
+ "table": "rekam_medis",
+ "source": "arfandotid/ci_rekammedis@606cd16795",
+ "license": "unclear (license.txt is CodeIgniter's MIT, not the app author's)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "idRekamMedis",
+   "type": "char(15)",
+   "desc": ""
+  },
+  {
+   "name": "pasienId",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "dokterNip",
+   "type": "char(18)",
+   "desc": ""
+  },
+  {
+   "name": "poliklinikId",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "keluhan",
+   "type": "text",
+   "desc": ""
+  },
+  {
+   "name": "diagnosa",
+   "type": "text",
+   "desc": ""
+  },
+  {
+   "name": "tglPeriksa",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "userId",
+   "type": "int(11)",
+   "desc": ""
+  }
+ ]
+}

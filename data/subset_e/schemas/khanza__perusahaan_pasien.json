@@ -1,0 +1,34 @@
+{
+ "system": "khanza",
+ "table": "perusahaan_pasien",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "kode_perusahaan",
+   "type": "varchar(8)",
+   "desc": ""
+  },
+  {
+   "name": "nama_perusahaan",
+   "type": "varchar(70)",
+   "desc": ""
+  },
+  {
+   "name": "alamat",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "kota",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "no_telp",
+   "type": "varchar(27)",
+   "desc": ""
+  }
+ ]
+}

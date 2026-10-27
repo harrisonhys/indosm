@@ -1,0 +1,12 @@
+done short, new LLM calls so far 0
+done def, new LLM calls so far 58
+done elements, new LLM calls so far 109
+done scope, new LLM calls so far 163
+done scope+bnr, new LLM calls so far 211
+                             hit  hit@1  R@GT_neutral  F1_neutral  stage1_prompt_tokens  prompt_tokens     sec
+config                                                                                                        
+two-stage+dict[short]      0.829  0.634         0.323       0.296               349.366        958.195  21.217
+two-stage+dict[def]        0.878  0.634         0.338       0.299               685.366       1341.829  24.361
+two-stage+dict[elements]   0.854  0.707         0.335       0.288               890.366       1545.390  25.518
+two-stage+dict[scope]      0.805  0.634         0.322       0.297              4638.366       5295.220  42.180
+two-stage+dict[scope+bnr]  0.829  0.659         0.302       0.278              8014.366       8665.146  61.062

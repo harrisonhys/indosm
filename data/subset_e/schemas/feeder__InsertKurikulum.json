@@ -1,0 +1,34 @@
+{
+ "system": "feeder",
+ "table": "InsertKurikulum",
+ "source": "PDDikti Feeder Web Service User Guide v2.2 (07-12-2020)",
+ "license": "public documentation",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "nama_kurikulum",
+   "type": "character",
+   "desc": ""
+  },
+  {
+   "name": "id_prodi",
+   "type": "uuid",
+   "desc": ""
+  },
+  {
+   "name": "jumlah_sks_lulus",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "jumlah_sks_wajib",
+   "type": "numeric",
+   "desc": ""
+  },
+  {
+   "name": "jumlah_sks_pilihan",
+   "type": "numeric",
+   "desc": ""
+  }
+ ]
+}

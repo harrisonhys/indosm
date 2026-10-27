@@ -1,0 +1,189 @@
+{
+ "system": "khanza",
+ "table": "pasien",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_rkm_medis",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "nm_pasien",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "no_ktp",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "jk",
+   "type": "enum('l','p')",
+   "desc": ""
+  },
+  {
+   "name": "tmp_lahir",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_lahir",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "nm_ibu",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "alamat",
+   "type": "varchar(200)",
+   "desc": ""
+  },
+  {
+   "name": "gol_darah",
+   "type": "enum('a','b','o','ab','-')",
+   "desc": ""
+  },
+  {
+   "name": "pekerjaan",
+   "type": "varchar(60)",
+   "desc": ""
+  },
+  {
+   "name": "stts_nikah",
+   "type": "enum('belum menikah','menikah','janda','dudha','jomblo')",
+   "desc": ""
+  },
+  {
+   "name": "agama",
+   "type": "varchar(12)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_daftar",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "no_tlp",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "umur",
+   "type": "varchar(30)",
+   "desc": ""
+  },
+  {
+   "name": "pnd",
+   "type": "enum('ts','tk','sd','smp','sma','slta/sederajat','d1','d2','d3','d4','s1','s2','s3','-')",
+   "desc": ""
+  },
+  {
+   "name": "keluarga",
+   "type": "enum('ayah','ibu','istri','suami','saudara','anak','diri sendiri','lain-lain')",
+   "desc": ""
+  },
+  {
+   "name": "namakeluarga",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "kd_pj",
+   "type": "char(3)",
+   "desc": ""
+  },
+  {
+   "name": "no_peserta",
+   "type": "varchar(25)",
+   "desc": ""
+  },
+  {
+   "name": "kd_kel",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "kd_kec",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "kd_kab",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "pekerjaanpj",
+   "type": "varchar(35)",
+   "desc": ""
+  },
+  {
+   "name": "alamatpj",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "kelurahanpj",
+   "type": "varchar(60)",
+   "desc": ""
+  },
+  {
+   "name": "kecamatanpj",
+   "type": "varchar(60)",
+   "desc": ""
+  },
+  {
+   "name": "kabupatenpj",
+   "type": "varchar(60)",
+   "desc": ""
+  },
+  {
+   "name": "perusahaan_pasien",
+   "type": "varchar(8)",
+   "desc": ""
+  },
+  {
+   "name": "suku_bangsa",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "bahasa_pasien",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "cacat_fisik",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "email",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "nip",
+   "type": "varchar(30)",
+   "desc": ""
+  },
+  {
+   "name": "kd_prop",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "propinsipj",
+   "type": "varchar(30)",
+   "desc": ""
+  }
+ ]
+}

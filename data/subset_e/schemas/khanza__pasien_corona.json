@@ -1,0 +1,174 @@
+{
+ "system": "khanza",
+ "table": "pasien_corona",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_pengenal",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "no_rkm_medis",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "inisial",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "nama_lengkap",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_masuk",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "kode_jk",
+   "type": "varchar(1)",
+   "desc": ""
+  },
+  {
+   "name": "nama_jk",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_lahir",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "kode_kewarganegaraan",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "nama_kewarganegaraan",
+   "type": "varchar(25)",
+   "desc": ""
+  },
+  {
+   "name": "kode_penularan",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "sumber_penularan",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "kd_kelurahan",
+   "type": "varchar(15)",
+   "desc": ""
+  },
+  {
+   "name": "nm_kelurahan",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "kd_kecamatan",
+   "type": "varchar(10)",
+   "desc": ""
+  },
+  {
+   "name": "nm_kecamatan",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "kd_kabupaten",
+   "type": "varchar(6)",
+   "desc": ""
+  },
+  {
+   "name": "nm_kabupaten",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "kd_propinsi",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "nm_propinsi",
+   "type": "varchar(20)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_keluar",
+   "type": "date",
+   "desc": ""
+  },
+  {
+   "name": "kode_statuskeluar",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "nama_statuskeluar",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "tgl_lapor",
+   "type": "datetime",
+   "desc": ""
+  },
+  {
+   "name": "kode_statusrawat",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "nama_statusrawat",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "kode_statusisolasi",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "nama_statusisolasi",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "email",
+   "type": "varchar(50)",
+   "desc": ""
+  },
+  {
+   "name": "notelp",
+   "type": "varchar(40)",
+   "desc": ""
+  },
+  {
+   "name": "sebab_kematian",
+   "type": "varchar(60)",
+   "desc": ""
+  },
+  {
+   "name": "kode_jenis_pasien",
+   "type": "varchar(5)",
+   "desc": ""
+  },
+  {
+   "name": "nama_jenis_pasien",
+   "type": "varchar(40)",
+   "desc": ""
+  }
+ ]
+}

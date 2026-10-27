@@ -1,0 +1,23 @@
+done E01L
+done E02L
+done E03L
+done E04L
+done E05L
+done E06L
+done E07L
+done E08L
+done E09L
+done E10L
+done E11L
+done E12L
+done E13L
+done E14L
+done E20L
+new LLM calls: 47
+                      R@GT     F1       hit     hit@1  prompt_tokens     sec
+config                                                                      
+llm-full+dict        0.353  0.270       NaN       NaN       1963.933  31.400
+llm-full+dict+table  0.327  0.280       NaN       NaN       1972.733  29.351
+two-stage+dict       0.400  0.330  0.866667  0.666667        985.067  24.299
+two-stage+dict+t1    0.389  0.328  0.933333       0.6        998.133  24.528
+two-stage+dict+t12   0.373  0.290  0.933333       0.6       1006.933  23.756

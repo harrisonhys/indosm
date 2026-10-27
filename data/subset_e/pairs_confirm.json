@@ -1,0 +1,616 @@
+[
+ {
+  "id": "C01",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "rmpuskesmas__tb_pasien",
+  "target": "fhir__Patient",
+  "gt": [
+   [
+    "kode_pasien",
+    "identifier"
+   ],
+   [
+    "nama_pasien",
+    "name"
+   ],
+   [
+    "alamat",
+    "address"
+   ],
+   [
+    "tgl_lahir",
+    "birthDate"
+   ],
+   [
+    "telp",
+    "telecom"
+   ],
+   [
+    "ortu_suami",
+    "contact.name"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "no_jaminan",
+    "identifier"
+   ],
+   [
+    "rt",
+    "address"
+   ],
+   [
+    "rw",
+    "address"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "istri_anak",
+    "contact.name",
+    "second contact (wife/child) vs. ortu_suami"
+   ]
+  ],
+  "notes": "Base FHIR R4 only: SATUSEHAT extensions (birthPlace, religion, mothersMaidenName, citizenship) are not modelled, so those source columns are true negatives. Jen_pmbyrn (payment type) belongs to Coverage; alergi_obat to AllergyIntolerance.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C02",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "rmpuskesmas__tb_rekam_medis",
+  "target": "fhir__Encounter",
+  "gt": [
+   [
+    "no_redis",
+    "identifier"
+   ],
+   [
+    "kode_pasien",
+    "subject"
+   ],
+   [
+    "kode_dktr",
+    "participant.individual"
+   ],
+   [
+    "keluhan",
+    "reasonCode"
+   ],
+   [
+    "diagnosa",
+    "diagnosis.condition"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "rcn_tndk_lnjt",
+    "hospitalization.dischargeDisposition",
+    "follow-up plan vs. discharge disposition"
+   ],
+   [
+    "created_at",
+    "period",
+    "record timestamp vs. visit time"
+   ]
+  ],
+  "notes": "One row = one examination. Anamnesia/pmrk_fisik/therapy belong to Observation/ClinicalImpression/MedicationRequest; same split as Khanza kamar_inap (diagnosa_awal->reasonCode, akhir->diagnosis).",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C03",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "rmpuskesmas__tb_rujuk",
+  "target": "fhir__ServiceRequest",
+  "gt": [
+   [
+    "no_surat_rujukan",
+    "identifier"
+   ],
+   [
+    "tgl_rujuk",
+    "authoredOn"
+   ],
+   [
+    "no_redis",
+    "encounter"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "no_redis = visit record id, the FK analogous to Khanza no_rawat.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C04",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "rmpuskesmas__tb_resep",
+  "target": "fhir__MedicationRequest",
+  "gt": [
+   [
+    "no_resep",
+    "identifier"
+   ],
+   [
+    "tgl_resep",
+    "authoredOn"
+   ],
+   [
+    "no_redis",
+    "encounter"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "resep",
+    "medication[x]",
+    "free-text prescription: drug and/or dosage (dosageInstruction)"
+   ]
+  ],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C05",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "rmpuskesmas__tb_dokter",
+  "target": "fhir__Practitioner",
+  "gt": [
+   [
+    "kode_dktr",
+    "identifier"
+   ],
+   [
+    "nama_dktr",
+    "name"
+   ],
+   [
+    "alamat_dktr",
+    "address"
+   ],
+   [
+    "tgl_lahir_dktr",
+    "birthDate"
+   ],
+   [
+    "telp_dktr",
+    "telecom"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "pend_trkhr_dktr",
+    "qualification.code",
+    "education level vs. professional qualification"
+   ]
+  ],
+  "notes": "Base FHIR R4 only: SATUSEHAT extensions (birthPlace, religion, mothersMaidenName, citizenship) are not modelled, so those source columns are true negatives.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C06",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "sipuskesmas__polis",
+  "target": "fhir__Location",
+  "gt": [
+   [
+    "id",
+    "identifier"
+   ],
+   [
+    "nama",
+    "name"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "Poli = clinic department, -> Location as Khanza poliklinik (E04). nomor_sekarang = current queue number.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C07",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "sipuskesmas__tenaga_kesehatans",
+  "target": "fhir__Practitioner",
+  "gt": [
+   [
+    "id",
+    "identifier"
+   ],
+   [
+    "nama",
+    "name"
+   ],
+   [
+    "no_telepon",
+    "telecom"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "poli_id and jadwal (schedule) belong to PractitionerRole, not in the 11 resources.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C08",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "sipuskesmas__antrians",
+  "target": "fhir__Encounter",
+  "gt": [
+   [
+    "id",
+    "identifier"
+   ],
+   [
+    "pasien_id",
+    "subject"
+   ],
+   [
+    "poli_id",
+    "location.location"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "created_at",
+    "period",
+    "queue-ticket time vs. visit time"
+   ],
+   [
+    "nomor_antrian",
+    "identifier",
+    "daily queue number vs. visit identifier"
+   ]
+  ],
+  "notes": "Queue ticket = registration of an outpatient visit (as Encounter with status arrived in SATUSEHAT).",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C09",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "cirekammedis__dokter",
+  "target": "fhir__Practitioner",
+  "gt": [
+   [
+    "nip",
+    "identifier"
+   ],
+   [
+    "namaDokter",
+    "name"
+   ],
+   [
+    "spesialis",
+    "qualification.code"
+   ],
+   [
+    "noTelp",
+    "telecom"
+   ],
+   [
+    "alamat",
+    "address"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "email",
+    "telecom"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C10",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "cirekammedis__obat",
+  "target": "fhir__Medication",
+  "gt": [
+   [
+    "idObat",
+    "identifier"
+   ],
+   [
+    "namaObat",
+    "code"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "harga (price) and keterangan (indication text) have no Medication counterpart.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C11",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "cirekammedis__pasien",
+  "target": "fhir__Patient",
+  "gt": [
+   [
+    "idPasien",
+    "identifier"
+   ],
+   [
+    "namaPasien",
+    "name"
+   ],
+   [
+    "jenisKelamin",
+    "gender"
+   ],
+   [
+    "noTelp",
+    "telecom"
+   ],
+   [
+    "alamat",
+    "address"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "email",
+    "telecom"
+   ]
+  ],
+  "ambiguous": [],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C12",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "cirekammedis__poliklinik",
+  "target": "fhir__Location",
+  "gt": [
+   [
+    "idPoliklinik",
+    "identifier"
+   ],
+   [
+    "namaPoliklinik",
+    "name"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "gedung",
+    "partOf",
+    "building/floor text vs. parent location"
+   ]
+  ],
+  "notes": "",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C13",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "cirekammedis__rekam_medis",
+  "target": "fhir__Encounter",
+  "gt": [
+   [
+    "idRekamMedis",
+    "identifier"
+   ],
+   [
+    "pasienId",
+    "subject"
+   ],
+   [
+    "dokterNip",
+    "participant.individual"
+   ],
+   [
+    "poliklinikId",
+    "location.location"
+   ],
+   [
+    "keluhan",
+    "reasonCode"
+   ],
+   [
+    "diagnosa",
+    "diagnosis.condition"
+   ],
+   [
+    "tglPeriksa",
+    "period"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "userId = app user who entered the record: no Encounter counterpart.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C14",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "cirekammedis__rm_obat",
+  "target": "fhir__MedicationRequest",
+  "gt": [
+   [
+    "idRekamMedis",
+    "encounter"
+   ],
+   [
+    "idObat",
+    "medication[x]"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "Link table visit x drug.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C15",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "sipograf__t_anak",
+  "target": "fhir__Patient",
+  "gt": [
+   [
+    "id_anak",
+    "identifier"
+   ],
+   [
+    "nama_anak",
+    "name"
+   ],
+   [
+    "tanggal_lahir",
+    "birthDate"
+   ],
+   [
+    "jenis_kelamin",
+    "gender"
+   ],
+   [
+    "alamat",
+    "address"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [
+   [
+    "nama_ibu",
+    "contact.name",
+    "mother of a child patient: guardian contact vs. mothersMaidenName ext."
+   ]
+  ],
+  "notes": "Base FHIR R4 only: SATUSEHAT extensions (birthPlace, religion, mothersMaidenName, citizenship) are not modelled, so those source columns are true negatives.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C16",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "sipograf__t_penimbangan",
+  "target": "fhir__Observation",
+  "gt": [
+   [
+    "id_penimbangan",
+    "identifier"
+   ],
+   [
+    "id_anak",
+    "subject"
+   ],
+   [
+    "tgl_penimbangan",
+    "effective[x]"
+   ],
+   [
+    "berat_badan",
+    "value[x]"
+   ],
+   [
+    "petugas",
+    "performer"
+   ],
+   [
+    "keterangan",
+    "note"
+   ]
+  ],
+  "gt_n1": [
+   [
+    "tinggi_badan",
+    "value[x]"
+   ]
+  ],
+  "ambiguous": [
+   [
+    "posyandu",
+    "performer",
+    "posyandu name: performing organization vs. location"
+   ]
+  ],
+  "notes": "Weighing record; weight is the primary value, height n:1 (same rule as the vital-sign tables). umur (age in months) has no Observation element.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C17",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "epuskesmas__obat",
+  "target": "fhir__Medication",
+  "gt": [
+   [
+    "id_obat",
+    "identifier"
+   ],
+   [
+    "nama",
+    "code"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "kategori = therapeutic class ('Obat Demam'): Medication R4 has no such element.",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ },
+ {
+  "id": "C18",
+  "group": "confirm-fhir",
+  "lang": "id-en",
+  "source": "opensid__posyandu",
+  "target": "fhir__Organization",
+  "gt": [
+   [
+    "id",
+    "identifier"
+   ],
+   [
+    "nama",
+    "name"
+   ],
+   [
+    "alamat",
+    "address"
+   ]
+  ],
+  "gt_n1": [],
+  "ambiguous": [],
+  "notes": "Posyandu = community-run health post. Organization chosen (a body with a name and address); Location is also defensible, so a Location answer scores 0 here (resource-level ambiguity).",
+  "annotator": "draft-claude",
+  "adjudicated": false
+ }
+]

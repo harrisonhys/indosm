@@ -1,0 +1,44 @@
+{
+ "system": "khanza",
+ "table": "resep_dokter_racikan",
+ "source": "SIMRS Khanza (mas-elkhanza/SIMRS-Khanza@master, sik.sql)",
+ "license": "Khanza custom license (free use, no commercial gain without permission)",
+ "lang": "id",
+ "columns": [
+  {
+   "name": "no_resep",
+   "type": "varchar(14)",
+   "desc": ""
+  },
+  {
+   "name": "no_racik",
+   "type": "varchar(2)",
+   "desc": ""
+  },
+  {
+   "name": "nama_racik",
+   "type": "varchar(100)",
+   "desc": ""
+  },
+  {
+   "name": "kd_racik",
+   "type": "varchar(3)",
+   "desc": ""
+  },
+  {
+   "name": "jml_dr",
+   "type": "int(11)",
+   "desc": ""
+  },
+  {
+   "name": "aturan_pakai",
+   "type": "varchar(150)",
+   "desc": ""
+  },
+  {
+   "name": "keterangan",
+   "type": "varchar(50)",
+   "desc": ""
+  }
+ ]
+}

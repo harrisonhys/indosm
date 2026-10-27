@@ -1,0 +1,224 @@
+{
+ "system": "fhir",
+ "table": "MedicationRequest",
+ "source": "HL7 FHIR R4 4.0.1 StructureDefinition snapshot",
+ "license": "CC0-1.0",
+ "lang": "en",
+ "columns": [
+  {
+   "name": "identifier",
+   "type": "Identifier",
+   "desc": "External ids for this request"
+  },
+  {
+   "name": "status",
+   "type": "code",
+   "desc": "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown"
+  },
+  {
+   "name": "statusReason",
+   "type": "CodeableConcept",
+   "desc": "Reason for current status"
+  },
+  {
+   "name": "intent",
+   "type": "code",
+   "desc": "proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option"
+  },
+  {
+   "name": "category",
+   "type": "CodeableConcept",
+   "desc": "Type of medication usage"
+  },
+  {
+   "name": "priority",
+   "type": "code",
+   "desc": "routine | urgent | asap | stat"
+  },
+  {
+   "name": "doNotPerform",
+   "type": "boolean",
+   "desc": "True if request is prohibiting action"
+  },
+  {
+   "name": "reported[x]",
+   "type": "boolean|Reference",
+   "desc": "Reported rather than primary record"
+  },
+  {
+   "name": "medication[x]",
+   "type": "CodeableConcept|Reference",
+   "desc": "Medication to be taken"
+  },
+  {
+   "name": "subject",
+   "type": "Reference",
+   "desc": "Who or group medication request is for"
+  },
+  {
+   "name": "encounter",
+   "type": "Reference",
+   "desc": "Encounter created as part of encounter/admission/stay"
+  },
+  {
+   "name": "supportingInformation",
+   "type": "Reference",
+   "desc": "Information to support ordering of the medication"
+  },
+  {
+   "name": "authoredOn",
+   "type": "dateTime",
+   "desc": "When request was initially authored"
+  },
+  {
+   "name": "requester",
+   "type": "Reference",
+   "desc": "Who/What requested the Request"
+  },
+  {
+   "name": "performer",
+   "type": "Reference",
+   "desc": "Intended performer of administration"
+  },
+  {
+   "name": "performerType",
+   "type": "CodeableConcept",
+   "desc": "Desired kind of performer of the medication administration"
+  },
+  {
+   "name": "recorder",
+   "type": "Reference",
+   "desc": "Person who entered the request"
+  },
+  {
+   "name": "reasonCode",
+   "type": "CodeableConcept",
+   "desc": "Reason or indication for ordering or not ordering the medication"
+  },
+  {
+   "name": "reasonReference",
+   "type": "Reference",
+   "desc": "Condition or observation that supports why the prescription is being written"
+  },
+  {
+   "name": "instantiatesCanonical",
+   "type": "canonical",
+   "desc": "Instantiates FHIR protocol or definition"
+  },
+  {
+   "name": "instantiatesUri",
+   "type": "uri",
+   "desc": "Instantiates external protocol or definition"
+  },
+  {
+   "name": "basedOn",
+   "type": "Reference",
+   "desc": "What request fulfills"
+  },
+  {
+   "name": "groupIdentifier",
+   "type": "Identifier",
+   "desc": "Composite request this is part of"
+  },
+  {
+   "name": "courseOfTherapyType",
+   "type": "CodeableConcept",
+   "desc": "Overall pattern of medication administration"
+  },
+  {
+   "name": "insurance",
+   "type": "Reference",
+   "desc": "Associated insurance coverage"
+  },
+  {
+   "name": "note",
+   "type": "Annotation",
+   "desc": "Information about the prescription"
+  },
+  {
+   "name": "dosageInstruction",
+   "type": "Dosage",
+   "desc": "How the medication should be taken"
+  },
+  {
+   "name": "dispenseRequest",
+   "type": "BackboneElement",
+   "desc": "Medication supply authorization"
+  },
+  {
+   "name": "dispenseRequest.initialFill",
+   "type": "BackboneElement",
+   "desc": "First fill details"
+  },
+  {
+   "name": "dispenseRequest.initialFill.quantity",
+   "type": "Quantity",
+   "desc": "First fill quantity"
+  },
+  {
+   "name": "dispenseRequest.initialFill.duration",
+   "type": "Duration",
+   "desc": "First fill duration"
+  },
+  {
+   "name": "dispenseRequest.dispenseInterval",
+   "type": "Duration",
+   "desc": "Minimum period of time between dispenses"
+  },
+  {
+   "name": "dispenseRequest.validityPeriod",
+   "type": "Period",
+   "desc": "Time period supply is authorized for"
+  },
+  {
+   "name": "dispenseRequest.numberOfRepeatsAllowed",
+   "type": "unsignedInt",
+   "desc": "Number of refills authorized"
+  },
+  {
+   "name": "dispenseRequest.quantity",
+   "type": "Quantity",
+   "desc": "Amount of medication to supply per dispense"
+  },
+  {
+   "name": "dispenseRequest.expectedSupplyDuration",
+   "type": "Duration",
+   "desc": "Number of days supply per dispense"
+  },
+  {
+   "name": "dispenseRequest.performer",
+   "type": "Reference",
+   "desc": "Intended dispenser"
+  },
+  {
+   "name": "substitution",
+   "type": "BackboneElement",
+   "desc": "Any restrictions on medication substitution"
+  },
+  {
+   "name": "substitution.allowed[x]",
+   "type": "boolean|CodeableConcept",
+   "desc": "Whether substitution is allowed or not"
+  },
+  {
+   "name": "substitution.reason",
+   "type": "CodeableConcept",
+   "desc": "Why should (not) substitution be made"
+  },
+  {
+   "name": "priorPrescription",
+   "type": "Reference",
+   "desc": "An order/prescription that is being replaced"
+  },
+  {
+   "name": "detectedIssue",
+   "type": "Reference",
+   "desc": "Clinical Issue with action"
+  },
+  {
+   "name": "eventHistory",
+   "type": "Reference",
+   "desc": "A list of events of interest in the lifecycle"
+  }
+ ]
+}

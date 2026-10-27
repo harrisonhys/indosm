@@ -1,0 +1,25 @@
+done C01
+done C02
+done C03
+done C04
+done C05
+done C06
+done C07
+done C08
+done C09
+done C10
+done C11
+done C12
+done C13
+done C14
+done C15
+done C16
+done C17
+done C18
+new LLM calls: 90
+                R@GT_neutral  F1_neutral    hit  hit@1  prompt_tokens
+config                                                               
+llm-full+dict          0.488       0.435    NaN    NaN       1876.111
+union[def]             0.545       0.453  0.944  0.667       1161.278
+primary[rank1]         0.611       0.520  0.944  0.667        906.722
+oracle+dict            0.791       0.732    NaN    NaN        252.778

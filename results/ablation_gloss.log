@@ -1,0 +1,27 @@
+done E01
+done E02
+done E03
+done E04
+done E05
+done E06
+done E07
+done E08
+done E09
+done E10
+done E11
+done E12
+done E13
+done E14
+done E20
+new LLM calls: 107
+                      R@GT     F1       hit     hit@1  prompt_tokens     sec
+config                                                                      
+two-stage+dict       0.400  0.330  0.866667  0.666667        985.067  24.299
+two-stage+gloss@1    0.356  0.279  0.866667  0.666667       1112.533  24.805
+two-stage+gloss@12   0.387  0.313  0.866667  0.666667       1197.733  27.225
+two-stage+qgloss@12  0.433  0.347  0.866667  0.666667       1189.000  26.130
+llm-full+dict        0.353  0.270       NaN       NaN       1963.933  31.400
+llm-full+gloss       0.255  0.232       NaN       NaN       2049.133  28.669
+llm-full+qgloss      0.240  0.210       NaN       NaN       2049.467  29.112
+oracle+dict          0.549  0.476       NaN       NaN        340.267  19.884
+oracle+gloss         0.605  0.522       NaN       NaN        425.467  19.425
