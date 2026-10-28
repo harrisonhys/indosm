@@ -141,3 +141,46 @@ Analisis baru ada di `revision2_analyses.py`, yang dijalankan per model. Panggil
 | Placeholder penulis/repositori | ⏳ menunggu data penulis |
 
 Naskah revisi: 12 halaman pada render LibreOffice (halaman 12 terisi ±¼), 11 tabel, 1 gambar, 29 referensi.
+
+---
+
+# Putaran 3
+
+Tidak ada eksperimen model baru di putaran ini. Perubahannya ada pada desain anotasi, definisi formal, dan kalibrasi klaim.
+
+**Penilaian B (ablasi stage 1)** ✅ Kesimpulan disesuaikan persis seperti saran: "LLM resource selection is therefore more effective than the two simple embedding classifiers we tested; this does not show that no non-LLM classifier could work."
+
+**Comment 1: IAA dan "resource acceptance"** ✅ (desain) / ⏳ (angka)
+- Reviewer benar: prosedur sebelumnya mengukur *acceptance*, bukan agreement. Karena anotasi kedua belum dilaksanakan, kami **memperbaiki desainnya**, bukan sekadar mengganti istilah.
+- Annotator kedua kini bekerja dalam dua tahap:
+  - **Tahap 1** (`annotation/anotasi_kedua_tahap1_resource.xlsx`): memilih resource tiap tabel secara independen, hanya dari nama tabel dan kolom. Resource yang ditetapkan tidak tampil di file ini; ini sudah diverifikasi.
+  - **Tahap 2**: file tahap 2 baru diberikan setelah tahap 1 dikembalikan, dan berisi label per kolom terhadap resource yang ditetapkan.
+- Dengan desain ini agreement pemilihan resource adalah agreement sungguhan antara dua pilihan independen (raw dan Cohen's κ atas 11 resource).
+- §2.1 kini melaporkan empat ukuran: seleksi resource, kategori anotasi, elemen target, dan pasangan exact, ditambah jumlah label yang berubah setelah adjudikasi.
+- Angkanya tetap menunggu annotator kedua.
+
+**Comment 2: definisi deployment-lenient** ✅
+- §2.3 kini memuat definisi formal. G = gold 1:1, X = gold n:1 dan ambiguous, A = assignment greedy one-to-one:
+  - A dihitung **sekali atas semua prediksi** untuk kedua kebijakan deployment, sebelum status n:1 dilihat;
+  - untuk kebijakan neutral, A dihitung setelah prediksi di X dibuang;
+  - P = |A∩G|/|A| (strict, neutral) atau |A∩(G∪X)|/|A| (lenient);
+  - R = |A∩G|/|G| untuk semua kebijakan, sehingga penyebut recall selalu jumlah gold 1:1;
+  - F1 = 2PR/(P+R) per tabel.
+- Ditambahkan penjelasan mengapa F1 neutral bisa melebihi F1 lenient: assignment neutral dihitung tanpa prediksi X, sehingga elemen yang semula direbut prediksi X bisa jatuh ke pasangan gold.
+
+**Comment 3: bukti statistik eksploratif** ✅ Satu kalimat eksplisit ditambahkan di §3.2: hasil GLM deployment-strict pada confirm18 (+12,0; CI 0,5..24,2; p = 0,037) adalah bukti eksploratif dari analisis yang ditambahkan setelah pra-registrasi, tanpa koreksi multiplisitas, dan bukan konfirmasi independen atas H1.
+
+**Comment 4: kesimpulan human confirmation** ✅ Diganti dengan kalimat yang disarankan: "Human confirmation of the selected resource is a promising safeguard, although its practical cost and effectiveness remain to be evaluated."
+
+**Comment 5: reproducibility dan presentasi**
+- ✅ **Versi model** kini spesifik:
+  - Ollama 0.40.4, `qwen3:8b` digest 500a1f067a9f (Q4_K_M);
+  - `bge-m3` digest 790764642607 (F16);
+  - GLM-5.3-Flash lewat API Neuralwatt, model id `glm-5.3-flash` (bobot `zai-org/GLM-5.3-Flash`), diakses 28 Oktober 2026.
+  
+  Juga dinyatakan bahwa penyedia API tidak mengunci checkpoint, sehingga hasil API direproduksi dari cache respons yang dirilis, bukan dengan memanggil ulang.
+- ✅ **Header tabel yang terpecah** (Tabel 8 dan 10, juga caption): "R@|GT|" sebelumnya terpotong setelah "|" di sel sempit. Kini dikunci dengan karakter *word joiner*, sehingga tidak lagi terpecah; sudah diverifikasi pada render.
+- ✅ **Pra-registrasi**: file pra-registrasi memuat konfigurasi beku, hipotesis, uji, kriteria, hash SHA-256 GT, dan hasil konfirmatori. Kini ditambahkan **addendum bertanggal** yang mendaftar semua analisis pasca-review (putaran 1 dan 2, termasuk lengan GLM) sebagai eksploratif. Naskah (§2.3) merujuk addendum ini.
+- ⏳ URL repositori, hash commit, identitas penulis, dan placeholder anotasi menunggu data penulis. DOI, tahun, dan tanggal editorial adalah isian masthead template yang diisi redaksi IJCCS.
+
+Naskah: 12 halaman (render LibreOffice; halaman 12 terisi ±45%).

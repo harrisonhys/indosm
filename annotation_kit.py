@@ -1,10 +1,13 @@
 """Second-annotator kit for the 59 FHIR pairs (41 dev + 18 confirm), blind to the draft GT, plus agreement scoring.
 
   python annotation_kit.py make             -> annotation/anotasi_kedua.xlsx (one row per source column)
-  python annotation_kit.py score FILE.xlsx  -> agreement with the draft GT + disagreement list for adjudication
+  python annotation_kit.py score FILE.xlsx [TAHAP1.xlsx]  -> agreement with the draft GT + disagreement list
+Phase 1 (annotation/anotasi_kedua_tahap1_resource.xlsx) is handed out first: the annotator picks each table's FHIR
+resource without seeing the assigned one. Phase 2 (anotasi_kedua.xlsx) follows: column labels against the assigned
+resource.
 
 Agreement is reported at two levels:
-  resource level  sheet "Resource": does the annotator accept the FHIR resource assigned to each table (raw agreement)
+  resource level  phase 1: independent choice of each table's resource vs. the draft; raw agreement and Cohen's kappa
   category level  per source column, label in {1:1, n:1, ambigu, tidak ada}; raw agreement and Cohen's kappa
   element level   per source column, label = target element (1:1 or n:1) or NONE; Cohen's kappa over those labels
                   (columns either annotator marked "ambigu" excluded)
@@ -26,6 +29,15 @@ from hybrid import SCHEMAS, columns
 
 PAIRS = [pathlib.Path("data/subset_e/pairs_e.json"), pathlib.Path("data/subset_e/pairs_confirm.json")]
 OUT = pathlib.Path("annotation/anotasi_kedua.xlsx")
+OUT_PHASE1 = pathlib.Path("annotation/anotasi_kedua_tahap1_resource.xlsx")
+RESOURCES = ["Patient", "Practitioner", "Organization", "Location", "Encounter", "Condition", "Observation",
+             "MedicationRequest", "Medication", "DiagnosticReport", "ServiceRequest", "lainnya / beberapa resource"]
+GUIDE_PHASE1 = """TAHAP 1 (kerjakan dan kirim kembali SEBELUM menerima file tahap 2).
+
+Untuk setiap tabel sumber, pilih SATU resource HL7 FHIR R4 yang paling tepat untuk mengekspor satu baris tabel tersebut (resource yang dideskripsikan tabel, bukan resource yang hanya dirujuk lewat foreign key). Bila tabel jelas mengisi beberapa resource sekaligus atau tidak cocok dengan satu pun, pilih "lainnya / beberapa resource" dan jelaskan di Catatan.
+
+Pilihan: Patient, Practitioner, Organization, Location, Encounter, Condition, Observation, MedicationRequest, Medication, DiagnosticReport, ServiceRequest.
+Jangan melihat file GT atau hasil model. Perkiraan waktu ±30 menit."""
 RELATIONS = ["1:1", "n:1", "ambigu", "tidak ada"]
 GUIDE = """Tugas: untuk setiap kolom tabel sumber (SIMRS/aplikasi kesehatan Indonesia), pilih elemen FHIR R4 yang paling tepat di resource target yang sudah ditentukan, atau "tidak ada".
 
@@ -44,7 +56,7 @@ Konvensi:
 6. Tabel tanda vital: kolom tekanan darah -> component.value[x] (1:1), vital lain -> component.value[x] (n:1).
 7. Kolom tarif/harga dan kolom audit aplikasi (created_at, user input) -> tidak ada, kecuali jelas padanannya.
 
-Di sheet "Resource", nyatakan apakah Anda setuju dengan resource FHIR yang ditetapkan untuk tiap tabel; bila tidak, tulis resource alternatif. Kolom pada sheet "Anotasi" tetap diisi terhadap resource yang ditetapkan.
+Tahap 2: file ini dibuka SETELAH tahap 1 (pemilihan resource) dikirim. Kolom di sheet "Anotasi" diisi terhadap resource yang ditetapkan di kolom "resource target".
 
 Jangan melihat file GT lain dan jangan menjalankan model. Perkiraan waktu ±4 jam; boleh dicicil.
 """
@@ -94,21 +106,37 @@ def make():
             ref_sheets[res][2].add(f"F{r}")
             rel.add(f"G{r}")
             ann[f"F{r}"].fill = ann[f"G{r}"].fill = fill
-    res = wb.create_sheet("Resource", 1)
-    res.append(["pasangan", "tabel sumber", "resource yang ditetapkan", "Setuju? (ya/tidak)", "Resource alternatif", "Catatan"])
-    for c in res[1]:
-        c.font = Font(bold=True)
-    yn = DataValidation(type="list", formula1='"ya,tidak"', allow_blank=True)
-    res.add_data_validation(yn)
-    for p in pairs:
-        res.append([p["id"], p["source"], p["target"].removeprefix("fhir__"), None, None, None])
-        yn.add(f"D{res.max_row}")
-        res[f"D{res.max_row}"].fill = fill
-    for col, w in zip("ABCDEF", (10, 34, 22, 18, 22, 40)):
-        res.column_dimensions[col].width = w
     OUT.parent.mkdir(exist_ok=True)
     wb.save(OUT)
     print(f"{OUT}: {len(pairs)} pairs, {ann.max_row - 1} source columns")
+    make_phase1(pairs)
+
+
+def make_phase1(pairs: list[dict]):
+    """Phase 1, done BEFORE the annotator receives phase 2: choose the FHIR resource of each table independently.
+    The file shows table and column names only, never the assigned resource."""
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Petunjuk"
+    ws["A1"] = GUIDE_PHASE1
+    ws["A1"].alignment = Alignment(wrap_text=True, vertical="top")
+    ws.column_dimensions["A"].width = 120
+    ws.row_dimensions[1].height = 200
+    res = wb.create_sheet("Resource")
+    res.append(["pasangan", "tabel sumber", "kolom sumber", "Resource FHIR pilihan Anda", "Catatan"])
+    for c in res[1]:
+        c.font = Font(bold=True)
+    dv = DataValidation(type="list", formula1=f'"{",".join(RESOURCES)}"', allow_blank=True)
+    res.add_data_validation(dv)
+    for p in pairs:
+        res.append([p["id"], p["source"], ", ".join(columns(p["source"])), None, None])
+        dv.add(f"D{res.max_row}")
+        res[f"D{res.max_row}"].fill = PatternFill("solid", fgColor="FFF2CC")
+        res[f"C{res.max_row}"].alignment = Alignment(wrap_text=True, vertical="top")
+    for col, w in zip("ABCDE", (10, 30, 70, 26, 30)):
+        res.column_dimensions[col].width = w
+    wb.save(OUT_PHASE1)
+    print(f"{OUT_PHASE1}: {len(pairs)} tables (resource chosen independently, assigned resource hidden)")
 
 
 def kappa(a: list, b: list) -> float:
@@ -119,7 +147,7 @@ def kappa(a: list, b: list) -> float:
     return (po - pe) / (1 - pe) if pe < 1 else 1.0
 
 
-def score(path: str):
+def score(path: str, phase1: str | None = None):
     df = pd.read_excel(path, sheet_name="Anotasi").rename(columns={"Elemen target": "el", "Relasi": "rel"})
     assert df["rel"].notna().all(), f"{df['rel'].isna().sum()} rows without Relasi"
     gt = {p["id"]: p for p in load_pairs()}
@@ -146,10 +174,14 @@ def score(path: str):
     tp = len(a1 & a2)
     print(f"exact (source column, FHIR element) 1:1 links: draft {len(a1)}, second {len(a2)}, shared {tp}; "
           f"P {tp / max(len(a2), 1):.3f} R {tp / max(len(a1), 1):.3f} F1 {2 * tp / max(len(a1) + len(a2), 1):.3f}")
-    r = pd.read_excel(path, sheet_name="Resource")
-    agreed = r["Setuju? (ya/tidak)"].astype(str).str.strip().str.lower().eq("ya")
-    print(f"resource level: annotator 2 accepts the assigned resource for {agreed.sum()}/{len(r)} tables; "
-          f"alternatives: {r.loc[~agreed, 'Resource alternatif'].dropna().tolist()}")
+    if phase1:
+        r = pd.read_excel(phase1, sheet_name="Resource")
+        a1 = [gt[x]["target"].removeprefix("fhir__") for x in r["pasangan"]]
+        a2 = r["Resource FHIR pilihan Anda"].astype(str).str.strip().tolist()
+        same = sum(x == y for x, y in zip(a1, a2))
+        print(f"resource selection (independent, phase 1): agreement {same}/{len(a1)} = {same / len(a1):.3f}; "
+              f"Cohen's kappa {kappa(a1, a2):.3f}; disagreements: "
+              f"{[(i, x, y) for i, x, y in zip(r['pasangan'], a1, a2) if x != y]}")
     out = pathlib.Path(path).with_name("ketidaksepakatan.csv")
     d[d.draft != d.second].to_csv(out, index=False)
     print(f"disagreements for adjudication -> {out}")
@@ -162,4 +194,4 @@ def demo():
 
 if __name__ == "__main__":
     demo()
-    {"make": lambda: make(), "score": lambda: score(sys.argv[2])}[sys.argv[1]]()
+    {"make": lambda: make(), "score": lambda: score(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)}[sys.argv[1]]()

@@ -52,3 +52,15 @@ Penyimpangan dari rencana: n = 18, bukan ±20. Sumber berlisensi jelas yang puny
 | H2 primary[rank1] − union[def] | +6,5 (−6,7..+20,2) | 4/12/2 | 0,173 | 0,173 | tidak terkonfirmasi; arah konsisten |
 
 F1 (sekunder): H1 +8,6 (CI −2,7..+21,1), H2 +6,7 (CI −6,1..+20,3), keduanya ns. Interpretasi dan analisis eksploratif ada di HYBRID.md.
+
+## Addendum: analisis setelah review (28 Okt 2026, ditambahkan setelah hasil konfirmatori diketahui)
+
+Semua analisis di bawah ini **eksploratif**. Analisis ini tidak termasuk keluarga uji konfirmatori (H1 dan H2) dan tidak mengubah hasil H1/H2 di atas. Hash GT tetap sama dan masih diverifikasi oleh skrip.
+
+1. **Review putaran 1** (`revision_analyses.py`): P/R/F1 threshold-free dengan kebijakan annotation-neutral; seleksi stage 1 (top-1/top-3) dan akurasi stage 2 kondisional; absorpsi Encounter dengan katalog `definition` untuk dua model.
+2. **Review putaran 2** (`revision2_analyses.py`). Kebijakan evaluasinya ditulis di docstring skrip sebelum angka dihitung:
+   - *deployment-strict*: tanpa penyaringan berbasis gold;
+   - *deployment-lenient*: n:1/ambiguous dihitung benar dalam presisi;
+   - *oracle-B*: resource gold dengan nama `Resource.path`;
+   - stage 1 berbasis embedding (bge-m3; definisi, atau definisi + nama elemen).
+3. **Model kedua (GLM-5.3-Flash)**: semua hasilnya eksploratif. Konfigurasi dibekukan pada Qwen dan tidak disetel ulang.

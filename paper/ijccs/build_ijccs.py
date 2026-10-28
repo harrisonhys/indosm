@@ -68,6 +68,7 @@ def runs(text: str, rpr: str) -> str:
         elif tok.startswith("`"):
             t = tok[1:-1]
         r = rpr.replace("</w:rPr>", extra + "</w:rPr>") if extra else rpr
+        t = t.replace("R@|GT|", "R@\u2060|\u2060GT\u2060|")  # word joiners: never wrap inside the metric name
         out.append(f'<w:r>{r}<w:t xml:space="preserve">{esc(t)}</w:t></w:r>')
     return "".join(out)
 
