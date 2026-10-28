@@ -46,6 +46,16 @@ Tanpa izin, paper tetap bisa terbit dengan angka agregat. Dataset dirilis hanya 
 7. Keterbatasan: satu/dua anotator, satu run per konfigurasi, model 8B, power.
 8. Kesimpulan.
 
+## Kandidat venue (SINTA 2, dicek 28 Okt 2026; konfirmasi peringkat di sinta.kemdiktisaintek.go.id sebelum submit)
+
+1. **IJCCS (UGM)**: SINTA 2, SK 177/E/KPT/2024, periode 2023–2028. Berbahasa Inggris, terbit Jan/Apr/Jul/Okt. Pilihan utama: akreditasinya paling jelas masa berlakunya.
+2. **Jurnal RESTI (IAII)**: SINTA 2 (SK terbaru belum terverifikasi). Menerima artikel bahasa Inggris, submisi dan review gratis, frekuensi terbit tinggi. Pilihan cepat.
+3. *Opsi naik kelas:* **JISEBI (Unair)**: kini SINTA 1 (SK 79/E/KPT/2023, 2023–2027) menurut situsnya. Ruang lingkup sistem informasi/integrasi data paling cocok, tetapi terbit hanya 2×/tahun (Apr/Okt).
+
+Tidak disarankan: JTIIK (SK di daftar publik tampak berakhir 2024) dan Khazanah Informatika (SK berlaku sampai vol. 11 no. 2, 2025), sampai status akreditasi barunya jelas. Jurnal rekam medis/informatika kesehatan yang ditemukan rata-rata SINTA 3–5.
+
+**Dipilih: IJCCS (28 Okt).** Naskah: `paper/ijccs/manuscript.md`, dibangun dengan `python paper/ijccs/build_ijccs.py` menjadi `paper/ijccs/IJCCS_manuscript.docx`, memakai template resmi bahasa Inggris (A4, margin 3 cm, TNR 11). Hasilnya 11 halaman (render LibreOffice), abstrak ID 176 kata / EN 187 kata, judul 10 kata, 29 referensi IEEE berurutan kemunculan, 8 tabel + 1 gambar. Sisa isian: nama/afiliasi/email penulis, `[TBD: κ]`, acknowledgements; lalu cek ulang jumlah halaman di Microsoft Word.
+
 ## Jadwal realistis
 
 - **Minggu 1:** draf bagian 3–6 **selesai 28 Okt** (`paper/draft_sections_3-6.md`, bahasa Inggris; statistik data dari `paper_stats.py`). Sisanya dikerjakan paralel dengan anotator kedua.
