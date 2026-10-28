@@ -56,6 +56,13 @@ Tidak disarankan: JTIIK (SK di daftar publik tampak berakhir 2024) dan Khazanah 
 
 **Dipilih: IJCCS (28 Okt).** Naskah: `paper/ijccs/manuscript.md`, dibangun dengan `python paper/ijccs/build_ijccs.py` menjadi `paper/ijccs/IJCCS_manuscript.docx`, memakai template resmi bahasa Inggris (A4, margin 3 cm, TNR 11). Hasilnya 11 halaman (render LibreOffice), abstrak ID 176 kata / EN 187 kata, judul 10 kata, 29 referensi IEEE berurutan kemunculan, 8 tabel + 1 gambar. Sisa isian: nama/afiliasi/email penulis, `[TBD: κ]`, acknowledgements; lalu cek ulang jumlah halaman di Microsoft Word.
 
+**Revisi setelah review (28 Okt):**
+- Judul baru: *Single-Resource LLM Schema Matching of Indonesian Health Systems to FHIR*.
+- Tabel baru: P/R/F1 threshold-free; stage-1 dengan stage-2 kondisional; absorpsi Encounter dihitung ulang dengan katalog `def` untuk dua model.
+- Prosedur metrik ditulis lengkap dengan contoh, keluarga uji konfirmatori dinyatakan eksplisit, dan pernyataan pra-registrasi ditulis jujur.
+- Hasil: 11 halaman, abstrak 181/196 kata. Tanggapan poin per poin ada di `paper/ijccs/tanggapan_reviewer.md`, dan analisisnya di `revision_analyses.py`.
+- Belum: κ (annotator kedua), data penulis, URL repo bersih.
+
 ## Jadwal realistis
 
 - **Minggu 1:** draf bagian 3–6 **selesai 28 Okt** (`paper/draft_sections_3-6.md`, bahasa Inggris; statistik data dari `paper_stats.py`). Sisanya dikerjakan paralel dengan anotator kedua.

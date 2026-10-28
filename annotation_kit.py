@@ -3,8 +3,10 @@
   python annotation_kit.py make             -> annotation/anotasi_kedua.xlsx (one row per source column)
   python annotation_kit.py score FILE.xlsx  -> agreement with the draft GT + disagreement list for adjudication
 
-Agreement is per source column: label = the target element (1:1 or n:1) or NONE; "ambigu" rows are reported apart.
-Cohen's kappa over those labels, plus correspondence-level P/R/F1 of annotator 2's 1:1 links vs. the draft gt.
+Agreement is reported at two levels:
+  resource level  sheet "Resource": does the annotator accept the FHIR resource assigned to each table (raw agreement)
+  element level   per source column, label = target element (1:1 or n:1) or NONE; Cohen's kappa over those labels
+                  ("ambigu" rows reported apart), plus P/R/F1 of annotator 2's 1:1 links vs. the draft gt.
 """
 import json
 import pathlib
@@ -37,6 +39,8 @@ Konvensi:
 5. Nomor kunjungan/rawat (no_rawat, no_redis, idRekamMedis) pada tabel selain kunjungan itu sendiri adalah referensi -> "encounter", bukan "identifier".
 6. Tabel tanda vital: kolom tekanan darah -> component.value[x] (1:1), vital lain -> component.value[x] (n:1).
 7. Kolom tarif/harga dan kolom audit aplikasi (created_at, user input) -> tidak ada, kecuali jelas padanannya.
+
+Di sheet "Resource", nyatakan apakah Anda setuju dengan resource FHIR yang ditetapkan untuk tiap tabel; bila tidak, tulis resource alternatif. Kolom pada sheet "Anotasi" tetap diisi terhadap resource yang ditetapkan.
 
 Jangan melihat file GT lain dan jangan menjalankan model. Perkiraan waktu ±4 jam; boleh dicicil.
 """
@@ -86,6 +90,18 @@ def make():
             ref_sheets[res][2].add(f"F{r}")
             rel.add(f"G{r}")
             ann[f"F{r}"].fill = ann[f"G{r}"].fill = fill
+    res = wb.create_sheet("Resource", 1)
+    res.append(["pasangan", "tabel sumber", "resource yang ditetapkan", "Setuju? (ya/tidak)", "Resource alternatif", "Catatan"])
+    for c in res[1]:
+        c.font = Font(bold=True)
+    yn = DataValidation(type="list", formula1='"ya,tidak"', allow_blank=True)
+    res.add_data_validation(yn)
+    for p in pairs:
+        res.append([p["id"], p["source"], p["target"].removeprefix("fhir__"), None, None, None])
+        yn.add(f"D{res.max_row}")
+        res[f"D{res.max_row}"].fill = fill
+    for col, w in zip("ABCDEF", (10, 34, 22, 18, 22, 40)):
+        res.column_dimensions[col].width = w
     OUT.parent.mkdir(exist_ok=True)
     wb.save(OUT)
     print(f"{OUT}: {len(pairs)} pairs, {ann.max_row - 1} source columns")
@@ -121,6 +137,10 @@ def score(path: str):
     tp = len(a1 & a2)
     print(f"1:1 links: draft {len(a1)}, second {len(a2)}, shared {tp}; "
           f"P {tp / max(len(a2), 1):.3f} R {tp / max(len(a1), 1):.3f} F1 {2 * tp / max(len(a1) + len(a2), 1):.3f}")
+    r = pd.read_excel(path, sheet_name="Resource")
+    agreed = r["Setuju? (ya/tidak)"].astype(str).str.strip().str.lower().eq("ya")
+    print(f"resource level: annotator 2 accepts the assigned resource for {agreed.sum()}/{len(r)} tables; "
+          f"alternatives: {r.loc[~agreed, 'Resource alternatif'].dropna().tolist()}")
     out = pathlib.Path(path).with_name("ketidaksepakatan.csv")
     d[d.draft != d.second].to_csv(out, index=False)
     print(f"disagreements for adjudication -> {out}")
