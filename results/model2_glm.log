@@ -1,0 +1,70 @@
+done dev41 E01
+done dev41 E02
+done dev41 E03
+done dev41 E04
+done dev41 E05
+done dev41 E06
+done dev41 E07
+done dev41 E08
+done dev41 E09
+done dev41 E10
+done dev41 E11
+done dev41 E12
+done dev41 E13
+done dev41 E14
+done dev41 E20
+done dev41 E29
+done dev41 E30
+done dev41 E31
+done dev41 E32
+done dev41 E33
+done dev41 E34
+done dev41 E35
+done dev41 E36
+done dev41 E37
+done dev41 E38
+done dev41 E39
+done dev41 E40
+done dev41 E41
+done dev41 E42
+done dev41 E43
+done dev41 E44
+done dev41 E45
+done dev41 E46
+done dev41 E47
+done dev41 E48
+done dev41 E49
+done dev41 E50
+done dev41 E51
+done dev41 E52
+done dev41 E53
+done dev41 E54
+done confirm18 C01
+done confirm18 C02
+done confirm18 C03
+done confirm18 C04
+done confirm18 C05
+done confirm18 C06
+done confirm18 C07
+done confirm18 C08
+done confirm18 C09
+done confirm18 C10
+done confirm18 C11
+done confirm18 C12
+done confirm18 C13
+done confirm18 C14
+done confirm18 C15
+done confirm18 C16
+done confirm18 C17
+done confirm18 C18
+new LLM calls: 256
+                          R@GT_neutral  F1_neutral  hit@1  prompt_tokens
+set       config                                                        
+dev41     llm-full+dict          0.556       0.497    NaN       1931.756
+          union[def]             0.581       0.557  0.829       1228.122
+          primary[rank1]         0.682       0.653  0.829       1059.341
+          oracle+dict            0.764       0.724    NaN        307.829
+confirm18 llm-full+dict          0.635       0.569    NaN       1871.833
+          union[def]             0.619       0.579  0.833        980.722
+          primary[rank1]         0.714       0.669  0.833        937.389
+          oracle+dict            0.824       0.795    NaN        248.500

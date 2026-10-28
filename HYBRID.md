@@ -15,7 +15,7 @@
 
 **Implikasi untuk paper:** hybrid hanya layak diusulkan bila targetnya besar, misalnya seluruh spesifikasi FHIR (ratusan elemen) atau katalog standar Satu Data, di mana prompt penuh tidak muat atau mahal. Eksperimen itulah yang perlu dijalankan berikutnya untuk menguji H2 dengan adil.
 
-**Status terbaru (27 Okt, n = 41, target besar 289 elemen):** konfigurasi terbaik non-oracle adalah **two-stage dengan satu resource utama** (katalog `def`, resource peringkat 1 dari tahap 1). R@|GT| 0,407 vs llm-full+dict 0,270 (+13,7 poin, CI +3,8..+23,7) dengan 55% token. Sisa gap ke oracle (0,552) hampir seluruhnya akibat salah pilih resource di tahap 1. Upaya memperbaikinya lewat prompt tahap 1 (katalog `elements`, instruksi anti-FK) tidak menaikkan recall. **Konfirmasi pra-registrasi pada 18 pasangan non-Khanza:** arah dan besar efek tereplikasi (+12,2 poin atas llm-full), tetapi belum signifikan (p_Holm = 0,14). Lihat bagian-bagian terakhir.
+**Status terbaru (27 Okt, n = 41, target besar 289 elemen):** konfigurasi terbaik non-oracle adalah **two-stage dengan satu resource utama** (katalog `def`, resource peringkat 1 dari tahap 1). R@|GT| 0,407 vs llm-full+dict 0,270 (+13,7 poin, CI +3,8..+23,7) dengan 55% token. Sisa gap ke oracle (0,552) hampir seluruhnya akibat salah pilih resource di tahap 1. Upaya memperbaikinya lewat prompt tahap 1 (katalog `elements`, instruksi anti-FK) tidak menaikkan recall. **Konfirmasi pra-registrasi pada 18 pasangan non-Khanza:** arah dan besar efek tereplikasi (+12,2 poin atas llm-full), tetapi belum signifikan (p_Holm = 0,14). **Model kedua (GLM-5.3 Flash, konfigurasi tidak disetel ulang):** keunggulan rank1 tereplikasi (+12,7 poin dev41, p = 0,016; +11,2 gabungan, p = 0,010). Lihat bagian-bagian terakhir.
 
 ## Kamus singkatan (`mine_abbrev.py` → `data/abbrev_khanza.json`)
 
@@ -519,14 +519,64 @@ Sumber: `mfarim/laravel-rekam-medis-puskesmas` (MIT, singkatan ad hoc `pmrk_fisi
 
 primary[rank1] (two-stage, katalog `def`, satu resource peringkat 1) dapat dilaporkan sebagai konfigurasi terbaik dengan efek yang **direplikasi arahnya dan besarnya** pada data baru (+12 sampai +14 poin atas llm-full, ±50% token). Signifikansi konfirmatorinya belum tercapai (p_Holm = 0,14, n = 18). Untuk paper, laporkan kedua set terpisah ditambah status pra-registrasi apa adanya. Menambah set konfirmasi (sistem lain, atau EN→FHIR seperti `eclinic_api` sebagai kondisi terpisah) adalah cara langsung menaikkan power.
 
+## Analisis tingkat korespondensi (`analyze_correspondence.py`, eksploratif)
+
+28 Okt 2026 · dari cache (0 panggilan baru) · unit = satu korespondensi gt, *hit* = masuk top-|GT| (n:1-netral) · recall mikro · CI = bootstrap klaster per pasangan, p = uji permutasi *sign-flip* per pasangan (dua sisi), agar korespondensi dalam satu tabel tidak dianggap independen
+
+| Set (pasangan / korespondensi) | llm-full+dict | union[`def`] | primary[rank1] | oracle | rank1 − llm-full (CI; p) | rank1 − union (CI; p) |
+| --- | --- | --- | --- | --- | --- | --- |
+| dev41 (41 / 205) | 0,263 | 0,327 | 0,356 | 0,561 | +9,3 (−1,4..+20,8; 0,12) | +2,9 (−5,2..+10,9; 0,57) |
+| confirm18 (18 / 69) | 0,536 | 0,609 | 0,667 | 0,812 | +13,0 (0,0..+28,0; 0,19) | +5,8 (−9,6..+20,6; 0,60) |
+| gabungan (59 / 274) | 0,332 | 0,398 | 0,434 | 0,624 | **+10,2 (+1,4..+19,3; 0,029)** | +3,6 (−3,4..+10,7; 0,37) |
+
+Bacaan:
+- Analisis korespondensi **tidak menambah power**. Begitu korelasi dalam tabel dikoreksi, unit efektifnya tetap pasangan.
+- Efek mikro sedikit lebih kecil daripada makro (+9,3 vs +13,7 di dev41), karena tabel besar (mis. `pasien`, 11 gt) mendapat bobot lebih, dan di tabel besar semua metode relatif sama.
+- Urutan konfigurasi konsisten di ketiga set.
+- Klaim yang kokoh untuk paper: **primary[rank1] tidak lebih buruk dan cenderung lebih baik (+9 sampai +14 poin) daripada llm-full dengan ±50% token prompt.** Efisiensi biaya bersifat deterministik; keunggulan akurasi tereplikasi arahnya tetapi signifikansinya bergantung pada set gabungan.
+
+## Model kedua: GLM-5.3 Flash via API Neuralwatt (`run_model2.py`, `analyze_model2.py`)
+
+28 Okt 2026 · `glm-5.3-flash` (zai-org/GLM-5.3-Flash; GLM 5.2 Flash tidak tersedia di endpoint) · temperature 0, seed 0, `json_object`, `reasoning_effort=low` (reasoning tidak bisa dimatikan) · 4 konfigurasi utama × 59 pasangan, prompt dan konfigurasi **identik** dengan Qwen (dibekukan pada Qwen, tidak disetel untuk GLM) · 258 panggilan, semua `finish=stop`, 0 JSON rusak · 203k token input + 60k output (±US$0,06)
+
+| Model / set | llm-full+dict | union[`def`] | primary[rank1] | oracle | hit@1 tahap 1 |
+| --- | --- | --- | --- | --- | --- |
+| Qwen3-8B / dev41 | 0,270 | 0,338 | **0,407** | 0,552 | 26/41 |
+| Qwen3-8B / confirm18 | 0,488 | 0,545 | **0,611** | 0,791 | 12/18 |
+| GLM-5.3 Flash / dev41 | 0,556 | 0,581 | **0,682** | 0,764 | 34/41 |
+| GLM-5.3 Flash / confirm18 | 0,635 | 0,619 | **0,714** | 0,824 | 15/18 |
+
+(R@|GT| n:1-netral; F1 menunjukkan pola yang sama.)
+
+primary[rank1] − llm-full+dict (Wilcoxon dua sisi, bootstrap 95% CI):
+
+| Model | dev41 | confirm18 | gabungan 59 |
+| --- | --- | --- | --- |
+| Qwen3-8B | +13,7 (+3,8..+23,7; p=0,011) | +12,2 (−0,2..+27,2; p=0,14) | +13,2 (+5,3..+21,5; p=0,002) |
+| GLM-5.3 Flash | **+12,7 (+3,7..+21,7; p=0,016)** | +7,9 (−5,6..+22,2; p=0,36) | **+11,2 (+3,8..+18,7; p=0,010)** |
+
+primary[rank1] − union[`def`] untuk GLM: +9,9 gabungan (CI +3,3..+17,2; p = 0,009). Untuk Qwen: +6,8 (p = 0,053).
+
+### Bacaan
+
+1. **Keunggulan satu resource utama tereplikasi lintas keluarga model.** Untuk GLM, dev41 adalah replikasi yang jujur: semua pilihan desain dibuat di Qwen, dan GLM tidak pernah dipakai untuk menyetel apa pun. Efeknya hampir sama besar (+12,7 vs +13,7) dan signifikan. Di confirm18 arahnya sama tetapi ns. Banyak pasangan seri (14/18), karena GLM sudah tinggi di semua konfigurasi.
+2. **Pada model yang lebih kuat, union tidak lagi membantu, tetapi rank1 tetap membantu.** GLM union ≈ llm-full (+2,5 dev, −1,6 confirm), sedangkan rank1 tetap +8 sampai +13. Penyerapan oleh resource yang dirujuk lewat FK (Encounter) tetap terjadi pada model yang lebih besar, dan pembatasan ke satu resource adalah perbaikannya.
+3. **GLM jauh lebih akurat** (+16 sampai +24 poin per konfigurasi, semua p < 0,001) dan **sangat cepat** (median 2–3 detik/panggilan vs 16–19 detik Qwen lokal). Tahap 1-nya juga jauh lebih baik (hit@1 83% vs 64%). Gap ke oracle menyusut dari 14,6 ke 8,2 poin (dev41).
+4. Struktur biaya sama untuk kedua model: rank1 memakai ±53–55% token prompt llm-full.
+
+### Catatan validitas
+
+- API temperature 0 / seed 0 belum tentu deterministik. Hasil tersimpan di `data/hybrid_cache__glm-5.3-flash.json`, sehingga analisis dapat diulang tanpa memanggil API lagi.
+- Skema publik GitHub kemungkinan ada di data latih kedua model; yang tidak mungkin ada adalah GT kami.
+- Kunci API hanya dibaca dari variabel lingkungan `NEURALWATT_API_KEY` (`hybrid.py`); kunci tidak disimpan di repo.
+
 ## Langkah berikutnya
 
-1. ~~Uji target besar.~~ ~~Pipeline dua tahap.~~ ~~Ablasi nama tabel.~~ ~~Kamus istilah domain.~~ ~~Tambah pasangan ke ≥ 40.~~ ~~Katalog tahap 1 yang lebih kaya.~~ ~~Satu resource utama di tahap 2.~~ ~~Peringkat 1 tahap 1 lewat prompt.~~ ~~Konfirmasi pada pasangan non-Khanza.~~ Selesai, lihat di atas.
+1. ~~Uji target besar.~~ ~~Pipeline dua tahap.~~ ~~Ablasi nama tabel.~~ ~~Kamus istilah domain.~~ ~~Tambah pasangan ke ≥ 40.~~ ~~Katalog tahap 1 yang lebih kaya.~~ ~~Satu resource utama di tahap 2.~~ ~~Peringkat 1 tahap 1 lewat prompt.~~ ~~Konfirmasi pada pasangan non-Khanza.~~ ~~Analisis korespondensi.~~ ~~Model kedua (GLM-5.3 Flash).~~ Selesai, lihat di atas.
 2. **Pemilihan resource dari hasil matching, bukan dari deskripsi.** Prompt tahap 1 sudah mentok (katalog `elements` +3 hit@1 tanpa kenaikan recall; instruksi anti-FK kontraproduktif). Opsi yang tersisa:
    (a) LLM melihat 2–3 hasil matching per resource lalu memilih satu (satu panggilan kecil tambahan);
    (b) aturan struktural tanpa LLM, misalnya resource yang hanya ter-match lewat kolom FK (`*.encounter`, `*.subject`, `*.identifier`) didiskualifikasi;
    (c) model yang lebih besar (Gemini) khusus untuk tahap 1.
    Uji juga nama tabel sumber di tahap 1 untuk skema berkolom generik (`sipuskesmas`). Setiap perubahan pipeline harus dikonfirmasi ulang pada set held-out baru, karena set konfirmasi 18 pasangan sekarang sudah "terpakai".
-3. **Analisis tingkat korespondensi** (mixed-effects / cluster bootstrap) sebagai analisis utama, karena power di tingkat pasangan terlalu rendah.
 4. Perbaiki ekor kamus: seed kecil akronim medis/administrasi, atau minta LLM mengekspansi singkatan sekali per sistem (ala Columbo), lalu bandingkan dengan kamus hasil tambang.
 5. Ganti atau perkuat retriever (bge-m3 → retriever yang di-fine-tune ala Magneto, atau BM25 + embedding), karena recall@10 0,69 adalah plafon saat ini.

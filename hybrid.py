@@ -5,6 +5,7 @@ plus the embedding-only retrievers. Writes results/hybrid_scores<tag>_k<k>.csv a
 Usage: python hybrid.py [k] [pairs.json] [tag]
 """
 import json
+import os
 import pathlib
 import re
 import sys
@@ -16,9 +17,13 @@ import requests
 from pilot import OLLAMA, f1_one_to_one, recall_at_gt
 
 LOCAL_MODEL = "qwen3:8b"
+# INDOSM_LLM=neuralwatt:<model id> switches every LLM call to that OpenAI-compatible API (key in NEURALWATT_API_KEY,
+# never in the repo) with its own cache file; unset = local Ollama qwen3:8b, byte-identical to all earlier runs.
+REMOTE = os.environ.get("INDOSM_LLM", "").removeprefix("neuralwatt:") or None
+NEURALWATT = "https://api.neuralwatt.com/v1"
 SCHEMAS = pathlib.Path("data/subset_e/schemas")
 PAIRS = pathlib.Path("data/subset_e/pairs_e.json")
-CACHE = pathlib.Path("data/hybrid_cache.json")
+CACHE = pathlib.Path(f"data/hybrid_cache__{REMOTE}.json" if REMOTE else "data/hybrid_cache.json")
 ABBREV = {k: v["expansion"] for k, v in json.loads(pathlib.Path("data/abbrev_khanza.json").read_text()).items()}
 K_LIST = (1, 3, 5, 10)
 MAX_OUTPUT_TOKENS = 3000  # ponytail: guards against repetition loops; normal answers are <1k tokens
@@ -63,9 +68,33 @@ def embed(texts: list[str]) -> list[list[float]]:
     r.raise_for_status()
 
 
+def remote_llm(prompt: str) -> dict:
+    body = {"model": REMOTE, "messages": [{"role": "user", "content": prompt}], "temperature": 0, "seed": 0,
+            "response_format": {"type": "json_object"}, "reasoning_effort": "low", "max_tokens": 16000}
+    headers = {"Authorization": f"Bearer {os.environ['NEURALWATT_API_KEY']}"}
+    t0 = time.time()
+    for attempt in range(6):
+        r = requests.post(f"{NEURALWATT}/chat/completions", json=body, headers=headers, timeout=600)
+        if r.status_code not in (429, 500, 502, 503, 504):
+            break
+        time.sleep(min(60, 5 * 2 ** attempt))
+    r.raise_for_status()
+    j = r.json()
+    content = (j["choices"][0]["message"].get("content") or "").strip()
+    content = re.sub(r"^```(?:json)?\s*|\s*```$", "", content)  # some models fence JSON despite json mode
+    u = j.get("usage", {})
+    return {"content": content, "prompt_tokens": u.get("prompt_tokens", 0),
+            "completion_tokens": u.get("completion_tokens", 0),
+            "reasoning_tokens": (u.get("completion_tokens_details") or {}).get("reasoning_tokens", 0),
+            "finish_reason": j["choices"][0].get("finish_reason"), "sec": time.time() - t0}
+
+
 def cached_llm(prompt: str) -> dict:
     cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
-    key = f"{LOCAL_MODEL}|{prompt}"
+    key = f"{REMOTE or LOCAL_MODEL}|{prompt}"
+    if key not in cache and REMOTE:
+        cache[key] = remote_llm(prompt)
+        CACHE.write_text(json.dumps(cache, ensure_ascii=False))
     if key not in cache:
         body = {"model": LOCAL_MODEL, "messages": [{"role": "user", "content": prompt}], "format": "json",
                 "think": False, "stream": False, "options": {"temperature": 0, "seed": 0, "num_ctx": 16384, "num_predict": MAX_OUTPUT_TOKENS}}
