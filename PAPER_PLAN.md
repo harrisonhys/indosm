@@ -63,6 +63,13 @@ Tidak disarankan: JTIIK (SK di daftar publik tampak berakhir 2024) dan Khazanah 
 - Hasil: 11 halaman, abstrak 181/196 kata. Tanggapan poin per poin ada di `paper/ijccs/tanggapan_reviewer.md`, dan analisisnya di `revision_analyses.py`.
 - Belum: κ (annotator kedua), data penulis, URL repo bersih.
 
+**Revisi putaran 2 (28 Okt):**
+- Tiga kebijakan evaluasi (neutral, deployment-strict, lenient); hasil tetap sama tanpa penyaringan berbasis gold.
+- Ablasi oracle-B: prefiks membantu Qwen (+5,0), efeknya kecil pada GLM (+2,1, tidak signifikan); primary identik dengan oracle-B bila rank-1 benar.
+- Baseline embedding stage-1: top-1 27%, di bawah llm-full.
+- Klaim dibatasi ke zero-training/schema-only/single-resource.
+- 12 halaman (sisa margin ±¾ halaman). Analisis ada di `revision2_analyses.py`.
+
 ## Jadwal realistis
 
 - **Minggu 1:** draf bagian 3–6 **selesai 28 Okt** (`paper/draft_sections_3-6.md`, bahasa Inggris; statistik data dari `paper_stats.py`). Sisanya dikerjakan paralel dengan anotator kedua.

@@ -80,3 +80,64 @@ Sebelum submisi ulang:
 1. **Annotator kedua.** Isi `annotation/anotasi_kedua.xlsx` (sheet "Resource" dan "Anotasi"), lalu jalankan `python annotation_kit.py score <file>`, adjudikasi, dan rescore.
 2. **Nama, afiliasi, dan email penulis** untuk header dan footer.
 3. **URL repositori dan hash commit.** Repositori `harrisonhys/indosm` saat ini **publik dan memuat dump mentah** (`data/subset_e/raw/`, termasuk `sik.sql`) yang menurut SUBSET_E.md tidak boleh diredistribusi. Sebelum tautannya dicantumkan di naskah, sebaiknya buat repositori rilis yang bersih (tanpa `raw/`), atau bersihkan repositori ini.
+
+---
+
+# Putaran 2
+
+Analisis baru ada di `revision2_analyses.py`, yang dijalankan per model. Panggilan LLM baru hanya untuk prompt yang belum ada di cache: 55 untuk Qwen (lokal) dan 66 untuk GLM (API). Kebijakan evaluasi deployment ditulis di docstring skrip **sebelum** angkanya dihitung.
+
+## Major comments
+
+**1. Evaluasi memakai label gold untuk menyaring prediksi** ✅
+- §2.3 kini mendefinisikan tiga kebijakan:
+  - *annotation-neutral*: metrik lama yang dipra-registrasi. Dinyatakan eksplisit bahwa metrik ini mengukur subset pasangan yang dapat dinilai dan memakai label gold untuk menyaring.
+  - *deployment-strict*: tanpa penyaringan berbasis gold. Setiap pasangan yang di-assign dan bukan gold 1:1 dihitung false positive; ini batas bawah kinerja operasional.
+  - *deployment-lenient*: n:1 dan ambiguous dihitung benar dalam presisi; ini acuan atas.
+- Juga dinyatakan bahwa kebijakan deployment ditambahkan setelah review pertama tetapi ditetapkan sebelum dihitung.
+- Tabel 6 kini melaporkan P/R/F1 deployment-strict, plus F1 neutral dan lenient, untuk kedua model. Ketiga kebijakan berbeda paling banyak 0,04 F1, dan urutan konfigurasinya sama.
+- Tabel 5 menambah selisih F1 deployment-strict: primary − llm-full gabungan +11,7 (Qwen, p = 0,004) dan +13,8 (GLM, p < 0,001). Semuanya eksploratif.
+
+**2. Klaim "oracle bukan batas atas" perlu diuji** ✅ (eksperimen dijalankan)
+- Kami menjalankan ablasi yang disarankan (Tabel 8):
+  - oracle-A: resource gold, nama elemen polos;
+  - oracle-B: resource gold, nama `Resource.path`;
+  - primary.
+- Temuan mekanis: untuk tabel yang rank-1-nya benar, prompt primary identik dengan prompt oracle-B, dan skornya terbukti sama persis untuk kedua model. Jadi primary = oracle-B × [rank-1 benar].
+- Hasil: oracle-B − oracle-A gabungan +5,0 poin R@|GT| untuk Qwen (CI 0,5..9,5; p = 0,026) dan +2,1 untuk GLM (CI −1,9..6,3; p = 0,35).
+- Klaim di naskah disesuaikan: format berprefiks membantu model kecil, dan efeknya kecil atau tidak terdeteksi pada model besar. Kalimat lama "the resource prefix appears to help the model" dihapus.
+
+**3. Inter-annotator agreement** ⏳ (prosedur ✅)
+- Skrip skor kini melaporkan empat ukuran secara terpisah, sesuai permintaan:
+  - agreement pemilihan resource;
+  - agreement kategori (1:1/n:1/ambiguous/none), raw dan κ;
+  - agreement elemen, κ;
+  - exact agreement/F1 pasangan (kolom sumber, elemen FHIR).
+- Jumlah label yang berubah setelah adjudikasi dihitung dari daftar ketidaksepakatan.
+- Angkanya tetap menunggu annotator kedua.
+
+**4. Baseline dan klaim novelty** ✅ (kedua opsi)
+- Klaim kontribusi dibatasi eksplisit ke setting *zero-training, schema-only, single-resource*. Ditambahkan juga: "We do not claim superiority over trained matchers, which we do not evaluate."
+- Baseline struktural yang disarankan ditambahkan (Tabel 8): klasifikasi resource berbasis embedding (bge-m3, tabel vs definisi resource, dengan dan tanpa nama elemen), lalu stage-2 LLM yang sama.
+- Hasilnya:
+  - top-1 hanya 27% (vs 64% Qwen dan 83% GLM untuk stage-1 LLM);
+  - end-to-end di bawah llm-full (Qwen −11,9; GLM −36,0 poin).
+- Kesimpulannya: manfaat metode berasal dari penggunaan LLM untuk memilih resource, bukan sekadar dari adanya langkah klasifikasi resource.
+
+**5. Sensitivitas multi-resource** ✅
+- Dinyatakan sebagai pemeriksaan kualitatif dan eksploratif. Klaim "understates ... by a modest amount" dihapus.
+- Ditambahkan bahwa sampel 30 prediksi tanpa gold alternatif hasil adjudikasi tidak cukup untuk mengestimasi perubahan R@|GT| atau F1.
+
+## Temuan teknis
+
+| Catatan | Tindakan |
+| --- | --- |
+| Tabel 3 tanpa n per kelompok | n ditambahkan di setiap kolom. Caption menyatakan 25 dari 28 pasangan baseline yang ditampilkan, dan tiga kelompok satu-pasangan yang dihilangkan disebut namanya |
+| Agregasi Tabel 6 | §2.3: P, R, F1 dihitung per tabel lalu macro-average; F1 adalah rata-rata F1 per tabel, bukan harmonic mean dari rata-rata P dan R |
+| Tabel 7: skor 0 bila rank-1 salah | Dinyatakan sebagai konsekuensi protokol anotasi single-resource, bukan temuan empiris |
+| Header "Union R@ \| GT\|" terpisah | Bug pemformatan pada pembangkit naskah (pemisah sel tabel). Sudah diperbaiki, header kini "Union R@\|GT\|" |
+| Konfirmasi manusia di §3.4 | Dinyatakan sebagai implikasi yang belum diuji, tanpa user study. Biaya, beban kerja, dan akurasi konfirmasi manusia disebut sebagai hal yang belum diukur |
+| Pra-registrasi tanpa bukti waktu independen | Tetap dinyatakan terus terang di §2.3; tidak ada klaim tambahan |
+| Placeholder penulis/repositori | ⏳ menunggu data penulis |
+
+Naskah revisi: 12 halaman pada render LibreOffice (halaman 12 terisi ±¼), 11 tabel, 1 gambar, 29 referensi.

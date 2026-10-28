@@ -5,8 +5,12 @@
 
 Agreement is reported at two levels:
   resource level  sheet "Resource": does the annotator accept the FHIR resource assigned to each table (raw agreement)
+  category level  per source column, label in {1:1, n:1, ambigu, tidak ada}; raw agreement and Cohen's kappa
   element level   per source column, label = target element (1:1 or n:1) or NONE; Cohen's kappa over those labels
-                  ("ambigu" rows reported apart), plus P/R/F1 of annotator 2's 1:1 links vs. the draft gt.
+                  (columns either annotator marked "ambigu" excluded)
+  exact pairs     P/R/F1 of annotator 2's (source column, FHIR element) 1:1 links vs. the draft gt
+After adjudication, the number of changed labels = rows of ketidaksepakatan.csv whose adjudicated label differs
+from the draft.
 """
 import json
 import pathlib
@@ -125,17 +129,22 @@ def score(path: str):
         g1 = {s: t for s, t in p["gt"] + p["gt_n1"]}
         amb = {s for s, *_ in p["ambiguous"]}
         draft = "AMBIGU" if r["kolom sumber"] in amb else g1.get(r["kolom sumber"], "NONE")
+        cat1 = ("ambigu" if r["kolom sumber"] in amb else "1:1" if r["kolom sumber"] in dict(p["gt"])
+                else "n:1" if r["kolom sumber"] in dict(p["gt_n1"]) else "tidak ada")
         second = "AMBIGU" if r["rel"] == "ambigu" else ("NONE" if r["rel"] == "tidak ada" else str(r["el"]))
         rows.append({"pair": r["pasangan"], "col": r["kolom sumber"], "draft": draft, "second": second,
+                     "cat1": cat1, "cat2": r["rel"],
                      "rel2": r["rel"], "note": r.get("Catatan")})
     d = pd.DataFrame(rows)
+    print(f"category level (1:1 / n:1 / ambigu / tidak ada, all {len(d)} columns): raw agreement "
+          f"{(d.cat1 == d.cat2).mean():.3f}; Cohen's kappa {kappa(d.cat1.tolist(), d.cat2.tolist()):.3f}")
     clear = d[(d.draft != "AMBIGU") & (d.second != "AMBIGU")]
-    print(f"columns {len(d)}; both non-ambiguous {len(clear)}; raw agreement {(clear.draft == clear.second).mean():.3f}; "
+    print(f"element level (target element or NONE, columns both annotators did not mark ambiguous: {len(clear)}): raw agreement {(clear.draft == clear.second).mean():.3f}; "
           f"Cohen's kappa {kappa(clear.draft.tolist(), clear.second.tolist()):.3f}")
     a2 = {(r.pair, r.col, r.second) for r in d.itertuples() if r.rel2 == "1:1"}
     a1 = {(pid, s, t) for pid, p in gt.items() for s, t in p["gt"]}
     tp = len(a1 & a2)
-    print(f"1:1 links: draft {len(a1)}, second {len(a2)}, shared {tp}; "
+    print(f"exact (source column, FHIR element) 1:1 links: draft {len(a1)}, second {len(a2)}, shared {tp}; "
           f"P {tp / max(len(a2), 1):.3f} R {tp / max(len(a1), 1):.3f} F1 {2 * tp / max(len(a1) + len(a2), 1):.3f}")
     r = pd.read_excel(path, sheet_name="Resource")
     agreed = r["Setuju? (ya/tidak)"].astype(str).str.strip().str.lower().eq("ya")

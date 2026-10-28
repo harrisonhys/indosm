@@ -199,7 +199,9 @@ def body(tpl: Template, src: str) -> str:
             rows = []
             while i + 1 < len(lines) and lines[i + 1].startswith("|"):
                 i += 1
-                rows.append([c.strip() for c in cite(lines[i], order).strip().strip("|").split("|")])
+                row = cite(lines[i], order).strip()
+                # cells are separated by " | " so that "R@|GT|" inside a cell stays intact
+                rows.append([c.strip() for c in row.removeprefix("|").removesuffix("|").strip().split(" | ")])
             out.append(table(rows))
             out.append(para(*txt_first, ""))
             first = True
