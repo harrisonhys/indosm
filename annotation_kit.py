@@ -10,7 +10,8 @@ Agreement is reported at two levels:
   resource level  phase 1: independent choice of each table's resource vs. the draft; raw agreement and Cohen's kappa
   category level  per source column, label in {1:1, n:1, ambigu, tidak ada}; raw agreement and Cohen's kappa
   element level   per source column, label = target element (1:1 or n:1) or NONE; Cohen's kappa over those labels
-                  (columns either annotator marked "ambigu" excluded)
+                  (columns either annotator marked "ambigu" excluded); also restricted to columns that at least one annotator
+                  mapped, because the dominant NONE label inflates kappa over all columns
   exact pairs     P/R/F1 of annotator 2's (source column, FHIR element) 1:1 links vs. the draft gt
 After adjudication, the number of changed labels = rows of ketidaksepakatan.csv whose adjudicated label differs
 from the draft.
@@ -169,6 +170,10 @@ def score(path: str, phase1: str | None = None):
     clear = d[(d.draft != "AMBIGU") & (d.second != "AMBIGU")]
     print(f"element level (target element or NONE, columns both annotators did not mark ambiguous: {len(clear)}): raw agreement {(clear.draft == clear.second).mean():.3f}; "
           f"Cohen's kappa {kappa(clear.draft.tolist(), clear.second.tolist()):.3f}")
+    mapped = clear[(clear.draft != "NONE") | (clear.second != "NONE")]
+    print(f"element level, columns mapped by at least one annotator ({len(mapped)}; guards against kappa inflated by "
+          f"'none'): raw agreement {(mapped.draft == mapped.second).mean():.3f}; "
+          f"Cohen's kappa {kappa(mapped.draft.tolist(), mapped.second.tolist()):.3f}")
     a2 = {(r.pair, r.col, r.second) for r in d.itertuples() if r.rel2 == "1:1"}
     a1 = {(pid, s, t) for pid, p in gt.items() for s, t in p["gt"]}
     tp = len(a1 & a2)

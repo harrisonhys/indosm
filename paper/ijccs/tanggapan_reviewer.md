@@ -184,3 +184,36 @@ Tidak ada eksperimen model baru di putaran ini. Perubahannya ada pada desain ano
 - ⏳ URL repositori, hash commit, identitas penulis, dan placeholder anotasi menunggu data penulis. DOI, tahun, dan tanggal editorial adalah isian masthead template yang diisi redaksi IJCCS.
 
 Naskah: 12 halaman (render LibreOffice; halaman 12 terisi ±45%).
+
+---
+
+# Putaran 4
+
+Tidak ada eksperimen model baru. Perubahannya: uji unit evaluator, ukuran agreement tambahan, dan tiga penyesuaian teks.
+
+**Comment 1: IAA** ⏳ (angka) / ✅ (metodologi)
+- **κ elemen yang menggelembung karena "none"**: skrip skor kini juga menghitung agreement elemen hanya pada kolom yang dipetakan oleh setidaknya satu annotator. §2.1 menyebut kedua versi, dan exact-link F1 dinyatakan sebagai ukuran agreement utama.
+- **Informasi annotator vs model**: §2.1 kini menyatakan bahwa annotator melihat nama tabel dan nama kolom, sedangkan matcher sengaja hanya menerima nama dan tipe kolom. Gold standard adalah acuan yang dibangun dengan konteks lebih kaya daripada yang diberikan ke model.
+- Angka agreement tetap menunggu annotator kedua (tahap 1, lalu tahap 2).
+
+**Comment 2: konsistensi implementasi ketiga kebijakan** ✅
+- Uji unit evaluator ditambahkan: `tests/test_evaluation.py`, 8 uji assert tanpa framework, dijalankan dengan `python tests/test_evaluation.py`, dan semuanya lulus. Kasus yang dicakup sesuai permintaan reviewer:
+  - tabel tanpa prediksi (*unmatched*) dan confidence 0;
+  - dua kolom yang memperebutkan elemen yang sama (*collision*);
+  - prediksi n:1 di bawah ketiga kebijakan, termasuk kasus F1 neutral > lenient > strict;
+  - prediksi ambiguous;
+  - confidence sama, dengan urutan output model yang dipertahankan;
+  - potongan R@|GT| saat ada nilai yang sama.
+- Satu uji memeriksa seluruh 826 baris hasil nyata (dua model): recall strict dan lenient identik di setiap baris, dan presisi lenient tidak pernah di bawah strict. Ini mengonfirmasi bahwa A untuk strict dan lenient benar-benar berasal dari assignment yang sama.
+
+**Comment 3: ketidakmerataan per resource** ✅ Satu kalimat ditambahkan di §3.2: peningkatan rata-rata tidak berlaku untuk setiap resource. Dengan Qwen, ServiceRequest (rujukan dan order) tetap 0 dan Practitioner turun, sehingga mapping ke resource tersebut memerlukan validasi manual yang lebih ketat sebelum dipakai.
+
+**Comment 4: klaim statistik dan istilah pra-registrasi** ✅
+- Narasi konfirmatori tidak diubah.
+- Istilah kini "internally pre-registered", di abstrak (EN dan ID), kontribusi, dan §2.3. §2.3 menjelaskan eksplisit bahwa protokol adalah dokumen internal di repositori proyek, bukan entri di registri eksternal.
+
+**Penyesuaian panjang.** Naskah tetap 12 halaman (halaman 12 terisi ±65% pada render LibreOffice). Untuk menjaga margin:
+- Tabel 2 dipersingkat menjadi cuplikan; caption menyebut isinya: 4 dari 7 pasangan 1:1, kolom n:1, dan 1 dari 2 kolom ambiguous.
+- Baris "definisi + nama elemen" di Tabel 8 dipindah ke teks.
+- Tabel 11 hanya memuat dua konfigurasi yang dibandingkan.
+- Kalimat analisis tingkat korespondensi dihapus; bukti gabungan yang sama sudah ada di Tabel 5.
